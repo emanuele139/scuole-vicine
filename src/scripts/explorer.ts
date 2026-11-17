@@ -1,4 +1,6 @@
-import { installBasemap } from './basemap';
+import { RetryableRequest, type RequestState } from '../lib/retryable-request';
+import { resourceFeedback } from './resource-feedback';
+import { installBasemap, type BasemapState } from './basemap';
 import { readSearchSession, writeSearchSession, tabSearchStorage, type SearchSession } from '../lib/search-session';
 import { schools, schoolHref } from '../lib/catalog-client';
 import { loadFamily } from '../lib/family';
@@ -17,11 +19,14 @@ const radius = $<HTMLSelectElement>('#radius');
 const status = $('#address-status');
 const choices = $('#address-choices');
 const submit = $<HTMLButtonElement>('#search-submit');
+const addressSpinner = $('#address-spinner');
+const addressLoadingStatus = $('#address-loading-status');
 let searchMode: 'address' | 'name' = 'address';
 let educationStage: '' | 'nursery' | 'preschool' = '';
 let origin: AddressMatch | null = null;
-let request: AbortController | null = null;
-let searchGeneration = 0;
+type AddressJob = {query:string;kind:'suggestions'|'search'};
+const addressFeedback=resourceFeedback($('#address-request-feedback'));
+const addressTask=new RetryableRequest<AddressJob,AddressMatch[]>((input,signal)=>findAddress(input.query,signal),addressState);
 let selectedAddress: AddressMatch | null = null;
 let suggestions: AddressMatch[] = [];
 let activeSuggestion = -1;
@@ -37,6 +42,20 @@ let map: any = null;
 let leaflet: any = null;
 let markersLayer: any = null;
 let mapStartup: Promise<void> | null = null;
+let basemap:ReturnType<typeof installBasemap>|null=null;
+const mapFeedback=resourceFeedback($('#map-request-feedback'));
+function mapState(state:BasemapState){
+  const restoreFocus=document.activeElement===mapFeedback.retry;
+  $('#school-map').setAttribute('aria-busy',String(state.phase==='loading'));
+  $('.map-shell').classList.toggle('is-loading',state.phase==='loading');
+  $('#map-column').classList.toggle('is-loading',state.phase==='loading');
+  $('#map-refresh-status').textContent=state.refresh?'Stiamo aggiornando la cartografia.':'';
+  if(state.phase==='ready'){mapFeedback.show({phase:'idle'});if(restoreFocus)$('#fit-map').focus({preventScroll:true});}
+  else if(state.phase==='loading')mapFeedback.show(state.refresh?{phase:'idle'}:{phase:'loading',title:'Stiamo caricando la mappa.',detail:'Sedi, filtri e scuola selezionata restano disponibili. Puoi continuare dall’elenco.',retry:!mapFeedback.retry.hidden});
+  else if(state.phase==='fallback')mapFeedback.show({phase:'error',title:'La cartografia online non è disponibile.',detail:'Usiamo uno schema locale. Riprova ricarica solo la mappa: posizione, scuole e filtri restano invariati.',retry:true});
+  else{mapFeedback.show({phase:'idle'});$('#basemap-status').textContent=state.message;$('#basemap-status').hidden=false;if(restoreFocus)$('#fit-map').focus({preventScroll:true});}
+}
+mapFeedback.retry.addEventListener('click',()=>{if(map)basemap?.retry();else void initMap();});
 let selectedSchoolId: string | null = null;
 const params = new URLSearchParams(location.search);
 const previous = readSearchSession(tabSearchStorage());
@@ -119,14 +138,47 @@ function renderList() {
   $('#shown-count').textContent = filtered.length ? `${Math.min(shown,filtered.length)} di ${filtered.length} sedi` : '';
   window.dispatchEvent(new Event('catalog:render'));
 }
-function cancelSearch() {
+function addressState(state:RequestState<AddressJob,AddressMatch[]>) {
+  const loading=state.phase==='loading';
+  addressSpinner.hidden=!loading;
+  addressLoadingStatus.textContent=loading?'Caricamento indirizzi…':'';
+  submit.disabled=loading&&state.input.kind==='search';
+  $('#school-search').setAttribute('aria-busy',String(loading));
+  query.setAttribute('aria-busy',String(loading));
+  if(state.phase==='idle'){addressFeedback.show({phase:'idle'});return;}
+  status.classList.toggle('sr-only',state.input.kind==='suggestions');
+  if(loading){
+    status.dataset.error='false';query.removeAttribute('aria-invalid');
+    if(state.input.kind==='suggestions'&&!state.retry){addressFeedback.show({phase:'idle'});status.textContent='';}
+    else{status.textContent='';addressFeedback.show({phase:'loading',title:state.input.kind==='search'?'Stiamo cercando l’indirizzo.':'Stiamo cercando i suggerimenti.',detail:'Ricerca e filtri restano al loro posto. Le sedi già disponibili non vengono cancellate.',retry:state.retry});}
+    return;
+  }
+  if(state.phase==='error'){
+    status.textContent='';status.dataset.error='false';
+    addressFeedback.show({phase:'error',title:state.reason==='timeout'?'Il servizio indirizzi non ha risposto in tempo.':'Il servizio indirizzi non è raggiungibile.',detail:suggestions.length?'Puoi usare i suggerimenti già disponibili o scegliere Riprova. Ricerca e filtri sono conservati.':'Controlla la connessione e scegli Riprova. Ricerca, filtri e risultati precedenti sono conservati.',retry:true});
+    return;
+  }
+  addressFeedback.show({phase:'idle'});
+  const matches=state.value;
+  if(state.input.kind==='suggestions'){
+    if(activeSuggestion<0&&(matches.length||!suggestions.length))showSuggestions(matches);
+    status.textContent=suggestions.length?`${suggestions.length} suggerimenti. Seleziona un indirizzo, poi premi Cerca.`:parseCivicAddress(query.value)?'Non abbiamo trovato questo numero civico. Controlla via e numero. Se preferisci cercare dalla via, puoi togliere il numero civico.':'Non abbiamo trovato suggerimenti a Milano. Controlla come è scritto il nome della via.';
+    if(state.retry)query.focus({preventScroll:true});
+  }else if(!matches.length){
+    status.textContent=parseCivicAddress(query.value)?'Non abbiamo trovato questo numero civico e non possiamo calcolare le distanze da quel punto. Controlla via e numero.':'Non abbiamo trovato questo indirizzo nel Comune di Milano. Controlla come è scritto il nome della via.';
+    status.dataset.error='true';query.setAttribute('aria-invalid','true');if(state.retry)query.focus({preventScroll:true});
+  }else if(matches.length===1){useAddress(matches[0]);if(state.retry&&!document.querySelector('dialog[open]'))$('#results-title').focus({preventScroll:true});}
+  else{status.textContent='Scegli l’indirizzo da cui calcolare le distanze:';showSuggestions(matches);if(!document.querySelector('dialog[open]'))query.focus();}
+}
+addressFeedback.retry.addEventListener('click',()=>void addressTask.retry());
+function cancelSearch(preserveError=false) {
   clearTimeout(suggestionTimer);
-  searchGeneration++;
-  request?.abort(); request=null;
-  submit.disabled=false;
-  $('#school-search').setAttribute('aria-busy','false');
+  if(!preserveError||addressTask.state.phase!=='error')addressTask.cancel();
   closeSuggestions();
   if(status.textContent?.startsWith('Cerco'))status.textContent='';
+}
+function dismissSuggestions(){
+  if(addressTask.state.phase==='loading'&&addressTask.state.input.kind==='suggestions')cancelSearch();else closeSuggestions();
 }
 function closeSuggestions() {
   suggestions=[];activeSuggestion=-1;choices.hidden=true;choices.replaceChildren();
@@ -136,6 +188,7 @@ function chooseAddress(match: AddressMatch) {
   const civic=parseCivicAddress(query.value);
   if(civic && !matchesCivicAddress(match,civic))return;
   cancelSearch();selectedAddress=match;query.value=match.label;
+  status.classList.remove('sr-only');
   status.textContent=`Indirizzo selezionato${match.houseNumber ? ' completo' : ' senza numero civico'}: premi Cerca per trovare le scuole vicine.`;
   status.dataset.error='false';query.removeAttribute('aria-invalid');query.focus();
 }
@@ -149,21 +202,7 @@ function showSuggestions(matches: AddressMatch[]) {
   });
   choices.hidden=!matches.length;query.setAttribute('aria-expanded',String(matches.length>0));
 }
-async function autocomplete() {
-  const generation=searchGeneration;
-  request=new AbortController();const controller=request;
-  const timeout=setTimeout(()=>controller.abort('timeout'),15000);
-  if(!suggestions.length)status.textContent='Cerco suggerimenti…';status.dataset.error='false';
-  try {
-    const matches=await findAddress(query.value,controller.signal);
-    if(generation!==searchGeneration)return;
-    if(activeSuggestion < 0 && (matches.length || !suggestions.length))showSuggestions(matches);
-    status.textContent=suggestions.length?`${suggestions.length} suggerimenti. Seleziona un indirizzo, poi premi Cerca.`:parseCivicAddress(query.value)?'Non abbiamo trovato questo numero civico. Controlla via e numero. Se preferisci cercare dalla via, puoi togliere il numero civico.':'Non abbiamo trovato suggerimenti a Milano. Controlla come è scritto il nome della via e riprova.';
-  } catch {
-    if(generation!==searchGeneration)return;
-    status.textContent=suggestions.length?'Mostriamo gli indirizzi già cercati su questo dispositivo. Selezionane uno, poi premi Cerca.':'I suggerimenti non sono disponibili. Puoi riprovare premendo Cerca.';
-  } finally { clearTimeout(timeout); }
-}
+function autocomplete(){return addressTask.start({query:query.value,kind:'suggestions'});}
 query.addEventListener('keydown',event=>{
   if(searchMode!=='address')return;
   if(event.key==='Escape'){cancelSearch();return;}
@@ -175,8 +214,8 @@ query.addEventListener('keydown',event=>{
     choices.children[activeSuggestion].scrollIntoView({block:'nearest'});
   } else if(event.key==='Enter' && activeSuggestion>=0){event.preventDefault();chooseAddress(suggestions[activeSuggestion]);}
 });
-document.addEventListener('pointerdown',event=>{if(!query.closest('.search-field')!.contains(event.target as Node))cancelSearch();});
-query.addEventListener('blur',()=>cancelSearch());
+document.addEventListener('pointerdown',event=>{if(!query.closest('.search-field')!.contains(event.target as Node)&&!addressFeedback.host.contains(event.target as Node))dismissSuggestions();});
+query.addEventListener('blur',dismissSuggestions);
 function clearOrigin() {
   origin=null; distances.clear();
   sort.querySelector<HTMLOptionElement>('[value="distance"]')!.disabled=true;
@@ -195,20 +234,23 @@ function updateMode() {
 }
 function resetFilters() { cancelSearch();selectedAddress=null;clearOrigin();query.value='';educationStage='';nurseryService.value='';municipality.value='';management.value='';radius.value='2';sort.value='name';onlySaved=false;status.textContent='';query.removeAttribute('aria-invalid');filterSchools(); }
 function useAddress(match: AddressMatch) {
+  status.classList.remove('sr-only');
   const civic=parseCivicAddress(query.value);
   if(civic && !matchesCivicAddress(match,civic)){status.textContent='Seleziona il numero civico esatto prima di cercare le scuole.';status.dataset.error='true';return;}
+  const keepSort=origin!==null||sort.value==='details';
   origin=match;distances.clear();
   for(const school of schools)if(school.lat!==null&&school.lng!==null)distances.set(school.id,distanceKm(match,{lat:school.lat,lng:school.lng}));
   sort.querySelector<HTMLOptionElement>('[value="distance"]')!.disabled=false;
-  sort.value='distance';
+  if(!keepSort)sort.value='distance';
   closeSuggestions();
   status.textContent=`Indirizzo trovato: ${match.label}${match.houseNumber ? ' · Distanze dal civico selezionato.' : ' · Distanze dalla via senza numero civico.'}`;
   status.dataset.error='false';query.removeAttribute('aria-invalid');
   filterSchools();
-  $('#catalogo').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
+  if(!document.querySelector('dialog[open]'))$('#catalogo').scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
 }
 async function search() {
   cancelSearch();
+  status.classList.remove('sr-only');
   status.dataset.error='false';query.removeAttribute('aria-invalid');
   if(searchMode==='name' || !query.value.trim()) {
     if(!query.value.trim())clearOrigin();
@@ -217,34 +259,16 @@ async function search() {
   }
   if(selectedAddress){useAddress(selectedAddress);return;}
   if(query.value.trim().length<3){status.textContent='Inserisci una via e, se disponibile, il numero civico.';query.setAttribute('aria-invalid','true');return;}
-  const generation=searchGeneration;
-  request=new AbortController();
-  const controller=request;
-  const timeout=setTimeout(()=>controller.abort('timeout'),15000);
-  submit.disabled=true;$('#school-search').setAttribute('aria-busy','true');status.textContent='Cerco l’indirizzo…';
-  try {
-    const matches=await findAddress(query.value,controller.signal);
-    if(generation!==searchGeneration)return;
-    if(!matches.length){status.textContent=parseCivicAddress(query.value)?'Non abbiamo trovato questo numero civico e non possiamo calcolare le distanze da quel punto. Controlla via e numero e riprova.':'Non abbiamo trovato questo indirizzo nel Comune di Milano. Controlla come è scritto il nome della via e riprova.';status.dataset.error='true';query.setAttribute('aria-invalid','true');return;}
-    if(matches.length===1){useAddress(matches[0]);return;}
-    status.textContent='Scegli l’indirizzo da cui calcolare le distanze:';
-    showSuggestions(matches);query.focus();
-  } catch(error) {
-    if(generation!==searchGeneration)return;
-    status.textContent=controller.signal.aborted?'La ricerca dell’indirizzo sta richiedendo più tempo del previsto. Riprova tra poco.':error instanceof Error && error.message.startsWith('Il servizio')?error.message:'Non siamo riusciti a cercare l’indirizzo. Controlla la connessione e riprova.';
-    status.dataset.error='true';
-  } finally {
-    clearTimeout(timeout);
-    if(generation===searchGeneration){submit.disabled=false;$('#school-search').setAttribute('aria-busy','false');}
-  }
+  await addressTask.start({query:query.value,kind:'search'});
 }
+
 let searchTimer: ReturnType<typeof setTimeout>;
 query.addEventListener('input',()=>{
-  const hadOrigin=Boolean(origin);
-  cancelSearch();selectedAddress=null;clearTimeout(searchTimer);clearOrigin();query.removeAttribute('aria-invalid');status.dataset.error='false';
+  // Autocomplete announcements stay accessible without changing the panel height on each keystroke.
+  status.classList.add('sr-only');
+  cancelSearch();selectedAddress=null;clearTimeout(searchTimer);query.removeAttribute('aria-invalid');status.dataset.error='false';
   status.textContent=searchMode==='address'&&query.value.trim().length<3?'Scrivi almeno 3 caratteri per i suggerimenti.':'';
-  if(searchMode==='name')searchTimer=setTimeout(()=>filterSchools(),160);
-  else if(hadOrigin)filterSchools();
+  if(searchMode==='name'){clearOrigin();searchTimer=setTimeout(()=>filterSchools(),160);}
   if(searchMode==='address'&&query.value.trim().length>=3){
     const cached=cachedAddressSuggestions(query.value);
     if(cached.matches.length){showSuggestions(cached.matches);status.textContent=`${cached.matches.length} suggerimenti. Seleziona un indirizzo, poi premi Cerca.`;}
@@ -298,7 +322,7 @@ function moveFilter(node:HTMLElement,host:HTMLElement){
 }
 function openFilters(opener:HTMLElement){
   if(filtersDialog.open)return;
-  cancelSearch();filterOpener=opener;revisionAtOpen=filterRevision;
+  cancelSearch(true);filterOpener=opener;revisionAtOpen=filterRevision;
   moveFilter($('.stage-filter'),$('#filters-stage-host'));
   moveFilter($('#search-extra-filters'),$('#filters-fields-host'));
   moveFilter($('#nursery-service-field'),$('#filters-service-host'));
@@ -398,11 +422,12 @@ function showClusterSchools(group:School[]){
 function initMap():Promise<void>{
   if(mapStartup)return mapStartup;
   mapStartup=(async()=>{
-    try{leaflet=await import('leaflet');}catch{ $('#school-map').textContent='La mappa non è disponibile. Le sedi restano consultabili nell’elenco.';return; }
+    mapState({phase:'loading',message:''});
+    try{const moduleJob=new RetryableRequest<null,typeof import('leaflet')>(()=>import('leaflet'),()=>{});await moduleJob.start(null);if(moduleJob.state.phase!=='ready')throw new Error('Mappa non disponibile');leaflet=moduleJob.state.value;}catch{mapStartup=null;$('#school-map').setAttribute('aria-busy','false');$('.map-shell').classList.remove('is-loading');$('#map-column').classList.remove('is-loading');$('#map-refresh-status').textContent='';mapFeedback.show({phase:'error',title:'Non riusciamo ad aprire la mappa.',detail:'Le scuole sono consultabili nell’elenco. Riprova conserva ricerca e filtri.',retry:true});return;}
     const L=leaflet;
     map=L.map('school-map',{scrollWheelZoom:false,zoomControl:false}).setView([45.4642,9.19],11);
     L.control.zoom({position:'bottomright',zoomInTitle:'Ingrandisci',zoomOutTitle:'Riduci'}).addTo(map);
-    installBasemap(L,map,message=>{const status=$('#basemap-status');status.textContent=message;status.hidden=!message;});
+    basemap=installBasemap(L,map,()=>{$('#basemap-status').hidden=true;},mapState);
     markersLayer=L.layerGroup().addTo(map);originLayer=L.layerGroup().addTo(map);
     map.on('zoomend',()=>renderMarkers());
     new ResizeObserver(()=>{map.invalidateSize();renderMarkers();}).observe($('#school-map'));

@@ -187,9 +187,47 @@
 }
 
 .search-input-row {
+  position:relative;
   display:flex;
   align-items:center;
   gap:11px
+}
+
+.search-input-row #query {
+  padding-right:32px
+}
+
+.address-spinner {
+  position:absolute;
+  right:5px;
+  top:50%;
+  transform:translateY(-50%);
+  width:16px;
+  height:16px;
+  pointer-events:none
+}
+
+.address-spinner[hidden] {
+  display:none
+}
+
+.address-spinner::before {
+  content:"";
+  display:block;
+  width:100%;
+  height:100%;
+  border:2px solid var(--line);
+  border-top-color:var(--ink);
+  border-radius:50%;
+  animation:address-spin .8s linear infinite
+}
+
+@keyframes address-spin {
+  to { transform:rotate(1turn) }
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .address-spinner::before { animation:none }
 }
 
 .search-field input {
@@ -269,6 +307,25 @@
   position:relative
 }
 
+#geocoder-credit {
+  display:flex;
+  align-items:baseline;
+  flex-wrap:wrap;
+  column-gap:3px;
+  font-size:11px;
+  color:var(--muted);
+  line-height:1.7
+}
+
+#geocoder-credit[hidden] {
+  display:none
+}
+
+.management-help.geocoder-help>p {
+  left:0;
+  right:auto
+}
+
 .management-help summary {
   cursor:pointer;
   min-height:24px;
@@ -283,7 +340,8 @@
   border-radius:7px;
   padding:15px;
   position:absolute;
-  top:30px;
+  top:100%;
+  margin:0;
   right:0;
   z-index:10;
   box-shadow:0 5px 15px #29271F12;
