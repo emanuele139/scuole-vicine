@@ -46,3 +46,5 @@ scuole-milano-family*.json
 /src/components/design/HomeMap.astro
 /src/components/design/MapWidget.astro
 /src/components/design/EmptyStatesGuide.astro
+/src/components/design/DesignUsability.astro
+/src/styles/design-usability.css
