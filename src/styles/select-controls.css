@@ -1,0 +1,22 @@
+/* One chevron geometry for native dropdowns, including dynamically created ones.
+   Preserve each control's background colour, border, font and native interaction. */
+select:not([multiple]):not([size]):not(.agenda-select select) {
+  appearance:none;
+  -webkit-appearance:none;
+  /* Longhands stay independent of contextual background/padding shorthands. */
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2368655b' stroke-width='1.7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='m5 9 7 7 7-7'/%3E%3C/svg%3E")!important;
+  background-position:right 12px center!important;
+  background-size:16px 16px!important;
+  background-repeat:no-repeat!important;
+  padding-inline-end:40px!important;
+}
+
+/* Let the operating system draw an accessible arrow in high-contrast modes. */
+@media(forced-colors:active) {
+  select:not([multiple]):not([size]) {
+    appearance:auto!important;
+    -webkit-appearance:auto!important;
+    background-image:none!important
+  }
+  .agenda-select-chevron { display:none }
+}
