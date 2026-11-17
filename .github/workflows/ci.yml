@@ -1,0 +1,34 @@
+name: Controlli
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: npm ci
+      - run: npm run check
+      - run: npm run shared:check
+      - run: npm test
+      - run: npm run test:research
+      - run: npm run test:nurseries
+      - run: npm run build
+      - run: npm run seo:audit
+      - name: Build e audit SEO di produzione senza deploy
+        env:
+          SEO_INDEXABLE: 'true'
+        run: |
+          npm run build -- --outDir /tmp/scuole-vicine-seo-production
+          python3 scripts/audit-seo.py --mode production --directory /tmp/scuole-vicine-seo-production
+      - name: Verifica esclusione della guida locale
+        run: test ! -e dist/design/index.html

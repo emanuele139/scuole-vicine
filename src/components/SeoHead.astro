@@ -1,0 +1,39 @@
+---
+import { markdownPath } from '../lib/markdown-paths.mjs';
+import { project } from '../data/project';
+import { absolute, pageMap, safeJson, seo, structuredData } from '../lib/seo';
+interface Props { title: string; description: string; noindex?: boolean }
+const { title, description, noindex = false } = Astro.props;
+const page = pageMap.get(Astro.url.pathname);
+const markdown = page && markdownPath(page.path);
+const name = page?.title || title;
+const summary = page?.description || description;
+const fullTitle = `${name} | ${project.name}`;
+const canonical = absolute(noindex ? '/404.html' : Astro.url.pathname);
+const image = absolute('/social/scuole-vicine.png');
+const indexable = seo.indexable && !!page && !noindex;
+---
+<title>{fullTitle}</title>
+<meta name="description" content={summary}/>
+<meta name="author" content={project.author}/>
+<meta name="robots" content={indexable ? 'index, follow, max-image-preview:large' : 'noindex, follow'}/>
+{!noindex && <link rel="canonical" href={canonical}/>}
+<meta property="og:locale" content="it_IT"/>
+<meta property="og:site_name" content={project.name}/>
+<meta property="og:type" content={page?.guide ? 'article' : 'website'}/>
+<meta property="og:title" content={fullTitle}/>
+<meta property="og:description" content={summary}/>
+<meta property="og:url" content={canonical}/>
+<meta property="og:image" content={image}/>
+<meta property="og:image:type" content="image/png"/>
+<meta property="og:image:width" content="1200"/>
+<meta property="og:image:height" content="630"/>
+<meta property="og:image:alt" content="Scuole Vicine. Guida alla scelta di nidi e scuole dell’infanzia a Milano."/>
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content={fullTitle}/>
+<meta name="twitter:description" content={summary}/>
+<meta name="twitter:image" content={image}/>
+<meta name="twitter:image:alt" content="Scuole Vicine. Guida alla scelta di nidi e scuole dell’infanzia a Milano."/>
+{indexable && <link rel="describedby" type="text/plain" href={absolute('/llms.txt')}/>}
+{markdown && <link rel="alternate" type="text/markdown" href={absolute(markdown)}/>}
+{page && <script type="application/ld+json" set:html={safeJson(structuredData(page))}/>}

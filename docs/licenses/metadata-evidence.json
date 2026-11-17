@@ -1,0 +1,112 @@
+{
+  "checkedAt": "2026-11-17",
+  "scope": "Estratti dei metadati di licenza; gli hash identificano le risposte remote complete, non i soli estratti.",
+  "sources": [
+    {
+      "id": "ds3014",
+      "url": "https://dati.comune.milano.it/api/3/action/package_show?id=ds3014-infogeo-scuole-infanzia-localizzazione-2025-2026",
+      "checkedAt": "2026-11-17",
+      "responseUrl": "https://dati.comune.milano.it/api/3/action/package_show?id=ds3014-infogeo-scuole-infanzia-localizzazione-2025-2026",
+      "sha256": "01ad3528f281b802037a68c297ebf5317f9c479d6e1cb671f91d5d0c51375983",
+      "metadata": {
+        "id": "f7c744ab-0b92-450f-a76c-536e86a78b30",
+        "name": "ds3014-infogeo-scuole-infanzia-localizzazione-2025-2026",
+        "title": "Istruzione: localizzazione delle scuole dell'Infanzia - anno scolastico 2025/2026",
+        "license_id": "cc-by",
+        "license_title": "Creative Commons Attribution",
+        "license_url": "http://www.opendefinition.org/licenses/cc-by",
+        "resources": [
+          {
+            "id": "0dd0037a-b29a-42f1-88f1-92f4e4f9937f",
+            "name": "ds3014_dst_an_statistica_totale_scuola-dellinfanzia_2025-2026.csv",
+            "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+          },
+          {
+            "id": "77d29269-928d-43f5-8196-c284fa71d231",
+            "name": "ds3014_dst_an_statistica_totale_scuola-dellinfanzia_2025-2026.json",
+            "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+          },
+          {
+            "id": "bcc976ce-c366-4eff-bf86-863d7e5a1b0c",
+            "name": "ds3014_dst_an_statistica_totale_scuola-dellinfanzia_2025-2026.geojson",
+            "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+          }
+        ]
+      },
+      "result": "retrieved"
+    },
+    {
+      "id": "ds47",
+      "url": "https://dati.comune.milano.it/api/3/action/package_show?id=ds47-istruzione-asili-nido-localizzazione-delle-strutture",
+      "checkedAt": "2026-11-17",
+      "responseUrl": "https://dati.comune.milano.it/api/3/action/package_show?id=ds47-istruzione-asili-nido-localizzazione-delle-strutture",
+      "sha256": "a5fddccf606c9ff9ec13cc17820d4f626f06aefee3c6c05f984535868a26b444",
+      "metadata": {
+        "id": "443d69ac-8487-4707-b18b-04269a880a7e",
+        "name": "ds47-istruzione-asili-nido-localizzazione-delle-strutture",
+        "title": "Istruzione: Asili Nido - localizzazione delle strutture",
+        "license_id": "cc-by",
+        "license_title": "Creative Commons Attribution",
+        "license_url": "http://www.opendefinition.org/licenses/cc-by",
+        "resources": [
+          {
+            "id": "372d6b0e-af5b-4dad-a9c3-4fa0318a7dc8",
+            "name": "ds47_nidi_infanzia.csv",
+            "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+          },
+          {
+            "id": "015ee4e7-4167-42bb-b3a4-3e651acd739b",
+            "name": "ds47_nidi_infanzia.json",
+            "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+          },
+          {
+            "id": "a91230b8-0307-447d-bec3-9e8af2f3e426",
+            "name": "ds47_nidi_infanzia.geojson",
+            "license_type": "https://w3id.org/italia/controlled-vocabulary/licences/A21_CCBY40"
+          }
+        ]
+      },
+      "result": "retrieved"
+    },
+    {
+      "id": "geoschool-service",
+      "url": "https://gisportal.comune.milano.it/federated/rest/services/D_Educazione/geoschool_data_web/MapServer?f=pjson",
+      "checkedAt": "2026-11-17",
+      "responseUrl": "https://gisportal.comune.milano.it/federated/rest/services/D_Educazione/geoschool_data_web/MapServer?f=pjson",
+      "sha256": "edbacf6a309964a6c8a7312aee8d3df9b412ebbcfcdf3a72d256e41d55972f2d",
+      "metadata": {
+        "name": null,
+        "copyrightText": "Comune di Milano",
+        "description": "Il servizio contiene le sedi scolastiche richiamate dall'applicativo di geoschool e aggiornato tramite API da SUSE. I dati sono stati approvati il 2024.Proprietario: Comune di Milano.Responsabile del dato: Direzione EducazioneFrequenza di aggiornamento: Non pianificato.Licenza Creative Commons Attribuzione (CC-BY 4.0)"
+      },
+      "result": "retrieved"
+    },
+    {
+      "id": "geoschool-layer",
+      "url": "https://gisportal.comune.milano.it/federated/rest/services/D_Educazione/geoschool_data_web/MapServer/0?f=pjson",
+      "checkedAt": "2026-11-17",
+      "responseUrl": "https://gisportal.comune.milano.it/federated/rest/services/D_Educazione/geoschool_data_web/MapServer/0?f=pjson",
+      "sha256": "a3d8f54dee8ccc7325a1371827ea5ceb2f6247732843803009ed9b6b6d0d1c0e",
+      "metadata": {
+        "name": "SERVIZI_EDUCATIVI",
+        "copyrightText": "",
+        "description": ""
+      },
+      "result": "retrieved"
+    },
+    {
+      "id": "milan-metadata",
+      "url": "https://raw.githubusercontent.com/codeforgermany/click_that_hood/main/public/data/milan.metadata.json",
+      "checkedAt": "2026-11-17",
+      "responseUrl": "https://raw.githubusercontent.com/codeforgermany/click_that_hood/main/public/data/milan.metadata.json",
+      "sha256": "970b3d5e8d63267f8fc27bd04fdd728d0eb9a07d172be424cfa3e701826ab4bf",
+      "metadata": {
+        "locationName": "Milan",
+        "countryName": "Italy",
+        "dataUrl": "http://dati.comune.milano.it/component/rd/item/61-61-nil-nuclei-didentita-locale.html",
+        "dataTitle": "dati.comune.milano.it"
+      },
+      "result": "retrieved"
+    }
+  ]
+}

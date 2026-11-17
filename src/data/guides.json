@@ -1,0 +1,644 @@
+{
+  "sources": {
+    "comune": {
+      "title": "Comune di Milano · Iscrizioni infanzia",
+      "url": "https://www.comune.milano.it/servizi/scuola/scuole-dell-infanzia",
+      "note": "La pagina raccoglie avvisi, graduatorie e allegati. L’apertura integrale è stata bloccata dal sito (errore 403); abbiamo controllato i dettagli nel comunicato allegato."
+    },
+    "bando": {
+      "title": "Comune · Comunicato 4/2026, infanzia",
+      "url": "https://www.comune.milano.it/documents/20118/5597955/Comunicato%2Biscrizioni%2Bn.4%2B2026-2027.pdf/c8cfbe3b-c259-0235-f0a1-82cc801d0065?download=true&t=1769522277936&version=1.0",
+      "note": "Il documento ufficiale ha 19 pagine ed è stato consultato estraendone il testo. Le indicazioni riguardano esclusivamente il 2026/27."
+    },
+    "brochure": {
+      "title": "Comune · Servizi all’infanzia 2026/27",
+      "url": "https://www.comune.milano.it/documents/20118/5594857/BrochureEducazione_2026.pdf/29922f5f-fde5-cb8d-5466-fc07e8adfe35?download=true&t=1769507992973&version=1.0",
+      "note": "La brochure ufficiale descrive servizi, organizzazione e ambientamento e risponde alle domande frequenti. Proviene dallo stesso ente del bando: permette un confronto tra documenti, senza costituire una conferma indipendente."
+    },
+    "mim": {
+      "title": "MIM · Nota iscrizioni 2026/27",
+      "url": "https://www.istruzioneer.gov.it/wp-content/uploads/2025/12/m_pi.AOODGOSV.REGISTRO-UFFICIALEU.0100847.17-12-2025.pdf",
+      "note": "La nota ministeriale del 17 dicembre 2025 è ospitata dall’Ufficio scolastico regionale (USR) Emilia-Romagna. Per l’infanzia occorre consultare la sezione dedicata, distinta da quella sulle iscrizioni online al primo ciclo."
+    },
+    "legge": {
+      "title": "Parlamento · Legge 62/2000",
+      "url": "https://www.parlamento.it/parlam/leggi/00062l.htm",
+      "note": "Abbiamo consultato l’articolo 1 del testo originario, sul sistema nazionale e sulla parità, insieme alle indicazioni dell’Ufficio scolastico."
+    },
+    "usr": {
+      "title": "Ufficio scolastico · Scuole paritarie",
+      "url": "https://www.istruzioneliguria.gov.it/pagine/modulistica--scuole-non-statali",
+      "note": "La pagina istituzionale spiega il riconoscimento di parità. Descrive una norma nazionale e non contiene l’elenco delle scuole milanesi."
+    },
+    "dpr": {
+      "title": "DPR 89/2009 · Articolo 2",
+      "url": "https://def.finanze.it/DocTribFrontend/getAttoNormativoDetail.do?ACTION=getArticolo&articolo=Articolo+2&codiceOrdinamento=200000200000000&id=%7BC081C6EB-3000-4311-87B5-415B454BD71B%7D",
+      "note": "La norma nazionale disciplina età di accesso, anticipi e orari della scuola dell’infanzia."
+    },
+    "uppa": {
+      "title": "Uppa · Nido e scuola dell’infanzia",
+      "url": "https://www.uppa.it/nido-e-scuola-dellinfanzia/",
+      "note": "Abbiamo letto l’articolo pedagogico come riferimento per lo stile e per le domande sulla scelta. Per tariffe e procedure amministrative occorrono invece le fonti del servizio."
+    },
+    "mensa": {
+      "title": "Comune · Refezione scolastica",
+      "url": "https://www.comune.milano.it/it/servizi/scuola/refezione-scolastica",
+      "note": "Il testo della pagina ufficiale, disponibile nei risultati di ricerca, indica quota massima, iscrizione automatica nelle comunali dal 2026/27 e termine ISEE. L’apertura diretta è stata bloccata (errore 403); abbiamo confrontato le informazioni con quelle del gestore e degli allegati."
+    },
+    "tavola": {
+      "title": "Milano Ristorazione · Un posto a tavola",
+      "url": "https://www.milanoristorazione.it/files/Famiglie/Rette/Un_posto_a_tavola.pdf",
+      "note": "La tabella a pagina 9 del PDF riguarda l’infanzia ed è distinta da quella della primaria. I dati sono stati letti nei risultati di ricerca: il download diretto non era disponibile (errore 502). Gli importi dei residenti coincidono con la relazione comunale 2024; manca una conferma del tariffario per il 2027/28."
+    },
+    "relazione": {
+      "title": "Comune · Relazione refezione 2024",
+      "url": "https://www2.comune.milano.it/documents/20126/466701248/Allegato%2B4%2B-%2BDelibera%2Bdi%2BConsiglio%2BComunale%2B109_2025.pdf/f43c6a31-2cf6-4852-d28e-512384891c9e?t=1769427809369",
+      "note": "La tabella a pagina 73 permette di confrontare storicamente le sei fasce dei residenti. Gli importi per i non residenti si riferiscono a quel periodo e non vengono presentati come attuali."
+    },
+    "faq": {
+      "title": "Milano Ristorazione · FAQ rette",
+      "url": "https://www.milanoristorazione.it/faq-rette",
+      "note": "Le domande frequenti ufficiali, lette nei risultati di ricerca, riguardano fratelli, variazioni e disdetta. Per l’iscrizione nelle comunali dal 2026/27, la pagina aggiornata del Comune dà un’indicazione più specifica della risposta generale del gestore."
+    },
+    "iscrizionimensa": {
+      "title": "Milano Ristorazione · Iscrizione al servizio",
+      "url": "https://www.milanoristorazione.it/iscrizione-servizio-di-refezione",
+      "note": "Il testo della pagina del gestore, letto nei risultati di ricerca, conferma l’iscrizione automatica per l’infanzia comunale e la necessità di gestire le variazioni."
+    },
+    "inps": {
+      "title": "INPS · Portale unico ISEE",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.Portale-unico-ISEE.html",
+      "note": "La fonte ufficiale spiega le tipologie ISEE e la Dichiarazione sostitutiva unica (DSU). Per ottenere un’agevolazione scolastica occorre rispettare anche le istruzioni e i termini del servizio."
+    },
+    "inpsguida": {
+      "title": "INPS · Guida alla riforma ISEE",
+      "url": "https://servizi2.inps.it/servizi/ISEEPrecompilato/docs/info/Guide/INPS%20Riforma%20ISEE.pdf",
+      "note": "La guida ufficiale spiega che l’ISEE per minorenni può considerare anche il genitore non convivente. Per capire quali persone rientrano nel nucleo, occorre valutare la situazione familiare: la residenza, da sola, non basta."
+    },
+    "naviglio": {
+      "title": "Santa Maria al Naviglio · FAQ",
+      "url": "https://scuolainfanzianaviglio.it/domande-frequenti/",
+      "note": "La scuola descrive direttamente rette, servizi e iscrizioni. Le condizioni riguardano questa singola paritaria e non si applicano automaticamente alle altre scuole."
+    },
+    "innocenti": {
+      "title": "Santi Innocenti · FAQ",
+      "url": "https://scuolainfanziassinnocenti.it/domande-frequenti/",
+      "note": "Questo secondo regolamento scolastico descrive attività, organizzazione e condizioni di una singola scuola. Le indicazioni non costituiscono una regola per tutta la città."
+    },
+    "montessori": {
+      "title": "Scuola Montessori Milano · Open day",
+      "url": "https://www.montessori-milano.it/open-day-montessori-milano.html",
+      "note": "L’avviso riguarda il 2027/28. L’evento del 14 novembre 2026 era già trascorso al momento della verifica; la pagina segnala anche visite alternative prenotabili via email."
+    },
+    "imc": {
+      "title": "Maria Consolatrice · Open day infanzia",
+      "url": "https://www.imcmilano.it/landing-infanzia/",
+      "note": "La pagina della scuola contiene un modulo dedicato all’infanzia. L’evento del 7 novembre 2026 è già trascorso: il collegamento permette di capire la procedura e non conferma un appuntamento futuro disponibile."
+    },
+    "attesa": {
+      "title": "Comune · Liste d’attesa",
+      "url": "https://www.comune.milano.it/amministrazione/amministrazione-trasparente/servizi-erogati/liste-d-attesa-servizi-all-infanzia",
+      "note": "La pagina istituzionale, aggiornata il 10 settembre 2026, rimanda alle graduatorie suddivise per Municipio."
+    },
+    "notizia": {
+      "title": "Comune · Apertura iscrizioni 2026/27",
+      "url": "https://www2.comune.milano.it/-/educazione.-iscrizioni-a-nidi-sezioni-primavera-e-scuole-dell-infanzia-dal-4-al-25-febbraio",
+      "note": "La comunicazione ufficiale del 16 gennaio 2026 descrive il periodo di iscrizione, ormai concluso, l’accesso tramite SPID/CIE e gli open day."
+    },
+    "nidi-bando": {
+      "title": "Comune · Iscrizioni nidi e primavera 2026/27",
+      "url": "https://www.comune.milano.it/documents/20118/5597879/Comunicato%2Biscrizioni%2Bn.4%2B2026-2027.pdf/5d374792-79b1-471c-a79e-afebe074e721?download=true&t=1769522189637&version=1.0",
+      "note": "Abbiamo consultato il testo PDF del Comunicato 4/2026. Le pagine 2–3 descrivono requisiti e domande per i bambini non ancora nati; le sezioni successive trattano domanda e graduatorie. Le regole riguardano il 2026/27 e non confermano quelle dell’anno successivo."
+    },
+    "nidi-accesso": {
+      "title": "Comune · Nidi e sezioni primavera",
+      "url": "https://www.comune.milano.it/servizi/scuola/nidi-d-infanzia-e-sezioni-primavera",
+      "note": "Il testo della pagina ufficiale, letto nei risultati di ricerca, riguarda iscrizioni, bambini non ancora nati, avvisi e open day del 28–30 gennaio 2026, ormai trascorsi. L’apertura diretta è stata bloccata (errore 403); abbiamo controllato anche i PDF pubblici collegati, senza consultare graduatorie nominative."
+    },
+    "nidi-quote": {
+      "title": "Comune · Quote nidi e primavera 2026/27",
+      "url": "https://www.comune.milano.it/documents/20118/1101454/Informazioni%2B2026-2027_quote_contributive_nidi%2Be%2Bsezioni_primavera.pdf/b75fd0d6-61ed-5667-bf9c-678b022eaa27?download=true&t=1783677068768&version=1.6",
+      "note": "Il documento del 1° luglio 2026 presenta le tariffe mensili alle pagine 1–2 e riduzioni, ISEE e pagamenti alle pagine 2–5. Le quote riguardano i posti assegnati dal Comune nel 2026/27, non quelli a iscrizione privata diretta."
+    },
+    "nidi-paginaquote": {
+      "title": "Comune · Quote e revisione",
+      "url": "https://www.comune.milano.it/servizi/scuola/nidi-d-infanzia-e-sezioni-primavera-revisione-della-quota-contributiva",
+      "note": "Abbiamo letto la pagina ufficiale nei risultati di ricerca, perché l’apertura diretta era bloccata (errore 403), e confrontato le informazioni con il PDF 2026/27 collegato. Entrambi i documenti provengono dallo stesso ente. Le indicazioni su Nidi Gratis non valgono automaticamente per ogni famiglia o posto privato."
+    },
+    "ats03": {
+      "title": "ATS Milano · Tipologie 0–3",
+      "url": "https://www.ats-milano.it/ats/carta-servizi/guida-servizi/assistenza-sociosanitaria/strutture-sociali/unita-offerta-sociali-area-prima-infanzia",
+      "note": "La pagina consultata descrive un massimo di 10 posti per il micronido e di 5 per il nido famiglia. Il centro prima infanzia (CPI) offre una frequenza non continuativa, fino a quattro ore consecutive e senza pasti. Queste caratteristiche non confermano né posti liberi né la qualità della singola sede."
+    },
+    "regione03": {
+      "title": "Regione Lombardia · Strutture sociali",
+      "url": "https://www.regione.lombardia.it/politiche-sociali-e-abitative/strutture-sociali-per-minori,-disabili-e-anziani",
+      "note": "La fonte istituzionale descrive i servizi sociali, indicati come “unità d’offerta”, e i relativi requisiti. Il registro elenca i servizi e non segnala i posti disponibili in tempo reale."
+    },
+    "uppa-nido": {
+      "title": "Uppa · Inserimento al nido",
+      "url": "https://www.uppa.it/inserimento-al-nido/",
+      "note": "Abbiamo letto l’articolo per il tono e per la spiegazione dell’ambientamento, centrata sul dialogo e sul rispetto dei tempi. È un riferimento pedagogico: non stabilisce tariffe o durate obbligatorie."
+    },
+    "ravenna-nido": {
+      "title": "Comune di Ravenna · Ambientamento",
+      "url": "https://comune.ravenna.it/altro-contenuto/lambientamento/",
+      "note": "La fonte istituzionale approfondisce colloqui, sonno e collaborazione durante l’ambientamento. Il confronto riguarda gli aspetti pedagogici; le modalità organizzative di Ravenna non diventano regole per i nidi milanesi."
+    },
+    "inps-nido": {
+      "title": "INPS · Bonus nido e supporto domiciliare",
+      "url": "https://www.inps.it/it/it/dettaglio-scheda.it.schede-servizio-strumento.schede-servizi.bonus-asilo-nido-e-forme-di-supporto-presso-la-propria-abitazione-51105.bonus-asilo-nido-e-forme-di-supporto-presso-la-propria-abitazione.html",
+      "note": "La scheda ufficiale, consultata e aggiornata il 28 maggio 2026, presenta importi, servizi ammessi e documenti. Per l’indicatore 2026 seguiamo la formulazione specifica della circolare, perché i diversi ISEE non coincidono automaticamente."
+    },
+    "inps29": {
+      "title": "INPS · Circolare 29 del 27 marzo 2026",
+      "url": "https://www.inps.it/content/dam/inps-site/it/scorporati/circolari-e-messaggi/2026/03/Circolare_15207/Allegati/16651_Circolare-numero-29-del-27-03-2026.pdf",
+      "note": "Abbiamo consultato il PDF: il §3.1 descrive i servizi ammessi, il §4 l’ISEE per specifiche prestazioni familiari e per l’inclusione calcolato escludendo l’Assegno unico universale (AUU), il §6 le spese ammesse, le prove e il termine per i documenti. La circolare permette un secondo controllo all’interno delle fonti dello stesso ente."
+    },
+    "inps-apertura": {
+      "title": "INPS · Domande bonus 2026",
+      "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.03.bonus-asilo-nido-2026-attivo-il-servizio-per-la-domanda.html",
+      "note": "La notizia ufficiale, letta nei risultati di ricerca, descrive la validità pluriennale della domanda dal 2026, l’aggiornamento delle mensilità e il termine dei documenti entro il 30 aprile successivo. Il bonus segue l’anno solare."
+    },
+    "nidi-gratis": {
+      "title": "Regione · Nidi Gratis Plus 2026/27",
+      "url": "https://www.bandi.regione.lombardia.it/servizi/servizio/catalogo/dettaglio/politiche-sociali/famiglia/nidi-gratis-plus-2026-27-adesione-famiglie-RLD12026053903",
+      "note": "Abbiamo letto il bando per le famiglie: prevede domande dal 27 ottobre al 19 novembre 2026 alle ore 12, salvo esaurimento delle risorse, ISEE fino a 25.000 euro, servizi e posti ammessi e ulteriori requisiti. La misura regionale segue regole distinte dal bonus INPS."
+    },
+    "nidi-gratis-elenco": {
+      "title": "Regione · Elenco ammessi 2026/27",
+      "url": "https://www.bandi.regione.lombardia.it/servizi/servizio/bandi/download/8a5aa37da165d9c101a1685e70020013?fileName=ELENCO+STRUTTURE+AMMESSE+26_27.pdf",
+      "note": "L’allegato pubblico collegato al bando ha 36 pagine e identifica il Comune aderente e il servizio o posto ammesso. Una sede a Milano può comprendere posti acquistati da altri Comuni: l’indirizzo non dimostra che il Comune di Milano aderisca alla misura."
+    },
+    "isee-nidi-faq": {
+      "title": "Comune · ISEE non inserito nella domanda",
+      "url": "https://servizicrm.comune.milano.it/centro-supporto/KA-01438/Nido-ISEE-non-inserito-in-iscrizione-online",
+      "note": "Le domande frequenti del Comune, lette nei risultati di ricerca, descrivono l’acquisizione diretta dei dati INPS da parte dell’ufficio, se autorizzata. Per anno, termini ed eventuali anomalie occorre fare riferimento al comunicato e al tariffario specifici."
+    }
+  },
+  "guides": [
+    {
+      "slug": "scegliere-la-scuola",
+      "title": "Quale scuola scegliere",
+      "intro": "Comunale, statale o privata? Per orientarti, considera i bisogni di tuo figlio e come si svolgerà la giornata della famiglia.",
+      "questions": [
+        {
+          "id": "tipologie",
+          "title": "Comunale, statale e paritaria: che differenza c’è?",
+          "text": "Comunale e statale indicano chi gestisce la scuola: il Comune o lo Stato. Paritaria indica invece un riconoscimento, che può riguardare anche una scuola comunale. Le private paritarie fanno parte del sistema nazionale di istruzione.\n\nPer confrontare le proposte, considera separatamente chi gestisce la scuola, quale riconoscimento possiede e come organizza il percorso educativo. Una retta più alta, da sola, non dimostra una qualità migliore.",
+          "refs": [
+            "legge",
+            "usr"
+          ],
+          "check": "La legge e la spiegazione dell’Ufficio scolastico concordano sul significato della parità. Per valutare la qualità occorre invece considerare la proposta e i bisogni della famiglia."
+        },
+        {
+          "id": "eta",
+          "title": "Infanzia, nido o sezione primavera?",
+          "text": "La scuola dell’infanzia accoglie normalmente i bambini dai tre anni; nido e sezione primavera sono servizi diversi. Per l’infanzia conta il compimento dei tre anni entro il 31 dicembre. L’anticipo per chi li compie entro il 30 aprile successivo dipende dalle condizioni previste e dai posti disponibili. Puoi chiedere alla segreteria quale percorso puoi scegliere in base alla data di nascita di tuo figlio.",
+          "refs": [
+            "dpr",
+            "mim"
+          ],
+          "check": "La norma e la nota ministeriale confermano età e condizioni degli anticipi. Per le condizioni comunali occorre consultare il bando specifico."
+        },
+        {
+          "id": "metodo",
+          "title": "Montessori, bilingue, religiosa: come valuto la proposta?",
+          "text": "Il progetto educativo aiuta a capire che cosa significa una proposta nella vita di tutti i giorni. Chiedi di leggerlo e fatti raccontare come vengono organizzati gioco libero, attività, movimento, lingue, pranzo e riposo.\n\nSe la scuola è bilingue, puoi chiedere chi usa la seconda lingua e per quanto tempo; se è religiosa, come la sua ispirazione entra nella giornata. Queste domande aiutano a preparare la visita: il nome di un metodo, da solo, non descrive tutto ciò che accade in sezione né certifica la qualità.",
+          "refs": [
+            "legge",
+            "uppa"
+          ],
+          "check": "La legge prevede il progetto educativo. Le domande pratiche sono nostri suggerimenti, coerenti con l’articolo pedagogico, e non requisiti imposti dalla normativa."
+        },
+        {
+          "id": "distanza",
+          "title": "Meglio vicino a casa o con più attività?",
+          "text": "Il tragitto fa parte della giornata: prova a percorrerlo all’orario di ingresso e considera chi potrà ritirare il bambino. Confronta poi orari, chiusure e proposta educativa. Ti suggeriamo di scegliere poche priorità sostenibili, come una relazione chiara con gli insegnanti, il tempo all’aperto e un ritiro compatibile con il lavoro. La distanza adatta dipende dalle possibilità e dai bisogni della famiglia.",
+          "refs": [
+            "uppa",
+            "brochure"
+          ],
+          "check": "Il suggerimento nasce dal confronto tra l’articolo di Uppa sul peso della vita quotidiana e l’organizzazione descritta nella brochure comunale."
+        },
+        {
+          "id": "bisogni",
+          "title": "E se mio figlio ha bisogno di sostegno o tempi più lunghi?",
+          "text": "Il colloquio prima dell’iscrizione è un momento utile per parlare dei bisogni di tuo figlio. Puoi chiedere come vengono condivise le informazioni, chi segue il progetto individuale e quali passaggi richiedono documenti.\n\nLe paritarie devono accogliere anche alunni con disabilità; l’organizzazione dei servizi aggiuntivi può però cambiare da una sede all’altra. Ti consigliamo di farti spiegare quali interventi sono previsti e quanto tempo occorre per attivarli.",
+          "refs": [
+            "legge",
+            "usr"
+          ],
+          "check": "Le due fonti istituzionali confermano l’accoglienza. Le domande aiutano a chiarire i servizi previsti e non garantiscono un numero di operatori o di ore."
+        }
+      ],
+      "stage": "preschool"
+    },
+    {
+      "slug": "costi-e-isee",
+      "title": "Costi, mensa e ISEE",
+      "intro": "Per capire quanto spenderai, distingui scuola, mensa e servizi aggiuntivi. Qui trovi le voci da confrontare e le informazioni sull’ISEE.",
+      "questions": [
+        {
+          "id": "totale",
+          "title": "La scuola comunale è gratuita?",
+          "text": "Per la scuola dell’infanzia comunale, la brochure 2026/27 indica un’iscrizione annuale di 56,20 euro non rimborsabili e un contributo mensa legato all’ISEE. Le rette del nido riguardano un servizio diverso e non permettono di stimare questa spesa. Per preparare il budget, considera anche gli eventuali servizi richiesti e i periodi estivi. Gli importi per il 2027/28 devono ancora essere riconfermati.",
+          "refs": [
+            "brochure",
+            "bando"
+          ],
+          "check": "La brochure e il comunicato concordano sugli importi. Provengono dallo stesso ente: il confronto è tra due documenti, senza una verifica indipendente."
+        },
+        {
+          "id": "fasce",
+          "title": "Quali sono le fasce ISEE della mensa?",
+          "text": "La tabella riguarda i residenti a Milano e la mensa della scuola dell’infanzia comunale e statale. Riporta gli importi del documento del gestore consultato, che coincidono con quelli della relazione comunale 2024. Per il 2027/28 serve una conferma aggiornata. Se non risiedi a Milano, puoi chiedere il tariffario dedicato: la fascia massima dei residenti non si applica automaticamente alla tua situazione.",
+          "refs": [
+            "tavola",
+            "relazione"
+          ],
+          "check": "Le sei fasce e gli importi coincidono nei due documenti. La relazione riguarda un periodo precedente; il PDF del gestore è stato letto nei risultati di ricerca, perché il download diretto non era disponibile."
+        },
+        {
+          "id": "isee",
+          "title": "Quale ISEE devo fare? E se i genitori non convivono?",
+          "text": "Per la mensa, il Comune richiede l’ISEE ordinario secondo le istruzioni del servizio. Se i genitori non sono coniugati e non convivono, verifica con INPS o con un Centro di assistenza fiscale (CAF) anche il calcolo per le prestazioni rivolte ai minorenni: la residenza, da sola, non determina chi viene considerato nel nucleo. Prima di inviare l’attestazione, chiedi quale può essere utilizzata per il servizio che richiedi.",
+          "refs": [
+            "inps",
+            "inpsguida",
+            "mensa"
+          ],
+          "check": "INPS distingue i diversi indicatori, mentre il Comune specifica quello acquisito per la mensa. ISEE ordinario e ISEE minorenni non vengono considerati automaticamente equivalenti."
+        },
+        {
+          "id": "scadenza-isee",
+          "title": "Se non ho l’ISEE, posso iscrivermi?",
+          "text": "L’iscrizione alla scuola e la richiesta di una tariffa agevolata sono due passaggi distinti. Per la mensa, se mancano i dati ISEE viene applicata la quota massima prevista per la propria situazione. Il termine del 2026/27 era il 31 luglio 2026 ed è già passato. Se presenti i dati in ritardo, puoi chiedere al gestore da quando può applicarsi l’eventuale agevolazione e se è previsto un rimborso per il periodo precedente.",
+          "refs": [
+            "mensa",
+            "tavola"
+          ],
+          "check": "Abbiamo confrontato il termine indicato dal Comune con la tabella del gestore. La scadenza del 2027/28 deve essere verificata nel nuovo avviso, senza ricavarla da quella precedente."
+        },
+        {
+          "id": "fratelli",
+          "title": "Ci sono sconti per fratelli o se il reddito diminuisce?",
+          "text": "Le domande frequenti della mensa prevedono, alle condizioni del servizio, una riduzione del 50% per i figli diversi dal più piccolo, che paga la quota intera. Se la situazione economica cambia, puoi verificare come chiedere la revisione della quota. Nel frattempo, chiarisci con l’ufficio quali importi restano dovuti e di proseguire i pagamenti richiesti in attesa della risposta. Per gli sconti delle scuole private occorre consultare le condizioni della singola scuola.",
+          "refs": [
+            "faq",
+            "relazione",
+            "inps"
+          ],
+          "check": "La riduzione per fratelli è confermata anche nella relazione comunale. INPS descrive l’ISEE corrente, che non sostituisce la richiesta di revisione da presentare al gestore."
+        },
+        {
+          "id": "privati",
+          "title": "Quanto costa una privata? La caparra si restituisce?",
+          "text": "Ogni scuola privata stabilisce il proprio tariffario. Per confrontare le spese, chiedi un preventivo scritto che distingua iscrizione, numero di mensilità, mensa, pre e post scuola, attività, materiale ed estate. È utile chiarire anche da quando decorre il pagamento, se la frequenza inizia più tardi.\n\nPrima di versare una somma per fermare il posto, leggi le condizioni di rinuncia e rimborso: la parola “prenotazione”, da sola, non chiarisce quali impegni stai assumendo.",
+          "refs": [
+            "naviglio",
+            "innocenti"
+          ],
+          "check": "I due regolamenti descrivono le condizioni delle singole scuole. L’elenco delle voci da chiedere è un nostro suggerimento; le clausole non si applicano automaticamente a tutti i gestori."
+        }
+      ],
+      "stage": "preschool"
+    },
+    {
+      "slug": "iscrizioni-e-graduatorie",
+      "title": "Iscrizioni e graduatorie",
+      "intro": "La domanda, l’assegnazione e l’accettazione seguono passaggi distinti. Ti aiutiamo a capire che cosa preparare e dove verificare le procedure.",
+      "questions": [
+        {
+          "id": "quando",
+          "title": "Quando si presenta la domanda al Comune?",
+          "text": "Per il 2026/27 le domande si presentavano dal 4 al 25 febbraio 2026, con apertura e chiusura alle ore 12 e accesso tramite SPID o CIE. Quel periodo è concluso. Per il 2027/28 serve il nuovo avviso: nella ricerca svolta non abbiamo verificato un calendario ufficiale da pubblicare. Nel frattempo puoi controllare le credenziali di accesso, aggiornare i recapiti e individuare le sedi che vuoi visitare.",
+          "refs": [
+            "notizia",
+            "bando"
+          ],
+          "check": "Abbiamo confrontato il comunicato stampa con il bando 2026/27. I passaggi preparatori sono suggerimenti e non sostituiscono l’elenco dei documenti che sarà richiesto per il prossimo anno."
+        },
+        {
+          "id": "statale",
+          "title": "Per la statale si usa Unica?",
+          "text": "Per la scuola dell’infanzia statale, la nota del Ministero dell’Istruzione e del Merito (MIM) 2026/27 prevede una domanda cartacea da presentare all’istituto scelto. La procedura è diversa dall’iscrizione online alla primaria. Puoi chiedere alla segreteria il modulo, come consegnarlo e quale ricevuta conservare.\n\nLe scuole private hanno procedure proprie: prima di manifestare interesse, è utile verificare se questo comporta già un impegno economico.",
+          "refs": [
+            "mim",
+            "naviglio"
+          ],
+          "check": "La nota ministeriale descrive la procedura statale. Le domande frequenti della paritaria mostrano che l’iscrizione privata può seguire tempi diversi; la procedura di questa singola scuola non vale per tutte."
+        },
+        {
+          "id": "clickday",
+          "title": "Come viene assegnato il posto? Conta la distanza?",
+          "text": "L’ammissione dipende dai criteri del bando e dalle domande ammesse. La distanza e i posti indicati nel catalogo non permettono di stimare la probabilità di ottenere un posto. Leggi le priorità dell’anno che ti interessa, controllare le dichiarazioni prima dell’invio e conservare la ricevuta. La partecipazione a una visita o la prenotazione di un open day sono passaggi separati dalla domanda di iscrizione.",
+          "refs": [
+            "bando",
+            "attesa"
+          ],
+          "check": "Il bando definisce i criteri di ammissione e la pagina sulla trasparenza pubblica le graduatorie. Le fonti non permettono di fornire probabilità individuali documentate."
+        },
+        {
+          "id": "attesa",
+          "title": "Se resto in lista d’attesa, cosa faccio?",
+          "text": "Puoi seguire gli aggiornamenti nelle pagine del Comune e controllare che i recapiti indicati nella domanda siano corretti. Quando ricevi un’offerta, leggi subito entro quando e come accettare. Se un passaggio non è chiaro, puoi contattare l’ufficio indicato nell’avviso. L’inserimento nella lista d’attesa significa che la domanda resta in attesa di assegnazione, non che il posto sia già disponibile.",
+          "refs": [
+            "attesa",
+            "comune"
+          ],
+          "check": "La pagina sulla trasparenza rimanda alle graduatorie per Municipio. Per sapere quali passaggi seguire, occorre leggere i singoli avvisi, che prevalgono sulle indicazioni generali."
+        },
+        {
+          "id": "doppie",
+          "title": "Posso tenere un posto comunale e uno statale?",
+          "text": "Prima di contare su due assegnazioni fino a settembre, chiarisci la situazione con entrambe le segreterie. Il comunicato comunale 2026/27 prevede verifiche sui bambini accolti anche nelle statali; la nota ministeriale limita la domanda di infanzia a una sola istituzione scolastica.\n\nSi tratta di regole con ambiti diversi: chiedi come coordinare domande e accettazioni nel tuo caso e consulta il bando del nuovo anno.",
+          "refs": [
+            "bando",
+            "mim"
+          ],
+          "check": "Abbiamo confrontato i vincoli comunali con quelli ministeriali, mantenendo distinti i rispettivi ambiti. Le fonti non danno un’autorizzazione generale a presentare domande o mantenere posti doppi."
+        }
+      ],
+      "stage": "preschool"
+    },
+    {
+      "slug": "open-day-e-visite",
+      "title": "Open day e visite",
+      "intro": "Una visita aiuta a immaginare la vita a scuola. Qui trovi come prepararla, quali domande fare e che cosa annotare dopo l’incontro.",
+      "questions": [
+        {
+          "id": "prenotare",
+          "title": "Come si prenota un open day?",
+          "text": "Sul sito della scuola cerca l’avviso dedicato all’infanzia e all’anno che ti interessa. Controlla sede, ingresso, durata e modalità di accesso: alcune scuole richiedono una prenotazione tramite modulo.\n\nMontessori Milano e Maria Consolatrice mostrano procedure diverse, ma i loro eventi del 14 e 7 novembre 2026 sono già trascorsi. Puoi consultare quelle pagine come esempi della procedura; per prenotare serve un appuntamento aggiornato.",
+          "refs": [
+            "montessori",
+            "imc"
+          ],
+          "check": "Abbiamo controllato due avvisi delle scuole e il loro anno di riferimento. Servono come esempi delle procedure e non costituiscono un calendario completo né una conferma di posti disponibili."
+        },
+        {
+          "id": "perso",
+          "title": "Se ho perso l’open day posso visitare lo stesso?",
+          "text": "Puoi scrivere alla segreteria per chiedere se sono previsti altri incontri o colloqui. Montessori Milano indica giornate alternative su prenotazione; la possibilità va però verificata con ogni scuola. Per i servizi comunali, consulta gli avvisi dedicati. Ricorda che la visita e la domanda di iscrizione seguono passaggi separati: partecipare a un incontro non equivale a presentare la domanda.",
+          "refs": [
+            "montessori",
+            "notizia"
+          ],
+          "check": "L’avviso della scuola descrive una possibilità concreta di visita alternativa. La comunicazione del Comune distingue il periodo delle visite da quello delle iscrizioni."
+        },
+        {
+          "id": "domande",
+          "title": "Che cosa chiedo agli insegnanti?",
+          "text": "Durante la visita puoi chiedere come vengono accompagnati i primi distacchi e come si svolgono pranzo, bagno e riposo. Per capire l’organizzazione, è utile sapere quanti adulti sono presenti nei diversi momenti e come si coprono le assenze degli insegnanti.\n\nPuoi approfondire anche l’uso del giardino e il modo in cui la scuola condivide difficoltà e progressi con la famiglia. Gli esempi recenti aiutano a immaginare la vita quotidiana oltre alle descrizioni generali.",
+          "refs": [
+            "uppa",
+            "brochure"
+          ],
+          "check": "Le domande proposte riprendono i temi pedagogici di Uppa e l’organizzazione descritta dal Comune. Sono suggerimenti per preparare la visita, senza valore di requisiti legali."
+        },
+        {
+          "id": "orari",
+          "title": "Pre e post scuola sono sempre disponibili?",
+          "text": "La disponibilità di pre e post scuola va verificata con la sede. Puoi chiedere gli orari effettivi, i requisiti di accesso, i posti disponibili e il costo. Il modello nazionale dell’infanzia prevede 40 ore, con possibilità di 25 o fino a 50 alle condizioni previste: ogni sede può offrire modelli diversi. Chiarisci anche le chiusure, perché luglio e i periodi di vacanza possono richiedere un’organizzazione separata.",
+          "refs": [
+            "dpr",
+            "naviglio"
+          ],
+          "check": "La norma descrive i modelli orari. Il regolamento della singola scuola mostra perché è utile chiarire quali servizi siano effettivamente disponibili."
+        },
+        {
+          "id": "ambientamento",
+          "title": "Come organizzo l’inizio e il confronto dopo le visite?",
+          "text": "Per organizzare l’inizio, puoi chiedere quando viene concordato l’ambientamento, quale presenza del genitore è richiesta e come si arriva alla giornata completa. I tempi possono cambiare: se devi pianificare il rientro al lavoro, chiarisci prima questo percorso con la scuola. Dopo la visita annota le risposte, le voci di costo ancora mancanti e le domande da approfondire. Puoi conservare questi appunti nello Spazio famiglia del sito.",
+          "refs": [
+            "brochure",
+            "uppa"
+          ],
+          "check": "Entrambe le letture danno rilievo ai bisogni del bambino. I suggerimenti organizzativi non indicano una durata dell’ambientamento valida per tutti."
+        }
+      ],
+      "stage": "preschool"
+    },
+    {
+      "slug": "scegliere-il-nido",
+      "title": "Scegliere un servizio 0–3",
+      "intro": "Nido, micronido, sezione primavera o servizio per poche ore: scopri le differenze e quali aspetti valutare per la giornata della famiglia.",
+      "stage": "nursery",
+      "questions": [
+        {
+          "id": "tipi03",
+          "title": "Nido, micronido e nido famiglia: che differenza c’è?",
+          "text": "Nido e micronido offrono un servizio continuativo con pasto e riposo, di norma dai 3 ai 36 mesi. In Lombardia il micronido accoglie fino a 10 bambini. Il nido famiglia è un servizio domiciliare, promosso da famiglie associate senza fini di lucro, per un massimo di 5 bambini da zero a tre anni.\n\nPer valutare la proposta, oltre alle dimensioni del gruppo è utile capire chi segue i bambini e come si coprono le assenze: il numero di posti, da solo, non dimostra la qualità.",
+          "refs": [
+            "ats03",
+            "regione03"
+          ],
+          "check": "Abbiamo confrontato le definizioni di ATS con il quadro regionale. Le domande sul personale aiutano a preparare la visita e non esprimono una valutazione delle singole sedi."
+        },
+        {
+          "id": "primavera03",
+          "title": "A due anni è meglio la primavera o il nido?",
+          "text": "La sezione primavera si rivolge ai bambini di 24–36 mesi ed è diversa dall’anticipo alla scuola dell’infanzia. Per capire quale proposta può funzionare per la famiglia, verifica la fascia di nascita ammessa dal bando e chiedi come vengono organizzati il gruppo, il riposo e il passaggio al percorso successivo.\n\nSe il servizio condivide l’edificio con l’infanzia, chiarisci anche come si richiede il posto per l’anno dopo: la continuità degli spazi non garantisce l’ammissione.",
+          "refs": [
+            "nidi-bando",
+            "brochure"
+          ],
+          "check": "Età e gruppi ammessi sono descritti nel bando e nella brochure comunale. La continuità educativa non permette di prevedere una futura assegnazione del posto."
+        },
+        {
+          "id": "cpi03",
+          "title": "Un centro prima infanzia può sostituire il nido a giornata intera?",
+          "text": "Il centro prima infanzia (CPI) risponde a un bisogno diverso dal nido a giornata intera. In Lombardia offre una frequenza non continuativa, fino a quattro ore consecutive, senza somministrazione dei pasti. Può prevedere la presenza di un adulto di riferimento. Prima di sceglierlo, puoi chiedere come si svolge la frequenza nella sede e quale accompagnamento è richiesto, anche se lo trovi insieme ai nidi nella ricerca 0–3.",
+          "refs": [
+            "ats03",
+            "regione03"
+          ],
+          "check": "Le descrizioni istituzionali indicano i limiti del servizio. Le modalità di accompagnamento devono essere verificate nella singola sede."
+        },
+        {
+          "id": "canali03",
+          "title": "Che cosa significano comunale, in appalto, accreditato e convenzionato?",
+          "text": "Chi gestisce il servizio e come viene assegnato il posto sono due aspetti distinti. In un servizio comunale in appalto, la gestione è affidata a un soggetto esterno. Un privato può offrire sia posti assegnati dal Comune sia posti a iscrizione diretta: puoi chiedere quale ti viene proposto.\n\nAccreditamento e convenzione indicano condizioni diverse. Per un posto comunale consulta gli elenchi del bando; per uno privato chiedi condizioni e tariffario scritti. Il riconoscimento di parità scolastica riguarda le scuole e non è una classificazione da applicare ai nidi.",
+          "refs": [
+            "nidi-accesso",
+            "nidi-bando",
+            "regione03"
+          ],
+          "check": "Abbiamo confrontato la procedura e gli elenchi comunali con la classificazione regionale. La presenza nel registro, da sola, non conferma una convenzione attuale."
+        },
+        {
+          "id": "qualita03",
+          "title": "Che cosa guardo oltre al prezzo e alla vicinanza?",
+          "text": "Durante la visita puoi chiedere chi sarà il riferimento di tuo figlio, come vengono ascoltate le famiglie e come si svolgono cambio, pasti, sonno e gioco. Un esempio concreto aiuta a capire l’organizzazione.\n\nPer valutare anche la giornata familiare, prova il tragitto agli orari reali e considera chi potrà occuparsi del ritiro. Questi criteri aiutano a confrontare i servizi: il metodo dichiarato o l’arredamento, da soli, non garantiscono che una sede sia adatta ai vostri bisogni.",
+          "refs": [
+            "uppa",
+            "uppa-nido"
+          ],
+          "check": "Le due letture pedagogiche concordano sul ruolo delle relazioni e della vita quotidiana. I criteri proposti aiutano il confronto e non costituiscono una certificazione."
+        }
+      ]
+    },
+    {
+      "slug": "iscrizioni-visite-nido",
+      "title": "Nido: iscrizioni, visite e ambientamento",
+      "intro": "Dalla prima visita all’ingresso al nido: che cosa verificare per la domanda e come concordare le prime settimane con il servizio.",
+      "stage": "nursery",
+      "questions": [
+        {
+          "id": "iscrizioni03",
+          "title": "Quando e come si fa domanda al nido comunale?",
+          "text": "Per un posto comunale, consulta la pagina del Comune e il comunicato dell’anno che ti interessa. Il periodo ordinario 2026/27 andava dal 4 al 25 febbraio 2026, con accesso tramite SPID o CIE, ed è ora concluso. Eventuali avvisi per le domande fuori termine vanno verificati separatamente.\n\nNon abbiamo verificato un calendario 2027/28 da pubblicare. Se contatti anche un nido privato, ricorda che quella richiesta segue una procedura distinta e non sostituisce la domanda al Comune.",
+          "refs": [
+            "nidi-bando",
+            "notizia",
+            "nidi-accesso"
+          ],
+          "check": "Il bando e la comunicazione ufficiale concordano sulle date e sulla modalità di presentazione. Eventuali avvisi fuori termine vanno letti in base al loro specifico ambito."
+        },
+        {
+          "id": "nascituri03",
+          "title": "Devo aspettare che il bambino nasca?",
+          "text": "In alcuni casi puoi presentare domanda prima della nascita. Il bando comunale 2026/27 ammetteva anche bambini non ancora nati, entro le fasce previste e con requisiti specifici di residenza della madre. Per il prossimo anno occorre consultare il nuovo avviso.\n\nSe scegli un privato, puoi chiedere quando manifestare interesse e da quale momento il posto comporta un impegno. Prima di versare una somma, chiarisci le condizioni, la data di ingresso e le possibilità di rinuncia.",
+          "refs": [
+            "nidi-bando",
+            "nidi-accesso"
+          ],
+          "check": "Il bando e la pagina dedicata documentano la possibilità di iscrivere bambini non ancora nati. Le domande sul contratto privato sono suggerimenti e non regole comunali."
+        },
+        {
+          "id": "attesa03",
+          "title": "Come funzionano graduatorie e accettazione?",
+          "text": "Dopo aver presentato la domanda, conserva la ricevuta, controlla i recapiti forniti e segui gli avvisi del Comune. Se arriva un’assegnazione, verifica entro quando devi accettare.\n\nLa capienza indicata nel catalogo descrive le dimensioni del servizio, non i posti liberi; anche la distanza, da sola, non permette di stimare l’ammissione. Se resti in attesa, puoi chiedere all’ufficio come seguire gli aggiornamenti: il posto diventa acquisito solo attraverso i passaggi previsti.",
+          "refs": [
+            "nidi-bando",
+            "attesa"
+          ],
+          "check": "Il bando e la pagina istituzionale delle liste d’attesa descrivono il percorso. Non analizziamo nominativi né stimiamo probabilità individuali di ammissione."
+        },
+        {
+          "id": "visite03",
+          "title": "Come prenoto una visita e quali domande porto?",
+          "text": "Dalla scheda del servizio puoi aprire l’avviso ufficiale e verificare che riguardi il nido, la sede e l’anno che ti interessano. Chiedi se occorre prenotare e se puoi partecipare con il bambino. Se mancano date aggiornate, puoi contattare il servizio per sapere se organizza visite su richiesta.\n\nDurante l’incontro, è utile approfondire pasti, latte, cambio, riposo, giardino e comunicazioni quotidiane. Se l’open day è condiviso con l’infanzia, verifica che comprenda anche gli spazi 0–3.",
+          "refs": [
+            "nidi-accesso",
+            "uppa-nido"
+          ],
+          "check": "Il Comune distingue gli avvisi per servizio. Le domande da fare durante la visita derivano dalla lettura pedagogica. Gli open day comunali del 28–30 gennaio 2026 sono già trascorsi."
+        },
+        {
+          "id": "ambientamento03",
+          "title": "Quanto dura l’ambientamento? E se piange?",
+          "text": "La durata dell’ambientamento dipende dal percorso del bambino e dalla collaborazione con gli educatori. Puoi concordare come iniziare, chi potrà accompagnarlo e quando introdurre pasto e sonno. È utile chiarire anche come vi aggiornerete e come saranno accolte le difficoltà.\n\nSe devi fissare il rientro al lavoro, cerca di prevedere, quando possibile, un margine organizzativo. Un distacco faticoso merita ascolto e confronto per adattare il percorso, senza attribuire colpe o forzare una durata uguale per tutti.",
+          "refs": [
+            "uppa-nido",
+            "ravenna-nido"
+          ],
+          "check": "Abbiamo confrontato l’articolo pedagogico con la descrizione istituzionale dell’ambientamento. Le modalità di Ravenna restano un esempio e non diventano una regola per Milano."
+        },
+        {
+          "id": "orari03",
+          "title": "Il prolungamento e luglio sono compresi?",
+          "text": "Gli orari indicati nella scheda non confermano che ogni famiglia possa utilizzare il prolungamento. Puoi chiedere quali orari sono effettivamente disponibili e quali requisiti sono previsti. La sezione primavera può seguire l’orario della struttura che la ospita.\n\nPer il servizio estivo comunale occorre una procedura dedicata e possono essere previsti accorpamenti. Nel privato, prima di confrontare i preventivi, chiedi un’indicazione scritta di chiusure, disponibilità estiva e costi.",
+          "refs": [
+            "nidi-bando",
+            "brochure"
+          ],
+          "check": "Il bando e la brochure distinguono orari ordinari, prolungamento ed estate. Il calendario 2026/27 non conferma le condizioni del 2027/28."
+        }
+      ]
+    },
+    {
+      "slug": "costi-bonus-nido",
+      "title": "Nido: rette, ISEE e bonus",
+      "intro": "Rette, ISEE e contributi possono seguire regole diverse. Ti aiutiamo a distinguere la tariffa comunale, gli aiuti INPS e quelli regionali.",
+      "stage": "nursery",
+      "questions": [
+        {
+          "id": "rette03",
+          "title": "Quanto costano nido e primavera con un posto assegnato dal Comune?",
+          "text": "La tabella riporta le quote mensili 2026/27 dei posti assegnati dal Comune; le quote annuali della mensa 3–6 riguardano invece un servizio diverso. Alla spesa si aggiunge l’iscrizione annua non rimborsabile di 56,20 euro, anche quando la quota mensile è gratuita. Se ti iscrivi direttamente a un servizio privato, serve il suo tariffario. Gli importi per il 2027/28 devono ancora essere riconfermati.",
+          "refs": [
+            "nidi-quote",
+            "nidi-paginaquote"
+          ],
+          "check": "Tabella e iscrizione riscontrate nel PDF e nella pagina del Comune: doppio documento dello stesso ente, non conferma indipendente."
+        },
+        {
+          "id": "isee03",
+          "title": "Quale ISEE serve? È lo stesso del bonus?",
+          "text": "Per la retta comunale, segui le istruzioni sulla Dichiarazione sostitutiva unica (DSU) per le prestazioni rivolte ai minorenni e sull’acquisizione dei dati INPS. Le domande frequenti del Comune spiegano che non occorre inviare l’attestazione quando i dati vengono acquisiti d’ufficio; vanno comunque rispettati i termini e controllate eventuali anomalie.\n\nPer il bonus 2026, INPS usa l’ISEE per specifiche prestazioni familiari e per l’inclusione, applicabile al minore e calcolato escludendo l’Assegno unico. Verifica quale indicatore serve per ciascun beneficio, perché il valore non coincide automaticamente.",
+          "refs": [
+            "isee-nidi-faq",
+            "nidi-quote",
+            "inps29"
+          ],
+          "check": "Abbiamo confrontato le istruzioni comunali con il §4 della circolare INPS. Si tratta di due procedimenti che possono usare indicatori diversi. Per situazioni familiari particolari, puoi chiedere assistenza a un CAF o a INPS."
+        },
+        {
+          "id": "assenze03",
+          "title": "Si paga anche durante l’ambientamento o le assenze?",
+          "text": "Per i posti assegnati dal Comune, il mese di ambientamento non si calcola semplicemente in base alle ore frequentate. Il documento 2026/27 prevede, con pagamento mensile, il 50% della quota se la frequenza non supera cinque giorni nel mese; anche dicembre è al 50%.\n\nLa rata unica anticipata offre uno sconto del 10%, ma esclude la riduzione per bassa frequenza e la revisione della quota. Luglio si paga separatamente. Se il posto è privato, puoi chiedere il regolamento: le riduzioni comunali non si applicano automaticamente.",
+          "refs": [
+            "nidi-quote",
+            "nidi-paginaquote"
+          ],
+          "check": "Abbiamo controllato le sezioni del PDF su riduzioni e pagamento anticipato, richiamate dalla pagina sulle quote. I due documenti provengono dallo stesso ente. La convenienza dello sconto dipende dalle condizioni applicabili."
+        },
+        {
+          "id": "bonus03",
+          "title": "Quanto rimborsa il bonus INPS nel 2026?",
+          "text": "Per i nati dal 1° gennaio 2024, il limite è 3.600 euro annui con indicatore ISEE applicabile fino a 40.000 euro; oltre soglia o senza un ISEE utilizzabile, il limite è 1.500 euro. Per i nati prima, il massimo è di 3.000 euro con ISEE fino a 25.000,99 euro, 2.500 euro da 25.001 a 40.000 euro e 1.500 euro oltre soglia o senza ISEE utilizzabile.\n\nIl contributo rispetta anche limiti mensili, fino a undici mensilità per anno solare, e non supera la spesa ammessa. Per un preventivo di pochi mesi, considera quindi i limiti applicabili a quei mesi, senza sottrarre l’intero massimale annuo.",
+          "refs": [
+            "inps-nido",
+            "inps29"
+          ],
+          "check": "Abbiamo confrontato gli importi della scheda INPS con la circolare 29/2026. Le fasce dei nati prima del 2024 sono riportate nella fonte. Queste informazioni non garantiscono un importo netto per il singolo caso."
+        },
+        {
+          "id": "documenti03",
+          "title": "Quali documenti servono? Posso pagare tutto l’anno insieme?",
+          "text": "Per richiedere il rimborso, conserva fattura, ricevuta o avviso ammesso e la prova del pagamento tracciabile, con il mese di riferimento. Anche se paghi una rata unica, puoi chiedere al gestore il dettaglio delle mensilità: il totale annuale non chiarisce la spesa di ogni mese.\n\nL’iscrizione e il pre/post scuola non sono rimborsabili con il bonus. Per le mensilità 2026, i documenti devono essere presentati entro il 30 aprile 2027. Dal 2026 la domanda ha validità pluriennale, ma le mensilità richieste vanno aggiornate ogni anno.",
+          "refs": [
+            "inps29",
+            "inps-apertura",
+            "inps-nido"
+          ],
+          "check": "Abbiamo verificato il §6 della circolare e la notizia di apertura del servizio. Il suggerimento sul dettaglio mensile risponde ai dubbi emersi nei forum, senza garantire che uno specifico documento venga accettato."
+        },
+        {
+          "id": "servizi-bonus03",
+          "title": "Il bonus vale anche per primavera, nido famiglia o CPI?",
+          "text": "L’accesso al bonus dipende dalla categoria effettiva del servizio e dal titolo abilitativo richiesto, non solo dal nome nel catalogo. INPS ammette nidi, micronidi, sezioni primavera, spazi gioco e servizi educativi domiciliari; esclude, tra gli altri, i centri per bambini e famiglie con adulto accompagnatore.\n\nPrima di contare sul rimborso per un nido famiglia o un centro prima infanzia (CPI), chiedi il titolo e la categoria del servizio. La presenza nel registro regionale non equivale all’approvazione della domanda INPS.",
+          "refs": [
+            "inps29",
+            "inps-nido",
+            "ats03"
+          ],
+          "check": "Abbiamo confrontato l’elenco INPS con le tipologie descritte da ATS. I nomi regionali dei servizi non vengono equiparati automaticamente alle categorie ammesse al contributo."
+        },
+        {
+          "id": "gratis03",
+          "title": "Nidi Gratis Plus significa che ogni nido a Milano è gratuito?",
+          "text": "Nidi Gratis Plus è una misura regionale distinta dal bonus INPS. Riguarda servizi e posti ammessi, con ISEE fino a 25.000 euro e altri requisiti. Il bando 2026/27 prevede le domande dal 27 ottobre al 19 novembre 2026 alle ore 12, salvo esaurimento delle risorse.\n\nControlla nell’elenco sia il Comune aderente sia il posto: la presenza di un indirizzo a Milano, da sola, non conferma il diritto all’aiuto. Per il budget familiare, attendi la verifica della domanda prima di considerare acquisita l’agevolazione.",
+          "refs": [
+            "nidi-gratis",
+            "nidi-gratis-elenco"
+          ],
+          "check": "Abbiamo confrontato il bando per le famiglie con l’elenco delle strutture. Le colonne distinguono Comune aderente e sede operativa; l’indirizzo della sede non dimostra un’adesione generale del Comune di Milano."
+        },
+        {
+          "id": "preventivo03",
+          "title": "Come confronto i preventivi privati e la prenotazione del posto?",
+          "text": "Per confrontare i preventivi privati, chiedi le stesse voci a ogni servizio: iscrizione, ammissione una tantum, mensilità, fascia oraria, pasti, pannolini, prolungamento ed estate. Chiarisci anche da quando si paga e quali condizioni valgono per assenze, rinuncia e rimborso della somma versata per fermare il posto.\n\nNel sito, un importo parziale o privo di anno non rappresenta il totale 2027/28. Per stimare la spesa dopo il bonus, separa i costi rimborsabili dal denaro da anticipare: il contributo non sostituisce il pagamento al gestore.",
+          "refs": [
+            "inps29",
+            "nidi-quote"
+          ],
+          "check": "L’elenco delle voci da confrontare è un suggerimento e non indica una tariffa media. Le regole INPS e comunali aiutano a distinguere rimborso, costo da pagare e sconto privato."
+        }
+      ]
+    }
+  ]
+}

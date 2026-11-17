@@ -1,0 +1,48 @@
+{
+  "name": "scuole-milano",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "catalog:reconcile": "python3 scripts/reconcile-catalog.py",
+    "catalog:research": "python3 scripts/apply-school-research.py",
+    "catalog:second-pass-report": "python3 scripts/report-second-pass.py",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "test:research": "python3 -m unittest discover -s tests -p test_research.py",
+    "check": "astro check",
+    "shared:db": "wrangler d1 migrations apply scuole-milano-shared --local",
+    "shared:dev": "npm run build && wrangler dev --ip 127.0.0.1 --port 4320",
+    "shared:check": "tsc -p worker/tsconfig.json --noEmit",
+    "catalog:nurseries": "python3 scripts/import-nurseries.py",
+    "catalog:nurseries-research": "python3 scripts/apply-nursery-research.py",
+    "test:nurseries": "python3 -m unittest discover -s tests -p test_nursery_research.py",
+    "seo:audit": "python3 scripts/audit-seo.py"
+  },
+  "dependencies": {
+    "@maplibre/maplibre-gl-leaflet": "^0.1.4",
+    "astro": "7.4.12",
+    "leaflet": "^1.9.4",
+    "maplibre-gl": "^6.18.0",
+    "qrcode": "^1.5.4"
+  },
+  "engines": {
+    "node": ">=22.23.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12",
+    "@cloudflare/workers-types": "^5.20261116.1",
+    "@types/leaflet": "^1.9.22",
+    "@types/node": "^26.6.6",
+    "@types/qrcode": "^1.5.6",
+    "typescript": "^6.0.3",
+    "wrangler": "^4.163.0",
+    "ultrahtml": "1.7.0",
+    "entities": "4.5.0"
+  },
+  "license": "MIT",
+  "author": "Emanuele Cardinali",
+  "description": "Scuole Vicine — Guida alla scelta di nidi e scuole dell’infanzia a Milano."
+}

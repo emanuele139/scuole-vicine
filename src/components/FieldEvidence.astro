@@ -1,0 +1,7 @@
+---
+import type { FieldEvidence } from '../lib/catalog';
+interface Props { evidence?: FieldEvidence }
+const { evidence } = Astro.props;
+const statuses: Record<string,string> = { verified:'Informazioni dalla fonte della scuola', 'operator-rule':'Indicazioni generali del gestore per le proprie sedi', 'not-published':'Informazione non pubblicata nelle fonti consultate', 'not-found':'Informazione non trovata nelle fonti consultate', blocked:'Non è stato possibile leggere l’intera fonte', 'needs-confirmation':'Da confermare con la scuola', 'prior-research':'Informazione raccolta nella ricerca precedente' };
+---
+{evidence && <div class="field-evidence" data-status={evidence.status}><span>{statuses[evidence.status] || 'Da verificare'}{evidence.year && <> · {evidence.year}</>}</span>{evidence.sourceUrls.length > 0 && <div><a href="#fonti">Vedi fonti ↓</a></div>}</div>}

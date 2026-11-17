@@ -1,0 +1,51 @@
+---
+import CookieConsent from '../components/CookieConsent.astro';
+import '../styles/fonts.css';
+import '../styles/global.css';
+import '../styles/site.css';
+import '../styles/editorial.css';
+import '../styles/ux.css';
+import { markdownPath } from '../lib/markdown-paths.mjs';
+import SeoHead from '../components/SeoHead.astro';
+import { breadcrumbs, pageMap } from '../lib/seo';
+import SchoolReport from '../components/SchoolReport.astro';
+import Icon from '../components/Icon.astro';
+import { project } from '../data/project';
+import BrandMosaic from '../components/design/BrandMosaic.astro';
+interface Props { title: string; active?: string; description?: string; immersive?: boolean; noindex?: boolean }
+const { title, active = 'cerca', description = project.tagline, noindex = false } = Astro.props;
+const path=Astro.url.pathname;
+const page = pageMap.get(path);
+const markdown = page && markdownPath(path);
+const crumbs = page ? breadcrumbs(page) : [];
+const links = [
+  { href: '/', label: 'Cerca scuole', key: 'cerca', icon: 'search' },
+  { href: '/agenda/', label: 'Open day', key: 'agenda', icon: 'calendar' },
+  { href: '/guide/', label: 'Come scegliere', key: 'guide', icon: 'info' },
+  { href: '/iscrizioni/', label: 'Iscrizioni', key: 'iscrizioni', icon: 'check' },
+];
+---
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#F7F5ED"/>
+    <SeoHead title={title} description={description} noindex={noindex}/><link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+    <slot name="head"/>
+  </head>
+  <body class:list={['site-page',{'is-home':path==='/', 'is-school':path.startsWith('/scuole/'), 'is-guide-article':path.startsWith('/guide/')&&path!=='/guide/'}]} data-page={active}>
+    <a href="#contenuto" class="skip-link">Vai al contenuto</a>
+    <header class="site-header"><div class="header-inner">
+      <a href="/" class="brand" aria-label={`${project.name}, pagina iniziale`}><span class="brand-symbol" aria-hidden="true">s<span>v</span><i></i></span><span>scuole<span class="brand-city">vicine<span class="brand-dot">.</span></span></span></a>
+      <nav class="main-nav" aria-label="Navigazione principale">{links.map(link=><a href={link.href} class:list={{active:active===link.key}} aria-current={active===link.key?'page':undefined}><Icon name={link.icon} size={17}/><span>{link.label}</span></a>)}</nav>
+      <div class="header-personal"><a class="header-compare" href="/confronto/" aria-label="Apri il confronto"><Icon name="grid" size={17}/><span class="compare-link-label">Confronta</span><span class="nav-count" data-compare-count hidden>0</span></a><a href="/famiglia/" class:list={['family-link',{active:active==='famiglia'}]} aria-current={active==='famiglia'?'page':undefined}><Icon name="heart" size={18}/><span>Le tue scuole</span><span class="family-count" data-saved-count>0</span></a></div>
+    </div></header>
+    <main id="contenuto" class="container" tabindex="-1">{crumbs.length > 0 && <nav class="breadcrumbs" aria-label="Percorso"><ol>{crumbs.map((crumb, i) => <li>{i === crumbs.length - 1 ? <span aria-current="page">{crumb.name}</span> : <a href={crumb.path}>{crumb.name}</a>}</li>)}</ol></nav>}<slot/>{markdown && <p class="markdown-download" data-markdown-exclude><a href={markdown} type="text/markdown" download>Scarica questa pagina in Markdown (.md)</a></p>}</main>
+    <footer class="site-footer" id="footer"><div class="container footer-inner"><div class="footer-opening"><p class="eyebrow">SCUOLE VICINE · SI CRESCE, INSIEME.</p><h2>Un piccolo passo.<br/>Una grande <span>scelta.</span></h2><BrandMosaic/></div><div class="footer-links"><div><strong>Esplora</strong><a href="/">Cerca sulla mappa</a><a href="/nidi/">Nidi e servizi 0–3</a><a href="/scuole-infanzia/">Scuole dell’infanzia 3–6</a><a href="/#raccolte">Esplora per Municipio</a><a href="/agenda/">Open day</a><a href="/famiglia/">Le tue scuole</a><a href="/confronto/">Confronta</a></div><div><strong>Capisci</strong><a href="/guide/">Come scegliere</a><a href="/iscrizioni/">Iscrizioni</a><a href="/metodo/">Dati e fonti</a><a href="/progetto/">Il progetto</a><a href="/privacy/">Privacy e cookie</a><button type="button" class="privacy-footer-button" data-privacy-open>Preferenze privacy</button><a href="/third-party-licenses.txt">Licenze delle librerie</a>{project.repositoryUrl && <a href={project.repositoryUrl} target="_blank" rel="noopener">Codice su GitHub</a>}</div></div><div class="footer-bottom"><span>Un progetto gratuito e open source ideato e sviluppato da <a href={project.authorUrl || '/progetto/#autore'} rel="author">{project.author}</a>.</span><p>Per ogni informazione indichiamo fonti, periodo e aspetti da verificare. Posti disponibili e condizioni per l’anno che ti interessa vanno confermati con le scuole.</p><a href="#contenuto">Torna su ↑</a></div></div></footer>
+    <SchoolReport />
+    <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+    <script src="../scripts/shared.ts"></script>
+    <script src="../scripts/site.ts"></script>
+  <CookieConsent/>
+  </body>
+</html>

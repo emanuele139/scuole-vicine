@@ -1,0 +1,39 @@
+---
+interface Props { class?: string }
+const { class: className = '' } = Astro.props;
+---
+<svg class:list={['detour-scene', className]} viewBox="0 0 700 480" fill="none" aria-hidden="true" focusable="false">
+  <!-- Original numeral forms: the same arches, paper, ink and character family. -->
+  <path d="m143 105-82 160h150M176 106v245" stroke="#B8AAF5" stroke-width="55" stroke-linecap="square" stroke-linejoin="round"/>
+  <path d="m143 105-82 160h150M176 106v245" stroke="#29271F" stroke-width="1.5" stroke-linejoin="round"/>
+  <rect x="279" y="103" width="145" height="247" rx="72.5" stroke="#D4E88B" stroke-width="55"/>
+  <path d="M351.5 103a72.5 72.5 0 0 1 72.5 72.5V278" stroke="#29271F" stroke-width="1.5"/>
+  <path d="m568 105-82 160h150M601 106v245" stroke="#F56A47" stroke-width="55" stroke-linecap="square" stroke-linejoin="round"/>
+  <path d="m568 105-82 160h150M601 106v245" stroke="#29271F" stroke-width="1.5" stroke-linejoin="round"/>
+  <g class="detour-book">
+    <path d="M278 250c27-11 53-6 74 12 20-18 47-23 74-12v113c-29-9-52-5-74 12-23-17-46-21-74-12V250Z" fill="#F7CB54" stroke="#29271F" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M352 264v105" stroke="#29271F" stroke-width="2"/>
+    <ellipse cx="330" cy="294" rx="9" ry="14" fill="#FFFDF5"/><ellipse cx="376" cy="294" rx="9" ry="14" fill="#FFFDF5"/>
+    <ellipse cx="327" cy="297" rx="4" ry="7" fill="#29271F"/><ellipse cx="373" cy="297" rx="4" ry="7" fill="#29271F"/>
+    <path d="M340 324c8 9 17 9 25 0" stroke="#29271F" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="m306 374-6 22m95-22 6 22m-111 0h18m85 0h18" stroke="#29271F" stroke-width="2" stroke-linecap="round"/>
+  </g>
+  <path d="M28 407c64 33 140-28 172-16 57 21-32 77-31 33 1-45 229 30 303-7 49-25 93-25 176-4m-17-14 20 15-23 9" stroke="#29271F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="rotate(12 499 53)"><path d="m499 21 7 23 24-6-15 20 16 18-25-4-7 23-7-23-24 4 15-18-15-20 24 6 7-23Z" fill="#F7CB54"/><path d="m499 37 4 15 15 4-15 4-4 15-4-15-15-4 15-4 4-15Z" fill="#29271F"/></g>
+  <circle cx="241" cy="71" r="7" fill="#F56A47"/>
+  <path d="M56 60c44-34 119-29 129-3 12 31-47 27-31 5 12-17 39-17 58-10m-10-10 14 12-16 6" stroke="#29271F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="rotate(-8 548 357)"><path d="m487 339 116-3 3 43-116 4-3-44Z" fill="#F2B9D0"/><path d="M502 359h83m-12-10 12 10-12 10" stroke="#29271F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
+<style>
+  .detour-scene { display: block; width: 100%; height: auto; overflow: visible; }
+  .detour-book { transform-origin: 352px 375px; }
+  .detour-scene.is-awake .detour-book { animation: detour-greeting .75s ease-in-out both; }
+  @keyframes detour-greeting { 0%,100% { transform: rotate(0); } 40% { transform: rotate(-6deg) translateY(-5px); } 70% { transform: rotate(3deg); } }
+  :global(.dg-reduced) .detour-book { animation: none !important; }
+  @media(prefers-reduced-motion:reduce) { .detour-scene.is-awake .detour-book { animation: none; } }
+</style>
+<script>
+  document.querySelectorAll<SVGElement>('.detour-scene').forEach(scene => {
+    scene.addEventListener('pointerenter', () => scene.classList.add('is-awake'), { once: true });
+  });
+</script>

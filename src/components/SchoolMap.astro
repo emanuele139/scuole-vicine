@@ -1,0 +1,22 @@
+---
+import type { School } from '../lib/catalog';
+import Icon from './Icon.astro';
+interface Props { school: School }
+const { school } = Astro.props;
+const hasPoint = typeof school.lat === 'number' && typeof school.lng === 'number';
+const lat = school.lat ?? 45.4642;
+const lng = school.lng ?? 9.19;
+const bbox = [lng - 0.0045, lat - 0.003, lng + 0.0045, lat + 0.003].join(',');
+const osm = new URL('https://www.openstreetmap.org/export/embed.html');
+osm.searchParams.set('bbox', bbox);
+osm.searchParams.set('layer', 'mapnik');
+osm.searchParams.set('marker', `${lat},${lng}`);
+const addressQuery = `${school.name}, ${school.address}, Milano`;
+const external = hasPoint ? `https://www.openstreetmap.org/?mlat=${lat}&mlon=${lng}#map=17/${lat}/${lng}` : `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(addressQuery)}`;
+---
+<section class="detail-section location-section" id="dove" aria-labelledby="location-title">
+  <h2 id="location-title">{school.status === 'historical' ? 'La sede nel catalogo storico' : 'Dove si trova'}</h2>
+  <p class="map-address"><Icon name="location" size={17}/>{school.address}, Milano</p>
+  {hasPoint ? <div class="school-location-map" data-private-map={osm.href} data-map-title={`Mappa della posizione di ${school.name}`}><div class="map-privacy-placeholder"><p>Questa mappa usa OpenStreetMap. Per caricarla, consenti le mappe esterne nelle preferenze privacy.</p><button type="button" class="btn" data-privacy-open>Scegli le preferenze</button><a href="/privacy/#mappe">Dati trasmessi al fornitore</a></div></div> : <p>Puoi cercare l’indirizzo sul servizio esterno con “Apri mappa”.</p>}
+  <div class="map-caption"><p>{school.status === 'historical' ? 'La mappa mostra l’indirizzo storico di una scuola di cui è documentata la chiusura. Non conferma una sede attualmente attiva.' : hasPoint ? `La posizione proviene dal censimento ${school.locationYear || 'comunale'}. Prima della visita, chiedi alla scuola quale ingresso usare.` : 'La mappa cerca l’indirizzo della scuola. Il punto proposto non conferma la sede né l’ingresso: chiedi alla scuola dove presentarti prima della visita.'}</p><a href={external} target="_blank" rel="noopener noreferrer">Apri mappa<Icon name="external" size={13}/></a></div>
+</section>

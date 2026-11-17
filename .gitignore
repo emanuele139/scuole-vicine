@@ -1,0 +1,47 @@
+# Dipendenze e output generati
+node_modules/
+dist/
+.astro/
+coverage/
+.DS_Store
+*.log
+__pycache__/
+*.py[cod]
+
+# Credenziali e stato locale
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+!.dev.vars.example
+.wrangler/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+*.pem
+*.key
+
+# Archivi personali e materiali locali: conservati sul disco, esclusi da Git
+/legacy/
+/research/
+/README-CODEX.md
+/regia.json
+/.agents/
+/.codex/
+/.aws/
+/private/
+/backups/
+/exports/
+scuole-milano-family*.json
+
+# Guida al design e dipendenze usate solo dalla guida locale
+/src/pages/design.astro
+/src/data/design-references.ts
+/src/scripts/design-guide.ts
+/src/scripts/design-home-map.ts
+/src/styles/design-guide.css
+/src/styles/design-home-map.css
+/src/components/design/HomeMap.astro
+/src/components/design/MapWidget.astro

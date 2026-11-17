@@ -1,0 +1,14 @@
+---
+import Character from './design/Character.astro';
+import GraphicMark from './design/GraphicMark.astro';
+interface Props { title:string; accent?:string; eyebrow?:string; description?:string; tone?:'iris'|'prato'|'rosa'|'sole'|'paper'; character?:'flower'|'arch'|'book'|'spark'; backHref?:string; backLabel?:string }
+const {title,accent,eyebrow,description,tone='iris',character='flower',backHref,backLabel='Indietro'}=Astro.props;
+const accentIndex=accent ? title.indexOf(accent) : -1;
+const marks={iris:'ribbon',prato:'orbit',rosa:'portal',sole:'asterisk',paper:'orbit'} as const;
+const colors={iris:'#F56A47',prato:'#B8AAF5',rosa:'#F7CB54',sole:'#B8AAF5',paper:'#F56A47'};
+---
+<header class:list={['page-intro',`intro-${tone}`]}>
+  <div class="intro-copy">{backHref&&<a class="intro-back" href={backHref}>← {backLabel}</a>}{eyebrow&&<p class="eyebrow">{eyebrow}</p>}<h1>{accentIndex>=0&&accent ? <>{title.slice(0,accentIndex)}<span class="title-cutout">{accent}</span>{title.slice(accentIndex+accent.length)}</> : title}</h1>{description&&<p class="intro-description">{description}</p>}</div>
+  <GraphicMark kind={marks[tone]} class="intro-graphic"/>
+  <Character kind={character} color={colors[tone]} class="intro-character"/>
+</header>

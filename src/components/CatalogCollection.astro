@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageIntro from './PageIntro.astro';
+import { schools, schoolHref } from '../lib/catalog';
+import { collectionPages, type SeoPage } from '../lib/seo';
+interface Props { page: SeoPage }
+const { page } = Astro.props;
+const members = [...(page.members || [])].sort((a,b) => a.name.localeCompare(b.name, 'it'));
+const municipality = page.path.startsWith('/municipi/');
+const nursery = page.path === '/nidi/';
+const groups = [...new Set(members.map(s => s.serviceType))].map(name => ({name, count: members.filter(s => s.serviceType === name).length}));
+const managements = [...new Set(members.map(s => s.management))].map(name => ({name, count: members.filter(s => s.management === name).length}));
+const historical = members.filter(s => s.status === 'historical').length;
+---
+<Layout title={page.title} description={page.description} active="cerca">
+  <PageIntro title={page.title} eyebrow="IL CATALOGO · MILANO" description={page.description} tone="prato" character="book"/>
+  <div class="prose">
+    <p>Questa raccolta comprende <strong>{members.length} schede di servizio</strong>{municipality ? ' attribuite al Municipio negli elenchi consultati' : nursery ? ' per la prima infanzia' : ' di scuola dell’infanzia'}. Più servizi possono condividere lo stesso edificio.{historical > 0 && <> Include {historical} {historical === 1 ? 'scheda storica con chiusura documentata' : 'schede storiche con chiusura documentata'}, indicate nell’elenco.</>} Ogni scheda riporta fonti, periodo e informazioni da confermare.</p>
+    <p>{municipality ? 'Il Municipio aiuta a circoscrivere la ricerca. Non è un bacino che garantisce l’ammissione: la distanza e l’appartenenza territoriale vanno lette insieme alle regole del servizio.' : nursery ? 'I servizi 0–3 hanno requisiti di età e modalità di frequenza differenti. Le sezioni primavera sono rivolte ai 24–36 mesi. Per le domande comunali, occorre distinguere i nidi a gestione diretta, quelli in appalto e i posti nei servizi privati accreditati.' : 'Gestione, riconoscimento e proposta educativa sono aspetti distinti. Le scuole comunali, statali e private seguono procedure diverse: verifica con il Comune o con la singola scuola come presentare la domanda.'}</p>
+    <p>I cataloghi hanno periodi diversi: per l’infanzia usiamo il censimento comunale 2025/26 e le anagrafi MIM 2026/27; per i servizi 0–3 i registri regionali al 31 ottobre 2026 e gli elenchi comunali 2026/27. Le regole del 2026/27 e i dati storici non confermano condizioni o posti per il 2027/28. <a href="/metodo/">Leggi copertura e metodo</a>.</p>
+  </div>
+  <section class="collection-summary" aria-label="Composizione della raccolta"><div><h2>Tipi di servizio</h2><ul>{groups.map(g => <li>{g.name}: <strong>{g.count}</strong></li>)}</ul></div><div><h2>Gestione</h2><ul>{managements.map(g => <li>{g.name}: <strong>{g.count}</strong></li>)}</ul></div></section>
+  <nav class="collection-navigation" aria-label="Esplora il catalogo"><a href="/">Ricerca per indirizzo e mappa</a>{collectionPages.filter(p => p.path !== page.path).map(p => <a href={p.path}>{p.path.startsWith('/municipi/') ? `Municipio ${p.path.split('/')[2]}` : p.path === '/nidi/' ? 'Nidi e servizi 0–3' : 'Infanzia 3–6'}</a>)}</nav>
+  <section class="full-catalog"><h2>{municipality ? 'Nidi e scuole del Municipio' : 'Tutti i servizi della raccolta'}</h2><p>Apri una scheda per leggere orari, costi, visite e fonti. L’elenco è alfabetico e non è una classifica.</p><div class="catalog-links">{members.map(s => <a href={schoolHref(s)}><strong>{s.name}</strong><span>{s.serviceType} · {s.ageRange} · {s.management}</span><span>{s.address} · {s.municipality ? `Municipio ${s.municipality}` : 'Municipio da verificare'}</span>{s.status === 'historical' && <span>Scheda storica · chiusura documentata</span>}</a>)}</div></section>
+  {!municipality && <p class="notice">{schools.filter(s => s.educationStage === (nursery ? 'nursery' : 'preschool') && s.municipality === null).length} schede di questa fascia non hanno un Municipio verificato: restano in questo elenco e nella ricerca cittadina.</p>}
+  <section class="prose"><h2>Prima di scegliere</h2><p>Chiedi quali voci comprende la retta, quali orari sono effettivamente disponibili e come funziona l’ambientamento. <a href="/guide/">Le guide alla scelta</a> spiegano le differenze tra servizi e aiutano a preparare il colloquio. Per le procedure, consulta <a href="/iscrizioni/">iscrizioni e visite</a>; per gli appuntamenti documentati, <a href="/agenda/">gli open day</a>.</p></section>
+</Layout>

@@ -1,0 +1,3141 @@
+{
+  "checkedAt": "2026-11-17",
+  "scope": "Inventario locale completo degli URL nei JSON di src/data e public/dati. Non equivale alla consultazione delle note legali di ciascun dominio. Le condizioni specifiche dei materiali prevalgono sulle policy generali. URL dei provider e riferimenti nel codice sono trattati separatamente nel rapporto.",
+  "distinctDomainCount": 247,
+  "distinctUrlCount": 1157,
+  "inputFiles": [
+    {
+      "path": "public/dati/approfondimento-nidi.json",
+      "sha256": "c546546cb4313f0f45fdf32378102a7d6e0dc9343e5c4ca9c1f7c831f06962fa"
+    },
+    {
+      "path": "public/dati/copertura-approfondimenti.json",
+      "sha256": "0b5d5e0d4c61181d745e86a5d891f62d87a23f673f6bc268617685f1e6a391f0"
+    },
+    {
+      "path": "public/dati/copertura-nidi.json",
+      "sha256": "ca2a60c7d4beb4e17489aa9fdfb32714933ee565004846ac3a5b0a6621a7917c"
+    },
+    {
+      "path": "public/dati/rapporto-riconciliazione.json",
+      "sha256": "21f27139258fc4a1cba1161e0c2b8157b3d5ce43a3d14a4fe8ec5a62cec1a007"
+    },
+    {
+      "path": "public/dati/secondo-passaggio.json",
+      "sha256": "20974aeea2ba497fbab7fa384c53215448b2861f44fcdd0c7ca7f5119a79cf75"
+    },
+    {
+      "path": "src/data/catalog-client.json",
+      "sha256": "5d7686e1a814d563021203842b40a4aa45f5ba07bc6c49525db64e63eb54b446"
+    },
+    {
+      "path": "src/data/guides.json",
+      "sha256": "e8a1f54e933b1a03cefe51054a6710a463f32805d04f96f209c7fbc7fd52977d"
+    },
+    {
+      "path": "src/data/milan-boundary.json",
+      "sha256": "88562d37fea46808ddbacc713d0f42fafbb620dc4baa57f86b49a94c15109c1e"
+    },
+    {
+      "path": "src/data/nurseries-client.json",
+      "sha256": "64846e80dc54b180f99daf982b26a182416888ad7677d0a28ebe6b152e2a39e0"
+    },
+    {
+      "path": "src/data/nurseries.json",
+      "sha256": "caddf13a05b68b7cc5e98ce24f151e0463b1ba1b9f8beee66806724eacb81d4e"
+    },
+    {
+      "path": "src/data/nursery-research-coverage.json",
+      "sha256": "c546546cb4313f0f45fdf32378102a7d6e0dc9343e5c4ca9c1f7c831f06962fa"
+    },
+    {
+      "path": "src/data/reconciliation-report.json",
+      "sha256": "21f27139258fc4a1cba1161e0c2b8157b3d5ce43a3d14a4fe8ec5a62cec1a007"
+    },
+    {
+      "path": "src/data/research-coverage.json",
+      "sha256": "0b5d5e0d4c61181d745e86a5d891f62d87a23f673f6bc268617685f1e6a391f0"
+    },
+    {
+      "path": "src/data/schools.json",
+      "sha256": "f9a63a30b4f6e7a62d30127f7d2e9c38e95040ce1754b2876b4cb51f99cd7b07"
+    },
+    {
+      "path": "src/data/second-pass-report.json",
+      "sha256": "20974aeea2ba497fbab7fa384c53215448b2861f44fcdd0c7ca7f5119a79cf75"
+    }
+  ],
+  "domains": [
+    {
+      "domain": "aldia.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "andersenschool.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "asilobianco.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "asilominiclubscoobymilano.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "asilonidoalieradici.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "asilonidobabyjungle.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "asilonidoilboscodellefiabe.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "asilopapaveriepapere.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "assonidifamily.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries-client.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "bambinibicocca.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "bsm.openapply.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "chezauaasilonido.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "chicchini.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "cocchetti.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "comune.ravenna.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "src/data/guides.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "consorziopan.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "contattaci.bdcschool.eu",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "corjesumilano.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "crescendoinsieme.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "dati.comune.milano.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/copertura-nidi.json",
+        "public/dati/rapporto-riconciliazione.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/reconciliation-report.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "dataset-specific-metadata-verified",
+      "family": "municipal-open-data"
+    },
+    {
+      "domain": "dati.istruzione.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/rapporto-riconciliazione.json",
+        "src/data/reconciliation-report.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json"
+      ],
+      "status": "open-dataset-policy-verified",
+      "family": "mim-iodl"
+    },
+    {
+      "domain": "def.finanze.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "src/data/guides.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "dragonfly.school",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "familosophy.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "figino.betlem.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "gaianido.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "gonzaga-milano.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "icnazariosauro.edu.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "icperasso.edu.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "icviapalmieri.edu.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "ilgiardinodeglielfi.eu",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "ilgiardinodeinavigli.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "infanzia.parrocchiadiprecotto.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "istitutoachillericci.net",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "istitutoic.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "koinecoopsociale.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "lacasadeltempofelice.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "lacompagniadeibirichini.it",
+      "distinctUrlCount": 7,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "lagiocomotiva.it",
+      "distinctUrlCount": 13,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "liberascuola-rudolfsteiner.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "liberidisognaremilano.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "marcellinepiazzacaserta.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "milano.scuolededalo.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "mondohellobaby.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "municipio7milano.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "src/data/schools.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "nidoipulcini.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "nidolecoccole.wixsite.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "nidomagnolia.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "nidoscuolainsideout.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "nuovaeducazione.it",
+      "distinctUrlCount": 7,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "orsanidiinsieme.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "orsolinemerici.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "osc-mi.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "partecipazione.comune.milano.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "pgt.comune.milano.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "specific-document-terms-not-verified",
+      "family": "institutional-subdomain"
+    },
+    {
+      "domain": "primaveragiardinodinfanzia.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "qf11.squarespace.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "qiqajon.org",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "resources.finalsite.net",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "santagiuliana.edu.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "santiprofeti.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "scuoladellinfanzia.donorionemilano.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "scuoladelmerkos.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "scuolaebraicamilano.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "scuolaegiziana.com",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "scuolainfanzianaviglio.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/guides.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "scuolainfanziassinnocenti.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/guides.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "scuolamontessori.com",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "scuolamontessorimilano.eu",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "scuolareginamundi.it",
+      "distinctUrlCount": 11,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "scuolasteinermilano.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "scuolasvizzera.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "scuolatoselli.ffcim.org",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "scuole-cubesps.preziosine.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "scuolesantanna.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "servizi2.inps.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "src/data/guides.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "servizicrm.comune.milano.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "src/data/guides.json"
+      ],
+      "status": "specific-document-terms-not-verified",
+      "family": "institutional-subdomain"
+    },
+    {
+      "domain": "stlouis.openapply.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "tangirino.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.ape-amorepereducare.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.arcobalenoasilonido.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.asiloinfantileaffori.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.asilolacasadeibalocchi.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.asilonidogiardinodeicolori.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.asilonidohappiness.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.asilonidoilgrandealbero.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.asilonidolacaricadei101.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.asilonidolagiostranelparco.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.asilonidomemo.com",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.asilonidosullalbero.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.asilorattiwelcher.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.asiloreginadicuori.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.asilounoduetre.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.assonidi.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.assonidifamiglia.com",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.ats-milano.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "src/data/guides.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.babilandia.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.baby-farm.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.babygrillo.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.bambinibicocca.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "src/data/schools.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.bandi.regione.lombardia.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "src/data/guides.json"
+      ],
+      "status": "specific-document-terms-not-verified",
+      "family": "institutional-subdomain"
+    },
+    {
+      "domain": "www.bausette.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.bdcschool.eu",
+      "distinctUrlCount": 7,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.beataverginemilano.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.bebek.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.beschool.eu",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.bhu-m.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.bimballegri.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.bolchinicascinacorba.org",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.bricioline.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.britishschoolmilan.com",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.cabrini105.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.canadianschool.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.casadeibambinivirgillito.com",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.centroaccoglienzaambrosiano.org",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.coccoleegiochi.eu",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.collegiosancarlo.it",
+      "distinctUrlCount": 7,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.comprensivosantambrogio.edu.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.comune.milano.it",
+      "distinctUrlCount": 362,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/copertura-nidi.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/guides.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "general-reuse-policy-verified-exceptions-apply",
+      "family": "municipal-web"
+    },
+    {
+      "domain": "www.crescereinsieme.org",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.deacooperativa.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.dsmailand.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.educare-center.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.elior.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.faesmilano.it",
+      "distinctUrlCount": 9,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/copertura-nidi.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.familydistrict.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.fattoriadidatticaapepe.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.figliedelloratorio.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.fondazioneaquilone.org",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.fondazionegrossman.org",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.fondazionemandellirodari.org",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.gio23.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.gliamicidipooh.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.google.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/secondo-passaggio.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.happychild.it",
+      "distinctUrlCount": 21,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.hocus-lotus.edu",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.i2leocorni.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icarbezara.edu.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icbrunomunari.edu.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.iccappelli.edu.it",
+      "distinctUrlCount": 8,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icoccolotti.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icsaldamerini.edu.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icsbarozzi.edu.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icscantu.edu.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icscialoia.edu.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icsdonorione.edu.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icsgattamelata.edu.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icsitalocalvino.edu.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icsmilan.com",
+      "distinctUrlCount": 13,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries-client.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icsmorantefilzi.edu.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icsorelleagazzi.edu.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icspertinimilano.edu.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.icvialinneo.edu.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.idiscoletti.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.ilgiardinodibez.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.ilmondodioz.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.ilnanogigante.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.ilnidodialilu.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.ilnidodibebe.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.ilpaesedeibalocchi-isc.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.ilpesciolino.net",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.ilsorriso.milano.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.ilsorrisodeipulcini.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.imcmilano.it",
+      "distinctUrlCount": 7,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/guides.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.improntas.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.inps.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "src/data/guides.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.istitutocadorna.edu.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.istitutocomprensivoborsi.edu.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.istitutoic.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.istitutoinfantilecrescenzago.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.istitutoleopardi.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.istitutolucianomanara.edu.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.istitutomadrebucchi.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.istruzioneer.gov.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "src/data/guides.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.istruzioneliguria.gov.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "src/data/guides.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.istsanpaolo.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.josef-tehillot.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.kikollelab.com",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.labalenablu.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.lacasettadimarzapane.com",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.lacattedrale.eu",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.laculladielauis.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.lalocomotivadimomo.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.lapuperia.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.lascuolainternational-it.org",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.lazolla.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.lecoccoledimari.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.leonexiii.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.liloom.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.limontadonzelli.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.lsmi.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.marcellinequadronno.it",
+      "distinctUrlCount": 9,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/nurseries-client.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.marcellinetommaseo.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.milanoristorazione.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "src/data/guides.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.milanworldschool.com",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.mileschool.it",
+      "distinctUrlCount": 7,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries-client.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.mim.gov.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.mitades.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.montessori-milano.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/guides.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.montessoribilingue.it",
+      "distinctUrlCount": 7,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.montessorimilano.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.mosaico-cem.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.mtcalcutta.edu.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.nidodimilano.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.nidofamigliasoambidu.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.nidoinfanzia.com",
+      "distinctUrlCount": 7,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.nidopiccoliamici.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.nidoquadrifoglio.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.nidoscuolaclorofilla.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.nidoscuolajacaranda.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.osc-mi.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.parlamento.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "src/data/guides.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.pedagogia.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.piccoleorme.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.piccolisorrisi.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.polimi.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.primariainfanziagaregnano.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.puntinocolorato.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.reginacarmeli.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.regione.lombardia.it",
+      "distinctUrlCount": 31,
+      "files": [
+        "public/dati/copertura-nidi.json",
+        "src/data/guides.json",
+        "src/data/nurseries.json"
+      ],
+      "status": "specific-license-unconfirmed-no-reuse-prohibition-established",
+      "family": "regional-registers",
+      "note": "Valutare art. 52 CAD e condizioni applicabili al singolo dato. Nessuna conclusione automatica di divieto dalle riserve generali del sito."
+    },
+    {
+      "domain": "www.sacrocuore.org",
+      "distinctUrlCount": 7,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.sangiuseppemilano.org",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.santelenamilano.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.scuolabonvesin.it",
+      "distinctUrlCount": 7,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.scuolacometa.it",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.scuolaeuropa.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.scuolainfanziaredentore.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.scuolainfanziasalvadori.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.scuolamariaconsolatrice.org",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.scuolamariaimmacolata.org",
+      "distinctUrlCount": 9,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.scuolarossello.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.scuolasantagemma.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.scuolasteinermilano.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.scuolesantangela.it",
+      "distinctUrlCount": 5,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.scuolesantanna.it",
+      "distinctUrlCount": 8,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.stjosephinternational.com",
+      "distinctUrlCount": 3,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.stlouisschool.com",
+      "distinctUrlCount": 7,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.suffragio.it",
+      "distinctUrlCount": 9,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/catalog-client.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.suoremantellate.org",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.teddylabmilano.com",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.thegivingtree.it",
+      "distinctUrlCount": 6,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "public/dati/copertura-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.themagicbarn.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.tomoro.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.unimi.it",
+      "distinctUrlCount": 1,
+      "files": [
+        "public/dati/approfondimento-nidi.json",
+        "src/data/nurseries.json",
+        "src/data/nursery-research-coverage.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.unimib.it",
+      "distinctUrlCount": 4,
+      "files": [
+        "public/dati/copertura-approfondimenti.json",
+        "public/dati/secondo-passaggio.json",
+        "src/data/research-coverage.json",
+        "src/data/schools.json",
+        "src/data/second-pass-report.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www.uppa.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "src/data/guides.json"
+      ],
+      "status": "individual-source-license-not-verified",
+      "family": "other-sources"
+    },
+    {
+      "domain": "www2.comune.milano.it",
+      "distinctUrlCount": 2,
+      "files": [
+        "src/data/guides.json"
+      ],
+      "status": "specific-document-terms-not-verified",
+      "family": "institutional-subdomain"
+    }
+  ]
+}

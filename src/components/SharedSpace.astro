@@ -1,0 +1,23 @@
+<section class="shared-panel" data-shared-panel aria-labelledby="shared-title">
+  <div><span class="family-eyebrow">Senza registrazione</span><h2 id="shared-title">Scegli insieme</h2><p data-shared-status role="status" aria-live="polite">Le scuole salvate e gli appunti restano su questo dispositivo.</p><p data-shared-expiry></p><p data-shared-error role="alert" hidden></p></div>
+  <div class="shared-actions">
+    <button class="family-primary" data-shared-create type="button">Condividi spazio</button>
+    <button class="family-primary" data-shared-incoming type="button" hidden>Apri anteprima del link ricevuto</button>
+    <button class="family-secondary" data-shared-link type="button" hidden>Link e codice QR</button>
+    <button class="family-secondary" data-shared-sync type="button" hidden>Sincronizza</button>
+    <button class="family-primary" data-shared-conflicts type="button" hidden>Confronta modifiche</button>
+    <details class="shared-manage" data-shared-manage hidden><summary>Gestisci spazio</summary><div class="shared-actions">
+    <button class="family-secondary" data-shared-add-local type="button" hidden>Aggiungi la mia copia locale</button>
+    <button class="family-secondary" data-shared-drafts type="button" hidden>Recupera altre bozze</button>
+    <button class="family-secondary" data-shared-leave type="button" hidden>Torna alla copia locale</button>
+    <button class="family-secondary" data-shared-delete type="button" hidden>Elimina spazio condiviso</button>
+    </div></details>
+  </div>
+</section>
+<dialog class="family-dialog shared-dialog" data-shared-dialog aria-labelledby="shared-dialog-title">
+  <div class="dialog-top"><span class="family-eyebrow">Spazio condiviso</span><button type="button" data-shared-close aria-label="Chiudi">×</button></div>
+  <h2 id="shared-dialog-title"></h2>
+  <div data-shared-content></div>
+  <p data-shared-dialog-error role="alert"></p>
+  <div class="dialog-actions"><button class="family-secondary" data-shared-close type="button">Chiudi</button><button class="family-primary" data-shared-confirm type="button" hidden>Conferma</button></div>
+</dialog>

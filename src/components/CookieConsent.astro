@@ -1,0 +1,25 @@
+---
+import CookieCharacter from './design/CookieCharacter.astro';
+import { analyticsEnabled, privacy } from '../data/privacy';
+import '../styles/privacy.css';
+---
+<aside id="cookie-banner" class="cookie-banner" aria-labelledby="cookie-title" hidden data-analytics-enabled={String(analyticsEnabled)} data-umami-script={analyticsEnabled ? privacy.umamiScript : ''} data-umami-id={analyticsEnabled ? privacy.umamiId : ''}>
+  <CookieCharacter/>
+  <div class="cookie-copy"><p class="eyebrow">LA SCELTA È TUA</p><h2 id="cookie-title">Un biscotto, poche scelte.</h2>
+    <p>Usiamo memorie tecniche per le funzioni che richiedi. Con il tuo consenso attiviamo le mappe esterne e{analyticsEnabled ? ' le statistiche Umami senza cookie' : ', quando configurate, le statistiche Umami senza cookie'}. Puoi rifiutare e continuare a usare il sito.</p>
+    <p class="cookie-note">Chiudere con la X equivale a rifiutare gli strumenti facoltativi. <a href="/privacy/">Informativa privacy e cookie</a></p>
+    <div class="cookie-actions"><button type="button" data-consent-reject>Rifiuta tutti</button><button type="button" data-consent-accept>Accetta tutti</button><button type="button" data-privacy-open>Personalizza</button></div>
+  </div>
+  <button type="button" class="cookie-close" data-consent-reject aria-label="Chiudi e rifiuta gli strumenti facoltativi">×</button>
+</aside>
+<dialog id="privacy-preferences" class="privacy-dialog" aria-labelledby="privacy-title" aria-describedby="privacy-description">
+  <div class="privacy-dialog-top"><CookieCharacter/><button type="button" class="cookie-close" data-privacy-close aria-label="Chiudi senza modificare le preferenze">×</button><p class="eyebrow">IL TUO SPAZIO, LE TUE SCELTE</p><h2 id="privacy-title">Preferenze privacy</h2></div>
+  <p id="privacy-description">Le opzioni facoltative partono disattivate. Puoi cambiare idea in ogni momento dal footer. <a href="/privacy/">Leggi l’informativa completa</a>.</p>
+  <div class="privacy-option"><div><strong>Funzioni tecniche</strong><p>Scuole salvate, appunti e preferenze sul dispositivo; sincronizzazione solo se richiesta.</p></div><span>Sempre attive</span></div>
+  <label class="privacy-option" for="consent-analytics"><div><strong>Statistiche · Umami</strong><p>Visite alle pagine pubbliche, dispositivo e provenienza geografica approssimativa. Nessun appunto, indirizzo cercato o link segreto.{!analyticsEnabled && ' Umami non è ancora attivo.'}</p></div><input id="consent-analytics" type="checkbox" disabled={!analyticsEnabled}/></label>
+  <label class="privacy-option" for="consent-maps"><div><strong>Mappe esterne</strong><p>OpenStreetMap e OpenFreeMap ricevono IP e area visualizzata. Se rifiuti, nella ricerca resta una mappa schematica locale.</p></div><input id="consent-maps" type="checkbox"/></label>
+  <p class="cookie-note">La ricerca indirizzi usa Photon solo quando digiti un indirizzo, come spiegato accanto al campo. Nessuna pubblicità o profilazione commerciale.</p>
+  <p id="privacy-storage-status" role="status" aria-live="polite"></p>
+  <div class="cookie-actions"><button type="button" data-consent-reject>Rifiuta tutti</button><button type="button" data-consent-accept>Accetta tutti</button><button type="button" data-consent-save>Salva preferenze</button></div>
+</dialog>
+<script src="../scripts/privacy.ts"></script>

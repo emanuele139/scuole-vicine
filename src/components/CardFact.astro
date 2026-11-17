@@ -1,0 +1,17 @@
+---
+import type { FieldEvidence } from '../lib/catalog';
+import { catalogText } from '../lib/catalog-copy';
+interface Props { id:string; label:string; value?:string|null; evidence?:FieldEvidence; href:string; previousYear?:string|null }
+const {id,label,value,evidence,href,previousYear}=Astro.props;
+const labels={verified:'Fonte della sede','operator-rule':'Indicazione del gestore','prior-research':'Ricerca precedente','needs-confirmation':'Da confermare','not-published':'Non pubblicato','not-found':'Non trovato',blocked:'Fonte non accessibile'};
+// The source and period remain beside the fact; put the actual information first.
+const commonPrefix=`Rete comunale ${evidence?.year}: `;
+const municipal=evidence?.status==='operator-rule'&&!!evidence.year&&value?.startsWith(commonPrefix);
+const status=municipal ? 'Indicazione comunale' : evidence ? labels[evidence.status] : value ? (previousYear?'Ricerca precedente':'Da confermare') : 'Informazione da verificare';
+const year=evidence?.year || (!evidence ? previousYear : null);
+const text=catalogText(municipal ? value?.slice(commonPrefix.length) : value);
+---
+<details class:list={['school-fact',{'fact-uncertain':evidence?.status==='needs-confirmation'}]} data-card-fact={id}>
+  <summary><span class="fact-label">{label}</span><span class="fact-copy"><span class:list={['fact-preview',{'fact-unknown':!text}]}>{text || 'Da chiedere alla scuola'}</span><span class="fact-meta">{status}{year&&<> · {year}</>}</span></span><span class="fact-expand" aria-hidden="true">+</span></summary>
+  <div class="fact-detail">{!text&&<p>Il dato mancante non indica che il servizio sia assente.</p>}<a href={href}>Leggi nella scheda →</a>{evidence?.sourceUrls[0]&&<a href={evidence.sourceUrls[0]} target="_blank" rel="noopener noreferrer">Fonte ↗</a>}</div>
+</details>

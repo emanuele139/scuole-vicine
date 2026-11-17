@@ -1,0 +1,26 @@
+---
+import Icon from './Icon.astro';
+---
+<dialog id="school-report-dialog" class="family-dialog report-dialog" aria-labelledby="report-title" aria-describedby="report-school-name">
+  <div class="dialog-top"><p class="eyebrow">Aiutaci a migliorare</p><button type="button" data-report-close aria-label="Chiudi segnalazione"><Icon name="close" /></button></div>
+  <h2 id="report-title">Segnala un problema</h2>
+  <p id="report-school-name"></p>
+  <form data-report-form>
+    <label for="report-category">Cosa vuoi segnalare?
+      <select id="report-category" name="category" required>
+        <option value="">Scegli un motivo</option>
+        <option value="closed">Scuola chiusa</option>
+        <option value="hours">Orari sbagliati</option>
+        <option value="address">Indirizzo sbagliato</option>
+        <option value="other">Altro</option>
+      </select>
+    </label>
+    <label for="report-details"><span data-report-details-label>Dettagli (facoltativi)</span><textarea id="report-details" name="details" rows="4" maxlength="3000" placeholder="Descrivi cosa va corretto. Se puoi, aggiungi un link alla fonte."></textarea></label>
+    <label for="report-email">La tua email (obbligatoria)<input id="report-email" name="email" type="email" autocomplete="email" required maxlength="254" aria-describedby="report-email-help" /></label>
+    <p id="report-email-help" class="report-help">Useremo la tua email solo per chiederti un chiarimento sulla segnalazione o per ringraziarti. Non verrà pubblicata. La segnalazione e l’email saranno conservate per un massimo di 12 mesi.</p>
+    <p class="report-help">Non inserire dati personali di bambini o di altre persone. <a href="/privacy/#segnalazioni">Informativa sulle segnalazioni</a>.</p>
+    <p data-report-status role="status" aria-live="polite" hidden></p>
+    <div class="dialog-actions"><button type="button" class="btn btn-secondary" data-report-close>Annulla</button><button type="submit" class="btn btn-primary">Invia segnalazione</button></div>
+  </form>
+  <div data-report-success hidden><p role="status">Grazie! Abbiamo ricevuto la tua segnalazione. La verificheremo prima di aggiornare la scheda.</p><div class="dialog-actions"><button type="button" class="btn btn-primary" data-report-close>Chiudi</button></div></div>
+</dialog>

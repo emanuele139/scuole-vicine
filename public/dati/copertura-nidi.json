@@ -1,0 +1,245 @@
+{
+  "byManagement": {
+    "Comunale": 181,
+    "Da verificare": 100,
+    "Privata": 150
+  },
+  "byServiceType": {
+    "Centro prima infanzia": 6,
+    "Micronido": 17,
+    "Nido d’infanzia": 349,
+    "Nido famiglia": 14,
+    "Sezione primavera": 45
+  },
+  "checkedAt": "2026-11-16",
+  "confirmedMunicipalAccess": 240,
+  "geolocated": 275,
+  "geolocatedCurrent": 218,
+  "geolocatedHistorical": 57,
+  "historicalMunicipality": 55,
+  "limits": [
+    "Il totale conta schede di servizio, non edifici o sedi fisiche uniche. Nido e primavera possono condividere indirizzo e gestori possono avere più unità registrate allo stesso civico.",
+    "Registri regionali al 31/10/2026 e offerta comunale 2026/27: nessuna conferma automatica per il 2027/28.",
+    "Le convenzioni sono documentate solo per le sedi presenti negli allegati comunali. Le altre non sono considerate automaticamente private, non accreditate o escluse dal canale comunale.",
+    "45 sezioni primavera comunali aggiunte separatamente: la fonte regionale NIDI non censisce sistematicamente questo tipo di servizio.",
+    "Coordinate Geoschool 2026/27 quando servizio e civico corrispondono; solo in assenza di corrispondenza attuale, DS47 storico 2018/19 con indirizzo completo esatto. Nessuna geocodifica approssimata.",
+    "Municipio e NIL storici sono riusati solo per gli stessi indirizzi completi e civici ammessi per le coordinate DS47 2018/19, con Municipio valido e concordante. Le attribuzioni storiche sono esplicitamente segnalate.",
+    "Nessuna retta, tariffa, probabilità di ammissione, posto libero o appuntamento attribuito dal registro.",
+    "Nido famiglia: omesso il nome del gestore per evitare esposizione non necessaria di persone fisiche; registri intenzionalmente pubblicati dalla Regione."
+  ],
+  "municipalRecords": 240,
+  "regionalRecords": 385,
+  "regionalRegisterDate": "2026-10-31",
+  "researchCoverage": {
+    "checkedAt": "2026-11-16",
+    "events": 6,
+    "numericCostRecords": 205,
+    "officialLinks": 376,
+    "reviewed": 431,
+    "schoolSpecificDetails": 337
+  },
+  "researchLocationConflicts": [
+    {
+      "id": "nido-cudes-047482",
+      "sourceUrls": [
+        "https://www.polimi.it/campus-e-servizi/pari-opportunita-e-inclusione/supporto-alla-genitorialita/asili-nido-e-altri-servizi",
+        "https://www.polimi.it/fileadmin/user_upload/campus-e-servizi/pari-opportunit%C3%A0-e-inclusione/supporto-alla-genitorialit%C3%A0/Asili_nido/2026/PoliMi_BANDO_NIDI_a.e._2026_2027_def.pdf"
+      ],
+      "warnings": [
+        "Il Politecnico indica micronido Bovisa in via Candiani 72; il registro riporta Durando 10. Verificare la sede prima della visita."
+      ]
+    },
+    {
+      "id": "nido-cudes-051156",
+      "sourceUrls": [
+        "https://www.thegivingtree.it/asilo-nido-bilingue-milano-dina-galli/"
+      ],
+      "warnings": [
+        "Il sito del gestore presenta Boscaiola in via Dina Galli 1, mentre il registro indica via della Boscaiola 26: confermare l’indirizzo e l’ingresso."
+      ]
+    },
+    {
+      "id": "nido-cudes-056080",
+      "sourceUrls": [
+        "https://www.faesmilano.it/aurora/"
+      ],
+      "warnings": [
+        "La pagina ufficiale indica FAES Aurora in via dei Contarini 4, mentre il registro riporta via Amadeo 11. Verificare sede e ingresso del nido."
+      ]
+    },
+    {
+      "id": "nido-cudes-057149",
+      "sourceUrls": [
+        "https://www.asilonidosullalbero.it/tariffe/"
+      ],
+      "warnings": [
+        "Il sito del gestore indica ora via Gallarate 122, mentre il registro riporta via Lucilio Gaio 9. Non sono attribuiti al vecchio indirizzo gli orari del nuovo sito, che presenta anche due indicazioni di apertura discordanti (7:30 e 8:00). Verificare sede e orari."
+      ]
+    }
+  ],
+  "sameAddressRegionalGroups": [
+    {
+      "address": "PIAZZA SANTISSIMA TRINITA 5",
+      "cudes": [
+        "054875",
+        "052436"
+      ]
+    },
+    {
+      "address": "VIA ANTONIO ALDINI 52",
+      "cudes": [
+        "067713",
+        "086828"
+      ]
+    },
+    {
+      "address": "VIA BRONZINO 1",
+      "cudes": [
+        "049700",
+        "055364"
+      ]
+    },
+    {
+      "address": "VIA GIUSEPPE GUERZONI 40",
+      "cudes": [
+        "048730",
+        "052414"
+      ]
+    },
+    {
+      "address": "VIA MELCHIORRE GIOIA 67",
+      "cudes": [
+        "101361",
+        "091159"
+      ]
+    },
+    {
+      "address": "VIA RICCARDO PITTERI 54",
+      "cudes": [
+        "093751",
+        "093750"
+      ]
+    },
+    {
+      "address": "VIA SALASCO 5",
+      "cudes": [
+        "101208",
+        "050494"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "label": "Comune di Milano · coordinate Geoschool",
+      "url": "https://www.comune.milano.it/servizi/scuola/geoschool-trova-nidi-e-scuole-dell-infanzia",
+      "year": "2026/27"
+    },
+    {
+      "label": "Regione Lombardia · registri UdOS",
+      "url": "https://www.regione.lombardia.it/politiche-sociali-e-abitative/strutture-sociali-per-minori,-disabili-e-anziani",
+      "year": "31/10/2026"
+    },
+    {
+      "label": "Comune di Milano · iscrizioni e allegati pubblici",
+      "url": "https://www.comune.milano.it/servizi/scuola/nidi-d-infanzia-e-sezioni-primavera",
+      "year": "2026/27"
+    },
+    {
+      "label": "Comune di Milano · DS47 coordinate storiche",
+      "url": "https://dati.comune.milano.it/dataset/ds47-istruzione-asili-nido-localizzazione-delle-strutture",
+      "year": "2018/19"
+    }
+  ],
+  "total": 431,
+  "unknownAccess": 191,
+  "unknownMunicipality": 136,
+  "unresolvedAddressRecords": [
+    {
+      "id": "nido-comune-feltrinelli-11-temporaneamente-in-via-monte-popera-14",
+      "name": "FELTRINELLI, 11 (temporaneamente in Via Monte Popera, 14)",
+      "warnings": [
+        "Identità non associata in modo univoco a un CUDES del registro regionale."
+      ]
+    },
+    {
+      "id": "nido-comune-nido-guerzoni-40",
+      "name": "Nido Guerzoni, 40",
+      "warnings": [
+        "Il Comune distingue questa sede dal civico con/senza bis. Il registro regionale riporta due CUDES allo stesso civico: associazione individuale non risolta."
+      ]
+    },
+    {
+      "id": "nido-comune-nido-guerzoni-40-bis",
+      "name": "Nido Guerzoni, 40 bis",
+      "warnings": [
+        "Il Comune distingue questa sede dal civico con/senza bis. Il registro regionale riporta due CUDES allo stesso civico: associazione individuale non risolta."
+      ]
+    },
+    {
+      "id": "nido-comune-nido-ss-trinita-5",
+      "name": "Nido SS. Trinità, 5",
+      "warnings": [
+        "Il Comune distingue questa sede dal civico con/senza bis. Il registro regionale riporta due CUDES allo stesso civico: associazione individuale non risolta."
+      ]
+    },
+    {
+      "id": "nido-comune-nido-ss-trinita-5-bis",
+      "name": "Nido SS. Trinità, 5 bis",
+      "warnings": [
+        "Il Comune distingue questa sede dal civico con/senza bis. Il registro regionale riporta due CUDES allo stesso civico: associazione individuale non risolta."
+      ]
+    },
+    {
+      "id": "nido-cudes-048357",
+      "name": "ASILO NIDO HAPPY CHILD - SACCARDO (temporaneamente in Via Dei Canzi, 28)",
+      "warnings": [
+        "Il Comune segnala un trasferimento temporaneo: ASILO NIDO HAPPY CHILD - SACCARDO (temporaneamente in Via Dei Canzi, 28). Verificare la sede prima della visita."
+      ]
+    },
+    {
+      "id": "nido-cudes-048750",
+      "name": "Nido Colletta, 72",
+      "warnings": [
+        "Corrispondenza provvisoria: indirizzo comunale e regionale discordanti (Colletta, 72 / VIA PIETRO COLLETTA 2). Verificare sede e ingresso."
+      ]
+    },
+    {
+      "id": "nido-cudes-054125",
+      "name": "ASILO NIDO PALAZZO REGIONE LOMBARDIA",
+      "warnings": [
+        "Ingressi diversi nelle fonti: Comune via Francesco Restelli 2; registro regionale via Melchiorre Gioia 35. Verificare accesso."
+      ]
+    },
+    {
+      "id": "nido-cudes-056064",
+      "name": "Nido Bergognone, 4/A",
+      "warnings": [
+        "Corrispondenza provvisoria: indirizzo comunale e regionale discordanti (Bergognone, 4/A / VIA AMBROGIO BERGOGNONE 2/4). Verificare sede e ingresso."
+      ]
+    }
+  ],
+  "unresolvedCudesGroups": [
+    {
+      "candidateCudes": [
+        "054875",
+        "052436"
+      ],
+      "handling": "Due schede comunali sostituiscono due record regionali; nessuna associazione CUDES individuale forzata.",
+      "municipalNames": [
+        "Nido SS. Trinità, 5",
+        "Nido SS. Trinità, 5 bis"
+      ]
+    },
+    {
+      "candidateCudes": [
+        "048730",
+        "052414"
+      ],
+      "handling": "Due schede comunali sostituiscono due record regionali; nessuna associazione CUDES individuale forzata.",
+      "municipalNames": [
+        "Nido Guerzoni, 40",
+        "Nido Guerzoni, 40 bis"
+      ]
+    }
+  ]
+}

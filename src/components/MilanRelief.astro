@@ -1,0 +1,76 @@
+---
+import rings from '../data/milan-boundary.json';
+import { schools, managements } from '../lib/catalog';
+import { metroLines, project, projectGrid, smoothPath } from '../lib/milan-map';
+// NIL neighborhood geometry: github.com/codeforgermany/click_that_hood, milan.geojson.
+const palette: Record<string, string[]> = {
+  Comunale: ['#7ed7bb', '#438e80', '#61af98'],
+  Statale: ['#9ebfe9', '#5c7ca8', '#7b9cc5'],
+  Privata: ['#f3ba77', '#b57845', '#d99b5e'],
+  Parentale: ['#e98f99', '#ae5d70', '#cb7784'],
+};
+const inside = (x: number, y: number, ring: number[][]) => {
+  let hit = false;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const [xi, yi] = ring[i], [xj, yj] = ring[j];
+    if (((yi > y) !== (yj > y)) && (x < (xj-xi)*(y-yi)/(yj-yi)+xi)) hit = !hit;
+  }
+  return hit;
+};
+const west = 9.035, north = 45.54, dx = .0047, dy = .0033;
+const located = schools.filter(s => s.lat !== null && s.lng !== null);
+const buckets = new Map<string, typeof schools>();
+for (const school of located) {
+  const key = `${Math.floor((school.lng!-west)/dx)},${Math.floor((north-school.lat!)/dy)}`;
+  buckets.set(key, [...(buckets.get(key) || []), school]);
+}
+const cells = [];
+for (let row = 0; row < 45; row++) for (let col = 0; col < 67; col++) {
+  const lng = west+(col+.5)*dx, lat = north-(row+.5)*dy;
+  const group = buckets.get(`${col},${row}`) || [];
+  if (!group.length && !rings.some(ring => inside(lng,lat,ring))) continue;
+  const type = [...managements].sort((a,b) => group.filter(s=>s.management===b).length-group.filter(s=>s.management===a).length)[0];
+  const height = group.length ? 9 + group.length * 12 : 3;
+  const {x,y} = projectGrid(col,row);
+  const colors = group.length ? palette[type] : ['#dfe4cd','#a0b3ad','#c0ccba'];
+  cells.push({ x, y, height, colors, count:group.length, type, names:group.map(s=>s.name).join(', ') });
+}
+---
+<div class="relief-map">
+  <svg viewBox="0 0 900 650" role="img" aria-labelledby="relief-title relief-description">
+    <title id="relief-title">Milano, un paesaggio di scuole</title>
+    <desc id="relief-description">Mappa a tessere dei quartieri di Milano, con le linee schematiche M1–M5. L’altezza indica il numero di sedi geolocalizzate nella tessera; il colore indica la gestione prevalente: verde comunale, azzurro statale, arancio privata, rosa parentale. {located.length} sedi con coordinate su {schools.length}.</desc>
+    <defs><filter id="terrain-shadow" x="-20%" y="-30%" width="150%" height="170%"><feDropShadow dx="-5" dy="9" stdDeviation="7" flood-color="#101c37" flood-opacity=".5"/></filter><linearGradient id="terrain-light" x2=".7" y2="1"><stop stop-color="#fff" stop-opacity=".17"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient></defs>
+    <g filter="url(#terrain-shadow)" stroke-linejoin="round" stroke-width=".65">
+      {cells.map(({x,y,height:h,colors:c,count,type,names}) => {
+        const liftX=-h*.12,liftY=-h*.38;
+        const a=[x,y],b=[x+9.6,y-.55],d=[x+1,y+9.2],e=[x+10.6,y+8.65];
+        const top=(p:number[])=>`${p[0]+liftX},${p[1]+liftY}`;
+        return <g class:list={['terrain-cell', {'terrain-school':count>0}]} data-terrain-type={count?type:undefined}>
+          <title>{count ? `${count} ${count===1?'scuola':'scuole'} · ${type} prevalente: ${names}` : 'Milano'}</title>
+          <path d={`M${top(a)} L${top(d)} L${d} L${a}Z`} fill={c[1]} stroke={c[1]}/>
+          <path d={`M${top(d)} L${top(e)} L${e} L${d}Z`} fill={c[2]} stroke={c[1]}/>
+          <path d={`M${top(a)} L${top(b)} L${top(e)} L${top(d)}Z`} fill={c[0]} stroke={c[2]}/>
+          <path d={`M${top(a)} L${top(b)} L${top(e)} L${top(d)}Z`} fill="url(#terrain-light)" stroke="none"/>
+        </g>;
+      })}
+    </g>
+    <g class="metro-network" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      {metroLines.map(line => <g><title>{line.name} · tracciato urbano schematico</title>{line.branches.map(branch => {
+        const d = smoothPath(branch.map(([lng,lat]) => {const p=project(lng,lat);return {x:p.x,y:p.y-6};}));
+        return <><path d={d} stroke="#24334b" stroke-width="7" stroke-opacity=".48"/><path d={d} stroke={line.color} stroke-width="3.7"/></>;
+
+      })}</g>)}
+    </g>
+    <g class="map-north" transform="translate(795 125)"><text x="0" y="-17">N</text><path d="M0 0l-5 18 5-4 5 4Z"/></g>
+  </svg>
+  <p class="map-coordinate">45°27′51″ N &nbsp; 9°11′25″ E</p>
+  <div class="metro-legend" aria-label="Linee della metropolitana">{metroLines.map(line=><span style={`--metro-color:${line.color}`}>{line.name}</span>)}<a href="https://www.atm.it/it/AltriServizi/Trasporto/Documents/schema_rete_metro.pdf" target="_blank" rel="noopener">Tracciati schematici ↗</a></div>
+</div>
+<style>
+.relief-map{position:absolute;right:-4%;top:9%;width:78%;height:76%;pointer-events:none}.relief-map svg{width:100%;height:100%;overflow:visible}.terrain-school{pointer-events:auto;transition:opacity .2s}.terrain-school:hover{filter:brightness(1.17)}.map-north text{fill:#d9dfdf;font:9px monospace;letter-spacing:2px}.map-north text{text-anchor:middle}.map-north path{fill:#d9dfdf}.map-coordinate{position:absolute;right:12%;bottom:5%;font:9px monospace;letter-spacing:1.8px;color:#c2cbd3}
+.metro-network{pointer-events:none;filter:drop-shadow(0 2px 1px #17233d55)}.metro-legend{position:absolute;right:16%;bottom:12%;display:flex;align-items:center;gap:5px;pointer-events:auto}.metro-legend>span{display:grid;place-items:center;color:#24334b;background:var(--metro-color);font-size:8px;font-weight:700;border-radius:4px;width:23px;height:18px}.metro-legend>a{color:#d4dbe3;text-decoration:none;font-size:8px;margin-left:5px}.metro-legend>a:hover{text-decoration:underline}
+@media(min-width:1600px){.relief-map{right:0;width:73%}}
+@media(max-width:900px){.relief-map{right:-18%;width:100%;top:20%;height:62%}}
+@media(max-width:600px){.relief-map{right:-14%;width:122%;height:calc(100% - 525px);min-height:200px;top:300px}.map-coordinate{display:none}.metro-legend{top:48px;bottom:auto;right:24%;gap:3px}.metro-legend>span{font-size:7px;width:20px;height:15px}.metro-legend>a{font-size:7px}}
+</style>

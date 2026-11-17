@@ -1,0 +1,7 @@
+---
+import CatalogCollection from '../../components/CatalogCollection.astro';
+import { collectionPages } from '../../lib/seo';
+export function getStaticPaths() { return collectionPages.filter(p => p.path.startsWith('/municipi/')).map(page => ({ params: { municipio: page.path.split('/')[2] }, props: { page } })); }
+const { page } = Astro.props;
+---
+<CatalogCollection page={page}/>

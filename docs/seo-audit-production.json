@@ -1,0 +1,193 @@
+{
+  "mode": "production",
+  "html_pages": 763,
+  "public_content_pages": 760,
+  "school_pages": 735,
+  "sitemap_urls": 760,
+  "internal_links_checked": 42745,
+  "schema_entities": 3793,
+  "markdown_documents": 25,
+  "http_checks": [
+    {
+      "path": "/",
+      "method": "GET",
+      "status": 200,
+      "robots": ""
+    },
+    {
+      "path": "/",
+      "method": "HEAD",
+      "status": 200,
+      "robots": ""
+    },
+    {
+      "path": "/nidi/",
+      "method": "GET",
+      "status": 200,
+      "robots": ""
+    },
+    {
+      "path": "/nidi/",
+      "method": "HEAD",
+      "status": 200,
+      "robots": ""
+    },
+    {
+      "path": "/municipi/7/",
+      "method": "GET",
+      "status": 200,
+      "robots": ""
+    },
+    {
+      "path": "/municipi/7/",
+      "method": "HEAD",
+      "status": 200,
+      "robots": ""
+    },
+    {
+      "path": "/famiglia/",
+      "method": "GET",
+      "status": 200,
+      "robots": "noindex, follow"
+    },
+    {
+      "path": "/famiglia/",
+      "method": "HEAD",
+      "status": 200,
+      "robots": "noindex, follow"
+    },
+    {
+      "path": "/confronto/?ids=mi-1007",
+      "method": "GET",
+      "status": 200,
+      "robots": "noindex, follow"
+    },
+    {
+      "path": "/confronto/?ids=mi-1007",
+      "method": "HEAD",
+      "status": 200,
+      "robots": "noindex, follow"
+    },
+    {
+      "path": "/robots.txt",
+      "method": "GET",
+      "status": 200,
+      "robots": ""
+    },
+    {
+      "path": "/robots.txt",
+      "method": "HEAD",
+      "status": 200,
+      "robots": ""
+    },
+    {
+      "path": "/sitemap.xml",
+      "method": "GET",
+      "status": 200,
+      "robots": ""
+    },
+    {
+      "path": "/sitemap.xml",
+      "method": "HEAD",
+      "status": 200,
+      "robots": ""
+    },
+    {
+      "path": "/llms.txt",
+      "method": "GET",
+      "status": 200,
+      "robots": "noindex, follow"
+    },
+    {
+      "path": "/llms.txt",
+      "method": "HEAD",
+      "status": 200,
+      "robots": "noindex, follow"
+    },
+    {
+      "path": "/social/scuole-vicine.png",
+      "method": "GET",
+      "status": 200,
+      "robots": ""
+    },
+    {
+      "path": "/social/scuole-vicine.png",
+      "method": "HEAD",
+      "status": 200,
+      "robots": ""
+    },
+    {
+      "path": "/questa-pagina-non-esiste-seo/",
+      "method": "GET",
+      "status": 404,
+      "robots": "noindex, follow"
+    },
+    {
+      "path": "/questa-pagina-non-esiste-seo/",
+      "method": "HEAD",
+      "status": 404,
+      "robots": "noindex, follow"
+    },
+    {
+      "path": "/api/nonexistent",
+      "method": "GET",
+      "status": 404,
+      "robots": "noindex, nofollow"
+    },
+    {
+      "path": "/api/nonexistent",
+      "method": "HEAD",
+      "status": 404,
+      "robots": "noindex, nofollow"
+    },
+    {
+      "path": "/api/reports",
+      "method": "GET",
+      "status": 405,
+      "robots": "noindex, nofollow"
+    },
+    {
+      "path": "/api/reports",
+      "method": "HEAD",
+      "status": 405,
+      "robots": "noindex, nofollow"
+    },
+    {
+      "path": "/index.md",
+      "method": "GET",
+      "status": 200,
+      "robots": "noindex, follow"
+    },
+    {
+      "path": "/index.md",
+      "method": "HEAD",
+      "status": 200,
+      "robots": "noindex, follow"
+    },
+    {
+      "path": "/metodo.md",
+      "method": "GET",
+      "status": 200,
+      "robots": "noindex, follow"
+    },
+    {
+      "path": "/metodo.md",
+      "method": "HEAD",
+      "status": 200,
+      "robots": "noindex, follow"
+    },
+    {
+      "path": "/guide/costi-e-isee.md",
+      "method": "GET",
+      "status": 200,
+      "robots": "noindex, follow"
+    },
+    {
+      "path": "/guide/costi-e-isee.md",
+      "method": "HEAD",
+      "status": 200,
+      "robots": "noindex, follow"
+    }
+  ],
+  "errors": []
+}

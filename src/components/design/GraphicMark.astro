@@ -1,0 +1,28 @@
+---
+/** Original ribbon / orbit / mosaic vocabulary derived from the approved moodboard. */
+interface Props { kind?: 'ribbon'|'orbit'|'asterisk'|'portal'; class?:string }
+const {kind='ribbon',class:className=''}=Astro.props;
+---
+<svg class:list={['graphic-mark',`graphic-${kind}`,className]} viewBox="0 0 240 240" fill="none" aria-hidden="true" focusable="false">
+  {kind==='ribbon'&&<>
+    <path d="M26 42h116c60 0 60 72 0 72H89c-60 0-60 79 0 79h119" stroke="currentColor" stroke-width="39"/>
+    <path d="m181 163 33 30-33 29" stroke="currentColor" stroke-width="20" stroke-linecap="square"/>
+    <path d="M27 42h114c59 0 59 72 0 72H90" stroke="#29271F" stroke-width="1.5"/>
+  </>}
+  {kind==='orbit'&&<>
+    <ellipse cx="120" cy="119" rx="96" ry="49" transform="rotate(-38 120 119)" stroke="currentColor" stroke-width="29"/>
+    <ellipse cx="120" cy="119" rx="96" ry="49" transform="rotate(38 120 119)" stroke="#29271F" stroke-width="2"/>
+    <path d="m183 41 9 18 20 3-14 14 2 20-18-10-18 8 4-20-13-15 21-1 7-17Z" fill="#F7CB54" stroke="#29271F" stroke-width="1.5"/>
+  </>}
+  {kind==='asterisk'&&<>
+    <path d="m119 20 14 63 55-33-33 55 65 15-65 15 33 55-55-33-14 63-14-63-55 33 33-55-63-15 63-15-33-55 55 33 14-63Z" fill="currentColor"/>
+    <circle cx="119" cy="120" r="24" fill="#F7F5ED"/>
+    <path d="m174 14 6 24 24 6-24 6-6 24-6-24-24-6 24-6 6-24Z" fill="#29271F"/>
+  </>}
+  {kind==='portal'&&<>
+    <path d="M30 218V111a90 90 0 0 1 180 0v107" stroke="currentColor" stroke-width="38"/>
+    <path d="M65 218V111a55 55 0 0 1 110 0v107" stroke="#29271F" stroke-width="1.5"/>
+    <path d="M43 210h144M43 179h144M43 148h144" stroke="#29271F" stroke-width="1.5"/>
+    <circle cx="120" cy="87" r="12" fill="#F7CB54" stroke="#29271F" stroke-width="1.5"/>
+  </>}
+</svg>

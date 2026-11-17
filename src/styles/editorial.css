@@ -1,0 +1,307 @@
+/* The moodboard's expressive layer. Search, result cards and cartography keep
+   their operational styles. All artwork is original, decorative SVG. */
+.graphic-mark, .learning-world, .brand-mosaic {
+  display: block;
+  pointer-events: none;
+}
+
+/* Kids in Flow / typography posters: paper, an emphatic word, a ribbon scene. */
+.home-hero {
+  background: transparent;
+  border-radius: 0;
+  padding: 30px 24px 48px;
+  min-height: 280px;
+  overflow: visible;
+}
+.hero-copy { max-width: calc(100% - 390px); }
+.hero-copy .eyebrow { margin-bottom: 20px; font-size: 10px; }
+.hero-edition { display: inline-block; margin-right: 9px; font-weight: 800; }
+.hero-copy h1 {
+  max-width: none;
+  font-size: clamp(46px, 4.7vw, 72px);
+  line-height: 1.04;
+  letter-spacing: -.055em;
+}
+.hero-copy h1 em {
+  position: relative;
+  isolation: isolate;
+  white-space: nowrap;
+  text-decoration: none;
+}
+.hero-copy h1 em::before {
+  content: '';
+  position: absolute;
+  inset: 5px -7px 0;
+  background: var(--sole);
+  transform: rotate(-1.5deg);
+  clip-path: polygon(1% 4%, 99% 0, 100% 97%, 0 100%);
+  z-index: -1;
+}
+.hero-copy h1 em::after {
+  content: '';
+  position: absolute;
+  left: -5px; right: -5px; bottom: -6px;
+  height: 6px;
+  border-top: 2px solid var(--ink);
+  border-radius: 50%;
+  transform: rotate(-1deg);
+}
+.hero-description { max-width: 100%; margin-top: 25px; }
+.home-world {
+  position: absolute;
+  right: 0; top: -2px;
+  width: 390px;
+  transform: rotate(-2deg);
+}
+.home-world .learning-world { width: 100%; height: auto; pointer-events: auto; }
+.learning-world.is-awake .world-ball {
+  animation: ball-greeting .7s cubic-bezier(.2,.7,.3,1) both;
+  transform-origin: 348px 267px;
+}
+.learning-world.is-awake .world-pencil {
+  stroke-dasharray: 180;
+  animation: pencil-greeting .8s ease-out both;
+}
+@keyframes ball-greeting {
+  0%,100% { transform: translateY(0); }
+  42% { transform: translateY(-11px) rotate(9deg); }
+  75% { transform: translateY(0) scale(1.06,.94); }
+}
+@keyframes pencil-greeting {
+  from { stroke-dashoffset: 180; }
+  to { stroke-dashoffset: 0; }
+}
+
+/* Multiverse / Teen Talk: cutout words and a recognisable set of graphic marks. */
+.title-cutout {
+  display: inline-block;
+  padding: .015em .1em .07em;
+  margin-inline: .025em;
+  background: var(--ink);
+  color: var(--paper);
+  line-height: .98;
+  transform: rotate(-1.8deg);
+  white-space: nowrap;
+}
+.page-intro { isolation: isolate; }
+.intro-copy { max-width: 76%; }
+.intro-copy h1 { line-height: 1.08; }
+.intro-graphic {
+  position: absolute;
+  width: 210px; height: 210px;
+  right: 48px; bottom: 12px;
+  color: var(--accent);
+  transform: rotate(-11deg);
+  z-index: 0;
+}
+.intro-iris .intro-graphic { color: var(--sole); }
+.intro-prato .intro-graphic { color: #9E8CDC; }
+.intro-sole .intro-graphic { color: var(--accent); }
+.intro-rosa .intro-graphic { color: #B8AAF5; }
+.intro-character {
+  width: 112px; height: 112px;
+  right: 8px; bottom: -10px;
+  z-index: 1;
+}
+.intro-description { max-width: 64ch; }
+
+/* mol / modular information: a numbered doorway into each actual next step. */
+.home-next-steps {
+  grid-template-columns: minmax(0,.95fr) repeat(3,minmax(0,1fr));
+  gap: 16px;
+  border-top: 1px solid var(--ink);
+  padding-top: 30px;
+}
+.home-next-steps>div { padding-right: 20px; }
+.home-next-steps>div h2 { font-size: 38px; line-height: 1.03; }
+.steps-thread { width: 180px; max-width: 90%; height: 68px; margin-top: 25px; }
+.home-next-steps>a {
+  position: relative;
+  padding: 26px;
+  gap: 18px;
+  border-radius: 3px 3px 22px 3px;
+  overflow: hidden;
+}
+.home-next-steps .step-kicker {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  align-items: flex-start;
+  z-index: 1;
+  font-size: 10px;
+  letter-spacing: .08em;
+}
+.step-kicker b {
+  font: 800 54px/.9 var(--display);
+  letter-spacing: -.07em;
+}
+.home-next-steps .graphic-mark {
+  position: absolute;
+  top: 22px; right: 19px;
+  width: 78px; height: 78px;
+  color: var(--ink);
+  transform: rotate(9deg);
+  transition: transform .2s ease-out;
+}
+.home-next-steps>a:hover .graphic-mark { transform: rotate(0deg); }
+.home-next-steps>a>h3 { font-size: 34px; line-height: 1.05; }
+.home-next-steps>a>svg:not(.graphic-mark) { width: 26px; }
+
+/* Guides as editorial covers. The motifs identify modules, never rate schools. */
+.guide-stage-section { scroll-margin-top: 15px; margin-top: 45px; }
+.guide-stage-section>h2 { font-size: 32px; margin-bottom: 23px; }
+.guide-card { border-color: var(--ink); border-radius: 3px 3px 20px 3px; gap: 18px; }
+.guide-cover-number {
+  font: 800 66px/.85 var(--display);
+  letter-spacing: -.08em;
+  padding-bottom: 4px;
+}
+.guide-card .eyebrow { font-size: 11px; }
+.site-page .guide-card h3 {
+  font: 700 40px/1.05 var(--display);
+  letter-spacing: -.04em;
+  max-width: 88%;
+}
+.guide-card .graphic-mark {
+  position: absolute;
+  width: 100px; height: 100px;
+  right: 25px; top: 24px;
+  color: #6551A0;
+  transform: rotate(8deg);
+  transition: transform .2s ease-out;
+}
+.guide-card:nth-child(4n+2) .graphic-mark { color: #32775B; }
+.guide-card:nth-child(4n+3) .graphic-mark { color: #A65078; }
+.guide-card:nth-child(4n) .graphic-mark { color: #A64D32; }
+.guide-card:hover .graphic-mark { transform: rotate(0deg); }
+.guide-card .btn-text { border-top: 1px solid #29271F30; padding-top: 16px; justify-content: space-between; }
+.guide-index { padding: 0; border: 1px solid var(--ink); background: var(--surface); border-radius: 4px; overflow: hidden; }
+.guide-index h2 { padding: 23px 25px; margin: 0; font-size: 27px; }
+.guide-index ol { margin: 0; padding: 0; list-style: none; }
+.guide-index li+li { margin-top: 0; }
+.guide-index a { display: grid; grid-template-columns: 54px minmax(0,1fr) 26px; gap: 18px; align-items: center; min-height: 69px; padding: 0 24px 0 0; border-top: 1px solid var(--line); font-size: 15px; }
+.guide-index a:hover { background: var(--paper); text-decoration: none; }
+.guide-index a:focus-visible { outline-offset: -4px; }
+.guide-index-number { align-self: stretch; display: grid; place-items: center; background: var(--iris); color: var(--ink); font: 700 24px/1 var(--display); letter-spacing: -.06em; min-height: 68px; }
+.guide-index li:nth-child(4n+2) .guide-index-number { background: var(--prato); }
+.guide-index li:nth-child(4n+3) .guide-index-number { background: var(--rosa); }
+.guide-index li:nth-child(4n) .guide-index-number { background: var(--sole); }
+.guide-index-arrow { font: 500 26px/1 var(--display); }
+.answer > h2 { display: grid; grid-template-columns: 33px minmax(0,1fr); gap: 15px; }
+.answer-number { font: 650 15px/1.3 var(--sans); letter-spacing: -.04em; border-bottom: 3px solid var(--iris); padding-bottom: 7px; align-self: start; margin-top: 4px; }
+
+/* The calendar gets its own typographic date, not another mascot. */
+.event-day { background: #F8EBC6; border-radius: 40px 40px 4px 4px; border: 1px solid var(--ink); padding: 17px 8px 12px; }
+.event-day strong { font-size: 48px; font-weight: 800; line-height: 1; letter-spacing: -.06em; margin: 4px 0; }
+.event-day>span { text-transform: uppercase; font-size: 10px; letter-spacing: .07em; }
+.event-month-title { border-bottom-color: var(--ink); }
+
+/* Conference mosaic / Google Labs: a playful edge around a calm link index. */
+.footer-opening h2 { max-width: calc(100% - 200px); font-size: 51px; line-height: 1.02; }
+.footer-opening h2 span { background: var(--paper); padding: 0 .08em .06em; text-decoration: none; display: inline-block; transform: rotate(-2deg); }
+.footer-opening .brand-mosaic { position: absolute; width: 180px; height: 120px; bottom: 2px; right: 0; transform: rotate(3deg); }
+.footer-links strong { display: flex; align-items: center; gap: 10px; font-size: 13px; }
+.footer-links strong::before { content: ''; width: 13px; height: 13px; border-radius: 50% 50% 0 0; background: var(--ink); }
+.footer-links>div:nth-child(2) strong::before { border-radius: 0; transform: rotate(45deg); width: 10px; height: 10px; }
+
+@media(max-width:1200px) {
+  .hero-copy { max-width: calc(100% - 300px); }
+  .hero-copy h1 { font-size: 58px; }
+  .home-world { width: 315px; top: 8px; }
+  .home-next-steps { grid-template-columns: repeat(3,minmax(0,1fr)); }
+  .home-next-steps>div { grid-column: 1/-1; display: flex; align-items: center; justify-content: space-between; padding-right: 0; }
+  .home-next-steps>div h2 { font-size: 36px; }
+  .home-next-steps>div h2 br { display: none; }
+  .steps-thread { margin-top: 0; width: 135px; height: 50px; }
+  .home-next-steps>div .eyebrow { display: none; }
+  .footer-opening h2 { max-width: none; font-size: 43px; }
+  .footer-opening .brand-mosaic { position: static; width: 165px; height: 110px; margin-top: 28px; transform: rotate(-2deg); }
+}
+@media(max-width:1023px) {
+  .home-hero { padding: 26px 20px 44px; min-height: 270px; }
+  .hero-copy { max-width: calc(100% - 210px); }
+  .hero-copy h1 { font-size: 49px; }
+  .home-world { width: 235px; right: -7px; top: 24px; }
+  .hero-description { font-size: 14px; }
+  .intro-graphic { width: 175px; height: 175px; right: 25px; }
+  .intro-character { width: 100px; height: 100px; }
+  .home-next-steps>a { padding: 22px; }
+  .home-next-steps>a>h3 { font-size: 30px; }
+  .home-next-steps .graphic-mark { width: 62px; height: 62px; right: 12px; }
+  .guide-stage-section>h2 { font-size: 29px; }
+  .site-page .guide-card h3 { font-size: 34px; }
+  .guide-card .graphic-mark { width: 83px; height: 83px; right: 17px; }
+  .guide-cover-number { font-size: 58px; }
+}
+@media(max-width:750px) {
+  .intro-copy { max-width: 100%; }
+  .intro-description { max-width: 74%; }
+  .intro-graphic { width: 125px; height: 125px; right: -3px; bottom: 4px; }
+  .intro-character { width: 75px; height: 75px; right: -3px; bottom: -10px; }
+}
+@media(max-width:650px) {
+  .home-hero { margin-top: 12px; padding: 24px 0 49px; min-height: 0; }
+  .hero-copy { max-width: 100%; }
+  .hero-copy .eyebrow { font-size: 9px; letter-spacing: .06em; margin-bottom: 22px; }
+  .hero-edition { margin-right: 4px; }
+  .hero-copy h1 { font-size: 43px; line-height: 1.07; letter-spacing: -.05em; }
+  .hero-copy h1 em::before { inset: 3px -5px 0; }
+  .hero-copy h1 em::after { bottom: -4px; height: 4px; }
+  .hero-description { max-width: 62%; font-size: 13px; line-height: 1.75; margin-top: 22px; }
+  .home-world { width: 132px; top: auto; right: -6px; bottom: 26px; }
+  .title-cutout { padding-inline: .08em; }
+  .intro-graphic { width: 104px; height: 104px; right: -8px; }
+  .intro-character { width: 65px; height: 65px; right: -4px; }
+  .intro-description { max-width: 75%; }
+  .home-next-steps { grid-template-columns: minmax(0,1fr); padding-top: 24px; margin-top: 40px; }
+  .home-next-steps>div h2 { font-size: 34px; max-width: 75%; }
+  .home-next-steps>div h2 br { display: initial; }
+  .steps-thread { width: 66px; max-width: 23%; }
+  .home-next-steps>a { display: flex; padding: 25px; gap: 16px; }
+  .home-next-steps .step-kicker { flex-direction: row; align-items: center; gap: 16px; }
+  .step-kicker b { font-size: 45px; }
+  .home-next-steps .graphic-mark { width: 74px; height: 74px; top: 19px; right: 20px; }
+  .home-next-steps>a>h3 { font-size: 35px; max-width: 90%; }
+  .home-next-steps>a>h3 br { display: none; }
+  .home-next-steps p { max-width: 90%; }
+  .home-next-steps>a>svg:not(.graphic-mark) { align-self: flex-end; margin-top: -7px; }
+  .guide-stage-section { margin-top: 32px; }
+  .guide-stage-section>h2 { font-size: 27px; }
+  .guide-card { padding: 26px; gap: 17px; }
+  .site-page .guide-card h3 { font-size: 35px; max-width: 100%; }
+  .guide-card .graphic-mark { width: 82px; height: 82px; top: 22px; right: 24px; }
+  .guide-cover-number { font-size: 58px; }
+  .guide-index h2 { padding: 22px; font-size: 27px; }
+  .guide-index a { grid-template-columns: 45px minmax(0,1fr) 18px; gap: 13px; padding-right: 13px; font-size: 13px; min-height: 70px; line-height: 1.75; }
+  .guide-index-number { font-size: 22px; }
+  .guide-index-arrow { font-size: 22px; }
+  .answer > h2 { grid-template-columns: 27px minmax(0,1fr); gap: 12px; font-size: 28px; }
+  .answer-number { font-size: 13px; }
+  .event-day { padding: 13px 5px 10px; }
+  .event-day strong { font-size: 36px; }
+  .event-day>span { font-size: 9px; }
+  .footer-opening h2 { font-size: 39px; }
+  .footer-opening .brand-mosaic { width: 144px; height: 96px; margin-top: 25px; }
+}
+@media(max-width:370px) {
+  .hero-copy h1 { font-size: 36px; }
+  .hero-copy .eyebrow { font-size: 8px; }
+  .hero-description { font-size: 12px; max-width: 61%; }
+  .home-world { width: 115px; }
+  .intro-graphic { width: 94px; height: 94px; right: -10px; }
+  .intro-description { max-width: 75%; }
+  .home-next-steps>div h2 { font-size: 30px; }
+  .home-next-steps .step-kicker { font-size: 9px; }
+  .home-next-steps .graphic-mark { width: 58px; height: 58px; right: 16px; }
+  .site-page .guide-card h3 { font-size: 31px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .learning-world *, .graphic-mark { animation: none !important; transition: none !important; }
+}
+@media print {
+  .home-world, .intro-graphic, .graphic-mark, .steps-thread { display: none !important; }
+  .hero-copy { max-width: none; }
+  .title-cutout { background: none; color: #222; transform: none; padding: 0; }
+  .guide-cover-number { font-size: 25pt; }
+  .guide-index-number { background: none !important; border-right: 1px solid #ddd; }
+}

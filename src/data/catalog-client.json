@@ -1,0 +1,6286 @@
+[
+  {
+    "id": "mi-1007",
+    "name": "Arena, 21",
+    "slug": "arena-21-mi-1007",
+    "address": "Via Arena 21",
+    "zone": "Porta Ticinese - Conca Del Naviglio",
+    "municipality": 1,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4544627664,
+    "lng": 9.17800738145,
+    "legacyId": "1007",
+    "code": "MI1A00800C",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA ARENA21"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1001",
+    "name": "Ariberto, 12",
+    "slug": "ariberto-12-mi-1001",
+    "address": "Via Ariberto Da Intimiano 12",
+    "zone": "Magenta - San Vittore",
+    "municipality": 1,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4585125867,
+    "lng": 9.17377692911,
+    "legacyId": "1001",
+    "code": "MI1A55800T",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA ARIBERTO"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1368",
+    "name": "Collegio San Carlo",
+    "slug": "collegio-san-carlo-mi-1368",
+    "address": "Corso Magenta 71",
+    "zone": "Magenta - San Vittore",
+    "municipality": 1,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4655815315,
+    "lng": 9.16977229797,
+    "legacyId": "1368",
+    "code": "MI1A217001",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"COLLEGIO SAN CARLO\""
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-17",
+        "time": "16:30",
+        "source": "https://www.collegiosancarlo.it/parliamo_di_scuola/open-day-2027-2028/",
+        "booking": "Registrazione nel portale ammissioni collegato alla pagina ufficiale",
+        "location": "Corso Magenta 71, Milano",
+        "id": "mi-1368-2026-11-17-1630"
+      }
+    ]
+  },
+  {
+    "id": "mi-1008",
+    "name": "Conti Cicogna",
+    "slug": "conti-cicogna-mi-1008",
+    "address": "Via Vincenzo Bellini 2",
+    "zone": "Guastalla",
+    "municipality": 1,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4655315159,
+    "lng": 9.20448185217,
+    "legacyId": "1008",
+    "code": "MI1A183003",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"CONTI CICOGNA\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1009",
+    "name": "Crivelli, 21",
+    "slug": "crivelli-21-mi-1009",
+    "address": "Via Carlo Crivelli 21",
+    "zone": "Porta Vigentina - Porta Lodovica",
+    "municipality": 1,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4529589307,
+    "lng": 9.194984059,
+    "legacyId": "1009",
+    "code": "MI1A04900P",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CRIVELLI21"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1011",
+    "name": "Dandolo, 5",
+    "slug": "dandolo-5-mi-1011",
+    "address": "Via Enrico Dandolo 5",
+    "zone": "Guastalla",
+    "municipality": 1,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4634042382,
+    "lng": 9.20436709779,
+    "legacyId": "1011",
+    "code": "MI1A05000V",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA DANDOLO5"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1407",
+    "name": "Il Giardino Degli Elfi",
+    "slug": "il-giardino-degli-elfi-mi-1407",
+    "address": "Via Domenico Cirillo 16",
+    "zone": "Sarpi",
+    "municipality": 1,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.4777109941,
+    "lng": 9.17325157278,
+    "legacyId": "1407",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1006",
+    "name": "Istituto Giacomo Leopardi - Sant'Anna",
+    "slug": "istituto-giacomo-leopardi-sant-anna-mi-1006",
+    "address": "Via Arena 13",
+    "zone": "Porta Ticinese - Conca Del Naviglio",
+    "municipality": 1,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4558715769,
+    "lng": 9.17935340899,
+    "legacyId": "1006",
+    "code": "MI1A17700Q",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"S.ANNA - ISTITUTO LEOPARDI"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2027-01-16",
+        "time": "09:30–11:30",
+        "source": "https://www.istitutoleopardi.it/iscrizioni-openday-2026/",
+        "booking": "Prenotazione nel modulo ufficiale, selezionando Infanzia via Arena 13",
+        "location": "Via Arena 13, Milano",
+        "id": "mi-1006-2027-01-16-09301130"
+      },
+      {
+        "date": "2027-01-16",
+        "time": "11:30–13:30",
+        "source": "https://www.istitutoleopardi.it/iscrizioni-openday-2026/",
+        "booking": "Prenotazione nel modulo ufficiale, selezionando Infanzia via Arena 13",
+        "location": "Via Arena 13, Milano",
+        "id": "mi-1006-2027-01-16-11301330"
+      }
+    ]
+  },
+  {
+    "id": "mi-1004",
+    "name": "Madre Cabrini",
+    "slug": "madre-cabrini-mi-1004",
+    "address": "Corso Di Porta Romana 105",
+    "zone": "Guastalla",
+    "municipality": 1,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4542760424,
+    "lng": 9.19892409768,
+    "legacyId": "1004",
+    "code": "MI1A22800B",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"MADRE CABRINI\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1418",
+    "name": "Milan World School",
+    "slug": "milan-world-school-mi-1418",
+    "address": "Via Della Chiusa 9",
+    "zone": "Duomo",
+    "municipality": 1,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.457846245,
+    "lng": 9.18449821333,
+    "legacyId": "1418",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1034",
+    "name": "Montessori S.R.L",
+    "slug": "montessori-s-r-l-mi-1034",
+    "address": "Via Milazzo 7/9",
+    "zone": "Brera",
+    "municipality": 1,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1034",
+    "code": "MI1A22000R",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"CASA DEI BAMBINI MONTESSORI\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1035",
+    "name": "Nuova Educazione",
+    "slug": "nuova-educazione-mi-1035",
+    "address": "Via Pace 10",
+    "zone": "Guastalla",
+    "municipality": 1,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4588076258,
+    "lng": 9.20294814951,
+    "legacyId": "1035",
+    "code": "MI1A55900N",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA NUOVA EDUCAZIONE"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-21",
+        "time": "11:00–13:00",
+        "source": "https://nuovaeducazione.it/open-day-scuola-primaria-e-infanzia-2026-2027-nuova-educazione/",
+        "booking": "Prenotazione nella sezione infanzia della pagina ufficiale",
+        "location": "Via Pace 10, Milano",
+        "id": "mi-1035-2026-11-21-11001300"
+      },
+      {
+        "date": "2027-01-16",
+        "time": "11:00–13:00",
+        "source": "https://nuovaeducazione.it/open-day-scuola-primaria-e-infanzia-2026-2027-nuova-educazione/",
+        "booking": "Prenotazione nella sezione infanzia della pagina ufficiale",
+        "location": "Via Pace 10, Milano",
+        "id": "mi-1035-2027-01-16-11001300"
+      },
+      {
+        "date": "2027-02-06",
+        "time": "10:30–12:30",
+        "source": "https://nuovaeducazione.it/open-day-scuola-primaria-e-infanzia-2026-2027-nuova-educazione/",
+        "booking": "Prenotazione nella sezione infanzia della pagina ufficiale",
+        "location": "Via Pace 10, Milano",
+        "id": "mi-1035-2027-02-06-10301230"
+      },
+      {
+        "date": "2027-03-11",
+        "time": "18:00–19:00",
+        "source": "https://nuovaeducazione.it/open-day-scuola-primaria-e-infanzia-2026-2027-nuova-educazione/",
+        "booking": "Prenotazione nella sezione infanzia della pagina ufficiale",
+        "location": "Via Pace 10, Milano",
+        "id": "mi-1035-2027-03-11-18001900"
+      },
+      {
+        "date": "2027-04-22",
+        "time": "18:00–19:00",
+        "source": "https://nuovaeducazione.it/open-day-scuola-primaria-e-infanzia-2026-2027-nuova-educazione/",
+        "booking": "Prenotazione nella sezione infanzia della pagina ufficiale",
+        "location": "Via Pace 10, Milano",
+        "id": "mi-1035-2027-04-22-18001900"
+      }
+    ]
+  },
+  {
+    "id": "mi-1032",
+    "name": "P.Ta Vigentina, 15/A",
+    "slug": "p-ta-vigentina-15-a-mi-1032",
+    "address": "Corso Di Porta Vigentina 15",
+    "zone": "Porta Vigentina - Porta Lodovica",
+    "municipality": 1,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4541084188,
+    "lng": 9.19609342537,
+    "legacyId": "1032",
+    "code": "MI1A12000X",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE B.NI PORTA VIGENTINA15"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1020",
+    "name": "Palermo, 9",
+    "slug": "palermo-9-mi-1020",
+    "address": "Via Palermo 7/9",
+    "zone": "Brera",
+    "municipality": 1,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1020",
+    "code": "MI1A10700D",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA PALERMO7/9"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1048",
+    "name": "Porta Nuova, 6",
+    "slug": "porta-nuova-6-mi-1048",
+    "address": "Bastioni Di Porta Nuova 6",
+    "zone": "Brera",
+    "municipality": 1,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4800553352,
+    "lng": 9.19078797171,
+    "legacyId": "1048",
+    "code": "MI1A11800X",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE B.NI PORTA NUOVA6"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1018",
+    "name": "Pta Venezia, 9",
+    "slug": "pta-venezia-9-mi-1018",
+    "address": "Bastioni Porta Venezia",
+    "zone": "Giardini Porta Venezia",
+    "municipality": 1,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1018",
+    "code": "MI1A11900Q",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE B.NI PORTA VENEZIA"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1021",
+    "name": "Ruffini, 6/A",
+    "slug": "ruffini-6-a-mi-1021",
+    "address": "Via Fratelli Ruffini 6A",
+    "zone": "Magenta - San Vittore",
+    "municipality": 1,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4667375204,
+    "lng": 9.16984091039,
+    "legacyId": "1021",
+    "code": "MI1A12800E",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA RUFFINI6/A"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1023",
+    "name": "S. Croce, 5",
+    "slug": "s-croce-5-mi-1023",
+    "address": "Via Santa Croce 5",
+    "zone": "Porta Ticinese - Conca Del Naviglio",
+    "municipality": 1,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.454838192,
+    "lng": 9.18329336952,
+    "legacyId": "1023",
+    "code": "MI1A138005",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SANTA CROCE5"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1027",
+    "name": "S. Orsola, 17",
+    "slug": "s-orsola-17-mi-1027",
+    "address": "Via Sant'Orsola 17",
+    "zone": "Duomo",
+    "municipality": 1,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4624801035,
+    "lng": 9.17985459795,
+    "legacyId": "1027",
+    "code": "MI1A139001",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SANT'ORSOLA17"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1203",
+    "name": "Scuola Europa",
+    "slug": "scuola-europa-mi-1203",
+    "address": "Viale Luigi Majno 39",
+    "zone": "Guastalla",
+    "municipality": 1,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4723973053,
+    "lng": 9.20508111111,
+    "legacyId": "1203",
+    "code": "MI1A21800R",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"SCUOLA EUROPA\""
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-21",
+        "time": "09:30",
+        "source": "https://www.scuolaeuropa.it/news/aperte-le-prenotazioni-al-secondo-open-day-dell-anno-scolastico-2027-28-508-2026-10-05",
+        "booking": "Prenotazione nel modulo ufficiale",
+        "location": "Viale Majno 39, Milano",
+        "id": "mi-1203-2026-11-21-0930"
+      }
+    ]
+  },
+  {
+    "id": "mi-1361",
+    "name": "Scuola Germanica",
+    "slug": "scuola-germanica-mi-1361",
+    "address": "Via Legnano 24",
+    "zone": "Brera",
+    "municipality": 1,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.4761739715,
+    "lng": 9.18172145881,
+    "legacyId": "1361",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-21",
+        "time": "09:00–12:00",
+        "source": "https://www.dsmailand.it/it/open-day-2026",
+        "booking": "Prenotare nel modulo ufficiale; la segreteria conferma la partecipazione",
+        "location": "Via Legnano 24, Milano",
+        "id": "mi-1361-2026-11-21-09001200"
+      }
+    ]
+  },
+  {
+    "id": "mi-1036",
+    "name": "Scuola Svizzera Rahn Education Milano",
+    "slug": "scuola-svizzera-rahn-education-milano-mi-1036",
+    "address": "Via Andrea Appiani 21",
+    "zone": "Brera",
+    "municipality": 1,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.4785158582,
+    "lng": 9.19408186928,
+    "legacyId": "1036",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1103",
+    "name": "Ss. Trinita', 5",
+    "slug": "ss-trinita-5-mi-1103",
+    "address": "Piazza Santissima Trinita' 5",
+    "zone": "Sarpi",
+    "municipality": 1,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4790184146,
+    "lng": 9.17731815983,
+    "legacyId": "1103",
+    "code": "MI1A14900G",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE PIAZZA SS. TRINITA'"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1016",
+    "name": "Suore Marcelline",
+    "slug": "suore-marcelline-mi-1016",
+    "address": "Via Quadronno 15",
+    "zone": "Porta Vigentina - Porta Lodovica",
+    "municipality": 1,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4543201773,
+    "lng": 9.19254952487,
+    "legacyId": "1016",
+    "code": "MI1A23500E",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"IST. DI CULTURA E LINGUE MARCELLINE\""
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-12-10",
+        "time": "12:00–14:00",
+        "source": "https://www.marcellinequadronno.it/info-open-day/",
+        "booking": "Compilare il modulo ufficiale o telefonare al +39 3383422452",
+        "location": "Via Quadronno 15, Milano",
+        "id": "mi-1016-2026-12-10-12001400"
+      },
+      {
+        "date": "2027-01-14",
+        "time": "12:00–14:00",
+        "source": "https://www.marcellinequadronno.it/info-open-day/",
+        "booking": "Compilare il modulo ufficiale o telefonare al +39 3383422452",
+        "location": "Via Quadronno 15, Milano",
+        "id": "mi-1016-2027-01-14-12001400"
+      },
+      {
+        "date": "2027-05-13",
+        "time": "12:00–14:00",
+        "source": "https://www.marcellinequadronno.it/info-open-day/",
+        "booking": "Compilare il modulo ufficiale o telefonare al +39 3383422452",
+        "location": "Via Quadronno 15, Milano",
+        "id": "mi-1016-2027-05-13-12001400"
+      }
+    ]
+  },
+  {
+    "id": "mi-1017",
+    "name": "Suore Marcelline",
+    "slug": "suore-marcelline-mi-1017",
+    "address": "Piazza Niccolo' Tommaseo 1",
+    "zone": "Magenta - San Vittore",
+    "municipality": 1,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4695776369,
+    "lng": 9.16723776787,
+    "legacyId": "1017",
+    "code": "MI1A252008",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"IST.MARCELLINE\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1031",
+    "name": "Suore Orsoline Di San Carlo",
+    "slug": "suore-orsoline-di-san-carlo-mi-1031",
+    "address": "Via Lanzone 53",
+    "zone": "Duomo",
+    "municipality": 1,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4615112963,
+    "lng": 9.17457650158,
+    "legacyId": "1031",
+    "code": "MI1A215009",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"ORSOLINE DI SAN CARLO\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1377",
+    "name": "Adriano, 20",
+    "slug": "adriano-20-mi-1377",
+    "address": "Via Adriano 20",
+    "zone": "Adriano",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5117884333,
+    "lng": 9.24677188482,
+    "legacyId": "1377",
+    "code": "MI1A56000T",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE ADRIANO"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1409",
+    "name": "Canadian School Of Milan",
+    "slug": "canadian-school-of-milan-mi-1409",
+    "address": "Via Melchiorre Gioia 42",
+    "zone": "Stazione Centrale - Ponte Seveso",
+    "municipality": 2,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.48757490917477,
+    "lng": 9.199107041386837,
+    "legacyId": "1409",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2027-02-11",
+        "time": "09:15–11:00",
+        "source": "https://www.canadianschool.it/page/?title=Open+Days&pid=171",
+        "booking": "Registrazione nel modulo ufficiale Open Days",
+        "location": "Gioia Campus, via Melchiorre Gioia 42, Milano",
+        "id": "mi-1409-2027-02-11-09151100"
+      }
+    ]
+  },
+  {
+    "id": "mi-1147",
+    "name": "Carnovali, 18",
+    "slug": "carnovali-18-mi-1147",
+    "address": "Via Giovanni Carnovali 18",
+    "zone": "Gorla - Precotto",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5131872436,
+    "lng": 9.23035030324,
+    "legacyId": "1147",
+    "code": "MI1A03000N",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CARNOVALI18"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1148",
+    "name": "Cesalpino, 38",
+    "slug": "cesalpino-38-mi-1148",
+    "address": "Via Cesalpino 40",
+    "zone": "Gorla - Precotto",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1148",
+    "code": "MI1A03500R",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CESALPINO40"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1152",
+    "name": "Cislaghi Luigi",
+    "slug": "cislaghi-luigi-mi-1152",
+    "address": "Via Bernardo Rucellai 15",
+    "zone": "Gorla - Precotto",
+    "municipality": 2,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5124776502,
+    "lng": 9.22231115669,
+    "legacyId": "1152",
+    "code": "MI1A238002",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"LUIGI CISLAGHI\""
+    ],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mi-1406",
+    "name": "De Curtis, 7",
+    "slug": "de-curtis-7-mi-1406",
+    "address": "Via Antonio De Curtis 7",
+    "zone": "Adriano",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5161006613,
+    "lng": 9.24165775525,
+    "legacyId": "1406",
+    "code": "MI1AEN500Q",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA DE CURTIS"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1038",
+    "name": "Della Giustizia, 6",
+    "slug": "della-giustizia-6-mi-1038",
+    "address": "Via Della Giustizia 6",
+    "zone": "Greco - Segnano",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4987201351,
+    "lng": 9.20723477889,
+    "legacyId": "1038",
+    "code": "MI1A055002",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA DELLA GIUSTIZIA6"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1039",
+    "name": "Fortis, 10",
+    "slug": "fortis-10-mi-1039",
+    "address": "Via Leone Fortis 10",
+    "zone": "Maciachini - Maggiolina",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4958912349,
+    "lng": 9.1957698019,
+    "legacyId": "1039",
+    "code": "MI1A061009",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA FORTIS10"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1040",
+    "name": "Galvani, 9",
+    "slug": "galvani-9-mi-1040",
+    "address": "Via Luigi Galvani 9",
+    "zone": "Stazione Centrale - Ponte Seveso",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4857684654,
+    "lng": 9.19997298318,
+    "legacyId": "1040",
+    "code": "MI1A06500L",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA GALVANI9"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1151",
+    "name": "Giacosa, 46",
+    "slug": "giacosa-46-mi-1151",
+    "address": "Via Giuseppe Giacosa 46",
+    "zone": "Loreto - Casoretto - Nolo",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4948406682,
+    "lng": 9.2216432494,
+    "legacyId": "1151",
+    "code": "MI1A068004",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA GIACOSA46"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1411",
+    "name": "Ics International School",
+    "slug": "ics-international-school-mi-1411",
+    "address": "Via Carlo Tenca 2",
+    "zone": "Stazione Centrale - Ponte Seveso",
+    "municipality": 2,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.4799613221,
+    "lng": 9.20131587291,
+    "legacyId": "1411",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1367",
+    "name": "Istituto Gonzaga",
+    "slug": "istituto-gonzaga-mi-1367",
+    "address": "Via Vitruvio 41",
+    "zone": "Stazione Centrale - Ponte Seveso",
+    "municipality": 2,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4825871033,
+    "lng": 9.20604471595,
+    "legacyId": "1367",
+    "code": "MI1A259003",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"ISTITUTO GONZAGA\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1150",
+    "name": "Istituto Infantile Di Crescenzago Sacchi",
+    "slug": "istituto-infantile-di-crescenzago-sacchi-mi-1150",
+    "address": "Via Padova 269",
+    "zone": "Padova - Turro - Crescenzago",
+    "municipality": 2,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5078676882,
+    "lng": 9.24522356028,
+    "legacyId": "1150",
+    "code": "MI1A229007",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"IST. INFANTILE CRESCENZAGO\""
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-21",
+        "time": "10:00–12:30",
+        "source": "https://www.istitutoinfantilecrescenzago.it/open-day-5/",
+        "location": "Via Padova 269, Milano",
+        "id": "mi-1150-2026-11-21-10001230"
+      },
+      {
+        "date": "2026-11-21",
+        "time": "15:30–18:00",
+        "source": "https://www.istitutoinfantilecrescenzago.it/open-day-5/",
+        "location": "Via Padova 269, Milano",
+        "id": "mi-1150-2026-11-21-15301800"
+      }
+    ]
+  },
+  {
+    "id": "mi-1387",
+    "name": "L.Go Bigatti, 2",
+    "slug": "l-go-bigatti-2-mi-1387",
+    "address": "Largo Enrico Bigatti 2",
+    "zone": "Adriano",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5156084134,
+    "lng": 9.24756562094,
+    "legacyId": "1387",
+    "code": "MI1A58200P",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE DI LARGO BIGATTI 2"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1037",
+    "name": "Maria Consolatrice",
+    "slug": "maria-consolatrice-mi-1037",
+    "address": "Via Melchiorre Gioia 51",
+    "zone": "Isola",
+    "municipality": 2,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4876141675,
+    "lng": 9.19842072671,
+    "legacyId": "1037",
+    "code": "MI1A21900L",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"MARIA CONSOLATRICE\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1165",
+    "name": "Martiri Oscuri, 7",
+    "slug": "martiri-oscuri-7-mi-1165",
+    "address": "Via Martiri Oscuri 7",
+    "zone": "Loreto - Casoretto - Nolo",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4947613416,
+    "lng": 9.21797368895,
+    "legacyId": "1165",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1044",
+    "name": "Muzio, 9",
+    "slug": "muzio-9-mi-1044",
+    "address": "Via Emanuele Muzio 9",
+    "zone": "Maciachini - Maggiolina",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4912289752,
+    "lng": 9.19941560999,
+    "legacyId": "1044",
+    "code": "MI1A10000P",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA MUZIO9"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1046",
+    "name": "Pallanza, 26",
+    "slug": "pallanza-26-mi-1046",
+    "address": "Via Pallanza 26",
+    "zone": "Maciachini - Maggiolina",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5022124888,
+    "lng": 9.2042626848,
+    "legacyId": "1046",
+    "code": "MI1A108009",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA PALLANZA26"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1154",
+    "name": "Preziosissimo Sangue",
+    "slug": "preziosissimo-sangue-mi-1154",
+    "address": "Via Padre Placido Riccardi 5",
+    "zone": "Padova - Turro - Crescenzago",
+    "municipality": 2,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5014364398,
+    "lng": 9.23897213571,
+    "legacyId": "1154",
+    "code": "MI1A23600A",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"PREZIOSISSIMO SANGUE\""
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-21",
+        "time": "09:00",
+        "source": "https://scuole-cubesps.preziosine.it/iscrizioni/",
+        "location": "Istituto Comprensivo Preziosissimo Sangue, Milano",
+        "booking": "Registrazione dalla pagina ufficiale Iscrizioni, selezionando Istituto Comprensivo Milano e infanzia",
+        "id": "mi-1154-2026-11-21-0900"
+      },
+      {
+        "date": "2026-12-12",
+        "time": "09:00",
+        "source": "https://scuole-cubesps.preziosine.it/iscrizioni/",
+        "location": "Istituto Comprensivo Preziosissimo Sangue, Milano",
+        "booking": "Registrazione dalla pagina ufficiale Iscrizioni, selezionando Istituto Comprensivo Milano e infanzia",
+        "id": "mi-1154-2026-12-12-0900"
+      }
+    ]
+  },
+  {
+    "id": "mi-1049",
+    "name": "Ragusa, 5",
+    "slug": "ragusa-5-mi-1049",
+    "address": "Via Ragusa 5",
+    "zone": "Maciachini - Maggiolina",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4974607664,
+    "lng": 9.19666726738,
+    "legacyId": "1049",
+    "code": "MI1A12300B",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA RAGUSA5"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1155",
+    "name": "Rovetta, 1",
+    "slug": "rovetta-1-mi-1155",
+    "address": "Via Gerolamo Rovetta 1",
+    "zone": "Padova - Turro - Crescenzago",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4988075244,
+    "lng": 9.22502784986,
+    "legacyId": "1155",
+    "code": "MI1A12700P",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA ROVETTA1"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1157",
+    "name": "Russo, 20",
+    "slug": "russo-20-mi-1157",
+    "address": "Via Russo",
+    "zone": "Padova - Turro - Crescenzago",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1157",
+    "code": "MI1A12900A",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA RUSSO"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1158",
+    "name": "S. Erlembardo, 4",
+    "slug": "s-erlembardo-4-mi-1158",
+    "address": "Sant'Erlembardo 4",
+    "zone": "Gorla - Precotto",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1158",
+    "code": "MI1A13400T",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SANT'ERLEMBARDO 4"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1160",
+    "name": "S. Mamete, 13",
+    "slug": "s-mamete-13-mi-1160",
+    "address": "Via San Mamete 13",
+    "zone": "Adriano",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5110452938,
+    "lng": 9.24846704619,
+    "legacyId": "1160",
+    "code": "MI1A13600D",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SAN MAMETE13"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1050",
+    "name": "San Gioachimo",
+    "slug": "san-gioachimo-mi-1050",
+    "address": "Via Fabio Filzi 1",
+    "zone": "Stazione Centrale - Ponte Seveso",
+    "municipality": 2,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4819986953,
+    "lng": 9.19855315725,
+    "legacyId": "1050",
+    "code": "MI1A20700A",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"SAN GIOACHIMO\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1051",
+    "name": "San Martino In Greco",
+    "slug": "san-martino-in-greco-mi-1051",
+    "address": "Piazza Greco 11",
+    "zone": "Greco - Segnano",
+    "municipality": 2,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5020329847,
+    "lng": 9.21233827241,
+    "legacyId": "1051",
+    "code": "MI1A211002",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"SAN MARTINO IN GRECO\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1052",
+    "name": "Sant'Angela Merici",
+    "slug": "sant-angela-merici-mi-1052",
+    "address": "Via Giovanni Cagliero 24",
+    "zone": "Maciachini - Maggiolina",
+    "municipality": 2,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4967444035,
+    "lng": 9.20078391305,
+    "legacyId": "1052",
+    "code": "MI1A190006",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"SANT'ANGELA MERICI\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1161",
+    "name": "Santa Marta",
+    "slug": "santa-marta-mi-1161",
+    "address": "Via San Giovanni Battista De La Salle 5",
+    "zone": "Padova - Turro - Crescenzago",
+    "municipality": 2,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.502520912,
+    "lng": 9.24158759144,
+    "legacyId": "1161",
+    "code": "MI1A55300P",
+    "aliases": [
+      "SANTA MARTA"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1164",
+    "name": "Santissimi Innocenti",
+    "slug": "santissimi-innocenti-mi-1164",
+    "address": "Via Asiago 5",
+    "zone": "Gorla - Precotto",
+    "municipality": 2,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5052468195,
+    "lng": 9.22521414967,
+    "legacyId": "1164",
+    "code": "MI1A17900B",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"SS.INNOCENTI\""
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-26",
+        "time": "10:00",
+        "source": "https://scuolainfanziassinnocenti.it/openday/",
+        "booking": "Prenotare data e turno nel modulo ufficiale; consigliati soli adulti",
+        "location": "Via Asiago 5, Milano",
+        "id": "mi-1164-2026-11-26-1000"
+      },
+      {
+        "date": "2026-11-26",
+        "time": "14:00",
+        "source": "https://scuolainfanziassinnocenti.it/openday/",
+        "booking": "Prenotare data e turno nel modulo ufficiale; consigliati soli adulti",
+        "location": "Via Asiago 5, Milano",
+        "id": "mi-1164-2026-11-26-1400"
+      },
+      {
+        "date": "2027-01-28",
+        "time": "10:00",
+        "source": "https://scuolainfanziassinnocenti.it/openday/",
+        "booking": "Prenotare data e turno nel modulo ufficiale; consigliati soli adulti",
+        "location": "Via Asiago 5, Milano",
+        "id": "mi-1164-2027-01-28-1000"
+      },
+      {
+        "date": "2027-01-28",
+        "time": "14:00",
+        "source": "https://scuolainfanziassinnocenti.it/openday/",
+        "booking": "Prenotare data e turno nel modulo ufficiale; consigliati soli adulti",
+        "location": "Via Asiago 5, Milano",
+        "id": "mi-1164-2027-01-28-1400"
+      },
+      {
+        "date": "2027-02-25",
+        "time": "10:00",
+        "source": "https://scuolainfanziassinnocenti.it/openday/",
+        "booking": "Prenotare data e turno nel modulo ufficiale; consigliati soli adulti",
+        "location": "Via Asiago 5, Milano",
+        "id": "mi-1164-2027-02-25-1000"
+      },
+      {
+        "date": "2027-02-25",
+        "time": "14:00",
+        "source": "https://scuolainfanziassinnocenti.it/openday/",
+        "booking": "Prenotare data e turno nel modulo ufficiale; consigliati soli adulti",
+        "location": "Via Asiago 5, Milano",
+        "id": "mi-1164-2027-02-25-1400"
+      },
+      {
+        "date": "2027-04-29",
+        "time": "10:00",
+        "source": "https://scuolainfanziassinnocenti.it/openday/",
+        "booking": "Prenotare data e turno nel modulo ufficiale; consigliati soli adulti",
+        "location": "Via Asiago 5, Milano",
+        "id": "mi-1164-2027-04-29-1000"
+      },
+      {
+        "date": "2027-04-29",
+        "time": "14:00",
+        "source": "https://scuolainfanziassinnocenti.it/openday/",
+        "booking": "Prenotare data e turno nel modulo ufficiale; consigliati soli adulti",
+        "location": "Via Asiago 5, Milano",
+        "id": "mi-1164-2027-04-29-1400"
+      }
+    ]
+  },
+  {
+    "id": "mi-1163",
+    "name": "Soffredini, 23",
+    "slug": "soffredini-23-mi-1163",
+    "address": "Via Alfredo Soffredini 23",
+    "zone": "Gorla - Precotto",
+    "municipality": 2,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.51532186547103,
+    "lng": 9.223872073827406,
+    "legacyId": "1163",
+    "code": "MI1A146004",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SOFFREDINI23"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1413",
+    "name": "St. Joseph'S International College",
+    "slug": "st-joseph-s-international-college-mi-1413",
+    "address": "Viale Monza 261",
+    "zone": "Gorla - Precotto",
+    "municipality": 2,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.5118863754,
+    "lng": 9.22341464269,
+    "legacyId": "1413",
+    "code": null,
+    "aliases": [],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mi-1399",
+    "name": "Statale Bottego",
+    "slug": "statale-bottego-mi-1399",
+    "address": "Via Vittorio Bottego 4",
+    "zone": "Padova - Turro - Crescenzago",
+    "municipality": 2,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.5036222151,
+    "lng": 9.24382602514,
+    "legacyId": "1399",
+    "code": "MIAA8GH015",
+    "aliases": [
+      "INFANZIA VIA BOTTEGO"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2027-01-12",
+        "time": "17:00",
+        "source": "https://icperasso.edu.it/wp-content/uploads/sites/12/Brochure-Open-Day-Infanzia-2027.pdf?x14429",
+        "booking": "La locandina non indica prenotazione; verificare con la segreteria",
+        "location": "Via Bottego 4, Milano",
+        "id": "mi-1399-2027-01-12-1700"
+      }
+    ]
+  },
+  {
+    "id": "mi-1403",
+    "name": "Statale Mosso/Pontano",
+    "slug": "statale-mosso-pontano-mi-1403",
+    "address": "Via Giovanni Pontano 43",
+    "zone": "Padova - Turro - Crescenzago",
+    "municipality": 2,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.4965541976,
+    "lng": 9.2266062473,
+    "legacyId": "1403",
+    "code": "MIAA8DD012",
+    "aliases": [
+      "INFANZIA VIA PONTANO"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1156",
+    "name": "Statale Rucellai",
+    "slug": "statale-rucellai-mi-1156",
+    "address": "Via Bernardo Rucellai 19",
+    "zone": "Gorla - Precotto",
+    "municipality": 2,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.512282362,
+    "lng": 9.22151146205,
+    "legacyId": "1156",
+    "code": "MIAA819019",
+    "aliases": [
+      "INFANZIA VIA RUCELLAI"
+    ],
+    "enriched": false,
+    "events": [
+      {
+        "date": "2026-11-24",
+        "time": "16:15–18:30",
+        "source": "https://www.icsitalocalvino.edu.it/wp-content/uploads/2026/10/locandina-open-day-infanzia-2027-28.jpg",
+        "booking": "Prenotazione non indicata nella locandina; verificare con l’istituto",
+        "location": "Via Bernardo Rucellai 19, Milano",
+        "id": "mi-1156-2026-11-24-16151830"
+      }
+    ]
+  },
+  {
+    "id": "mi-1162",
+    "name": "Statale Sant'Uguzzone",
+    "slug": "statale-sant-uguzzone-mi-1162",
+    "address": "Via Sant'Uguzzone 10",
+    "zone": "Gorla - Precotto",
+    "municipality": 2,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.520721335,
+    "lng": 9.22555279207,
+    "legacyId": "1162",
+    "code": "MIAA81902A",
+    "aliases": [
+      "INFANZIA S. UGUZZONE"
+    ],
+    "enriched": false,
+    "events": [
+      {
+        "date": "2026-11-24",
+        "time": "16:15–18:30",
+        "source": "https://www.icsitalocalvino.edu.it/wp-content/uploads/2026/10/locandina-open-day-infanzia-2027-28.jpg",
+        "booking": "Prenotazione non indicata nella locandina; verificare con l’istituto",
+        "location": "Via Sant’Uguzzone 10, Milano",
+        "id": "mi-1162-2026-11-24-16151830"
+      }
+    ]
+  },
+  {
+    "id": "mi-1360",
+    "name": "Bacone, 13",
+    "slug": "bacone-13-mi-1360",
+    "address": "Piazzale Bacone 13",
+    "zone": "Buenos Aires - Porta Venezia - Porta Monforte",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4811877292,
+    "lng": 9.21527997828,
+    "legacyId": "1360",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1058",
+    "name": "Benedetto Marcello, 9",
+    "slug": "benedetto-marcello-9-mi-1058",
+    "address": "Via Benedetto Marcello 9",
+    "zone": "Buenos Aires - Porta Venezia - Porta Monforte",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.47994138,
+    "lng": 9.20661153224,
+    "legacyId": "1058",
+    "code": "MI1A01600B",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA B.MARCELLO9"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1190",
+    "name": "Boves, 2",
+    "slug": "boves-2-mi-1190",
+    "address": "Via Boves 2",
+    "zone": "Cimiano - Rottole - Q.Re Feltre",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.49529595273885,
+    "lng": 9.236596348996796,
+    "legacyId": "1190",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1408",
+    "name": "Caduti In Missione Di Pace, 10",
+    "slug": "caduti-in-missione-di-pace-10-mi-1408",
+    "address": "Via Caduti In Missione Di Pace 10",
+    "zone": "Lambrate - Ortica",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4780047769,
+    "lng": 9.25088674554,
+    "legacyId": "1408",
+    "code": "MI1A8A5001",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA CADUTI IN MISSIONE DI PACE"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1174",
+    "name": "Casa Dei Bambini Michelangelo Virgillito",
+    "slug": "casa-dei-bambini-michelangelo-virgillito-mi-1174",
+    "address": "Piazza Edoardo Ferravilla 2",
+    "zone": "Buenos Aires - Porta Venezia - Porta Monforte",
+    "municipality": 3,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4707610954,
+    "lng": 9.22286625265,
+    "legacyId": "1174",
+    "code": "MI1A20600E",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"MICHELANGELO VIRGILLITO\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1180",
+    "name": "Clericetti, 20",
+    "slug": "clericetti-20-mi-1180",
+    "address": "Via Celeste Clericetti 20",
+    "zone": "Citta' Studi",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4771720428,
+    "lng": 9.23558641864,
+    "legacyId": "1180",
+    "code": "MI1A04200X",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CLERICETTI20"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1184",
+    "name": "Costa, 22",
+    "slug": "costa-22-mi-1184",
+    "address": "Via Andrea Costa 22",
+    "zone": "Loreto - Casoretto - Nolo",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.488098576475124,
+    "lng": 9.221853023981225,
+    "legacyId": "1184",
+    "code": "MI1A046007",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA COSTA22 EX 24"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1187",
+    "name": "Crescenzago, 47",
+    "slug": "crescenzago-47-mi-1187",
+    "address": "Via Crescenzago 47",
+    "zone": "Cimiano - Rottole - Q.Re Feltre",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4898355698,
+    "lng": 9.24121546523,
+    "legacyId": "1187",
+    "code": "MI1A04800V",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CRESCENZAGO47"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1176",
+    "name": "Faes Aurora Bilingue",
+    "slug": "faes-aurora-bilingue-mi-1176",
+    "address": "Via Giovanni Antonio Amadeo 11",
+    "zone": "Citta' Studi",
+    "municipality": 3,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4710772144,
+    "lng": 9.23170220306,
+    "legacyId": "1176",
+    "code": "MI1A22600Q",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"FAES AURORA\""
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-17",
+        "time": "08:30–09:30",
+        "source": "https://www.faesmilano.it/wp-content/uploads/2026/06/Planning-Open-Day-2026-2027_-REV.pdf",
+        "location": "Via G. A. Amadeo 11, Milano",
+        "booking": "Prenotazione dalla pagina pubblica Open Morning Nido e Infanzia FAES",
+        "id": "mi-1176-2026-11-17-08300930"
+      },
+      {
+        "date": "2026-12-15",
+        "time": "08:30–09:30",
+        "source": "https://www.faesmilano.it/wp-content/uploads/2026/06/Planning-Open-Day-2026-2027_-REV.pdf",
+        "location": "Via G. A. Amadeo 11, Milano",
+        "booking": "Prenotazione dalla pagina pubblica Open Morning Nido e Infanzia FAES",
+        "id": "mi-1176-2026-12-15-08300930"
+      },
+      {
+        "date": "2027-01-23",
+        "time": "09:00–12:00",
+        "source": "https://www.faesmilano.it/wp-content/uploads/2026/06/Planning-Open-Day-2026-2027_-REV.pdf",
+        "location": "Via G. A. Amadeo 11, Milano",
+        "booking": "Prenotazione dalla pagina pubblica Open Morning Nido e Infanzia FAES",
+        "id": "mi-1176-2027-01-23-09001200"
+      },
+      {
+        "date": "2027-02-16",
+        "time": "13:00–14:00",
+        "source": "https://www.faesmilano.it/wp-content/uploads/2026/06/Planning-Open-Day-2026-2027_-REV.pdf",
+        "location": "Via G. A. Amadeo 11, Milano",
+        "booking": "Prenotazione dalla pagina pubblica Open Morning Nido e Infanzia FAES",
+        "id": "mi-1176-2027-02-16-13001400"
+      },
+      {
+        "date": "2027-03-16",
+        "time": "08:30–09:30",
+        "source": "https://www.faesmilano.it/wp-content/uploads/2026/06/Planning-Open-Day-2026-2027_-REV.pdf",
+        "location": "Via G. A. Amadeo 11, Milano",
+        "booking": "Prenotazione dalla pagina pubblica Open Morning Nido e Infanzia FAES",
+        "id": "mi-1176-2027-03-16-08300930"
+      },
+      {
+        "date": "2027-04-27",
+        "time": "13:00–14:00",
+        "source": "https://www.faesmilano.it/wp-content/uploads/2026/06/Planning-Open-Day-2026-2027_-REV.pdf",
+        "location": "Via G. A. Amadeo 11, Milano",
+        "booking": "Prenotazione dalla pagina pubblica Open Morning Nido e Infanzia FAES",
+        "id": "mi-1176-2027-04-27-13001400"
+      }
+    ]
+  },
+  {
+    "id": "mi-1188",
+    "name": "Feltre, 68/3",
+    "slug": "feltre-68-3-mi-1188",
+    "address": "Via Feltre 68/3",
+    "zone": "Cimiano - Rottole - Q.Re Feltre",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4908400341,
+    "lng": 9.24562053568,
+    "legacyId": "1188",
+    "code": "MI1A06000D",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA FELTRE68/3"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1189",
+    "name": "Fondazione Sacro Cuore",
+    "slug": "fondazione-sacro-cuore-mi-1189",
+    "address": "Via Rombon 78",
+    "zone": "Lambrate - Ortica",
+    "municipality": 3,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4861791706,
+    "lng": 9.25215457923,
+    "legacyId": "1189",
+    "code": "MI1A237006",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA FONDAZIONE SACRO CUORE"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1060",
+    "name": "Goldoni, 13",
+    "slug": "goldoni-13-mi-1060",
+    "address": "Via Carlo Goldoni 13",
+    "zone": "Buenos Aires - Porta Venezia - Porta Monforte",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4692853946,
+    "lng": 9.21058456155,
+    "legacyId": "1060",
+    "code": "MI1A06900X",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA GOLDONI13"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1379",
+    "name": "Il Nano Gigante",
+    "slug": "il-nano-gigante-mi-1379",
+    "address": "Via Riccardo Pitteri 56",
+    "zone": "Lambrate - Ortica",
+    "municipality": 3,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4750641266,
+    "lng": 9.24807360116,
+    "legacyId": "1379",
+    "code": "MI1ASA500M",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA IL NANO GIGANTE"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1363",
+    "name": "Libera Scuola Steineriana",
+    "slug": "libera-scuola-steineriana-mi-1363",
+    "address": "Via Tommaso Pini 1",
+    "zone": "Lambrate - Ortica",
+    "municipality": 3,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4846693147,
+    "lng": 9.24047694766,
+    "legacyId": "1363",
+    "code": "MI1A232003",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"LIBERA SCUOLA RUDOLF STEINER\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1057",
+    "name": "Matteucci, 5",
+    "slug": "matteucci-5-mi-1057",
+    "address": "Via Carlo Matteucci 5",
+    "zone": "Buenos Aires - Porta Venezia - Porta Monforte",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.481319548,
+    "lng": 9.21641240172,
+    "legacyId": "1057",
+    "code": "MI1A01000C",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE MATTEUCCI"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1192",
+    "name": "Narni, 16",
+    "slug": "narni-16-mi-1192",
+    "address": "Via Narni 16",
+    "zone": "Cimiano - Rottole - Q.Re Feltre",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5021375932,
+    "lng": 9.24742406891,
+    "legacyId": "1192",
+    "code": "MI1A10200A",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA NARNI16"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1062",
+    "name": "Pergolesi, 17",
+    "slug": "pergolesi-17-mi-1062",
+    "address": "Via Giovanni Battista Pergolesi 17",
+    "zone": "Buenos Aires - Porta Venezia - Porta Monforte",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4844830477,
+    "lng": 9.21106541355,
+    "legacyId": "1062",
+    "code": "MI1A112001",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA PERGOLESI17"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1193",
+    "name": "Pini, 2",
+    "slug": "pini-2-mi-1193",
+    "address": "Via Tommaso Pini 2",
+    "zone": "Lambrate - Ortica",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4847220706,
+    "lng": 9.24101398838,
+    "legacyId": "1193",
+    "code": "MI1A11500C",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA PINI2"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1178",
+    "name": "Porpora, 45",
+    "slug": "porpora-45-mi-1178",
+    "address": "Via Nicola Antonio Porpora 45",
+    "zone": "Loreto - Casoretto - Nolo",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4866239154,
+    "lng": 9.22247803942,
+    "legacyId": "1178",
+    "code": "MI1A117004",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA PORPORA45 ex 43"
+    ],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mi-1172",
+    "name": "Reni, 11",
+    "slug": "reni-11-mi-1172",
+    "address": "Via Guido Reni 11",
+    "zone": "Citta' Studi",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4715626117,
+    "lng": 9.22577709062,
+    "legacyId": "1172",
+    "code": "MI1A125003",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA RENI11"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1173",
+    "name": "Rossello Giuseppa",
+    "slug": "rossello-giuseppa-mi-1173",
+    "address": "Via Carlo Goldoni 68",
+    "zone": "Buenos Aires - Porta Venezia - Porta Monforte",
+    "municipality": 3,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4692415088,
+    "lng": 9.2204083758,
+    "legacyId": "1173",
+    "code": "MI1A210006",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"G.ROSSELLO\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1181",
+    "name": "Rudolf Steiner",
+    "slug": "rudolf-steiner-mi-1181",
+    "address": "Via Celeste Clericetti 45",
+    "zone": "Citta' Studi",
+    "municipality": 3,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4794949543,
+    "lng": 9.23527388128,
+    "legacyId": "1181",
+    "code": "MI1ADH500U",
+    "aliases": [
+      "ASILO RUDOLF STEINER"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2027-01-16",
+        "time": "09:30",
+        "source": "https://www.scuolasteinermilano.it/iscrizione-openday/",
+        "location": "Via Clericetti 45, Milano",
+        "booking": "Contattare info@scuolasteinermilano.it per modalità di partecipazione",
+        "id": "mi-1181-2027-01-16-0930"
+      }
+    ]
+  },
+  {
+    "id": "mi-1179",
+    "name": "San Giuseppe",
+    "slug": "san-giuseppe-mi-1179",
+    "address": "Via Antonio Bazzini 10",
+    "zone": "Citta' Studi",
+    "municipality": 3,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4817951575,
+    "lng": 9.22526156904,
+    "legacyId": "1179",
+    "code": "MI1A182007",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"SAN GIUSEPPE\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1063",
+    "name": "Santissimo Redentore",
+    "slug": "santissimo-redentore-mi-1063",
+    "address": "Via Pier Luigi Da Palestrina 11",
+    "zone": "Buenos Aires - Porta Venezia - Porta Monforte",
+    "municipality": 3,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4853590791,
+    "lng": 9.21332238219,
+    "legacyId": "1063",
+    "code": "MI1A23000B",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"SS.REDENTORE\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1370",
+    "name": "Sir James Henderson School",
+    "slug": "sir-james-henderson-school-mi-1370",
+    "address": "Via Carlo Alberto Pisani Dossi 16",
+    "zone": "Cimiano - Rottole - Q.Re Feltre",
+    "municipality": 3,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.4873194209,
+    "lng": 9.24439432184,
+    "legacyId": "1370",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1064",
+    "name": "Stoppani, 3",
+    "slug": "stoppani-3-mi-1064",
+    "address": "Via Antonio Stoppani 3",
+    "zone": "Buenos Aires - Porta Venezia - Porta Monforte",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4759383359,
+    "lng": 9.21211770277,
+    "legacyId": "1064",
+    "code": "MI1A15000Q",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA STOPPANI"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1195",
+    "name": "Suore Orsoline Sacra Famiglia",
+    "slug": "suore-orsoline-sacra-famiglia-mi-1195",
+    "address": "Via Monfalcone 7",
+    "zone": "Cimiano - Rottole - Q.Re Feltre",
+    "municipality": 3,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4920581527,
+    "lng": 9.23782767934,
+    "legacyId": "1195",
+    "code": "MI1A22200C",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"SUORE ORSOLINE DELLA SACRA FAMIGLIA\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1182",
+    "name": "Tajani, 14",
+    "slug": "tajani-14-mi-1182",
+    "address": "Via Filippo Tajani 14",
+    "zone": "Citta' Studi",
+    "municipality": 3,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.473099871,
+    "lng": 9.23684229664,
+    "legacyId": "1182",
+    "code": "MI1A153007",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA TAJANI14"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1386",
+    "name": "Andersen School",
+    "slug": "andersen-school-mi-1386",
+    "address": "Via Don Carlo San Martino 8",
+    "zone": "Corsica",
+    "municipality": 4,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.4678471299,
+    "lng": 9.23525932408,
+    "legacyId": "1386",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1066",
+    "name": "Anfossi, 26",
+    "slug": "anfossi-26-mi-1066",
+    "address": "Via Augusto Anfossi 26",
+    "zone": "Xxii Marzo",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4593830176,
+    "lng": 9.21275063685,
+    "legacyId": "1066",
+    "code": "MI1A005001",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA ANFOSSI26"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1202",
+    "name": "Barabino, 2",
+    "slug": "barabino-2-mi-1202",
+    "address": "Via Nicolo' Barabino 2",
+    "zone": "Lodi - Corvetto",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4346836491,
+    "lng": 9.22351330646,
+    "legacyId": "1202",
+    "code": "MI1A011008",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA BARABINO2"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1068",
+    "name": "Bezzecca, 16",
+    "slug": "bezzecca-16-mi-1068",
+    "address": "Via Bezzecca 16",
+    "zone": "Xxii Marzo",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.460746949,
+    "lng": 9.21244906163,
+    "legacyId": "1068",
+    "code": "MI1A020003",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA BEZZECCA16"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1069",
+    "name": "Carabelli, 8",
+    "slug": "carabelli-8-mi-1069",
+    "address": "Via Rodolfo Carabelli 8",
+    "zone": "Umbria - Molise - Calvairate",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4503619867,
+    "lng": 9.22255249628,
+    "legacyId": "1069",
+    "code": "MI1A02800N",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CARABELLI8/B"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1167",
+    "name": "Casa Dei Bambini Montessori",
+    "slug": "casa-dei-bambini-montessori-mi-1167",
+    "address": "Piazza San Girolamo Emiliani 6",
+    "zone": "Corsica",
+    "municipality": 4,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1167",
+    "code": "MI1AZO500G",
+    "aliases": [
+      "CASA DEI BAMBINI SCUOLA MONTESSORI"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-25",
+        "time": "09:30",
+        "source": "https://scuolamontessorimilano.eu/open-day/",
+        "booking": "Modulo ufficiale",
+        "location": "Piazza San Girolamo Emiliani 6, Milano",
+        "id": "mi-1167-2026-11-25-0930"
+      }
+    ]
+  },
+  {
+    "id": "mi-1070",
+    "name": "Colletta, 53",
+    "slug": "colletta-53-mi-1070",
+    "address": "Via Colletta 49/51",
+    "zone": "Umbria - Molise - Calvairate",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1070",
+    "code": "MI1A04300Q",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA COLLETTA49/51"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1168",
+    "name": "Corsica, 94",
+    "slug": "corsica-94-mi-1168",
+    "address": "Viale Corsica 94",
+    "zone": "Corsica",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4617244415,
+    "lng": 9.23609877186,
+    "legacyId": "1168",
+    "code": "MI1A04500B",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE V.LE CORSICA94"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1169",
+    "name": "Cova, 1",
+    "slug": "cova-1-mi-1169",
+    "address": "Via Giovanni Cova 1",
+    "zone": "Corsica",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4688583069,
+    "lng": 9.23572229871,
+    "legacyId": "1169",
+    "code": "MI1A047003",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA COVA1"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1196",
+    "name": "Decorati V. C., 14",
+    "slug": "decorati-v-c-14-mi-1196",
+    "address": "Via Decorati Al Valor Civile 14",
+    "zone": "Zona Da Verificare",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4598485091,
+    "lng": 9.24204350531,
+    "legacyId": "1196",
+    "code": "MI1A05200E",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA DECORATI14"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1170",
+    "name": "Devoto, 7",
+    "slug": "devoto-7-mi-1170",
+    "address": "Via Luigi Devoto 7",
+    "zone": "Corsica",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.46399525541396,
+    "lng": 9.234148545549337,
+    "legacyId": "1170",
+    "code": "MI1A05600T",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA DEVOTO7"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1067",
+    "name": "Donzelli Beniamino E Bice - Istituto Canossiane",
+    "slug": "donzelli-beniamino-e-bice-istituto-canossiane-mi-1067",
+    "address": "Via Tagliamento 12",
+    "zone": "Lodi - Corvetto",
+    "municipality": 4,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4435424306,
+    "lng": 9.21275521826,
+    "legacyId": "1067",
+    "code": "MI1A24900C",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"BENIAMINO E BICE DONZELLI\""
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-28",
+        "time": "10:00–12:00",
+        "source": "https://www.limontadonzelli.it/2026/11/16/elementor-5422/",
+        "location": "Via Benaco 9, Milano",
+        "booking": "Modalità di accesso da confermare con la scuola",
+        "id": "mi-1067-2026-11-28-10001200"
+      }
+    ]
+  },
+  {
+    "id": "mi-1416",
+    "name": "Ics International School",
+    "slug": "ics-international-school-mi-1416",
+    "address": "Via Pietro Colletta 27",
+    "zone": "Porta Romana",
+    "municipality": 4,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4500848368,
+    "lng": 9.20888024905,
+    "legacyId": "1416",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1072",
+    "name": "Maria Ausiliatrice",
+    "slug": "maria-ausiliatrice-mi-1072",
+    "address": "Via Bonvesin De La Riva 12",
+    "zone": "Xxii Marzo",
+    "municipality": 4,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4636771379,
+    "lng": 9.21216397768,
+    "legacyId": "1072",
+    "code": "MI1A18700A",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"MARIA AUSILIATRICE\""
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2027-01-23",
+        "time": "11:00–13:00",
+        "source": "https://www.scuolabonvesin.it/open-day-2026/",
+        "booking": "Modulo ufficiale; iscrizioni fino al giorno precedente",
+        "location": "Via Bonvesin de la Riva 12, Milano",
+        "id": "mi-1072-2027-01-23-11001300"
+      }
+    ]
+  },
+  {
+    "id": "mi-1208",
+    "name": "Martinengo, 34/2",
+    "slug": "martinengo-34-2-mi-1208",
+    "address": "Via Francesco Martinengo 34/2",
+    "zone": "Lodi - Corvetto",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.442350967576346,
+    "lng": 9.22896233013387,
+    "legacyId": "1208",
+    "code": "MI1A08600N",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA MARTINENGO34/2"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1197",
+    "name": "Meleri, 12",
+    "slug": "meleri-12-mi-1197",
+    "address": "Via Geremia Meleri 12",
+    "zone": "Taliedo - Morsenchio - Q.Re Forlanini",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4570380926,
+    "lng": 9.2472555207,
+    "legacyId": "1197",
+    "code": "MI1A090009",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA MELERI12"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1206",
+    "name": "Monte Popera, 14",
+    "slug": "monte-popera-14-mi-1206",
+    "address": "Via Monte Popera 14",
+    "zone": "Rogoredo - Santa Giulia",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4313888924,
+    "lng": 9.24648506713,
+    "legacyId": "1206",
+    "code": "MI1A09400L",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA MONTE POPERA14"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1073",
+    "name": "Monte Velino, 10",
+    "slug": "monte-velino-10-mi-1073",
+    "address": "Via Monte Velino 10",
+    "zone": "Ortomercato",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4528803089,
+    "lng": 9.2262976778,
+    "legacyId": "1073",
+    "code": "MI1A096008",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA MONTEVELINO10"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1209",
+    "name": "Oglio, 23",
+    "slug": "oglio-23-mi-1209",
+    "address": "Via Oglio 23",
+    "zone": "Lodi - Corvetto",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4400743967,
+    "lng": 9.21829658569,
+    "legacyId": "1209",
+    "code": "MI1A103006",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA OGLIO23"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1211",
+    "name": "Oglio, 25",
+    "slug": "oglio-25-mi-1211",
+    "address": "Via Oglio 25",
+    "zone": "Lodi - Corvetto",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4398043793,
+    "lng": 9.21774719582,
+    "legacyId": "1211",
+    "code": "MI1A104002",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA OGLIO25"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1212",
+    "name": "Osimo, 4",
+    "slug": "osimo-4-mi-1212",
+    "address": "Via Augusto Osimo 4",
+    "zone": "Lodi - Corvetto",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4345315923,
+    "lng": 9.22574464617,
+    "legacyId": "1212",
+    "code": "MI1A10600N",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA OSIMO4"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1175",
+    "name": "Regina Mundi Imc",
+    "slug": "regina-mundi-imc-mi-1175",
+    "address": "Viale Corsica 82",
+    "zone": "Corsica",
+    "municipality": 4,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4619523269,
+    "lng": 9.23416879627,
+    "legacyId": "1175",
+    "code": "MI1A19900L",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"REGINA MUNDI IMC\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1171",
+    "name": "Reni, 1 (Provv Via Mezzofanti, 23)",
+    "slug": "reni-1-provv-via-mezzofanti-23-mi-1171",
+    "address": "Via Reni 1",
+    "zone": "Corsica",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1171",
+    "code": "MI1A124007",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA RENI1"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1075",
+    "name": "San Pio V",
+    "slug": "san-pio-v-mi-1075",
+    "address": "Via Ennio 16",
+    "zone": "Umbria - Molise - Calvairate",
+    "municipality": 4,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4528354009,
+    "lng": 9.2177232117,
+    "legacyId": "1075",
+    "code": "MI1A20500P",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"SAN PIO V\""
+    ],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mi-1216",
+    "name": "San Vincenzo Regina Mundi",
+    "slug": "san-vincenzo-regina-mundi-mi-1216",
+    "address": "Via Carlo Boncompagni 18",
+    "zone": "Lodi - Corvetto",
+    "municipality": 4,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.440082459,
+    "lng": 9.22687787269,
+    "legacyId": "1216",
+    "code": "MI1A18600E",
+    "aliases": [
+      "SAN VINCENZO DE' PAOLI - REGINA MUNDI"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1074",
+    "name": "Santa Maria Del Suffragio",
+    "slug": "santa-maria-del-suffragio-mi-1074",
+    "address": "Via Carlo Poma 28",
+    "zone": "Xxii Marzo",
+    "municipality": 4,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4648456726,
+    "lng": 9.21593925546,
+    "legacyId": "1074",
+    "code": "MI1A23300V",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"S.MARIA DEL SUFFRAGIO\""
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-21",
+        "time": "09:30–12:00",
+        "source": "https://www.suffragio.it/poma28/?page_id=1255",
+        "booking": "Contattare la scuola per l’accesso",
+        "location": "Via Poma 28, Milano",
+        "id": "mi-1074-2026-11-21-09301200"
+      },
+      {
+        "date": "2027-02-27",
+        "time": "09:30–12:00",
+        "source": "https://www.suffragio.it/poma28/?page_id=1255",
+        "booking": "Contattare la scuola per l’accesso",
+        "location": "Via Poma 28, Milano",
+        "id": "mi-1074-2027-02-27-09301200"
+      }
+    ]
+  },
+  {
+    "id": "mi-1390",
+    "name": "Savinio, 9",
+    "slug": "savinio-9-mi-1390",
+    "address": "Via Alberto Savinio 9",
+    "zone": "Rogoredo - Santa Giulia",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.438011026,
+    "lng": 9.24441528493,
+    "legacyId": "1390",
+    "code": "MI1AT7500U",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA SAVINIO"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1198",
+    "name": "Sordello, 14",
+    "slug": "sordello-14-mi-1198",
+    "address": "Via Luigi Sordello 14",
+    "zone": "Taliedo - Morsenchio - Q.Re Forlanini",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4417516693,
+    "lng": 9.2444597156,
+    "legacyId": "1198",
+    "code": "MI1A14700X",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SORDELLO14"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1372",
+    "name": "St.Louis School",
+    "slug": "st-louis-school-mi-1372",
+    "address": "Via Enrico Caviglia 1",
+    "zone": "Lodi - Corvetto",
+    "municipality": 4,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4440928735,
+    "lng": 9.22989659204,
+    "legacyId": "1372",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1402",
+    "name": "Statale Sordello",
+    "slug": "statale-sordello-mi-1402",
+    "address": "Via Luigi Sordello 7",
+    "zone": "Taliedo - Morsenchio - Q.Re Forlanini",
+    "municipality": 4,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.443935696,
+    "lng": 9.2457293531,
+    "legacyId": "1402",
+    "code": "MIAA8AN012",
+    "aliases": [
+      "INFANZIA S. GIOVANNI BOSCO"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1218",
+    "name": "Sulmona, 9",
+    "slug": "sulmona-9-mi-1218",
+    "address": "Via Sulmona 9",
+    "zone": "Lodi - Corvetto",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4446140257,
+    "lng": 9.22586153765,
+    "legacyId": "1218",
+    "code": "MI1A15200B",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SULMONA9"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1077",
+    "name": "Suore Mantellate",
+    "slug": "suore-mantellate-mi-1077",
+    "address": "Via Giorgio Vasari 16",
+    "zone": "Porta Romana",
+    "municipality": 4,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.45377821504153,
+    "lng": 9.207196791331134,
+    "legacyId": "1077",
+    "code": "MI1A25700B",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"SUORE MANTELLATE\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1199",
+    "name": "Ucelli Di Nemi, 44",
+    "slug": "ucelli-di-nemi-44-mi-1199",
+    "address": "Via Ucelli Di Nemi 48",
+    "zone": "Monlue' - Ponte Lambro",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1199",
+    "code": "MI1A15700E",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA UCELLI DI NEMI48"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1200",
+    "name": "Ungheria, 42",
+    "slug": "ungheria-42-mi-1200",
+    "address": "Viale Ungheria 42",
+    "zone": "Taliedo - Morsenchio - Q.Re Forlanini",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4456764001,
+    "lng": 9.25185503599,
+    "legacyId": "1200",
+    "code": "MI1A15800A",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE V.LE UNGHERIA42"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1183",
+    "name": "Xxii Marzo, 59",
+    "slug": "xxii-marzo-59-mi-1183",
+    "address": "Corso Ventidue Marzo 59",
+    "zone": "Xxii Marzo",
+    "municipality": 4,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4622961102,
+    "lng": 9.22257152349,
+    "legacyId": "1183",
+    "code": "MI1A16900R",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA XXII MARZO59"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1225",
+    "name": "Arcadia, 20",
+    "slug": "arcadia-20-mi-1225",
+    "address": "Via Dell'Arcadia 20",
+    "zone": "Gratosoglio - Q.Re Missaglia - Q.Re Terrazze",
+    "municipality": 5,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4173915932,
+    "lng": 9.17249864174,
+    "legacyId": "1225",
+    "code": "MI1A00700L",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA ARCADIA20"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1221",
+    "name": "Baroni, 45",
+    "slug": "baroni-45-mi-1221",
+    "address": "Via Costantino Baroni 45",
+    "zone": "Gratosoglio - Q.Re Missaglia - Q.Re Terrazze",
+    "municipality": 5,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4091619111,
+    "lng": 9.17172076807,
+    "legacyId": "1221",
+    "code": "MI1A012004",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA BARONI45"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1228",
+    "name": "Barrili, 27",
+    "slug": "barrili-27-mi-1228",
+    "address": "Via Anton Giulio Barrili 27",
+    "zone": "Stadera - Chiesa Rossa - Q.Re Torretta - Conca Fal",
+    "municipality": 5,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4340279761,
+    "lng": 9.17957066923,
+    "legacyId": "1228",
+    "code": "MI1A01400Q",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA BARRILI27"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1414",
+    "name": "Bdc School",
+    "slug": "bdc-school-mi-1414",
+    "address": "Via Dei Fontanili 3",
+    "zone": "Morivione",
+    "municipality": 5,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4423017112,
+    "lng": 9.18887826481,
+    "legacyId": "1414",
+    "code": "MI1AZ3500I",
+    "aliases": [
+      "BDC SCHOOL MILANO"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1205",
+    "name": "Bognetti, 13",
+    "slug": "bognetti-13-mi-1205",
+    "address": "Via Dei Bognetti 13",
+    "zone": "Morivione",
+    "municipality": 5,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4385972655,
+    "lng": 9.1894923226,
+    "legacyId": "1205",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1081",
+    "name": "Brunacci, 8",
+    "slug": "brunacci-8-mi-1081",
+    "address": "Via Vincenzo Brunacci 8",
+    "zone": "Porta Ticinese - Conca Del Naviglio",
+    "municipality": 5,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4447789226,
+    "lng": 9.1784156379,
+    "legacyId": "1081",
+    "code": "MI1A02400A",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA BRUNACCI8"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1213",
+    "name": "Dei Guarneri, 19",
+    "slug": "dei-guarneri-19-mi-1213",
+    "address": "Via Dei Guarneri 19",
+    "zone": "Vigentino - Q.Re Fatima",
+    "municipality": 5,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.426434057,
+    "lng": 9.2046062904,
+    "legacyId": "1213",
+    "code": "MI1A07200Q",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA GUARNERI19"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1083",
+    "name": "Gentilino, 4/A",
+    "slug": "gentilino-4-a-mi-1083",
+    "address": "Via Gentilino 4/A",
+    "zone": "Porta Ticinese - Conca Del Naviglio",
+    "municipality": 5,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4488641583,
+    "lng": 9.18069755455,
+    "legacyId": "1083",
+    "code": "MI1A06600C",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA GENTILINO4"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1404",
+    "name": "Ics International School",
+    "slug": "ics-international-school-mi-1404",
+    "address": "Viale Ortles 46",
+    "zone": "Scalo Romana",
+    "municipality": 5,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.43954102596085,
+    "lng": 9.205645249055886,
+    "legacyId": "1404",
+    "code": "MI1APA500E",
+    "aliases": [
+      "ICS INTERNATIONAL SCHOOL"
+    ],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mi-1226",
+    "name": "Istituto Madre Cocchetti Annunciata",
+    "slug": "istituto-madre-cocchetti-annunciata-mi-1226",
+    "address": "Viale Giovanni Da Cermenate 4",
+    "zone": "Stadera - Chiesa Rossa - Q.Re Torretta - Conca Fal",
+    "municipality": 5,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.437295843,
+    "lng": 9.17668939303,
+    "legacyId": "1226",
+    "code": "MI1A196005",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"MADRE ANNUNCIATA COCCHETTI\""
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-21",
+        "time": "09:30",
+        "source": "https://cocchetti.it/open-day",
+        "booking": "Pulsante di iscrizione ufficiale",
+        "location": "Viale Giovanni da Cermenate 4, Milano",
+        "id": "mi-1226-2026-11-21-0930"
+      }
+    ]
+  },
+  {
+    "id": "mi-1383",
+    "name": "La Giocomotiva",
+    "slug": "la-giocomotiva-mi-1383",
+    "address": "Via Ruggero Bonghi 30",
+    "zone": "Tibaldi",
+    "municipality": 5,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4409183637,
+    "lng": 9.18447099438,
+    "legacyId": "1383",
+    "code": "MI1A571008",
+    "aliases": [
+      "LA GIOCOMOTIVA"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1233",
+    "name": "La Zolla",
+    "slug": "la-zolla-mi-1233",
+    "address": "Via Giulio Carcano 53",
+    "zone": "Tibaldi",
+    "municipality": 5,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4394469828,
+    "lng": 9.18500370073,
+    "legacyId": "1233",
+    "code": "MI1A24200N",
+    "aliases": [
+      "LA ZOLLA"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-12-04",
+        "time": "09:45–11:00",
+        "source": "https://www.lazolla.it/event/scuola-dellinfanzia-e-sezione-primavera-via-carcano-2/",
+        "location": "Via Giulio Carcano 53, Milano",
+        "booking": "Modulo ufficiale; iscrizioni entro il 3 dicembre 2026 alle 12:00",
+        "id": "mi-1233-2026-12-04-09451100"
+      }
+    ]
+  },
+  {
+    "id": "mi-1396",
+    "name": "Mbm - Milano Bilingue Montessori",
+    "slug": "mbm-milano-bilingue-montessori-mi-1396",
+    "address": "Via Nicola Palmieri 72",
+    "zone": "Stadera - Chiesa Rossa - Q.Re Torretta - Conca Fal",
+    "municipality": 5,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4347670278,
+    "lng": 9.18492787125,
+    "legacyId": "1396",
+    "code": "MI1AD4500V",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA MONTESSORI BILINGUE"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-17",
+        "time": "09:30–11:00",
+        "source": "https://www.montessoribilingue.it/open-day/",
+        "booking": "segreteria@montessoribilingue.it",
+        "location": "Via Palmieri 72/4, Milano",
+        "id": "mi-1396-2026-11-17-09301100"
+      }
+    ]
+  },
+  {
+    "id": "mi-1242",
+    "name": "Pescarenico, 1",
+    "slug": "pescarenico-1-mi-1242",
+    "address": "Via Pescarenico 1",
+    "zone": "Stadera - Chiesa Rossa - Q.Re Torretta - Conca Fal",
+    "municipality": 5,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4333452388,
+    "lng": 9.17271466949,
+    "legacyId": "1242",
+    "code": "MI1A11300R",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA PESCARENICO1"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1082",
+    "name": "Pezzi, 3",
+    "slug": "pezzi-3-mi-1082",
+    "address": "Via Giulietta Pezzi 3",
+    "zone": "Porta Vigentina - Porta Lodovica",
+    "municipality": 5,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4479705034,
+    "lng": 9.19688428778,
+    "legacyId": "1082",
+    "code": "MI1A11400L",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA PEZZI3"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1229",
+    "name": "S. Abbondio, 27 (Provv Via Palmieri, 24)",
+    "slug": "s-abbondio-27-provv-via-palmieri-24-mi-1229",
+    "address": "Via San Abbondio 27",
+    "zone": "Stadera - Chiesa Rossa - Q.Re Torretta - Conca Fal",
+    "municipality": 5,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1229",
+    "code": "MI1A13100A",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SAN ABBONDIO27"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1231",
+    "name": "S. Giacomo, 3",
+    "slug": "s-giacomo-3-mi-1231",
+    "address": "Via San Giacomo 3",
+    "zone": "Stadera - Chiesa Rossa - Q.Re Torretta - Conca Fal",
+    "municipality": 5,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.428777998,
+    "lng": 9.17386394802,
+    "legacyId": "1231",
+    "code": "MI1A13500N",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SAN GIACOMO3"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1224",
+    "name": "Statale Cassoni",
+    "slug": "statale-cassoni-mi-1224",
+    "address": "Via Attilio Cassoni 7",
+    "zone": "Stadera - Chiesa Rossa - Q.Re Torretta - Conca Fal",
+    "municipality": 5,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.4311881423,
+    "lng": 9.1753445863,
+    "legacyId": "1224",
+    "code": "MIAA8FV013",
+    "aliases": [
+      "INFANZIA A. CASSONI"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1084",
+    "name": "Statale Giambologna",
+    "slug": "statale-giambologna-mi-1084",
+    "address": "Via Giambologna 30",
+    "zone": "Porta Ticinese - Conca Del Naviglio",
+    "municipality": 5,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.4459944598,
+    "lng": 9.18457844277,
+    "legacyId": "1084",
+    "code": "MIAA8CB01Q",
+    "aliases": [
+      "INFANZIA VIA GIAMBOLOGNA"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2027-01-19",
+        "time": "18:00–19:00",
+        "source": "https://www.icsbarozzi.edu.it/openschool",
+        "booking": "Verificare le modalità sul sito della scuola",
+        "location": "Via Giambologna 30, Milano",
+        "id": "mi-1084-2027-01-19-18001900"
+      }
+    ]
+  },
+  {
+    "id": "mi-1217",
+    "name": "Statale Solaroli",
+    "slug": "statale-solaroli-mi-1217",
+    "address": "Via Paolo Solaroli 9",
+    "zone": "Vigentino - Q.Re Fatima",
+    "municipality": 5,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.4364309346,
+    "lng": 9.19879770293,
+    "legacyId": "1217",
+    "code": "MIAA80901P",
+    "aliases": [
+      "INFANZIA - VIA SOLAROLI"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-12-15",
+        "time": "16:45–18:00",
+        "source": "https://www.icsmorantefilzi.edu.it/pagine/open-day-infanzia-ics-morante-filzi-2026-2027",
+        "booking": "Contattare l’istituto per informazioni sull’accesso",
+        "location": "Via Paolo Solaroli 9, Milano",
+        "id": "mi-1217-2026-12-15-16451800"
+      }
+    ]
+  },
+  {
+    "id": "mi-1204",
+    "name": "Toselli Francesco",
+    "slug": "toselli-francesco-mi-1204",
+    "address": "Via Cuore Immacolato Di Maria 7",
+    "zone": "Vigentino - Q.Re Fatima",
+    "municipality": 5,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4362998505,
+    "lng": 9.19687493272,
+    "legacyId": "1204",
+    "code": "MI1A20000G",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"FRANCESCO TOSELLI\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1219",
+    "name": "Val Di Sole, 9/A",
+    "slug": "val-di-sole-9-a-mi-1219",
+    "address": "Via Val Di Sole 9",
+    "zone": "Vigentino - Q.Re Fatima",
+    "municipality": 5,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4321564536,
+    "lng": 9.20409691509,
+    "legacyId": "1219",
+    "code": "MI1A159006",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA VAL DI SOLE9/A"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1259",
+    "name": "Ada Biolchini Dell' Acqua",
+    "slug": "ada-biolchini-dell-acqua-mi-1259",
+    "address": "Via Cascina Corba 97",
+    "zone": "Lorenteggio",
+    "municipality": 6,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4511595487,
+    "lng": 9.1272098009,
+    "legacyId": "1259",
+    "code": "MI1A19200T",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA ADA BOLCHINI DELL'ACQUA"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-21",
+        "time": "09:00–12:30",
+        "source": "https://www.bolchinicascinacorba.org/evento/open-day-nido-primavera-infanzia-british-kindergarten/",
+        "booking": "Accesso libero",
+        "location": "Via Cascina Corba 97, Milano",
+        "id": "mi-1259-2026-11-21-09001230"
+      }
+    ]
+  },
+  {
+    "id": "mi-1078",
+    "name": "Alzaia Nav. Grande, 22",
+    "slug": "alzaia-nav-grande-22-mi-1078",
+    "address": "Alzaia Naviglio Grande 22",
+    "zone": "Porta Ticinese - Conchetta",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4518284769,
+    "lng": 9.17429985192,
+    "legacyId": "1078",
+    "code": "MI1A003009",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA ALZAIA NAVIGLIO GRANDE22"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1248",
+    "name": "Anemoni, 4",
+    "slug": "anemoni-4-mi-1248",
+    "address": "Via Degli Anemoni 4",
+    "zone": "Lorenteggio",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4554768106,
+    "lng": 9.13105845218,
+    "legacyId": "1248",
+    "code": "MI1A004005",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA ANEMONI4"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1249",
+    "name": "Barzilai, 8",
+    "slug": "barzilai-8-mi-1249",
+    "address": "Via Salvatore Barzilai 8",
+    "zone": "Bande Nere",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.452312697,
+    "lng": 9.14080623662,
+    "legacyId": "1249",
+    "code": "MI1A01500G",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA BARZILAI8"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1080",
+    "name": "Bergognone, 6",
+    "slug": "bergognone-6-mi-1080",
+    "address": "Via Bergognone 6",
+    "zone": "Porta Genova",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4558317306,
+    "lng": 9.16212666202,
+    "legacyId": "1080",
+    "code": "MI1A018003",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA BERGOGNONE6"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1415",
+    "name": "Bloom International School",
+    "slug": "bloom-international-school-mi-1415",
+    "address": "Via Gentile Bellini 1",
+    "zone": "Giambellino",
+    "municipality": 6,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.4512839423,
+    "lng": 9.14299495396,
+    "legacyId": "1415",
+    "code": null,
+    "aliases": [],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mi-1234",
+    "name": "De Nicola, 18",
+    "slug": "de-nicola-18-mi-1234",
+    "address": "Via Enrico De Nicola 18",
+    "zone": "Barona",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4303792139,
+    "lng": 9.1565046169,
+    "legacyId": "1234",
+    "code": "MI1A05100P",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA DE NICOLA18"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1356",
+    "name": "Dei Crollalanza, 15",
+    "slug": "dei-crollalanza-15-mi-1356",
+    "address": "Via Dei Crollalanza 15",
+    "zone": "Porta Ticinese - Conchetta",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4456539363,
+    "lng": 9.16657684677,
+    "legacyId": "1356",
+    "code": "MI1A05300A",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA DEI CROLLALANZA15"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1252",
+    "name": "Don Orione",
+    "slug": "don-orione-mi-1252",
+    "address": "Viale Caterina Da Forli' 19",
+    "zone": "Bande Nere",
+    "municipality": 6,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4595254301,
+    "lng": 9.14513093211,
+    "legacyId": "1252",
+    "code": "MI1A195009",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"DON ORIONE\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1251",
+    "name": "Fondazione Grossman",
+    "slug": "fondazione-grossman-mi-1251",
+    "address": "Via Angelo Inganni 12",
+    "zone": "Lorenteggio",
+    "municipality": 6,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4476980773,
+    "lng": 9.12776987533,
+    "legacyId": "1251",
+    "code": "MI1A21300N",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA BILINGUE FONDAZIONE GROSSMAN"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1381",
+    "name": "Giro Giro Tondo",
+    "slug": "giro-giro-tondo-mi-1381",
+    "address": "Via Andrea Ponti 16",
+    "zone": "Moncucco - San Cristoforo",
+    "municipality": 6,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4458829996,
+    "lng": 9.15623699261,
+    "legacyId": "1381",
+    "code": "MI1A577007",
+    "aliases": [
+      "ASILO STEINERIANO GIRO GIRO TONDO"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1086",
+    "name": "La Zolla",
+    "slug": "la-zolla-mi-1086",
+    "address": "Via Bergognone 8",
+    "zone": "Porta Genova",
+    "municipality": 6,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4556898387,
+    "lng": 9.16222151244,
+    "legacyId": "1086",
+    "code": null,
+    "aliases": [],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mi-1254",
+    "name": "Legioni Romane 56",
+    "slug": "legioni-romane-56-mi-1254",
+    "address": "Viale Legioni Romane 56",
+    "zone": "Forze Armate",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4594313179,
+    "lng": 9.12730495765,
+    "legacyId": "1254",
+    "code": "MI1A07800P",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA LEGIONI ROMANE54",
+      "Legioni Romane, 56"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1394",
+    "name": "Les Galipettes",
+    "slug": "les-galipettes-mi-1394",
+    "address": "Via San Giuseppe Cottolengo 25",
+    "zone": "Ronchetto Sul Naviglio - Q.Re Lodovico Il Moro",
+    "municipality": 6,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.4418037109,
+    "lng": 9.14457290135,
+    "legacyId": "1394",
+    "code": null,
+    "aliases": [],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mi-1239",
+    "name": "Lope De Vega, 39",
+    "slug": "lope-de-vega-39-mi-1239",
+    "address": "Via Lope De Vega",
+    "zone": "Moncucco - San Cristoforo",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1239",
+    "code": "MI1A08000P",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA LOPE DE VEGA"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1266",
+    "name": "Lorenteggio, 6",
+    "slug": "lorenteggio-6-mi-1266",
+    "address": "Via Lorenteggio 6",
+    "zone": "Bande Nere",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4551811995,
+    "lng": 9.1501008704,
+    "legacyId": "1266",
+    "code": "MI1A08100E",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA LORENTEGGIO6"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1246",
+    "name": "Memmi, 10/1",
+    "slug": "memmi-10-1-mi-1246",
+    "address": "Via Memmi 10/1",
+    "zone": "Moncucco - San Cristoforo",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1246",
+    "code": "MI1A091005",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA MEMMI10/1"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1257",
+    "name": "Narcisi, 1",
+    "slug": "narcisi-1-mi-1257",
+    "address": "Via Dei Narcisi 1",
+    "zone": "Lorenteggio",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.450037859622476,
+    "lng": 9.128526553789282,
+    "legacyId": "1257",
+    "code": "MI1A10100E",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA DEI NARCISI1"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1261",
+    "name": "Narcisi, 6",
+    "slug": "narcisi-6-mi-1261",
+    "address": "Via Dei Narcisi 6",
+    "zone": "Lorenteggio",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4513074847,
+    "lng": 9.12800612417,
+    "legacyId": "1261",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1241",
+    "name": "Parenzo, 12",
+    "slug": "parenzo-12-mi-1241",
+    "address": "Via Parenzo 12",
+    "zone": "Ronchetto Sul Naviglio - Q.Re Lodovico Il Moro",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.440519061,
+    "lng": 9.14099792722,
+    "legacyId": "1241",
+    "code": "MI1A110009",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA PARENZO12"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1265",
+    "name": "Pisa, 5/1",
+    "slug": "pisa-5-1-mi-1265",
+    "address": "Via Ugo Pisa 5",
+    "zone": "Lorenteggio",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4526308541,
+    "lng": 9.11988611218,
+    "legacyId": "1265",
+    "code": "MI1A116008",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA PISA5/1"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1243",
+    "name": "S. Paolino, 4",
+    "slug": "s-paolino-4-mi-1243",
+    "address": "Via San Paolino 4",
+    "zone": "Barona",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4330926629,
+    "lng": 9.16360877175,
+    "legacyId": "1243",
+    "code": "MI1A137009",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SAN PAOLINO4"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1244",
+    "name": "Salerno, 5",
+    "slug": "salerno-5-mi-1244",
+    "address": "Via Salerno 5",
+    "zone": "Ronchetto Sul Naviglio - Q.Re Lodovico Il Moro",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4382450483,
+    "lng": 9.14808242782,
+    "legacyId": "1244",
+    "code": "MI1A13000E",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SALERNO5"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1240",
+    "name": "San Colombano, 8/A",
+    "slug": "san-colombano-8-a-mi-1240",
+    "address": "Via San Colombano 8",
+    "zone": "Ronchetto Sul Naviglio - Q.Re Lodovico Il Moro",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4386551972,
+    "lng": 9.12666441842,
+    "legacyId": "1240",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1260",
+    "name": "Sant'Angela Merici",
+    "slug": "sant-angela-merici-mi-1260",
+    "address": "Via Vespri Siciliani 55",
+    "zone": "Giambellino",
+    "municipality": 6,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4517252628,
+    "lng": 9.14642836977,
+    "legacyId": "1260",
+    "code": "MI1A258007",
+    "aliases": [
+      "SCUOLE DELL'INFANZIA \"SANT'ANGELA MERICI\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1085",
+    "name": "Santa Maria Al Naviglio",
+    "slug": "santa-maria-al-naviglio-mi-1085",
+    "address": "Alzaia Naviglio Grande 68",
+    "zone": "Porta Ticinese - Conchetta",
+    "municipality": 6,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4508186947,
+    "lng": 9.16945759926,
+    "legacyId": "1085",
+    "code": "MI1A17300C",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"S.MARIA AL NAVIGLIO\""
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-27",
+        "time": "10:00",
+        "source": "https://scuolainfanzianaviglio.it/una-mattinata-per-conoscerci/",
+        "booking": "Consigliata: 0236564636 o scuolanaviglio@gmail.com",
+        "location": "Alzaia Naviglio Grande 68, Milano",
+        "id": "mi-1085-2026-11-27-1000"
+      }
+    ]
+  },
+  {
+    "id": "mi-1088",
+    "name": "Savona, 30",
+    "slug": "savona-30-mi-1088",
+    "address": "Via Savona 30",
+    "zone": "Porta Genova",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4547170483,
+    "lng": 9.16534406805,
+    "legacyId": "1088",
+    "code": "MI1A14200R",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SAVONA30"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1253",
+    "name": "Scuola Comunita' Ebraica",
+    "slug": "scuola-comunita-ebraica-mi-1253",
+    "address": "Via Sally Mayer 4",
+    "zone": "Bande Nere",
+    "municipality": 6,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4557952661,
+    "lng": 9.13766853182,
+    "legacyId": "1253",
+    "code": "MI1A245005",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"SALLY MAYER\" COMUNITA' EBRAICA"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1235",
+    "name": "Statale De Pretis",
+    "slug": "statale-de-pretis-mi-1235",
+    "address": "Via Agostino De Pretis 15",
+    "zone": "Barona",
+    "municipality": 6,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.4301487266,
+    "lng": 9.1527438577,
+    "legacyId": "1235",
+    "code": "MIAA8DY019",
+    "aliases": [
+      "INFANZIA VIA DE PRETIS"
+    ],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mi-1262",
+    "name": "Statale Soderini",
+    "slug": "statale-soderini-mi-1262",
+    "address": "Via Luigi Soderini 41",
+    "zone": "Bande Nere",
+    "municipality": 6,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.4553515288,
+    "lng": 9.13874806784,
+    "legacyId": "1262",
+    "code": "MIAA8FY01E",
+    "aliases": [
+      "INFANZIA VIA SODERINI"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-12-01",
+        "time": "17:00",
+        "source": "https://icnazariosauro.edu.it/evento/open-day-soderini-2026/",
+        "booking": "Ingresso libero secondo il Comune; riconfermare l’orario",
+        "location": "Via Soderini 41, Milano",
+        "id": "mi-1262-2026-12-01-1700"
+      }
+    ]
+  },
+  {
+    "id": "mi-1264",
+    "name": "Tolstoi, 79",
+    "slug": "tolstoi-79-mi-1264",
+    "address": "Via Leone Tolstoi 79",
+    "zone": "Bande Nere",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.456860757,
+    "lng": 9.14744048004,
+    "legacyId": "1264",
+    "code": "MI1A15500V",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA TOLSTOI79"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1089",
+    "name": "Tortona, 80",
+    "slug": "tortona-80-mi-1089",
+    "address": "Via Tortona 80",
+    "zone": "Porta Genova",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4507468791,
+    "lng": 9.15693553964,
+    "legacyId": "1089",
+    "code": "MI1A15600P",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA TORTONA80"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1238",
+    "name": "Watt, 39",
+    "slug": "watt-39-mi-1238",
+    "address": "Via Giacomo Watt 39",
+    "zone": "Moncucco - San Cristoforo",
+    "municipality": 6,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4432015551,
+    "lng": 9.14992807047,
+    "legacyId": "1238",
+    "code": "MI1A168001",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA WATT"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1091",
+    "name": "Andrea Verga, 19",
+    "slug": "andrea-verga-19-mi-1091",
+    "address": "Via Andrea Verga 19",
+    "zone": "Porta Magenta",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4622759036,
+    "lng": 9.1603426474,
+    "legacyId": "1091",
+    "code": "MI1A166009",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA VERGA19"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1366",
+    "name": "Anselmo da Baggio 54",
+    "slug": "a-da-baggio-54-mi-1366",
+    "address": "Via Anselmo Da Baggio 54",
+    "zone": "Baggio",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4650324373,
+    "lng": 9.08849680133,
+    "legacyId": "1366",
+    "code": "MI1A00600R",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA A.DA BAGGIO54",
+      "A. Da Baggio, 54"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1275",
+    "name": "Betlem – Figlie di Betlem",
+    "slug": "betlem-mi-1275",
+    "address": "Via Novara 540",
+    "zone": "Figino",
+    "municipality": 7,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4896363023,
+    "lng": 9.0720423423,
+    "legacyId": "1275",
+    "code": "MI1A22700G",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"BETLEM\"",
+      "Betlem"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1271",
+    "name": "Branca, 2",
+    "slug": "branca-2-mi-1271",
+    "address": "Via Giulio Branca 2",
+    "zone": "Bande Nere",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4671321147,
+    "lng": 9.133694279,
+    "legacyId": "1271",
+    "code": "MI1A02200P",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA BRANCA2"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1273",
+    "name": "Cabella 42",
+    "slug": "cabella-42-mi-1273",
+    "address": "Via Bartolomeo Cabella 42",
+    "zone": "Baggio",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4589210956,
+    "lng": 9.09198912686,
+    "legacyId": "1273",
+    "code": "MI1A025006",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CABELLA42",
+      "Cabella, 42"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1349",
+    "name": "Casa dei Bambini – Scuola Montessori",
+    "slug": "casa-dei-bambini-scuola-montessori-mi-1349",
+    "address": "Via Arosio 3",
+    "zone": "San Siro",
+    "municipality": 7,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4733298937,
+    "lng": 9.12487173685,
+    "legacyId": "1349",
+    "code": "MI1A17800G",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"CASA DEI BAMBINI SCUOLA MONTESSORI\"",
+      "Casa Dei Bambini - Scuola Montessori"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-18",
+        "time": "10:00–10:45",
+        "source": "https://www.montessori-milano.it/open-day-montessori-milano.html",
+        "id": "mi-1349-2026-11-18-10001045"
+      },
+      {
+        "date": "2026-11-19",
+        "time": "10:00–10:45",
+        "source": "https://www.montessori-milano.it/open-day-montessori-milano.html",
+        "id": "mi-1349-2026-11-19-10001045"
+      }
+    ]
+  },
+  {
+    "id": "mi-1250",
+    "name": "Caterina Da Forli', 14",
+    "slug": "caterina-da-forli-14-mi-1250",
+    "address": "Viale Caterina Da Forli' 14",
+    "zone": "Bande Nere",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.460093775343374,
+    "lng": 9.144913174113375,
+    "legacyId": "1250",
+    "code": "MI1A033005",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA C.DA FORLI'14"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1375",
+    "name": "Dolci / Cadorna",
+    "slug": "statale-dolci-mi-1375",
+    "address": "Via Carlo Dolci 5",
+    "zone": "San Siro",
+    "municipality": 7,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.4719645363,
+    "lng": 9.14297546501,
+    "legacyId": "1375",
+    "code": "MIAA8C401B",
+    "aliases": [
+      "INFANZIA LUIGI CADORNA",
+      "Statale Dolci"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1304",
+    "name": "Don Gnocchi 8",
+    "slug": "don-gnocchi-8-mi-1304",
+    "address": "Via Don Carlo Gnocchi 8",
+    "zone": "San Siro",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4736610613,
+    "lng": 9.12298831465,
+    "legacyId": "1304",
+    "code": "MI1A05700N",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA DON GNOCCHI8",
+      "Don Gnocchi, 8"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1380",
+    "name": "Fondazione Josef Tehillot",
+    "slug": "fondazione-josef-tehillot-mi-1380",
+    "address": "Via Dei Gracchi 5",
+    "zone": "Porta Magenta",
+    "municipality": 7,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4641475775,
+    "lng": 9.15203603376,
+    "legacyId": "1380",
+    "code": "MI1A55400E",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA LE JOSEPH TEHILLOT"
+    ],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mi-1277",
+    "name": "Forze Armate, 59",
+    "slug": "forze-armate-59-mi-1277",
+    "address": "Via Delle Forze Armate 59",
+    "zone": "Bande Nere",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4629020095,
+    "lng": 9.1313009973,
+    "legacyId": "1277",
+    "code": "MI1A063001",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA FORZE ARMATE59"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1095",
+    "name": "Immacolata Concezione",
+    "slug": "immacolata-concezione-mi-1095",
+    "address": "Via Elba 18",
+    "zone": "Porta Magenta",
+    "municipality": 7,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4640894633,
+    "lng": 9.15672412024,
+    "legacyId": "1095",
+    "code": "MI1A20400V",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"IMMACOLATA CONCEZIONE\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1279",
+    "name": "Immacolata Mariuccia Proverbio",
+    "slug": "immacolata-mariuccia-proverbio-mi-1279",
+    "address": "Via Pacifico Arcangeli 4",
+    "zone": "Quarto Cagnino",
+    "municipality": 7,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4752865067,
+    "lng": 9.11195585042,
+    "legacyId": "1279",
+    "code": "MI1A17600X",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"IMMACOLATA MARIUCCIA PROVERBIO\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1382",
+    "name": "La Zolla – Gianna Beretta Molla",
+    "slug": "la-zolla-gianna-beretta-molla-mi-1382",
+    "address": "Piazzale Brescia 3",
+    "zone": "San Siro",
+    "municipality": 7,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4704340843,
+    "lng": 9.14392467884,
+    "legacyId": "1382",
+    "code": "MI1A56100N",
+    "aliases": [
+      "LA ZOLLA \"GIANNA BERETTA MOLLA\"",
+      "La Zolla Gianna Beretta Molla"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1280",
+    "name": "Lamennais",
+    "slug": "statale-lamennais-mi-1280",
+    "address": "Via Lamennais 19",
+    "zone": "Quarto Cagnino",
+    "municipality": 7,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.4736769614,
+    "lng": 9.11258634648,
+    "legacyId": "1280",
+    "code": "MIAA8C702X",
+    "aliases": [
+      "INFANZIA VIA LAMENNAIS",
+      "Statale Lamennais"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-25",
+        "time": "17:00",
+        "source": "https://www.comune.milano.it/web/scuole-aperte/gli-istituti-comprensivi-di-milano/open-day/open-day-municipio-7",
+        "id": "mi-1280-2026-11-25-1700"
+      }
+    ]
+  },
+  {
+    "id": "mi-1305",
+    "name": "Lycée Stendhal – Maternelle",
+    "slug": "ecole-francaise-de-milan-mi-1305",
+    "address": "Via Laveno 12",
+    "zone": "San Siro",
+    "municipality": 7,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.4769641148,
+    "lng": 9.13830410336,
+    "legacyId": "1305",
+    "code": null,
+    "aliases": [
+      "Ecole Francaise De Milan"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1269",
+    "name": "Marco Polo · Airaghi 40",
+    "slug": "statale-airaghi-mi-1269",
+    "address": "Via Airaghi 40",
+    "zone": "Quinto Romano",
+    "municipality": 7,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.4756967253,
+    "lng": 9.08566532952,
+    "legacyId": "1269",
+    "code": "MIAA8C701V",
+    "aliases": [
+      "INFANZIA VIA AIRAGHI",
+      "Statale Airaghi"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-23",
+        "time": "17:00",
+        "source": "https://www.comune.milano.it/web/scuole-aperte/gli-istituti-comprensivi-di-milano/open-day/open-day-municipio-7",
+        "id": "mi-1269-2026-11-23-1700"
+      }
+    ]
+  },
+  {
+    "id": "mi-1272",
+    "name": "Marx",
+    "slug": "statale-carlo-marx-mi-1272",
+    "address": "Via Carlo Marx 2",
+    "zone": "Quarto Cagnino",
+    "municipality": 7,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.4707806394,
+    "lng": 9.11280952842,
+    "legacyId": "1272",
+    "code": "MIAA8C7031",
+    "aliases": [
+      "INFANZIA VIA C.MARX",
+      "Statale Carlo Marx"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-24",
+        "time": "17:00",
+        "source": "https://www.comune.milano.it/web/scuole-aperte/gli-istituti-comprensivi-di-milano/open-day/open-day-municipio-7",
+        "id": "mi-1272-2026-11-24-1700"
+      }
+    ]
+  },
+  {
+    "id": "mi-1256",
+    "name": "Massaua, 15",
+    "slug": "massaua-15-mi-1256",
+    "address": "Via Massaua 15",
+    "zone": "Bande Nere",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4605002496,
+    "lng": 9.14740754331,
+    "legacyId": "1256",
+    "code": "MI1A088009",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA MASSAUA15"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1283",
+    "name": "Mater Divinae Gratiae",
+    "slug": "mater-divinae-gratiae-mi-1283",
+    "address": "Via Tommaso Gulli 14",
+    "zone": "Bande Nere",
+    "municipality": 7,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1283",
+    "code": null,
+    "aliases": [],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mi-1287",
+    "name": "MB School (ex Madre Bucchi)",
+    "slug": "madre-bucchi-mi-1287",
+    "address": "Via Palmi 25",
+    "zone": "Forze Armate",
+    "municipality": 7,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4585133296,
+    "lng": 9.09831436779,
+    "legacyId": "1287",
+    "code": "MI1A231007",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA PARROCCHIALE MADRE BUCCHI",
+      "Madre Bucchi"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-21",
+        "time": "09:00",
+        "source": "https://www.istitutomadrebucchi.it/nuovi-percorsi-bilingue-milano/",
+        "id": "mi-1287-2026-11-21-0900"
+      }
+    ]
+  },
+  {
+    "id": "mi-1207",
+    "name": "Merkos L'Inyonei Chinuch",
+    "slug": "merkos-l-inyonei-chinuch-mi-1207",
+    "address": "Via Delle Forze Armate 61",
+    "zone": "Bande Nere",
+    "municipality": 7,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4629065269,
+    "lng": 9.13061727337,
+    "legacyId": "1207",
+    "code": "MI1A563009",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"MERKOS L'INYONEI CHINUCH\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1270",
+    "name": "Milesi 2",
+    "slug": "milesi-2-mi-1270",
+    "address": "Via Bianca Milesi 2",
+    "zone": "Forze Armate",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1270",
+    "code": "MI1A09300R",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA MILESI2",
+      "Milesi, 2"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1284",
+    "name": "Muggiano / Arcobaleno",
+    "slug": "statale-muggiano-mi-1284",
+    "address": "Via Muggiano 16 (presso primaria 14)",
+    "zone": "Muggiano",
+    "municipality": 7,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.4487064666,
+    "lng": 9.07061808408,
+    "legacyId": "1284",
+    "code": "MIAA82002E",
+    "aliases": [
+      "INFANZIA VIA MUGGIANO",
+      "Statale Muggiano"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-28",
+        "time": "09:00–12:00",
+        "source": "https://www.comune.milano.it/web/scuole-aperte/gli-istituti-comprensivi-di-milano/open-day/open-day-municipio-7",
+        "id": "mi-1284-2026-11-28-09001200"
+      }
+    ]
+  },
+  {
+    "id": "mi-1412",
+    "name": "Nagib Mahfuz",
+    "slug": "nagib-mahfuz-mi-1412",
+    "address": "Via Simone Stratico 7",
+    "zone": "San Siro",
+    "municipality": 7,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.4758386991,
+    "lng": 9.13519994076,
+    "legacyId": "1412",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1285",
+    "name": "Ontani 1",
+    "slug": "ontani-1-mi-1285",
+    "address": "Via Degli Ontani 1",
+    "zone": "Baggio",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4540675548,
+    "lng": 9.08094112178,
+    "legacyId": "1285",
+    "code": "MI1A10500T",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA ONTANI1",
+      "Ontani, 1"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1312",
+    "name": "Paravia 3",
+    "slug": "paravia-3-mi-1312",
+    "address": "Via Pier Alessandro Paravia 3",
+    "zone": "San Siro",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4697839624,
+    "lng": 9.12674330218,
+    "legacyId": "1312",
+    "code": "MI1A109005",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA PARAVIA3",
+      "Paravia, 3"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1288",
+    "name": "Quinto Romano 26",
+    "slug": "quinto-romano-26-mi-1288",
+    "address": "Via Quinto Romano 26",
+    "zone": "Baggio",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.464739571,
+    "lng": 9.08641250236,
+    "legacyId": "1288",
+    "code": "MI1A12200G",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA QUINTO ROMANO26",
+      "Quinto Romano, 26"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1274",
+    "name": "Salici / Fratelli Cervi",
+    "slug": "statale-dei-salici-mi-1274",
+    "address": "Via dei Salici 4",
+    "zone": "Baggio",
+    "municipality": 7,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.4518268227,
+    "lng": 9.08188558801,
+    "legacyId": "1274",
+    "code": "MIAA82001D",
+    "aliases": [
+      "INFANZIA VIA DEI SALICI",
+      "Statale Dei Salici"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2027-01-14",
+        "time": "10:00–11:30",
+        "source": "https://www.comune.milano.it/web/scuole-aperte/gli-istituti-comprensivi-di-milano/open-day/open-day-municipio-7",
+        "id": "mi-1274-2027-01-14-10001130"
+      }
+    ]
+  },
+  {
+    "id": "mi-1278",
+    "name": "Salvadori Giulio",
+    "slug": "salvadori-giulio-mi-1278",
+    "address": "Via Tonezza 13",
+    "zone": "Bande Nere",
+    "municipality": 7,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4616891534,
+    "lng": 9.13061169394,
+    "legacyId": "1278",
+    "code": "MI1A25400X",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"GIULIO SALVADORI\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1317",
+    "name": "Santa Giuliana Falconieri",
+    "slug": "santa-giuliana-falconieri-mi-1317",
+    "address": "Via Zamagna 18",
+    "zone": "San Siro",
+    "municipality": 7,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4749914776,
+    "lng": 9.13386828537,
+    "legacyId": "1317",
+    "code": "MI1A260007",
+    "aliases": [
+      "SCUOLA DELL'INF. SR. COMPASSIONISTE S.GIULIANA FALCONIERI"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1102",
+    "name": "Sanzio, 11",
+    "slug": "sanzio-11-mi-1102",
+    "address": "Via Sanzio 19",
+    "zone": "De Angeli - Monte Rosa",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1102",
+    "code": "MI1A140005",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SANZIO19"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1359",
+    "name": "Seprio, 11 Bis",
+    "slug": "seprio-11-bis-mi-1359",
+    "address": "Via Seprio 11",
+    "zone": "Porta Magenta",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4656427349,
+    "lng": 9.15304451125,
+    "legacyId": "1359",
+    "code": "MI1A14400C",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SEPRIO11"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1320",
+    "name": "Silla 150/A",
+    "slug": "silla-150-a-mi-1320",
+    "address": "Via Lucio Cornelio Silla 150/A",
+    "zone": "Figino",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.49390914194302,
+    "lng": 9.077136966193853,
+    "legacyId": "1320",
+    "code": "MI1A145008",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SILLA150",
+      "Silla, 150/A"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1321",
+    "name": "Stratico 3",
+    "slug": "stratico-3-mi-1321",
+    "address": "Via Simone Stratico 3",
+    "zone": "San Siro",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4758296857,
+    "lng": 9.13606910392,
+    "legacyId": "1321",
+    "code": "MI1A15100G",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA STRATICO3",
+      "Stratico, 3"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1289",
+    "name": "Val d’Intelvi 11",
+    "slug": "val-d-intelvi-11-mi-1289",
+    "address": "Via Val D'Intelvi 11",
+    "zone": "Baggio",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4609082798,
+    "lng": 9.08719634173,
+    "legacyId": "1289",
+    "code": "MI1A16000A",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA VAL D'INTELVI11",
+      "Val D'Intelvi, 11"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1290",
+    "name": "Valdagno 10",
+    "slug": "valdagno-10-mi-1290",
+    "address": "Via Valdagno 10",
+    "zone": "Forze Armate",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4616824035,
+    "lng": 9.1121811982,
+    "legacyId": "1290",
+    "code": "MI1A162002",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA VALDAGNO10",
+      "Valdagno, 10"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1291",
+    "name": "Valle Antrona 12",
+    "slug": "valle-antrona-12-mi-1291",
+    "address": "Via Valle Antrona 12",
+    "zone": "Baggio",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4563411062,
+    "lng": 9.08870845609,
+    "legacyId": "1291",
+    "code": "MI1A16300T",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA VALLE ANTRONA12",
+      "Valle Antrona, 12"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1292",
+    "name": "Viterbo 43",
+    "slug": "viterbo-43-mi-1292",
+    "address": "Via Viterbo 43",
+    "zone": "Forze Armate",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4552739268,
+    "lng": 9.10545545508,
+    "legacyId": "1292",
+    "code": "MI1A167005",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA VITERBO43",
+      "Viterbo, 43"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1376",
+    "name": "Viterbo 7",
+    "slug": "viterbo-7-mi-1376",
+    "address": "Via Viterbo 7",
+    "zone": "Forze Armate",
+    "municipality": 7,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4565439565,
+    "lng": 9.1122658752,
+    "legacyId": "1376",
+    "code": "MI1A062005",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA VITERBO.7",
+      "Viterbo, 7"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1331",
+    "name": "Arsia, 2",
+    "slug": "arsia-2-mi-1331",
+    "address": "Via Arsia 2",
+    "zone": "Quarto Oggiaro - Vialba - Musocco",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.514345931340216,
+    "lng": 9.128472338906642,
+    "legacyId": "1331",
+    "code": "MI1A009008",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA ARSIA2"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1297",
+    "name": "Beata Vergine",
+    "slug": "beata-vergine-mi-1297",
+    "address": "Via Giuseppe Terragni 36",
+    "zone": "Qt 8",
+    "municipality": 8,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4859003686,
+    "lng": 9.13340885459,
+    "legacyId": "1297",
+    "code": "MI1A25100C",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"BEATA VERGINE\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1322",
+    "name": "Betti, 56",
+    "slug": "betti-56-mi-1322",
+    "address": "Via Betti 71",
+    "zone": "Q.Re Gallaratese - Q.Re San Leonardo - Lampugnano",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1322",
+    "code": "MI1A01900V",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA BETTI71"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1298",
+    "name": "Borsa, 6",
+    "slug": "borsa-6-mi-1298",
+    "address": "Via Mario Borsa 6",
+    "zone": "Q.Re Gallaratese - Q.Re San Leonardo - Lampugnano",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4998917652,
+    "lng": 9.10560844176,
+    "legacyId": "1298",
+    "code": "MI1A02100V",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA BORSA6"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1294",
+    "name": "Borsi · Pasolini / Cascina Merlata (già Appennini)",
+    "slug": "statale-appennini-mi-1294",
+    "address": "Via Jona",
+    "zone": "Cascina Merlata",
+    "municipality": 8,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": null,
+    "lng": null,
+    "legacyId": "borsi",
+    "code": "MIAA8C101X",
+    "aliases": [
+      "INFANZIA VIA JONA",
+      "Statale Appennini"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-12-15",
+        "time": "17:00–19:00",
+        "source": "https://www.istitutocomprensivoborsi.edu.it/pagine/open-day-e-incontri-serali-istituto-comprensivo-borsi-2",
+        "location": "Sede dell’incontro: via Viscontini 7",
+        "id": "mi-1294-2026-12-15-17001900"
+      },
+      {
+        "date": "2027-01-14",
+        "time": "17:00–19:00",
+        "source": "https://www.istitutocomprensivoborsi.edu.it/pagine/open-day-e-incontri-serali-istituto-comprensivo-borsi-2",
+        "location": "Infanzia Pasolini, via Pasolini 90",
+        "id": "mi-1294-2027-01-14-17001900"
+      }
+    ]
+  },
+  {
+    "id": "mi-1332",
+    "name": "Brivio, 8",
+    "slug": "brivio-8-mi-1332",
+    "address": "Via Brivio 8",
+    "zone": "Villapizzone - Cagnola - Boldinasco",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5036303117,
+    "lng": 9.14451373561,
+    "legacyId": "1332",
+    "code": "MI1A02300E",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA BRIVIO8"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1334",
+    "name": "Capuana, 8",
+    "slug": "capuana-8-mi-1334",
+    "address": "Via Luigi Capuana 8",
+    "zone": "Quarto Oggiaro - Vialba - Musocco",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5179484555,
+    "lng": 9.14166314406,
+    "legacyId": "1334",
+    "code": "MI1A02700T",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CAPUANA8"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1309",
+    "name": "Casa Dei Bambini Montessori",
+    "slug": "casa-dei-bambini-montessori-mi-1309",
+    "address": "Via Lorenzo Bartolini 46",
+    "zone": "Villapizzone - Cagnola - Boldinasco",
+    "municipality": 8,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4921437538,
+    "lng": 9.1523223502,
+    "legacyId": "1309",
+    "code": "MI1A18100B",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA A METODO MONTESSORI"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1333",
+    "name": "Castellino Da Castello, 10",
+    "slug": "castellino-da-castello-10-mi-1333",
+    "address": "Via Castellino Da Castello 10",
+    "zone": "Villapizzone - Cagnola - Boldinasco",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4962021931,
+    "lng": 9.1585545643,
+    "legacyId": "1333",
+    "code": "MI1A03100D",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA C.DA CASTELLO10"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1358",
+    "name": "Castellino Da Castello, 5",
+    "slug": "castellino-da-castello-5-mi-1358",
+    "address": "Via Castellino Da Castello 5",
+    "zone": "Villapizzone - Cagnola - Boldinasco",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4956755887,
+    "lng": 9.15882740241,
+    "legacyId": "1358",
+    "code": "MI1A032009",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA C.DA CASTELLO5"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1299",
+    "name": "Cesenatico, 6",
+    "slug": "cesenatico-6-mi-1299",
+    "address": "Via Cesenatico 6",
+    "zone": "Qt 8",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4841237665,
+    "lng": 9.13599613287,
+    "legacyId": "1299",
+    "code": "MI1A03700C",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CESENATICO6"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1300",
+    "name": "Chiarelli, 14",
+    "slug": "chiarelli-14-mi-1300",
+    "address": "Via Luigi Chiarelli 14",
+    "zone": "Q.Re Gallaratese - Q.Re San Leonardo - Lampugnano",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4908386996,
+    "lng": 9.12243319264,
+    "legacyId": "1300",
+    "code": "MI1A038008",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CHIARELLI14"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1301",
+    "name": "Cilea, 52",
+    "slug": "cilea-52-mi-1301",
+    "address": "Via Francesco Cilea 52",
+    "zone": "Q.Re Gallaratese - Q.Re San Leonardo - Lampugnano",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4967643327,
+    "lng": 9.10469925956,
+    "legacyId": "1301",
+    "code": "MI1A039004",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CILEA52"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1303",
+    "name": "Clotilde Ratti Welcher",
+    "slug": "ratti-welcher-clotilde-mi-1303",
+    "address": "Piazza San Giovanni 7",
+    "zone": "Trenno",
+    "municipality": 8,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4906422217,
+    "lng": 9.10001051012,
+    "legacyId": "1303",
+    "code": "MI1A23900T",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"RATTI WELCHER CLOTILDE\"",
+      "Ratti Welcher Clotilde"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1335",
+    "name": "Console Marcello, 7",
+    "slug": "console-marcello-7-mi-1335",
+    "address": "Via Console Marcello 7",
+    "zone": "Villapizzone - Cagnola - Boldinasco",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4992808883,
+    "lng": 9.14896753068,
+    "legacyId": "1335",
+    "code": "MI1A04400G",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CONSOLE MARCELLO7"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1337",
+    "name": "Faravelli, 36",
+    "slug": "faravelli-36-mi-1337",
+    "address": "Via Luigi Giuseppe Faravelli 36",
+    "zone": "Portello",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4831449241,
+    "lng": 9.15147686394,
+    "legacyId": "1337",
+    "code": "MI1A059009",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA FARAVELLI36"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1350",
+    "name": "Francescane Del Cuore Immacolato Di Maria",
+    "slug": "francescane-del-cuore-immacolato-di-maria-mi-1350",
+    "address": "Via Garegnano 10",
+    "zone": "Maggiore - Musocco - Certosa",
+    "municipality": 8,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5014655736,
+    "lng": 9.12889553804,
+    "legacyId": "1350",
+    "code": "MI1A209002",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"SUORE FRANCESCANE\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1338",
+    "name": "Giovanni XXIIi",
+    "slug": "giovanni-xxiii-mi-1338",
+    "address": "Via Giovanni Ambrogio De Predis 8",
+    "zone": "Villapizzone - Cagnola - Boldinasco",
+    "municipality": 8,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4974554306,
+    "lng": 9.15136184634,
+    "legacyId": "1338",
+    "code": "MI1A202007",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"GIOVANNI XXIII\""
+    ],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mi-1326",
+    "name": "Graf, 72",
+    "slug": "graf-72-mi-1326",
+    "address": "Via Arturo Graf 72",
+    "zone": "Quarto Oggiaro - Vialba - Musocco",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5127171422,
+    "lng": 9.14556214051,
+    "legacyId": "1326",
+    "code": "MI1A070004",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA GRAF72"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1104",
+    "name": "Istituto San Paolo Delle Suore Angeliche",
+    "slug": "istituto-san-paolo-delle-suore-angeliche-mi-1104",
+    "address": "Via Michelangelo Buonarroti 49",
+    "zone": "De Angeli - Monte Rosa",
+    "municipality": 8,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4726824049,
+    "lng": 9.15516160681,
+    "legacyId": "1104",
+    "code": "MI1A189002",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"IST. SAN PAOLO SUORE ANGELICHE\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1307",
+    "name": "Lampugnano 163",
+    "slug": "lampugnano-163-mi-1307",
+    "address": "Via Lampugnano 163",
+    "zone": "Trenno",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4919429945,
+    "lng": 9.10354005016,
+    "legacyId": "1307",
+    "code": "MI1A07700V",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA LAMPUGNANO163",
+      "Lampugnano, 163"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1417",
+    "name": "Leone XIII",
+    "slug": "leone-xiii-mi-1417",
+    "address": "Via Leone Tredicesimo 12",
+    "zone": "Pagano",
+    "municipality": 8,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.474263479,
+    "lng": 9.16319276643,
+    "legacyId": "1417",
+    "code": "MI1A0P5005",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA ISTITUTO LEONE XIII"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1393",
+    "name": "Mac Mahon, 100",
+    "slug": "mac-mahon-100-mi-1393",
+    "address": "Via Mac Mahon 100",
+    "zone": "Villapizzone - Cagnola - Boldinasco",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4955650132,
+    "lng": 9.15603979085,
+    "legacyId": "1393",
+    "code": "MI1AEB500O",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA MAC MAHON"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1342",
+    "name": "Magreglio, 3",
+    "slug": "magreglio-3-mi-1342",
+    "address": "Via Magreglio 3",
+    "zone": "Villapizzone - Cagnola - Boldinasco",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4962068068,
+    "lng": 9.13228130003,
+    "legacyId": "1342",
+    "code": "MI1A08200A",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA MAGREGLIO3"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1096",
+    "name": "Mantegna, 8",
+    "slug": "mantegna-8-mi-1096",
+    "address": "Via Andrea Mantegna 8",
+    "zone": "Sarpi",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4834102049,
+    "lng": 9.16812825972,
+    "legacyId": "1096",
+    "code": "MI1A084002",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA MANTEGNA10"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1344",
+    "name": "Maria Ausiliatrice",
+    "slug": "maria-ausiliatrice-mi-1344",
+    "address": "Via Antonio Aldini 52",
+    "zone": "Quarto Oggiaro - Vialba - Musocco",
+    "municipality": 8,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5121895667,
+    "lng": 9.13339814488,
+    "legacyId": "1344",
+    "code": "MI1A17200L",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"MARIA AUSILIATRICE\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1345",
+    "name": "Maria Consolatrice",
+    "slug": "maria-consolatrice-mi-1345",
+    "address": "Via Ampezzo 8",
+    "zone": "Villapizzone - Cagnola - Boldinasco",
+    "municipality": 8,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4970361628,
+    "lng": 9.14047084432,
+    "legacyId": "1345",
+    "code": "MI1A175004",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"MARIA CONSOLATRICE\""
+    ],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mi-1097",
+    "name": "Massena, 12",
+    "slug": "massena-12-mi-1097",
+    "address": "Via Andrea Massena 12",
+    "zone": "Pagano",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4770681281,
+    "lng": 9.16591602269,
+    "legacyId": "1097",
+    "code": "MI1A089005",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA MASSENA12/3"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1310",
+    "name": "Montichiari, 7",
+    "slug": "montichiari-7-mi-1310",
+    "address": "Via Montichiari 7",
+    "zone": "Qt 8",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4852211575,
+    "lng": 9.14020838174,
+    "legacyId": "1310",
+    "code": "MI1A09800X",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA MONTICHIARI7"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1098",
+    "name": "Pier Capponi, 18-22",
+    "slug": "pier-capponi-18-22-mi-1098",
+    "address": "Via Piero Capponi 18",
+    "zone": "Pagano",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4696443124,
+    "lng": 9.15943807804,
+    "legacyId": "1098",
+    "code": "MI1A026002",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CAPPONI18/22"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1099",
+    "name": "Regina Carmeli",
+    "slug": "regina-carmeli-mi-1099",
+    "address": "Via Monviso 33",
+    "zone": "Sarpi",
+    "municipality": 8,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.4859593854,
+    "lng": 9.17022426015,
+    "legacyId": "1099",
+    "code": "MI1A223008",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"REGINA CARMELI\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1348",
+    "name": "Satta, 19",
+    "slug": "satta-19-mi-1348",
+    "address": "Via Sebastiano Satta 19",
+    "zone": "Quarto Oggiaro - Vialba - Musocco",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5180195038,
+    "lng": 9.14412021153,
+    "legacyId": "1348",
+    "code": "MI1A141001",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA SATTA19"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1319",
+    "name": "Sem Benelli, 12",
+    "slug": "sem-benelli-12-mi-1319",
+    "address": "Via Sem Benelli 12",
+    "zone": "Q.Re Gallaratese - Q.Re San Leonardo - Lampugnano",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4971274127,
+    "lng": 9.12272872399,
+    "legacyId": "1319",
+    "code": "MI1A017007",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA BENELLI SEM12"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1410",
+    "name": "St.Louis School",
+    "slug": "st-louis-school-mi-1410",
+    "address": "Via Marcantonio Colonna 24",
+    "zone": "Portello",
+    "municipality": 8,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.486489268,
+    "lng": 9.15355479206,
+    "legacyId": "1410",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1365",
+    "name": "Statale Gattamelata",
+    "slug": "statale-gattamelata-mi-1365",
+    "address": "Via Gattamelata 37",
+    "zone": "Portello",
+    "municipality": 8,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1365",
+    "code": "MIAA8F001X",
+    "aliases": [
+      "INFANZIA VIA GATTAMELATA"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1400",
+    "name": "Statale Mantegna",
+    "slug": "statale-mantegna-mi-1400",
+    "address": "Via Andrea Mantegna 10",
+    "zone": "Sarpi",
+    "municipality": 8,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.4835270187,
+    "lng": 9.16798551114,
+    "legacyId": "1400",
+    "code": "MIAA8F201G",
+    "aliases": [
+      "INFANZIA MANTEGNA"
+    ],
+    "enriched": false,
+    "events": [
+      {
+        "date": "2027-01-11",
+        "time": "16:30–18:30",
+        "source": "https://www.icvialinneo.edu.it/pagine/scuola-dellinfanzia-presentazione-dellofferta-formativa-e-visita-della-scuola-open-day",
+        "location": "Ingresso da via Monviso 4",
+        "id": "mi-1400-2027-01-11-16301830"
+      }
+    ]
+  },
+  {
+    "id": "mi-1347",
+    "name": "Statale Sapri",
+    "slug": "statale-sapri-mi-1347",
+    "address": "Via Sapri 25",
+    "zone": "Maggiore - Musocco - Certosa",
+    "municipality": 8,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.5046911385,
+    "lng": 9.12658894646,
+    "legacyId": "1347",
+    "code": "MIAA8C6013",
+    "aliases": [
+      "INFANZIA VIA SAPRI"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2027-01-09",
+        "time": "09:00–12:00",
+        "source": "https://www.icsaldamerini.edu.it/pagine/open-day-2026-scuola-dellinfanzia",
+        "location": "Via Sapri 25",
+        "id": "mi-1347-2027-01-09-09001200"
+      }
+    ]
+  },
+  {
+    "id": "mi-1351",
+    "name": "Val Lagarina, 26/A",
+    "slug": "val-lagarina-26-a-mi-1351",
+    "address": "Via Val Lagarina 26",
+    "zone": "Quarto Oggiaro - Vialba - Musocco",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5200404391,
+    "lng": 9.13199595287,
+    "legacyId": "1351",
+    "code": "MI1A161006",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA VAL LAGARINA26/A"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1352",
+    "name": "Varesina, 6",
+    "slug": "varesina-6-mi-1352",
+    "address": "Via Varesina 6",
+    "zone": "Villapizzone - Cagnola - Boldinasco",
+    "municipality": 8,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4943917088,
+    "lng": 9.14862457727,
+    "legacyId": "1352",
+    "code": "MI1A16400N",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA VARESINA6"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1130",
+    "name": "Affori, 21",
+    "slug": "affori-21-mi-1130",
+    "address": "Viale Affori 21",
+    "zone": "Affori",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5169100062,
+    "lng": 9.16820078341,
+    "legacyId": "1130",
+    "code": "MI1A00100N",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA AFFORI"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1115",
+    "name": "Aquilone Educational",
+    "slug": "aquilone-educational-mi-1115",
+    "address": "Via Enrico Acerbi 14",
+    "zone": "Bruzzano",
+    "municipality": 9,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5283687225,
+    "lng": 9.17658928028,
+    "legacyId": "1115",
+    "code": "MI1A17100R",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA ASILO INFANTILE"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1116",
+    "name": "Asilo Infantile Affori",
+    "slug": "asilo-infantile-affori-mi-1116",
+    "address": "Via Giuseppe Molteni 9",
+    "zone": "Affori",
+    "municipality": 9,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5178709246,
+    "lng": 9.16931740818,
+    "legacyId": "1116",
+    "code": "MI1A22100L",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"ASILO INFANTILE AFFORI\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1371",
+    "name": "Baps British American Pre-School",
+    "slug": "baps-british-american-pre-school-mi-1371",
+    "address": "Via Val Cismon 9",
+    "zone": "Niguarda - Ca' Granda - Prato Centenaro - Q.Re Ful",
+    "municipality": 9,
+    "management": "Privata",
+    "recognition": "Non paritaria nel catalogo 2025/26",
+    "lat": 45.5060982517,
+    "lng": 9.19465490819,
+    "legacyId": "1371",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1106",
+    "name": "Catone, 30",
+    "slug": "catone-30-mi-1106",
+    "address": "Via Catone 30",
+    "zone": "Bovisa",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4997167902,
+    "lng": 9.1701165755,
+    "legacyId": "1106",
+    "code": "MI1A034001",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CATONE30"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1131",
+    "name": "Cesari, 38",
+    "slug": "cesari-38-mi-1131",
+    "address": "Via Cesari 42",
+    "zone": "Niguarda - Ca' Granda - Prato Centenaro - Q.Re Ful",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": "1131",
+    "code": "MI1A03600L",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CESARI42"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1133",
+    "name": "Cirie' 10/Girola 4",
+    "slug": "cirie-10-girola-4-mi-1133",
+    "address": "Via Cirie' 10",
+    "zone": "Zona Da Verificare",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5109497146,
+    "lng": 9.19562795522,
+    "legacyId": "1133",
+    "code": "MI1A041004",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA CIRIE'10"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1119",
+    "name": "Cor Jesu",
+    "slug": "cor-jesu-mi-1119",
+    "address": "Via Teano 21",
+    "zone": "Comasina",
+    "municipality": 9,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.528165543,
+    "lng": 9.16148183604,
+    "legacyId": "1119",
+    "code": "MI1A25000L",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"COR JESU\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1120",
+    "name": "Del Volga, 7",
+    "slug": "del-volga-7-mi-1120",
+    "address": "Via Del Volga 7",
+    "zone": "Bruzzano",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.526067821,
+    "lng": 9.17171763565,
+    "legacyId": "1120",
+    "code": "MI1A054006",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA DEL VOLGA7"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1122",
+    "name": "Gabbro, 4",
+    "slug": "gabbro-4-mi-1122",
+    "address": "Via Gabbro 4",
+    "zone": "Bovisasca",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5146547532,
+    "lng": 9.15876297883,
+    "legacyId": "1122",
+    "code": "MI1A06400R",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA GABBRO4"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1138",
+    "name": "Grimm, 11",
+    "slug": "grimm-11-mi-1138",
+    "address": "Via Fratelli Grimm 11",
+    "zone": "Niguarda - Ca' Granda - Prato Centenaro - Q.Re Ful",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5183128026,
+    "lng": 9.20610275251,
+    "legacyId": "1138",
+    "code": "MI1A05800D",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA F.LLI GRIMM11"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1108",
+    "name": "Guicciardi, 3",
+    "slug": "guicciardi-3-mi-1108",
+    "address": "Via Diego Guicciardi 3",
+    "zone": "Dergano",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5018062266,
+    "lng": 9.17316212393,
+    "legacyId": "1108",
+    "code": "MI1A07300G",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA GUICCIARDI3"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1109",
+    "name": "Imbonati, 2",
+    "slug": "imbonati-2-mi-1109",
+    "address": "Via Carlo Imbonati 2",
+    "zone": "Dergano",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4984219086,
+    "lng": 9.18461772879,
+    "legacyId": "1109",
+    "code": "MI1A07400B",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA IMBONATI2"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1110",
+    "name": "Imbriani, 21",
+    "slug": "imbriani-21-mi-1110",
+    "address": "Via Degli Imbriani 21",
+    "zone": "Bovisa",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4984827949,
+    "lng": 9.16949551894,
+    "legacyId": "1110",
+    "code": "MI1A075007",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA IMBRIANI21"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1123",
+    "name": "Iseo, 5",
+    "slug": "iseo-5-mi-1123",
+    "address": "Via Iseo 5",
+    "zone": "Affori",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5197721328,
+    "lng": 9.17424378896,
+    "legacyId": "1123",
+    "code": "MI1A076003",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA ISEO5"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1053",
+    "name": "Istituto Di Cultura E Lingue Marcelline",
+    "slug": "istituto-di-cultura-e-lingue-marcelline-mi-1053",
+    "address": "Piazza Caserta 6",
+    "zone": "Maciachini - Maggiolina",
+    "municipality": 9,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5014437459,
+    "lng": 9.19610227558,
+    "legacyId": "1053",
+    "code": "MI1A19300N",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"IST. DI CULTURA E LINGUE MARCELLINE\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1397",
+    "name": "La Giocomotiva",
+    "slug": "la-giocomotiva-mi-1397",
+    "address": "Via Cesare Zocchi 1",
+    "zone": "Maciachini - Maggiolina",
+    "municipality": 9,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5032064145,
+    "lng": 9.19801457412,
+    "legacyId": "1397",
+    "code": "MI1A69500D",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA LA GIOCOMOTIVA"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1124",
+    "name": "Litta Modignani, 89",
+    "slug": "litta-modignani-89-mi-1124",
+    "address": "Via Alessandro Litta Modignani 89",
+    "zone": "Bovisasca",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5208347141,
+    "lng": 9.15383020384,
+    "legacyId": "1124",
+    "code": "MI1A07900E",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA LITTA MODIGLIANI89"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1139",
+    "name": "Maria Immacolata",
+    "slug": "maria-immacolata-mi-1139",
+    "address": "Viale Giovanni Suzzani 64",
+    "zone": "Niguarda - Ca' Granda - Prato Centenaro - Q.Re Ful",
+    "municipality": 9,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5084231578,
+    "lng": 9.19905107275,
+    "legacyId": "1139",
+    "code": "MI1A24800L",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"MARIA IMMACOLATA\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1141",
+    "name": "Maria Immacolata",
+    "slug": "maria-immacolata-mi-1141",
+    "address": "Piazza Belloveso 6",
+    "zone": "Niguarda - Ca' Granda - Prato Centenaro - Q.Re Ful",
+    "municipality": 9,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5155223274,
+    "lng": 9.19464440329,
+    "legacyId": "1141",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1126",
+    "name": "Merloni, 2",
+    "slug": "merloni-2-mi-1126",
+    "address": "Via Madre Clelia Merloni 2",
+    "zone": "Comasina",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5251355292,
+    "lng": 9.16308986442,
+    "legacyId": "1126",
+    "code": "MI1A092001",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA MERLONI2"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1140",
+    "name": "Monterotondo, 10",
+    "slug": "monterotondo-10-mi-1140",
+    "address": "Via Monte Rotondo 10",
+    "zone": "Niguarda - Ca' Granda - Prato Centenaro - Q.Re Ful",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5143370048,
+    "lng": 9.1950147185,
+    "legacyId": "1140",
+    "code": "MI1A09500C",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA MONTEROTONDO10"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1047",
+    "name": "Pastrengo, 10",
+    "slug": "pastrengo-10-mi-1047",
+    "address": "Via Pastrengo 10",
+    "zone": "Isola",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4866412667,
+    "lng": 9.18701891656,
+    "legacyId": "1047",
+    "code": "MI1A111005",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA PASTRENGO10"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1144",
+    "name": "Ricci Achille",
+    "slug": "ricci-achille-mi-1144",
+    "address": "Via Camillo Sbarbaro 11",
+    "zone": "Parco Nord",
+    "municipality": 9,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5171750965,
+    "lng": 9.18218601178,
+    "legacyId": "1144",
+    "code": "MI1A24700R",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"ACHILLE RICCI\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1112",
+    "name": "Rodari Antonio",
+    "slug": "rodari-antonio-mi-1112",
+    "address": "Via Giuseppe Cesare Abba 22",
+    "zone": "Dergano",
+    "municipality": 9,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5028631767,
+    "lng": 9.17926151313,
+    "legacyId": "1112",
+    "code": "MI1A170001",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"A.RODARI\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1113",
+    "name": "Santa Gemma Calgani",
+    "slug": "santa-gemma-calgani-mi-1113",
+    "address": "Via Filippo Baldinucci 88",
+    "zone": "Bovisa",
+    "municipality": 9,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": 45.5029850581,
+    "lng": 9.16737303888,
+    "legacyId": "1113",
+    "code": "MI1A18000G",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA \"SANTA GEMMA\""
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1118",
+    "name": "Statale Ciccotti",
+    "slug": "statale-ciccotti-mi-1118",
+    "address": "Via Ettore Ciccotti 2",
+    "zone": "Bovisasca",
+    "municipality": 9,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.5228145699,
+    "lng": 9.16621366868,
+    "legacyId": "1118",
+    "code": "MIAA8CR013",
+    "aliases": [
+      "INFANZIA VIA CICCOTTI"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1121",
+    "name": "Statale Dora Baltea",
+    "slug": "statale-dora-baltea-mi-1121",
+    "address": "Via Dora Baltea 24",
+    "zone": "Bruzzano",
+    "municipality": 9,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.5285859483,
+    "lng": 9.16727635949,
+    "legacyId": "1121",
+    "code": "MIAA8CF013",
+    "aliases": [
+      "INFANZIA VIA DORA BALTEA"
+    ],
+    "enriched": false,
+    "events": [
+      {
+        "date": "2027-01-23",
+        "time": "10:30–12:30",
+        "source": "https://www.icscantu.edu.it/open-day-istituto-comprensivo-c-cantu-2026/",
+        "location": "Via Dora Baltea 24",
+        "id": "mi-1121-2027-01-23-10301230"
+      }
+    ]
+  },
+  {
+    "id": "mi-1136",
+    "name": "Statale Gatti",
+    "slug": "statale-gatti-mi-1136",
+    "address": "Via Francesco Gatti 12",
+    "zone": "Niguarda - Ca' Granda - Prato Centenaro - Q.Re Ful",
+    "municipality": 9,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.5070744767,
+    "lng": 9.19124428623,
+    "legacyId": "1136",
+    "code": "MIAA8DG01D",
+    "aliases": [
+      "INFANZIA VIA F. GATTI"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2027-01-14",
+        "time": "10:30–11:30",
+        "source": "https://www.icarbezara.edu.it/evento/open-day-2026-scuola-dellinfanzia-gatti/",
+        "location": "Scuola dell’infanzia Gatti, via Gatti 12",
+        "id": "mi-1136-2027-01-14-10301130"
+      }
+    ]
+  },
+  {
+    "id": "mi-1405",
+    "name": "Statale Iseo",
+    "slug": "statale-iseo-mi-1405",
+    "address": "Via Iseo 7",
+    "zone": "Affori",
+    "municipality": 9,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.5200517081,
+    "lng": 9.17387472331,
+    "legacyId": "1405",
+    "code": "MIAA8CS01Q",
+    "aliases": [
+      "INFANZIA VIA ISEO"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1127",
+    "name": "Statale P. Rossi",
+    "slug": "statale-p-rossi-mi-1127",
+    "address": "Via Pellegrino Rossi 17",
+    "zone": "Affori",
+    "municipality": 9,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.5085022158,
+    "lng": 9.17636629867,
+    "legacyId": "1127",
+    "code": "MIAA8CG01V",
+    "aliases": [
+      "INFANZIA VIA PELLEGRINO ROSSI"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-12-09",
+        "time": "10:00",
+        "source": "https://www.icscialoia.edu.it/wp-content/uploads/2026/11/OPEN-DAY-2027-28-LOCANDINA.jpg",
+        "booking": "https://www.icscialoia.edu.it/open-day-2026",
+        "location": "Via Pellegrino Rossi 17",
+        "id": "mi-1127-2026-12-09-1000"
+      }
+    ]
+  },
+  {
+    "id": "mi-1129",
+    "name": "Statale Scialoia",
+    "slug": "statale-scialoia-mi-1129",
+    "address": "Via Vittorio Scialoia 15",
+    "zone": "Affori",
+    "municipality": 9,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.5100438005,
+    "lng": 9.1791997818,
+    "legacyId": "1129",
+    "code": "MIAA8CG02X",
+    "aliases": [
+      "INFANZIA VIA SCIALOIA"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1142",
+    "name": "Statale Suzzani",
+    "slug": "statale-suzzani-mi-1142",
+    "address": "Viale Giovanni Suzzani 240",
+    "zone": "Niguarda - Ca' Granda - Prato Centenaro - Q.Re Ful",
+    "municipality": 9,
+    "management": "Statale",
+    "recognition": "Non applicabile",
+    "lat": 45.5212935456,
+    "lng": 9.20681019556,
+    "legacyId": "1142",
+    "code": "MIAA8DF02P",
+    "aliases": [
+      "INFANZIA MUNARI"
+    ],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2026-11-24",
+        "time": "16:30–18:00",
+        "source": "https://www.icspertinimilano.edu.it/wp-content/uploads/2026/10/volantino-open-day-munari-per-sito-400x445.jpg",
+        "location": "Infanzia Munari, viale Suzzani 240",
+        "id": "mi-1142-2026-11-24-16301800"
+      },
+      {
+        "date": "2027-01-13",
+        "time": "10:30–11:30",
+        "source": "https://www.icspertinimilano.edu.it/wp-content/uploads/2026/10/volantino-open-day-munari-per-sito-400x445.jpg",
+        "location": "Infanzia Munari, viale Suzzani 240",
+        "id": "mi-1142-2027-01-13-10301130"
+      }
+    ]
+  },
+  {
+    "id": "mi-1143",
+    "name": "Thomas Mann, 9",
+    "slug": "thomas-mann-9-mi-1143",
+    "address": "Via Thomas Mann 9",
+    "zone": "Niguarda - Ca' Granda - Prato Centenaro - Q.Re Ful",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.5238121635,
+    "lng": 9.20836584766,
+    "legacyId": "1143",
+    "code": "MI1A083006",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA T.MANN9"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1056",
+    "name": "Toce, 7",
+    "slug": "toce-7-mi-1056",
+    "address": "Via Toce 7",
+    "zone": "Isola",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.492521254,
+    "lng": 9.18583756639,
+    "legacyId": "1056",
+    "code": "MI1A154003",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA TOCE7"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mi-1114",
+    "name": "Villani, 7",
+    "slug": "villani-7-mi-1114",
+    "address": "Via Dino Villani 7",
+    "zone": "Maciachini - Maggiolina",
+    "municipality": 9,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": 45.4985011582,
+    "lng": 9.18817184674,
+    "legacyId": "1114",
+    "code": "MI1A09900Q",
+    "aliases": [
+      "SCUOLA DELL'INFANZIA COMUNALE VIA VILLANI"
+    ],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mim-mi1agb500e",
+    "name": "Bambini Bicocca",
+    "slug": "scuola-dell-infanzia-bambini-bicocca-mim-mi1agb500e",
+    "address": "Piazza Dei Daini 6",
+    "zone": "Zona da verificare",
+    "municipality": null,
+    "management": "Privata",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": null,
+    "code": "MI1AGB500E",
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "extra-dragonfly",
+    "name": "Dragonfly",
+    "slug": "dragonfly-extra-dragonfly",
+    "address": "Via Giacomo Quarenghi 22",
+    "zone": "Gallaratese",
+    "municipality": null,
+    "management": "Privata",
+    "recognition": "Da verificare",
+    "lat": null,
+    "lng": null,
+    "legacyId": "dragonfly",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "extra-glicine",
+    "name": "La Casa del Glicine",
+    "slug": "la-casa-del-glicine-extra-glicine",
+    "address": "Via Fratelli Zoia 194",
+    "zone": "Baggio",
+    "municipality": null,
+    "management": "Parentale",
+    "recognition": "Non applicabile",
+    "lat": null,
+    "lng": null,
+    "legacyId": "glicine",
+    "code": null,
+    "aliases": [],
+    "enriched": true,
+    "events": [
+      {
+        "date": "2027-01-30",
+        "time": "10:30",
+        "source": "https://www.fattoriadidatticaapepe.it/wp-content/uploads/2026/10/open-day_gennaio2027_v2.jpg",
+        "id": "extra-glicine-2027-01-30-1030"
+      }
+    ]
+  },
+  {
+    "id": "extra-madonna-poveri",
+    "name": "Madonna dei Poveri",
+    "slug": "madonna-dei-poveri-extra-madonna-poveri",
+    "address": "Via Valdagno 14",
+    "zone": "Forze Armate",
+    "municipality": null,
+    "management": "Privata",
+    "recognition": "Paritaria da ricontrollare",
+    "lat": null,
+    "lng": null,
+    "legacyId": "madonna-poveri",
+    "code": "MI1A25500Q",
+    "aliases": [],
+    "enriched": true,
+    "events": []
+  },
+  {
+    "id": "mim-mi1a02900d",
+    "name": "Via Carnia",
+    "slug": "scuola-dell-infanzia-comunale-via-carnia-mim-mi1a02900d",
+    "address": "Via Carnia 22",
+    "zone": "Zona da verificare",
+    "municipality": null,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": null,
+    "code": "MI1A02900D",
+    "aliases": [],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mim-mi1a067008",
+    "name": "Via Ghini 8",
+    "slug": "scuola-dell-infanzia-comunale-via-ghini8-mim-mi1a067008",
+    "address": "Via Ghini 8",
+    "zone": "Zona da verificare",
+    "municipality": null,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": null,
+    "code": "MI1A067008",
+    "aliases": [],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mim-mi1a08500t",
+    "name": "Via Martinelli 57",
+    "slug": "scuola-dell-infanzia-comunale-via-martinelli57-mim-mi1a08500t",
+    "address": "Via Martinelli 57",
+    "zone": "Zona da verificare",
+    "municipality": null,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": null,
+    "code": "MI1A08500T",
+    "aliases": [],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mim-mi1a097004",
+    "name": "Via Monteverdi 6",
+    "slug": "scuola-dell-infanzia-comunale-via-monteverdi6-mim-mi1a097004",
+    "address": "Via Monteverdi 6",
+    "zone": "Zona da verificare",
+    "municipality": null,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": null,
+    "code": "MI1A097004",
+    "aliases": [],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mim-mi1a14300l",
+    "name": "Via Scalabrini 7",
+    "slug": "scuola-dell-infanzia-comunale-via-scalabrini7-mim-mi1a14300l",
+    "address": "Via Scalabrini 7",
+    "zone": "Zona da verificare",
+    "municipality": null,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": null,
+    "code": "MI1A14300L",
+    "aliases": [],
+    "enriched": false,
+    "events": []
+  },
+  {
+    "id": "mim-mi1a16500d",
+    "name": "Via Venini 80",
+    "slug": "scuola-dell-infanzia-comunale-via-venini80-mim-mi1a16500d",
+    "address": "Via Venini 80",
+    "zone": "Zona da verificare",
+    "municipality": null,
+    "management": "Comunale",
+    "recognition": "Paritaria",
+    "lat": null,
+    "lng": null,
+    "legacyId": null,
+    "code": "MI1A16500D",
+    "aliases": [],
+    "enriched": false,
+    "events": []
+  }
+]

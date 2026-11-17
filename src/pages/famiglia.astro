@@ -1,0 +1,78 @@
+---
+import PageIntro from '../components/PageIntro.astro';
+import Character from '../components/design/Character.astro';
+import Layout from '../layouts/Layout.astro';
+import Icon from '../components/Icon.astro';
+import SharedSpace from '../components/SharedSpace.astro';
+---
+<Layout title="Le tue scuole" active="famiglia">
+  <div class="family-page" data-family-page>
+    <noscript><p class="notice">La selezione e gli appunti richiedono JavaScript. Puoi consultare le <a href="/metodo/#catalogo">schede di tutte le scuole</a>.</p></noscript>
+    <div class="family-heading"><PageIntro accent="scuole." title="Le tue scuole." eyebrow="LA TUA SELEZIONE, IL PROSSIMO PASSO" description="Le scuole che ti interessano, le visite e gli appunti. Uno spazio per raccogliere le informazioni e scegliere insieme." tone="prato" character="arch"/></div><div class="family-device-bar"><p class="family-device" data-family-device><span class="device-dot"></span> Su questo dispositivo</p><a class="family-browse" href="/">Aggiungi una scuola <Icon name="plus" size={17}/></a></div>
+
+    <div class="family-warning" data-family-storage-warning hidden role="alert">Il browser non consente il salvataggio. Esporta una copia prima di chiudere questa pagina.</div>
+    <p class="family-feedback" data-family-feedback role="status" aria-live="polite"></p>
+    <p class="notice" data-shared-entry hidden>Hai ricevuto uno spazio condiviso. <a href="#condivisione">Apri l’anteprima prima di collegarlo</a>.</p>
+
+
+    <section class="received-selection" data-family-received hidden aria-labelledby="received-title">
+      <div><span class="family-eyebrow">Link ricevuto</span><h2 id="received-title">Una selezione da conoscere</h2><p data-family-received-names></p></div>
+      <button class="family-primary" type="button" data-family-accept-selection>Aggiungi alla selezione <Icon name="plus" size={16} /></button>
+    </section>
+
+    <section class="family-empty" data-family-empty>
+      <Character kind="arch" color="#B8AAF5"/>
+      <span class="family-eyebrow">Si parte da una scuola</span>
+      <h2>La tua selezione<br />comincia qui.</h2>
+      <p>Salva le scuole che ti interessano. Potrai confrontare orari e costi, organizzare le visite e raccogliere gli appunti nello stesso spazio.</p>
+      <a class="family-primary" href="/">Trova la prima scuola <Icon name="arrow" size={18} /></a>
+      <small>Puoi tenere gli appunti su questo dispositivo oppure attivare uno spazio condiviso, protetto con cifratura.</small>
+    </section>
+
+    <div class="family-workspace" data-family-workspace hidden>
+      <section class="family-rose" aria-labelledby="rose-title">
+        <div class="rose-heading"><div><span class="family-eyebrow">Un passo alla volta</span><h2 id="rose-title">La tua selezione <span data-family-count>0</span></h2></div><button class="family-secondary" type="button" data-family-share><Icon name="users" size={17} /> Condividi selezione</button></div>
+        <div class="family-filters" aria-label="Filtra la selezione">
+          <button type="button" class="active" aria-pressed="true" data-family-filter="tutte">Tutte</button>
+          <button type="button" aria-pressed="false" data-family-filter="da-visitare">Da visitare</button>
+          <button type="button" aria-pressed="false" data-family-filter="visitate">Visitate</button>
+        </div>
+        <div class="family-school-list" data-family-list></div>
+      </section>
+
+      <aside class="family-sidebar">
+        <section class="family-aside-card compare-aside">
+          <span class="aside-icon"><Icon name="check" size={20} /></span>
+          <h2>Le differenze,<br />a colpo d’occhio.</h2>
+          <p>Scegli fino a tre scuole della selezione per confrontare orari, costi e servizi.</p>
+          <a class="family-primary" href="/confronto/">Apri confronto <Icon name="arrow" size={17} /></a>
+          <span class="compare-count" data-family-compare-count>0 di 3 selezionate</span>
+        </section>
+        <section class="family-aside-card visit-aside">
+          <Icon name="calendar" size={21} />
+          <h2>Che cosa chiedere durante la visita</h2>
+          <ol><li>Quali sono gli orari di ingresso, uscita e prolungamento?</li><li>Come vengono organizzati il riposo e l’ambientamento?</li><li>Quanti adulti sono presenti nei diversi momenti della giornata?</li><li>Come vengono usati gli spazi all’aperto e organizzate le attività della sezione?</li></ol>
+          <a href="/iscrizioni/">Iscrizioni e visite <Icon name="arrow" size={15} /></a>
+        </section>
+      </aside>
+    </div>
+
+    <section class="family-utilities" id="condivisione" aria-label="Condivisione e copie"><h2>Scegli come conservare e condividere gli appunti</h2><SharedSpace/><section class="family-transfer" aria-labelledby="transfer-title">
+      <div><span class="family-eyebrow">I tuoi dati</span><h2 id="transfer-title">Porta con te gli appunti</h2><p>Il file esportato contiene gli appunti in un formato leggibile: conservalo con cura. Il link della selezione condivide solo le scuole. Il link segreto dello spazio condiviso permette anche di sincronizzare gli appunti, protetti con cifratura.</p></div>
+      <div class="transfer-actions"><button type="button" class="family-secondary" data-family-export><Icon name="download" size={16} /> Esporta copia</button><button type="button" class="family-secondary" data-family-import>Importa copia <Icon name="plus" size={16} /></button><input type="file" accept="application/json,.json" data-family-file hidden aria-label="Scegli una copia dello spazio famiglia" /></div>
+    </section></section>
+
+    <dialog class="family-dialog" data-family-import-dialog aria-labelledby="family-import-title">
+      <div class="dialog-top"><span class="family-eyebrow">Importa copia</span><button type="button" data-family-cancel-import aria-label="Chiudi importazione"><Icon name="close" size={20} /></button></div>
+      <h2 id="family-import-title">Controlla la copia prima di aggiungerla</h2>
+      <p data-family-import-summary></p><ul data-family-import-schools></ul>
+      <p class="import-explanation">Le scuole della copia verranno aggiunte alla selezione. Se gli appunti sono diversi, verranno conservati entrambi i testi. Gli stati delle visite già scelti in questo spazio resteranno invariati. Nel confronto potranno esserci al massimo tre scuole.</p>
+      <div class="dialog-actions"><button type="button" class="family-secondary" data-family-cancel-import>Annulla</button><button type="button" class="family-primary" data-family-confirm-import>Unisci alla mia copia <Icon name="plus" size={16} /></button></div>
+    </dialog>
+  </div>
+</Layout>
+
+<script>
+  import '../scripts/family';
+  import '../scripts/shared-space';
+</script>
