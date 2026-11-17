@@ -17,5 +17,6 @@ export default defineConfig({
   trailingSlash: 'always',
   devToolbar: { enabled: false },
   server: { host: '127.0.0.1' },
-  vite: { server: { strictPort: true } },
+  // Production CSP permits external scripts from this origin, not inline JavaScript.
+  vite: { server: { strictPort: true }, build: { assetsInlineLimit: 0 } },
 });
