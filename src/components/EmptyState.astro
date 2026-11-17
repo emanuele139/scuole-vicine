@@ -1,0 +1,29 @@
+---
+import Icon from './Icon.astro';
+import JourneyScene from './design/JourneyScene.astro';
+import '../styles/empty-states.css';
+interface Props {
+  kind: 'search' | 'saved' | 'compare';
+  headingId?: string;
+  headingLevel?: 'h2' | 'h3' | 'h4';
+  actionHref?: string;
+}
+const { kind, headingId=`empty-${kind}-title`, headingLevel='h2', actionHref } = Astro.props;
+const states = {
+  search: {eyebrow:'NESSUN RISULTATO, UN ALTRO TENTATIVO',title:'Nessuna sede con questi ',accent:'criteri.',description:'Prova un altro nome, una zona più ampia o filtri diversi. La ricerca è ancora qui: puoi modificarla senza ricominciare.',action:'Modifica la ricerca',href:'/#ricerca',note:'I criteri scelti restano disponibili nel campo di ricerca e nei filtri.'},
+  saved: {eyebrow:'SI PARTE DA UNA SCUOLA',title:'La tua selezione comincia ',accent:'qui.',description:'Salva con il cuore le scuole che ti interessano. Qui potrai ritrovarle, confrontarle e preparare le visite con i tuoi appunti.',action:'Trova la prima scuola',href:'/',note:'Gli appunti già scritti restano conservati anche quando togli una scuola.'},
+  compare: {eyebrow:'UN PASSO VERSO LA SCELTA',title:'Da quali scuole ',accent:'partiamo?',description:'Aggiungi fino a tre scuole. Orari, costi e servizi si affiancheranno nello stesso ordine, per capire che cosa cambia.',action:'Scegli la prima scuola',href:'#compare-search',note:'Puoi aggiungerle anche dalla loro scheda, usando Confronta.'},
+};
+const state = states[kind];
+const Heading = headingLevel;
+---
+<div class:list={['empty-scene',`empty-scene-${kind}`]}>
+  <div class="empty-scene-copy">
+    <p class="empty-scene-eyebrow">{state.eyebrow}</p>
+    <Heading id={headingId}>{state.title}<span>{state.accent}</span></Heading>
+    <p class="empty-scene-description">{state.description}</p>
+    <div class="empty-scene-actions"><slot name="action"><a class="empty-action" href={actionHref||state.href}>{state.action}<Icon name="arrow-right" size={19}/></a></slot><slot name="secondary"/></div>
+    <p class="empty-scene-note">{state.note}</p>
+  </div>
+  <div class="empty-scene-art"><JourneyScene kind={kind}/></div>
+</div>

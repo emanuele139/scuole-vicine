@@ -26,6 +26,7 @@ if (page) {
   function render() {
     const state = loadFamily();
     const ids = state.saved.filter(id => getSchool(id));
+    page!.classList.toggle('is-empty',ids.length===0);
     $('[data-family-empty]').hidden = ids.length > 0;
     $('[data-family-workspace]').hidden = ids.length === 0;
     $('[data-family-count]').textContent = String(ids.length);

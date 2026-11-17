@@ -1,6 +1,6 @@
 ---
 import PageIntro from '../components/PageIntro.astro';
-import Character from '../components/design/Character.astro';
+import EmptyState from '../components/EmptyState.astro';
 import Layout from '../layouts/Layout.astro';
 import Icon from '../components/Icon.astro';
 import SharedSpace from '../components/SharedSpace.astro';
@@ -20,13 +20,8 @@ import SharedSpace from '../components/SharedSpace.astro';
       <button class="family-primary" type="button" data-family-accept-selection>Aggiungi alla selezione <Icon name="plus" size={16} /></button>
     </section>
 
-    <section class="family-empty" data-family-empty>
-      <Character kind="arch" color="#B8AAF5"/>
-      <span class="family-eyebrow">Si parte da una scuola</span>
-      <h2>La tua selezione<br />comincia qui.</h2>
-      <p>Salva le scuole che ti interessano. Potrai confrontare orari e costi, organizzare le visite e raccogliere gli appunti nello stesso spazio.</p>
-      <a class="family-primary" href="/">Trova la prima scuola <Icon name="arrow" size={18} /></a>
-      <small>Puoi tenere gli appunti su questo dispositivo oppure attivare uno spazio condiviso, protetto con cifratura.</small>
+    <section class="illustrated-family-empty" data-family-empty aria-labelledby="empty-saved-title" hidden>
+      <EmptyState kind="saved"/>
     </section>
 
     <div class="family-workspace" data-family-workspace hidden>

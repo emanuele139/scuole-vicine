@@ -1,0 +1,65 @@
+/* Shared by the operational states and the independent design notebook. */
+.empty-scene {
+  --empty-ink: var(--ink,var(--dg-ink,#29271F));
+  --empty-paper: var(--paper,var(--dg-paper,#F7F5ED));
+  --empty-surface: var(--surface,var(--dg-white,#FFFDF5));
+  --empty-line: var(--line,var(--dg-line,#D8D5C9));
+  --empty-muted: var(--muted,var(--dg-muted,#68655B));
+  --empty-accent: #F7CB54;
+  display: grid; grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr);
+  gap: 26px; align-items: center; padding: clamp(25px,3vw,42px);
+  border: 1px solid var(--empty-line); border-radius: 12px;
+  background: var(--empty-surface); color: var(--empty-ink); text-align: left;
+  font-family: 'DM Sans',system-ui,sans-serif;
+}
+.empty-scene-saved { --empty-accent: #D4E88B; }
+.empty-scene-compare { --empty-accent: #B8AAF5; }
+.empty-scene-copy { position: relative; z-index: 1; min-width: 0; }
+.empty-scene-eyebrow { margin: 0 0 17px; font-size: 10px; line-height: 1.6; letter-spacing: .06em; font-weight: 650; }
+.empty-scene :is(h2,h3,h4) { font: 750 clamp(30px,2.8vw,42px)/1.08 'Bricolage Grotesque',system-ui,sans-serif; letter-spacing: -.04em; max-width: 20ch; margin: 0; color: var(--empty-ink); }
+.empty-scene :is(h2,h3,h4)>span { position: relative; isolation: isolate; white-space: nowrap; }
+.empty-scene :is(h2,h3,h4)>span::before { content: ''; position: absolute; z-index: -1; inset: 3px -4px -1px; background: var(--empty-accent); transform: rotate(-2deg); clip-path: polygon(1% 3%,99% 0,100% 97%,0 100%); }
+.empty-scene-description { margin: 22px 0 0; font-size: 15px; line-height: 1.8; max-width: 48ch; }
+.empty-scene-actions { display: flex; gap: 10px 19px; flex-wrap: wrap; align-items: center; margin-top: 23px; }
+.empty-action { display: inline-flex; align-items: center; justify-content: space-between; gap: 23px; min-height: 48px; padding: 12px 17px; background: var(--empty-ink); color: var(--empty-surface); border: 1px solid var(--empty-ink); border-radius: 6px; text-decoration: none; font: 600 14px/1.5 'DM Sans',system-ui,sans-serif; cursor: pointer; }
+.empty-action:hover { background: #444034; }
+.empty-secondary { display: inline-flex; align-items: center; min-height: 44px; padding: 8px 0; background: transparent; color: var(--empty-ink); font: 500 14px/1.5 'DM Sans',system-ui,sans-serif; text-decoration: underline; text-underline-offset: 4px; cursor: pointer; }
+.empty-scene .empty-scene-note { margin: 15px 0 0; color: var(--empty-muted); font-size: 12px; line-height: 1.75; max-width: 55ch; }
+.empty-scene-art { width: 100%; max-width: 340px; min-width: 0; justify-self: end; }
+.illustrated-family-empty { margin: 10px 0 35px; }
+.explorer.is-empty { display: block; }
+.explorer.is-empty .results-column, .explorer.is-empty.map-mode .results-column { display: block; }
+.explorer.is-empty .map-column { display: none; }
+.explorer.is-empty .school-grid { display: none; }
+.explorer.is-empty .result-footnote { display: none; }
+.explorer.is-empty .empty-scene { max-width: 1040px; margin-inline: auto; }
+.family-page.is-empty .page-intro, .comparison-page.is-empty .page-intro { min-height: 0; background: transparent; padding: 0; margin: 28px 0 20px; border-radius: 0; }
+.family-page.is-empty .intro-character, .family-page.is-empty .intro-graphic,
+.comparison-page.is-empty .intro-character, .comparison-page.is-empty .intro-graphic { display: none; }
+.family-page.is-empty .intro-copy, .comparison-page.is-empty .intro-copy { max-width: 100%; }
+.family-page.is-empty .intro-copy h1, .comparison-page.is-empty .intro-copy h1 { font-size: 42px; }
+.family-page.is-empty .intro-description, .comparison-page.is-empty .intro-description { display: none; }
+.family-page.is-empty .family-browse { display: none; }
+.comparison-page.is-empty .compare-picker { margin-top: 24px; }
+@media(max-width:750px) {
+  .empty-scene { gap: 15px; padding: 28px; grid-template-columns: minmax(0,1.2fr) minmax(0,.8fr); }
+  .empty-scene :is(h2,h3,h4) { font-size: 32px; }
+}
+@media(max-width:650px) {
+  .empty-scene { grid-template-columns: minmax(0,1fr); padding: 25px 23px 17px; gap: 14px; }
+  .empty-scene :is(h2,h3,h4) { font-size: 32px; max-width: 19ch; }
+  .empty-scene-eyebrow { font-size: 9px; margin-bottom: 16px; }
+  .empty-scene-description { margin-top: 20px; font-size: 15px; line-height: 1.75; }
+  .empty-scene-actions { margin-top: 21px; gap: 5px 17px; }
+  .empty-action { gap: 16px; min-height: 48px; padding-inline: 14px; }
+  .empty-scene-art { max-width: 270px; justify-self: center; }
+  .family-page.is-empty .intro-copy h1, .comparison-page.is-empty .intro-copy h1 { font-size: 34px; }
+  .family-page.is-empty .intro-description, .comparison-page.is-empty .intro-description { max-width: 100%; font-size: 14px; }
+  .family-page.is-empty .page-intro, .comparison-page.is-empty .page-intro { margin-top: 24px; }
+}
+@media(max-width:370px) {
+  .empty-scene { padding-inline: 19px; }
+  .empty-scene :is(h2,h3,h4) { font-size: 29px; }
+  .empty-action { font-size: 13px; gap: 12px; }
+}
+@media print { .empty-scene { break-inside: avoid; } .empty-scene-art { max-width: 230px; } }

@@ -24,6 +24,7 @@ if (dataNode) {
   const print = document.getElementById('print-comparison') as HTMLButtonElement;
   const differences = document.getElementById('compare-differences') as HTMLInputElement;
   const criteriaCount = document.getElementById('compare-criteria-count')!;
+  document.getElementById('compare-start')!.addEventListener('click',()=>{input.scrollIntoView({block:'center',behavior:'instant'});input.focus({preventScroll:true});});
   const normalized = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('it');
   const researchFields: Record<string, keyof SchoolResearch['fieldEvidence']> = {Orari:'hours',Costi:'cost','Servizi e spazi':'services','Open day e visite':'openDay'};
   const statusLabels = {verified:'Dati della sede','operator-rule':'Indicazioni comuni del gestore','prior-research':'Informazioni da una ricerca precedente','not-published':'Non pubblicato','not-found':'Non trovato nelle fonti consultate',blocked:'Fonte non consultabile','needs-confirmation':'Da confermare'};
@@ -39,6 +40,11 @@ if (dataNode) {
   function persist() { const state = loadFamily(); state.compare = ids; saveFamily(state); }
   function render() {
     const selected = ids.map(id => byId.get(id)!);
+    const empty=selected.length===0;
+    document.querySelector('.comparison-page')!.classList.toggle('is-empty',empty);
+    document.getElementById('compare-empty')!.hidden=!empty;
+    document.querySelectorAll<HTMLElement>('.compare-toolbar,.compare-filter-row,.compare-closing').forEach(el=>{el.hidden=empty;});
+    selection.hidden=board.hidden=empty;
     selection.dataset.count = String(selected.length);
     document.querySelector('.comparison-page')?.setAttribute('style', `--compare-columns:${Math.max(1, ids.length)};--selection-columns:${Math.min(3, ids.length+1)}`);
     count.textContent = `${ids.length} di 3 scuole`;
@@ -46,8 +52,8 @@ if (dataNode) {
     share.disabled = print.disabled = !ids.length;
     differences.disabled = ids.length < 2;
     if (ids.length < 2) differences.checked = false;
-    selection.innerHTML = selected.map(school => `<article class="compare-selected-card"><span class="badge">${escape(managementLabel(school))}</span><button class="compare-remove" data-remove-compare="${escape(school.id)}" aria-label="Rimuovi ${escape(school.name)} dal confronto">×</button><h2><a href="${escape(school.href)}">${escape(school.name)}</a></h2><p>${escape(school.serviceType)} · ${escape(school.ageRange)}</p><p>${escape(school.address)}</p><p>${escape(school.zone)}${school.municipality && school.zone !== `Municipio ${school.municipality}` ? ` · Municipio ${school.municipality}` : ''}</p></article>`).join('') + (ids.length < 3 ? `<div class="compare-slot">${ids.length ? 'C’è posto per un’altra scuola' : 'Qui troverai le scuole scelte'}</div>` : '');
-    if (!selected.length) { criteriaCount.textContent = ''; board.innerHTML = '<div class="compare-empty"><h2>Da quali scuole partiamo?</h2><p>Cerca una scuola qui sopra oppure aggiungila al confronto dalla sua scheda.</p></div>'; return; }
+    selection.innerHTML = selected.map(school => `<article class="compare-selected-card"><span class="badge">${escape(managementLabel(school))}</span><button class="compare-remove" data-remove-compare="${escape(school.id)}" aria-label="Rimuovi ${escape(school.name)} dal confronto">×</button><h2><a href="${escape(school.href)}">${escape(school.name)}</a></h2><p>${escape(school.serviceType)} · ${escape(school.ageRange)}</p><p>${escape(school.address)}</p><p>${escape(school.zone)}${school.municipality && school.zone !== `Municipio ${school.municipality}` ? ` · Municipio ${school.municipality}` : ''}</p></article>`).join('') + (ids.length && ids.length < 3 ? '<div class="compare-slot">C’è posto per un’altra scuola</div>' : '');
+    if (empty) { criteriaCount.textContent = ''; board.innerHTML = ''; return; }
     const criteria: [string, (school: ComparedSchool) => string | null | undefined][] = [
       ['Servizio ed età', school => [school.serviceType, school.ageRange].join(' · ')],
       ['Accesso', school => school.accessMode],

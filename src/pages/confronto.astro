@@ -2,12 +2,14 @@
 import PageIntro from '../components/PageIntro.astro';
 import Layout from '../layouts/Layout.astro';
 import Icon from '../components/Icon.astro';
+import EmptyState from '../components/EmptyState.astro';
 import { schools, schoolHref } from '../lib/catalog';
 const data = schools.map(school => ({ id: school.id, educationStage: school.educationStage, serviceType: school.serviceType, ageRange: school.ageRange, accessMode: school.accessMode, operator: school.operator, name: school.name, address: school.address, zone: school.zone, municipality: school.municipality, management: school.management, recognition: school.recognition, hours: school.hours, cost: school.cost, services: school.services || [], openDay: school.openDay, description: school.description, catalogYear: school.catalogYear, detailYear: school.detailYear, enriched: school.enriched, verifiedAt: school.verifiedAt, research: school.research, warnings: school.warnings, href: schoolHref(school) }));
 ---
 <Layout title="Confronta le scuole" active="confronto" description="Confronta fino a tre nidi, servizi 0–3 e scuole dell’infanzia di Milano: orari, costi, visite e informazioni da verificare.">
   <div class="comparison-page">
     <PageIntro accent="scuole" title="Confronta le scuole" eyebrow="LE DIFFERENZE CHE CONTANO" description="Confronta fino a tre scuole usando gli stessi criteri. Le informazioni che mancano ti aiutano a preparare le domande per la visita." tone="iris" character="arch"/>
+    <section id="compare-empty" aria-labelledby="empty-compare-title" hidden><EmptyState kind="compare"><button type="button" slot="action" class="empty-action" id="compare-start">Scegli la prima scuola <Icon name="arrow-right" size={19}/></button><a slot="secondary" class="empty-secondary" href="/famiglia/">Apri le tue scuole</a></EmptyState></section>
     <section class="compare-toolbar" aria-label="Gestisci confronto"><div><strong id="compare-count">0 di 3 scuole</strong><p id="compare-context">Scegli le scuole da mettere a confronto.</p></div><div class="compare-tools"><button class="btn btn-secondary" id="share-comparison"><Icon name="external" size={17} />Copia link</button><button class="btn btn-secondary" id="print-comparison"><Icon name="download" size={17} />Stampa</button></div></section>
     <div class="compare-selection" id="compare-selection" aria-label="Scuole selezionate"></div>
     <section class="compare-picker"><label for="compare-search">Aggiungi una scuola</label><div class="compare-search-wrap"><Icon name="search" /><input id="compare-search" type="search" placeholder="Nome, indirizzo o quartiere" autocomplete="off" aria-controls="compare-search-results" /></div><div id="compare-search-results" class="compare-search-results"></div></section>

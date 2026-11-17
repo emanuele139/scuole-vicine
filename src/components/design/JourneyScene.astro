@@ -1,0 +1,53 @@
+---
+interface Props { kind: 'search' | 'saved' | 'compare' }
+const { kind } = Astro.props;
+---
+<svg class:list={['journey-scene', `journey-${kind}`]} viewBox="0 0 600 360" fill="none" aria-hidden="true" focusable="false">
+  {kind === 'search' && <>
+    <g transform="rotate(-9 136 167)"><rect x="82" y="92" width="108" height="148" rx="9" fill="#FFFDF5" stroke="#29271F" stroke-width="1.5"/><path d="M102 125h49m-49 22h67m-67 22h53" stroke="#29271F" stroke-width="1.5"/><path d="M104 199h51" stroke="#F7CB54" stroke-width="15"/></g>
+    <path d="m395 210 75 81" stroke="#F56A47" stroke-width="35" stroke-linecap="square"/><path d="m395 210 75 81" stroke="#29271F" stroke-width="1.5"/>
+    <circle cx="333" cy="141" r="87" stroke="#B8AAF5" stroke-width="34"/><circle cx="333" cy="141" r="87" stroke="#29271F" stroke-width="1.5"/>
+    <path d="M291 139c22-34 51-38 79-10" stroke="#D4E88B" stroke-width="13" stroke-linecap="round"/>
+    <circle cx="482" cy="75" r="8" fill="#F56A47"/>
+  </>}
+  {kind === 'saved' && <>
+    <path d="M144 281V144a118 118 0 0 1 236 0v137" stroke="#D4E88B" stroke-width="36"/><path d="M144 281V144a118 118 0 0 1 236 0v137" stroke="#29271F" stroke-width="1.5"/>
+    <g transform="rotate(8 354 165)"><rect x="287" y="85" width="148" height="163" rx="8" fill="#FFFDF5" stroke="#29271F" stroke-width="1.5"/><path d="M314 112h80" stroke="#B8AAF5" stroke-width="17"/><path d="m363 184-28-27a17 17 0 0 1 28-19 17 17 0 0 1 28 19l-28 27Z" stroke="#29271F" stroke-width="2" stroke-linejoin="round"/></g>
+    <path d="M70 190c-14-56 45-84 72-53 28 33-22 53-39 32" stroke="#F56A47" stroke-width="17" stroke-linecap="round"/>
+  </>}
+  {kind === 'compare' && <>
+    <rect x="80" y="68" width="152" height="193" rx="16" fill="#FFFDF5" stroke="#D4E88B" stroke-width="23"/>
+    <rect x="367" y="68" width="152" height="193" rx="16" fill="#FFFDF5" stroke="#B8AAF5" stroke-width="23"/>
+    <rect x="80" y="68" width="152" height="193" rx="16" stroke="#29271F" stroke-width="1.5"/><rect x="367" y="68" width="152" height="193" rx="16" stroke="#29271F" stroke-width="1.5"/>
+    <path d="M110 174h92m-92 25h92m-92 25h65m217-50h92m-92 25h92m-92 25h65" stroke="#29271F" stroke-width="1.5"/>
+    <circle cx="156" cy="120" r="20" fill="#F7CB54"/><circle cx="443" cy="120" r="20" fill="#F7CB54"/><path d="M145 120h22m-11-11v22m276-11h22m-11-11v22" stroke="#29271F" stroke-width="2" stroke-linecap="round"/>
+    <path d="M248 120c24-33 62-35 91-8m-15-1 18 5-6-17" stroke="#F56A47" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  </>}
+  <g transform={kind === 'search' ? 'translate(170 160) scale(.63)' : 'translate(222 177) scale(.64)'}>
+    <g class="journey-book">
+      <path d="M21 45c36-15 72-9 99 16 27-25 63-31 99-16v151c-38-12-69-7-99 16-30-23-61-28-99-16V45Z" fill="#F7CB54" stroke="#29271F" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M120 63v143" stroke="#29271F" stroke-width="2"/>
+      <ellipse cx="97" cy="108" rx="12" ry="18" fill="#FFFDF5"/><ellipse cx="139" cy="108" rx="12" ry="18" fill="#FFFDF5"/>
+      <ellipse cx="100" cy="111" rx="5.5" ry="9" fill="#29271F"/><ellipse cx="142" cy="111" rx="5.5" ry="9" fill="#29271F"/>
+      <path d="M101 140c10 12 24 12 34 0" stroke="#29271F" stroke-width="3" stroke-linecap="round"/>
+      <path d="m79 204-6 21m86-21 6 21m-102 0h18m76 0h18" stroke="#29271F" stroke-width="2" stroke-linecap="round"/>
+    </g>
+  </g>
+  <path d="M37 309c76 38 112-20 153-4 46 18-22 54-23 27-2-33 166 22 232-7 45-20 88-22 158-7m-15-12 18 13-21 8" stroke="#29271F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="m490 27 6 20 21-4-14 16 13 17-20-5-6 20-6-20-20 5 13-17-14-16 21 4 6-20Z" fill="#F7CB54"/><path d="m490 42 4 13 13 4-13 4-4 13-4-13-13-4 13-4 4-13Z" fill="#29271F"/>
+  <g transform="rotate(-8 525 270)"><path d="m491 253 63-2 2 31-62 2-3-31Z" fill="#F2B9D0"/><path d="M502 268h38m-9-7 9 7-9 7" stroke="#29271F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></g>
+</svg>
+<style>
+  .journey-scene { display: block; width: 100%; height: auto; }
+  .journey-book { transform-origin: 120px 215px; }
+  .journey-scene.is-awake .journey-book { animation: journey-greeting .7s ease-in-out both; }
+  @keyframes journey-greeting { 0%,100% { transform: rotate(0); } 40% { transform: rotate(-6deg) translateY(-5px); } 72% { transform: rotate(3deg); } }
+  :global(.dg-reduced) .journey-book { animation: none !important; }
+  @media(prefers-reduced-motion:reduce) { .journey-scene.is-awake .journey-book { animation: none; } }
+</style>
+<script>
+  // Hidden empty states wait for a real interaction; no animation while results update.
+  document.querySelectorAll<SVGElement>('.journey-scene').forEach(scene => {
+    scene.addEventListener('pointerenter',()=>{scene.classList.add('is-awake');window.setTimeout(()=>scene.classList.remove('is-awake'),750);},{once:true});
+  });
+</script>

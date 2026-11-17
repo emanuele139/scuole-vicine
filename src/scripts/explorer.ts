@@ -114,6 +114,7 @@ function renderList() {
     distance.textContent = origin ? `${formatDistance(distances.get(s.id)!)} in linea d’aria` : '';
     grid.append(el); });
   $('#no-results').hidden = filtered.length !== 0;
+  $('#explorer').classList.toggle('is-empty',filtered.length===0);
   $('#load-more').hidden = shown >= filtered.length;
   $('#shown-count').textContent = filtered.length ? `${Math.min(shown,filtered.length)} di ${filtered.length} sedi` : '';
   window.dispatchEvent(new Event('catalog:render'));
@@ -269,6 +270,7 @@ document.querySelectorAll<HTMLElement>('[data-hero-management]').forEach(button 
 }));
 $('#reset-filters').addEventListener('click',resetFilters);
 $('#empty-reset').addEventListener('click',resetFilters);
+$('#empty-edit').addEventListener('click',()=>{window.scrollTo({top:Math.max(0,$('#ricerca').getBoundingClientRect().top+window.scrollY-headerHeight()-12),behavior:'instant'});query.focus({preventScroll:true});});
 $('#saved-only').addEventListener('click',()=>{onlySaved=!onlySaved;filterSchools();});
 document.querySelectorAll<HTMLElement>('[data-municipality]').forEach(button=>button.addEventListener('click',()=>{municipality.value=button.dataset.municipality!;filterSchools();}));
 $('#load-more').addEventListener('click',()=>{shown+=12;renderList();});
