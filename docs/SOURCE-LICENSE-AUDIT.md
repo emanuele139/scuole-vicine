@@ -4,6 +4,8 @@ Verifica del **17 novembre 2026** per Scuole Vicine. La verifica è stata svolta
 
 ## Esito operativo
 
+Integrazione del 17 novembre 2026: **DS634, numeri civici del Comune di Milano**, snapshot 1° ottobre 2026, è incluso nella ricerca locale con licenza **CC BY 4.0**, esplicitamente dichiarata nella [risorsa CSV](https://dati.comune.milano.it/dataset/ds634-numeri-civici-coordinate/resource/533b4e63-3d78-4bb5-aeb4-6c5f648f7f21). Attribuzione, trasformazioni, metadati e procedura riproducibile sono documentati in [Ricerca dei civici](CIVIC-ADDRESS-SEARCH.md); URL e impronta dello ZIP sono nel JSON distribuito. Questa aggiunta è successiva allo snapshot dell’inventario generale dei domini.
+
 Il software originale è MIT. Per i dati sono confermate IODL 2.0 per il portale MIM e CC BY 4.0 per DS3014, DS47 e Geoschool. Per altre fonti la verifica delle condizioni è incompleta: questo esito **non equivale a un divieto di riuso**.
 
 Per le pubblicazioni delle amministrazioni conta anche l’[articolo 52, comma 2, del CAD](https://docs.italia.it/italia/piano-triennale-ict/codice-amministrazione-digitale-docs/it/v2021-07-30/_rst/capo_V-sezione_I-articolo_52.html): in assenza di licenza espressa opera il principio di apertura predefinita, con l’eccezione dei dati personali. Le [linee guida AgID](https://www.agid.gov.it/sites/agid/files/2024-05/lg-open-data_v.1.0_1.pdf) trattano questo principio e l’attribuzione. Occorre distinguere il dato istituzionale dalla riproduzione di un’opera o da materiali di terzi e valutare se le riserve generali del sito siano applicabili al caso concreto. Questo audit non accerta la validità o l’efficacia di quelle riserve per i singoli dati inclusi.

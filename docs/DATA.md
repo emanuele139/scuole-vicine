@@ -12,6 +12,7 @@ Il catalogo distingue servizi 0–3 e scuole dell’infanzia 3–6. Una scheda i
 | [Comune, iscrizioni 0–3](https://www.comune.milano.it/servizi/scuola/nidi-d-infanzia-e-sezioni-primavera) | Allegati dell’offerta comunale 2026/27 | Permesso generale comunale con fonte e URL, salvo avvisi specifici e diritti di terzi; versione CC non precisata |
 | [Geoschool](https://www.comune.milano.it/servizi/scuola/geoschool-trova-nidi-e-scuole-dell-infanzia) | Posizioni 2026/27 per i servizi 0–3 | Comune di Milano, **CC BY 4.0**, dichiarata sul servizio ArcGIS padre |
 | [Comune, DS47](https://dati.comune.milano.it/dataset/ds47-istruzione-asili-nido-localizzazione-delle-strutture) | Coordinate e geografia storiche, 2018/19, con civico e indirizzo esatti | Comune di Milano, **CC BY 4.0**, confermata nuovamente nei metadati delle risorse |
+| [Comune di Milano, DS634](https://dati.comune.milano.it/dataset/ds634-numeri-civici-coordinate) | Ricerca locale dei civici, snapshot 1° ottobre 2026 | Comune di Milano, **CC BY 4.0**, dichiarata sulla risorsa; elaborazione Scuole Vicine |
 | Siti ufficiali delle scuole e dei gestori | Orari, costi, servizi, appuntamenti con anno per campo | Diritti delle singole fonti; nessuna licenza generale presunta |
 
 Verifica delle licenze: **17 novembre 2026**. Il [rapporto completo](SOURCE-LICENSE-AUDIT.md) distingue licenze esplicite, principio di apertura dei dati pubblici e aspetti non accertati. Una verifica incompleta non costituisce un divieto di riuso. I dati vengono mantenuti con fonte, periodo e trasformazioni; le attribuzioni del sito sono raccolte nei riquadri “Fonti”, consultabili senza appesantire la lettura. Non viene applicata MIT indistintamente a tutte le fonti.
@@ -41,3 +42,7 @@ La ricostruzione integrale del catalogo richiede gli snapshot e le ricerche stru
 | `npm run catalog:nurseries-research` | `research/nurseries/deepening/catalog-before.json`, manifesto e JSON dei gruppi |
 
 Questi comandi scrivono gli output del catalogo: eseguirli soltanto con gli input completi e una copia di lavoro salvata. I due script di importazione non scoprono automaticamente nuove annualità. `reconcile-catalog.py --download --as-of YYYY-MM-DD` riscarica i CSV MIM esplicitamente configurati, non ricrea tutti gli altri input mancanti.
+
+## Ricerca locale dei civici
+
+`public/dati/civici-milano.json` contiene 52.156 civici applicati su 3.965 vie, ricavati dal CSV comunale con `python3 scripts/import-civic-addresses.py`. Il comando scarica lo snapshot configurato; `--input ZIP` consente la ricostruzione da una copia locale. Metadati, URL, licenza e hash dello ZIP sono nel JSON. Sono esclusi civici non applicati, numeri non validi e accessi speciali indicati da BARRA2. Non sono inclusi residenti, contatti, dati immobiliari o associazioni fra indirizzi e utenti. Dettagli e limiti in [Ricerca dei civici](CIVIC-ADDRESS-SEARCH.md).

@@ -1,5 +1,6 @@
 import { AddressSuggestionCache } from './address-cache.ts';
 import { parseCivicAddress, matchesCivicAddress } from './civic-address.ts';
+import { findMunicipalCivic } from './municipal-civics.ts';
 export type Coordinates = { lat: number; lng: number };
 export type AddressMatch = Coordinates & { label: string; houseNumber: string | null; street: string | null };
 
@@ -40,6 +41,12 @@ function pause(ms: number, signal: AbortSignal): Promise<void> {
   });
 }
 export async function findAddress(address: string, signal: AbortSignal): Promise<AddressMatch[]> {
+  const civic = parseCivicAddress(address);
+  if (civic) {
+    const local = await findMunicipalCivic(civic, signal);
+    signal.throwIfAborted();
+    if (local.length) return local;
+  }
   const cached = cachedAddressSuggestions(address);
   if (cached.exact && cached.fresh) return cached.matches;
   const matches = await requestAddress(address, signal);

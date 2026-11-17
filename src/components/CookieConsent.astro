@@ -19,7 +19,7 @@ import '../styles/privacy.css';
   <label class="privacy-option" for="consent-analytics"><div><strong>Statistiche · Umami</strong><p>Visite alle pagine pubbliche, dispositivo e provenienza geografica approssimativa. Nessun appunto, indirizzo cercato o link segreto.{!analyticsEnabled && ' Umami non è ancora attivo.'}</p></div><input id="consent-analytics" type="checkbox" disabled={!analyticsEnabled}/></label>
   <p id="privacy-signals-status" class="cookie-note" hidden></p>
   <label class="privacy-option" for="consent-maps"><div><strong>Mappe esterne</strong><p>OpenStreetMap e OpenFreeMap ricevono IP e area visualizzata. Se rifiuti, nella ricerca resta una mappa schematica locale.</p></div><input id="consent-maps" type="checkbox"/></label>
-  <p class="cookie-note">La ricerca indirizzi usa Photon solo quando digiti un indirizzo, come spiegato accanto al campo. Nessuna pubblicità o profilazione commerciale.</p>
+  <p class="cookie-note">I civici vengono cercati prima nei dati comunali sul dispositivo. Quando serve Photon per i suggerimenti, riceve il testo digitato, come spiegato accanto al campo. Nessuna pubblicità o profilazione commerciale.</p>
   <p id="privacy-storage-status" role="status" aria-live="polite"></p>
   <div class="cookie-actions"><button type="button" data-consent-reject>Rifiuta tutti</button><button type="button" data-consent-accept>Accetta tutti</button><button type="button" data-consent-save>Salva preferenze</button></div>
 </dialog>

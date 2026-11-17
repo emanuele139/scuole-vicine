@@ -7,6 +7,7 @@ const house={label:'Corso Magenta 15, 20123, Milano',street:'Corso Magenta',hous
 test('parses civic numbers, suffixes and full selected addresses without treating street dates as civics',()=>{
   for(const address of ['Corso Magenta 15','Corso Magenta 15,Milano','Corso Magenta 15, 20123, Milano'])assert.deepEqual(parseCivicAddress(address),{street:'Corso Magenta',houseNumber:'15'});
   assert.deepEqual(parseCivicAddress('Via Dante 12/A, Milano'),{street:'Via Dante',houseNumber:'12/A'});
+  assert.deepEqual(parseCivicAddress('Via Esempio 12/1, Milano'),{street:'Via Esempio',houseNumber:'12/1'});
   assert.equal(parseCivicAddress('Via 25 Aprile'),null);
   assert.equal(parseCivicAddress('Corso Magenta, Milano'),null);
 });
@@ -15,6 +16,7 @@ test('requires both the real street and the exact civic including letters',()=>{
   assert.equal(matchesCivicAddress(house,requested),true);
   for(const candidate of [{...house,houseNumber:null},{...house,houseNumber:'15a'},{...house,street:'Via Magenta'},{...house,street:'Corso Sempione'}])assert.equal(matchesCivicAddress(candidate,requested),false);
   assert.equal(matchesCivicAddress({...house,street:'Via Dante',houseNumber:'12a'},parseCivicAddress('Via Dante 12/A')!),true);
+  assert.equal(matchesCivicAddress({...house,street:'Via Esempio',houseNumber:'121'},parseCivicAddress('Via Esempio 12/1')!),false);
 });
 test('cached generic street or wrong civic cannot satisfy a civic query',()=>{
   const cache=new AddressSuggestionCache(null);
@@ -28,7 +30,9 @@ test('structured search retains the actual civic coordinates and never falls bac
   const original=globalThis.fetch;const urls:URL[]=[];
   const feature=(street:string,number:string,point:number[],kind='place')=>({geometry:{coordinates:point},properties:{countrycode:'IT',city:'Milano',street,housenumber:number,postcode:'20123',osm_key:kind,osm_value:kind==='place'?'house':'museum',name:kind==='place'?undefined:'Museo'}});
   globalThis.fetch=async(input)=>{
-    const url=new URL(String(input));urls.push(url);
+    const url=new URL(String(input),'https://scuolevicine.test');
+    if(url.pathname==='/dati/civici-milano.json')return new Response(JSON.stringify({version:1,streets:[]}));
+    urls.push(url);
     const features=url.searchParams.get('housenumber')==='15' ? [feature('Corso Magenta','15',[9.1787191,45.465621],'tourism'),feature('Corso Magenta','15',[house.lng,house.lat]),feature('Corso Magenta','15a',[9.18,45.46]),feature('Corso Sempione','15',[9.17,45.47])] : [feature('Corso Magenta','99',[9.18,45.46])];
     return new Response(JSON.stringify({features}));
   };

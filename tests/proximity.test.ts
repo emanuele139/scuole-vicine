@@ -37,7 +37,8 @@ test('superseded uncached requests abort during the throttle wait without callin
   const {findAddress}=await import('../src/lib/proximity.ts');
   const original=globalThis.fetch;
   let calls=0;
-  globalThis.fetch=async()=>{
+  globalThis.fetch=async(input)=>{
+    if(String(input)==='/dati/civici-milano.json')return new Response(JSON.stringify({version:1,streets:[]}));
     calls++;
     return new Response(JSON.stringify({features:[{geometry:{coordinates:[9.19,45.46]},properties:{countrycode:'IT',city:'Milano',street:'Via Test Attesa',housenumber:'4'}}]}),{status:200});
   };
