@@ -34,6 +34,8 @@ __pycache__/
 /private/
 /backups/
 /exports/
+/tmp/
+/output/
 scuole-milano-family*.json
 
 # Guida al design e dipendenze usate solo dalla guida locale
@@ -47,4 +49,8 @@ scuole-milano-family*.json
 /src/components/design/MapWidget.astro
 /src/components/design/EmptyStatesGuide.astro
 /src/components/design/DesignUsability.astro
+/src/components/design/FamilyPassGuide.astro
 /src/styles/design-usability.css
+
+/src/components/design/NetworkStatesGuide.astro
+/src/styles/design-network.css
