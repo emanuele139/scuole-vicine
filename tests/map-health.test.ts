@@ -15,6 +15,12 @@ test('rejects HTTP errors and error tiles signalled with HTTP 200 plus x-blocked
   await assert.rejects(checkedTileBlob(new Response('<html>Error</html>',{headers:{'content-type':'text/html'}})));
   assert.equal((await checkedTileBlob(new Response('png',{headers:{'content-type':'image/png'}}))).size,3);
 });
+test('a manual map retry starts a fresh attempt and ignores stale provider events',()=>{
+  const changes:number[]=[];const fallback=new BasemapFailover(index=>changes.push(index));
+  const old=fallback.generation;fallback.fail(0,old);fallback.fail(1,old);
+  fallback.restart();assert.equal(fallback.current,0);assert.equal(fallback.fail(0,old),false);assert.equal(fallback.fail(1,old),false);
+  fallback.fail(0,fallback.generation);assert.deepEqual(changes,[1,2,0,1]);
+});
 test('recognizes the warning image even when the status and exposed headers look successful',()=>{
   const width=256,height=256,pixels=new Uint8ClampedArray(width*height*4).fill(255);
   assert.equal(isBlockedTilePixels(pixels,width,height),false);

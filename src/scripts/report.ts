@@ -7,7 +7,7 @@ const email = form.elements.namedItem('email') as HTMLInputElement;
 const submit = form.querySelector<HTMLButtonElement>('[type="submit"]')!;
 const status = form.querySelector<HTMLElement>('[data-report-status]')!;
 const success = dialog.querySelector<HTMLElement>('[data-report-success]')!;
-let schoolId = '', sending = false;
+let schoolId = '', sending = false, retrySend = false;
 let opener: HTMLButtonElement | null = null;
 function updateDetails() {
   details.setCustomValidity('');
@@ -21,7 +21,7 @@ document.addEventListener('click', event => {
   opener = button;
   schoolId = button.dataset.reportSchool!;
   dialog.querySelector('#report-school-name')!.textContent = button.dataset.reportName || '';
-  form.reset(); updateDetails(); form.hidden = false; success.hidden = true; status.hidden = true;
+  form.reset(); updateDetails(); form.hidden = false; success.hidden = true; status.hidden = true;retrySend=false;submit.textContent='Invia segnalazione';
   dialog.showModal(); category.focus();
 });
 dialog.querySelectorAll('[data-report-close]').forEach(button => button.addEventListener('click', () => { if (!sending) dialog.close(); }));
@@ -41,8 +41,9 @@ form.addEventListener('submit', async event => {
     form.hidden = true; success.hidden = false;
     form.reset(); success.querySelector<HTMLButtonElement>('button')!.focus();
   } catch (error) {
+    retrySend=true;
     status.textContent = error instanceof Error && error.name === 'Error' ? error.message : 'Non siamo riusciti a confermare l’invio. Controlla la connessione e riprova.';
     status.hidden = false;
-  } finally { sending = false; submit.disabled = false; submit.textContent = 'Invia segnalazione'; form.removeAttribute('aria-busy'); }
+  } finally { sending = false; submit.disabled = false; submit.textContent = retrySend?'Riprova l’invio':'Invia segnalazione'; form.removeAttribute('aria-busy'); }
 });
 details.addEventListener('input', () => details.setCustomValidity(''));

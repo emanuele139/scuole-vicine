@@ -2,44 +2,49 @@ import { mapsAllowed } from '../lib/consent';
 import { BasemapFailover, checkedTileBlob, isBlockedTilePixels } from '../lib/map-health';
 import { openLocalBasemap } from './basemap-local';
 
-export function installBasemap(L:any,map:any,onStatus:(message:string)=>void) {
+export type BasemapState={phase:'loading'|'ready'|'fallback'|'local';message:string;refresh?:boolean};
+export function installBasemap(L:any,map:any,onStatus:(message:string)=>void,onState?:(state:BasemapState)=>void) {
   let activeLayer:any=null;
   let destroyed=false;
+  let phase:BasemapState['phase']='loading';
+  function notify(next:BasemapState['phase'],message:string,refresh=false){phase=next;onStatus(message);onState?.({phase:next,message,refresh});}
   let dispose=()=>{};
-  const failover=new BasemapFailover(index=>activate(index));
-  function activate(index:number) {
+  const failover=new BasemapFailover((index,generation)=>activate(index,generation));
+  function activate(index:number,generation=failover.generation) {
     if(destroyed)return;
     if(index < 2 && !mapsAllowed())return;
     dispose();dispose=()=>{};
     if(activeLayer){map.removeLayer(activeLayer);activeLayer=null;}
-    if(index===0){startRaster();return;}
+    if(index===0){startRaster(generation);return;}
     if(index===1){
-      onStatus('Stiamo caricando una mappa alternativa…');
+      notify('loading','Stiamo caricando una mappa alternativa…');
       let cancelled=false;
-      const timer=setTimeout(()=>failover.fail(1),15000);
+      const timer=setTimeout(()=>{if(!cancelled)failover.fail(1,generation);},15000);
       dispose=()=>{cancelled=true;clearTimeout(timer);};
       import('./basemap-vector').then(({openVectorBasemap})=>{
         if(cancelled)return;
         const layer=openVectorBasemap(map);
         activeLayer=layer;
         const vector=layer.getMaplibreMap();
-        const error=()=>failover.fail(1);
+        const error=()=>{if(!cancelled)failover.fail(1,generation);};
         vector.on('error',error);
         vector.once('load',()=>{
           if(cancelled)return;
-          clearTimeout(timer);onStatus('La mappa alternativa OpenFreeMap è disponibile.');
+          clearTimeout(timer);notify('ready','La mappa alternativa OpenFreeMap è disponibile.');
         });
         dispose=()=>{cancelled=true;clearTimeout(timer);vector.off('error',error);};
-      }).catch(()=>{if(!cancelled)failover.fail(1);});
+      }).catch(()=>{if(!cancelled)failover.fail(1,generation);});
       return;
     }
-    onStatus('Le mappe online non sono disponibili. Mostriamo uno schema di Milano per aiutarti a individuare le sedi.');
+    if(mapsAllowed())notify('fallback','Le mappe online non sono disponibili. Mostriamo uno schema di Milano per aiutarti a individuare le sedi.');
+    else notify('local','Mappa schematica locale. Puoi abilitare le mappe esterne dalle preferenze privacy nel footer.');
     activeLayer=openLocalBasemap(L,map);
   }
-  function startRaster() {
-    onStatus('');
+  function startRaster(generation:number) {
+    notify('loading','Stiamo caricando la cartografia. Le sedi restano disponibili.');
     const pending=new Map<HTMLCanvasElement,AbortController>();
     let removed=false;
+    let loaded=false;
     const Layer=L.TileLayer.extend({
       createTile(coords:any,done:(error:unknown,tile:HTMLCanvasElement)=>void) {
         const tile=document.createElement('canvas');tile.width=256;tile.height=256;
@@ -63,7 +68,7 @@ export function installBasemap(L:any,map:any,onStatus:(message:string)=>void) {
             done(null,tile);
           } catch(error) {
             if(!removed && (!controller.signal.aborted || controller.signal.reason==='timeout')){
-              done(error,tile);failover.fail(0);
+              done(error,tile);failover.fail(0,generation);
             }
           } finally {clearTimeout(timer);pending.delete(tile);image?.close();}
         })();
@@ -75,17 +80,19 @@ export function installBasemap(L:any,map:any,onStatus:(message:string)=>void) {
       keepBuffer:1,
     });
     activeLayer.on('tileunload',({tile}:any)=>{pending.get(tile)?.abort();pending.delete(tile);});
+    activeLayer.on('loading',()=>{if(!removed&&generation===failover.generation&&failover.current===0)notify('loading','Stiamo caricando la cartografia. Le sedi restano disponibili.',loaded);});
+    activeLayer.on('load',()=>{if(!removed&&generation===failover.generation&&failover.current===0){loaded=true;notify('ready','');}});
     dispose=()=>{removed=true;for(const controller of pending.values())controller.abort();pending.clear();};
     activeLayer.addTo(map);
   }
   const privacyChange=()=>{
-    if(mapsAllowed()) activate(0);
+    if(mapsAllowed()) failover.restart();
     else {
       activate(2);
-      onStatus('Mappa schematica locale. Per la cartografia online, abilita le mappe esterne nelle preferenze privacy nel footer.');
     }
   };
   privacyChange();
   window.addEventListener('privacy:change',privacyChange);
   map.once('unload',()=>{destroyed=true;dispose();window.removeEventListener('privacy:change',privacyChange);});
+  return {retry(){if(!destroyed&&phase!=='loading')privacyChange();}};
 }

@@ -23,12 +23,14 @@ export async function checkedTileBlob(response: Response): Promise<Blob> {
 /** Monotonic failover: stale errors never switch a newer provider or cause retry loops. */
 export class BasemapFailover {
   current=0;
-  private change: (index:number)=>void;
-  constructor(change:(index:number)=>void){this.change=change;}
-  fail(provider:number) {
-    if(provider!==this.current || this.current>=2)return false;
+  generation=0;
+  private change: (index:number,generation:number)=>void;
+  constructor(change:(index:number,generation:number)=>void){this.change=change;}
+  restart(){this.generation++;this.current=0;this.change(0,this.generation);}
+  fail(provider:number,generation=this.generation) {
+    if(generation!==this.generation || provider!==this.current || this.current>=2)return false;
     this.current++;
-    this.change(this.current);
+    this.change(this.current,this.generation);
     return true;
   }
 }

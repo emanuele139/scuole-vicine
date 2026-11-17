@@ -1,0 +1,10 @@
+---
+import '../styles/resource-feedback.css';
+interface Props { id:string;title?:string;detail?:string }
+const {id,title='',detail=''}=Astro.props;
+---
+<div class="resource-feedback" id={id} data-phase="idle" hidden>
+  <span class="resource-symbol" aria-hidden="true"><svg class="resource-spinner" width="23" height="23" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="2" opacity=".25"/><path d="M12 3a9 9 0 0 1 9 9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg class="resource-alert" width="23" height="23" viewBox="0 0 24 24" fill="none"><path d="M12 3 2 21h20L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M12 9v5m0 3v1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><svg class="resource-info" width="23" height="23" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M12 11v6m0-10v1" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+  <div id={`${id}-copy`} data-resource-copy role="status" aria-live="polite" aria-atomic="true"><p class="resource-title" data-resource-title>{title}</p><p class="resource-detail" data-resource-detail>{detail}</p></div>
+  <button type="button" class="resource-retry" data-resource-retry hidden>Riprova <span aria-hidden="true">↻</span></button>
+</div>
