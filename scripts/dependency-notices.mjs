@@ -17,5 +17,5 @@ for (const [location, entry] of Object.entries(lock.packages).sort(([a], [b]) =>
   for (const file of files) sections.push(`\n--- ${file} ---\n${readFileSync(resolve(directory, file), 'utf8')}\n`);
 }
 if (missing.length) sections.push(`\nPacchetti che non includono un file LICENSE autonomo (vedere licenza dichiarata e sorgente upstream sopra): ${missing.join(', ')}\n`);
-writeFileSync(resolve(root, 'public/third-party-licenses.txt'), sections.join('\n'));
+writeFileSync(resolve(root, 'public/third-party-licenses.txt'), sections.join('\n').replace(/\r\n/g, '\n'));
 console.log('Aggiornato public/third-party-licenses.txt');

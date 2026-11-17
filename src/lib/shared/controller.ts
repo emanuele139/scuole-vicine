@@ -1,6 +1,6 @@
 import { getSchool } from '../catalog-client';
 import { loadFamily, setFamilyAdapter, type FamilyState } from '../family';
-import { credentials, encrypt, link, parseLink, validCredentials, random, type Credentials } from './protocol';
+import { createCredentials, encrypt, link, parseLink, parseSpaceURL, restoreCredentials, random, type Credentials } from './protocol';
 import { SharedClient, request, decode, type Snapshot } from './client';
 import { validateDocument, equal, merge, type SharedDocument } from './document';
 import { drafts, removeVault, readVault } from './vault';
@@ -11,6 +11,7 @@ let tabId = '';
 let incoming: Credentials | null = null;
 let incomingClient: SharedClient | null = null;
 let error = '';
+let incomingGeneration = 0;
 function notify() {
   window.dispatchEvent(new CustomEvent('shared:change'));
   if (client) window.dispatchEvent(new CustomEvent('family:change', { detail: { state: loadFamily(), persisted: true } }));
@@ -45,13 +46,23 @@ async function attach(next: SharedClient) {
   notify();
   void client.sync();
 }
-function receiveLink() {
+async function receiveLink() {
   const fragment = location.hash;
-  if (fragment.includes('spazio=') || fragment.includes('chiave=') || fragment.includes('accesso=')) {
-    incoming = parseLink(fragment);
+  if (/^#[12]\./.test(fragment) || fragment.includes('spazio=') || fragment.includes('chiave=') || fragment.includes('accesso=')) {
+    const generation = ++incomingGeneration;
+    incoming = null;
     incomingClient = null;
+    // Remove the root secret synchronously, before the first crypto await.
     history.replaceState(null, '', location.pathname + location.search);
-    error = incoming ? '' : 'Il link segreto è incompleto o non è valido. Puoi chiedere un nuovo link alla persona che lo ha condiviso.';
+    try {
+      const parsed = await parseLink(fragment);
+      if (generation !== incomingGeneration) return;
+      incoming = parsed;
+      error = incoming ? '' : 'Il link segreto è incompleto o non è valido. Riapri il link completo che hai conservato o chiedilo alla persona che lo ha condiviso.';
+    } catch {
+      if (generation !== incomingGeneration) return;
+      error = 'Non siamo riusciti a leggere il link protetto. Apri il sito tramite HTTPS con un browser aggiornato e riprova con il link completo.';
+    }
     if (client && incoming?.id === client.credentials.id && incoming.key === client.credentials.key && incoming.access === client.credentials.access) incoming = null;
     notify();
   }
@@ -60,14 +71,20 @@ export const ready = (async () => {
   if (typeof window === 'undefined') return;
   const main = document.querySelector('main');
   if (main) main.inert = true;
-  receiveLink();
-  window.addEventListener('hashchange', receiveLink);
+  const receivedLink = receiveLink();
+  window.addEventListener('hashchange', () => { void receiveLink(); });
   try {
+    await receivedLink;
     const previousTab = sessionStorage.getItem('family-shared-tab');
     tabId = random(16); // Every document gets its own vault, including duplicated browser tabs.
     sessionStorage.setItem('family-shared-tab', tabId);
-    const stored: unknown = JSON.parse(localStorage.getItem(ACTIVE) || 'null');
-    if (validCredentials(stored)) {
+    const rawStored: unknown = JSON.parse(localStorage.getItem(ACTIVE) || 'null');
+    const stored = await restoreCredentials(rawStored);
+    if (rawStored && !stored) throw new Error('Le credenziali salvate non sono valide.');
+    if (stored) {
+      const loading=document.getElementById('shared-startup-feedback');
+      if(loading){loading.dataset.phase='loading';loading.hidden=false;}
+      main?.setAttribute('aria-busy','true');
       const previous = previousTab ? await readVault<Snapshot>(`${stored.id}:${previousTab}`, stored) : null;
       let restored = previous ? new SharedClient(stored, vaultId(stored), previous, notify) : null;
       // A newly opened tab can recover the latest encrypted draft without modifying its source.
@@ -84,6 +101,8 @@ export const ready = (async () => {
     }
   } catch { error = 'Non siamo riusciti a riaprire lo spazio condiviso. La copia locale resta disponibile. Per riprovare, apri di nuovo il link segreto.'; }
   if (main) main.inert = false;
+  main?.removeAttribute('aria-busy');
+  const loading=document.getElementById('shared-startup-feedback');if(loading)loading.hidden=true;
   notify();
   setInterval(() => { if (!document.hidden) void client?.sync(); }, 15000);
   document.addEventListener('focusout', () => setTimeout(() => { void client?.sync(); }, 0));
@@ -102,9 +121,14 @@ export async function createShared() {
   const pendingKey = 'family-shared-creation';
   let pending: { credentials: Credentials; envelope: Awaited<ReturnType<typeof encrypt>>; document?: SharedDocument };
   const raw = sessionStorage.getItem(pendingKey);
-  if (raw) pending = JSON.parse(raw);
+  if (raw) {
+    pending = JSON.parse(raw);
+    const restored = await restoreCredentials(pending.credentials);
+    if (!restored) throw new Error('Non siamo riusciti a verificare la creazione in sospeso. Conserva una copia dei dati e riapri la pagina.');
+    pending.credentials = restored;
+  }
   else {
-    const c = credentials();
+    const c = await createCredentials();
     pending = { credentials: c, envelope: await encrypt(document, c, 1) };
     sessionStorage.setItem(pendingKey, JSON.stringify(pending));
   }
@@ -114,10 +138,21 @@ export async function createShared() {
   await attach(new SharedClient(pending.credentials, vaultId(pending.credentials), { base: original, local: result.document, revision: remote.revision, expiresAt: remote.expiresAt, pending: null }, notify));
   sessionStorage.removeItem(pendingKey);
 }
-export async function previewIncoming(): Promise<SharedDocument> {
+export async function previewIncoming(value?: string): Promise<SharedDocument> {
   await ready;
+  const generation = value !== undefined ? ++incomingGeneration : incomingGeneration;
+  if (value !== undefined) {
+    const parsed = await parseSpaceURL(value, location.origin);
+    if (generation !== incomingGeneration) throw new Error('Il link è cambiato. Apri di nuovo l’anteprima.');
+    if (!parsed) throw new Error('Incolla il link completo di uno spazio di questo sito, comprese le parti dopo #.');
+    incoming = parsed;
+    incomingClient = null;
+    notify();
+  }
   if (!incoming) throw new Error('Non abbiamo trovato un link da aprire. Controlla di aver copiato il link completo.');
-  incomingClient = await SharedClient.open(incoming, vaultId(incoming), notify);
+  const opened = await SharedClient.open(incoming, vaultId(incoming), notify);
+  if (generation !== incomingGeneration) { opened.stop(); throw new Error('Il link è cambiato. Apri di nuovo l’anteprima.'); }
+  incomingClient = opened;
   return incomingClient.state.local;
 }
 export async function acceptIncoming() {
@@ -126,7 +161,7 @@ export async function acceptIncoming() {
   await attach(incomingClient);
   incoming = null; incomingClient = null; notify();
 }
-export function dismissIncoming() { incoming = null; incomingClient = null; notify(); }
+export function dismissIncoming() { incomingGeneration++; incoming = null; incomingClient = null; notify(); }
 export async function leaveShared() {
   if (!client) return;
   await client.persist();

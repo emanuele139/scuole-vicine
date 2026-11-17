@@ -63,7 +63,7 @@ def main():
         if route.startswith('/design/'): continue  # Local-only style guide has its own shell.
         try: documents[route] = Document(path.read_text())
         except (ValueError, json.JSONDecodeError) as e: errors.append(f'{route}: HTML/JSON-LD {e}')
-    excluded = {'/famiglia/', '/confronto/', '/404.html'}
+    excluded = {'/famiglia/', '/s/', '/confronto/', '/404.html'}
     public = set(documents) - excluded
     school_data = json.loads(Path('src/data/schools.json').read_text()) + json.loads(Path('src/data/nurseries.json').read_text())
     require(len([p for p in public if p.startswith('/scuole/')]) == len(school_data), 'School route coverage differs from catalogue')

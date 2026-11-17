@@ -1,5 +1,4 @@
 ---
-import PageIntro from '../components/PageIntro.astro';
 import EmptyState from '../components/EmptyState.astro';
 import Layout from '../layouts/Layout.astro';
 import Icon from '../components/Icon.astro';
@@ -8,11 +7,11 @@ import SharedSpace from '../components/SharedSpace.astro';
 <Layout title="Le tue scuole" active="famiglia">
   <div class="family-page" data-family-page>
     <noscript><p class="notice">La selezione e gli appunti richiedono JavaScript. Puoi consultare le <a href="/metodo/#catalogo">schede di tutte le scuole</a>.</p></noscript>
-    <div class="family-heading"><PageIntro accent="scuole." title="Le tue scuole." eyebrow="LA TUA SELEZIONE, IL PROSSIMO PASSO" description="Le scuole che ti interessano, le visite e gli appunti. Uno spazio per raccogliere le informazioni e scegliere insieme." tone="prato" character="arch"/></div><div class="family-device-bar"><p class="family-device" data-family-device><span class="device-dot"></span> Su questo dispositivo</p><a class="family-browse" href="/">Aggiungi una scuola <Icon name="plus" size={17}/></a></div>
+    <SharedSpace/>
 
     <div class="family-warning" data-family-storage-warning hidden role="alert">Il browser non consente il salvataggio. Esporta una copia prima di chiudere questa pagina.</div>
     <p class="family-feedback" data-family-feedback role="status" aria-live="polite"></p>
-    <p class="notice" data-shared-entry hidden>Hai ricevuto uno spazio condiviso. <a href="#condivisione">Apri l’anteprima prima di collegarlo</a>.</p>
+    <p class="notice" data-shared-entry hidden>Questo link apre uno spazio con scuole e appunti. <a href="#condivisione">Controlla l’anteprima prima di aprirlo</a>.</p>
 
 
     <section class="received-selection" data-family-received hidden aria-labelledby="received-title">
@@ -26,7 +25,7 @@ import SharedSpace from '../components/SharedSpace.astro';
 
     <div class="family-workspace" data-family-workspace hidden>
       <section class="family-rose" aria-labelledby="rose-title">
-        <div class="rose-heading"><div><span class="family-eyebrow">Un passo alla volta</span><h2 id="rose-title">La tua selezione <span data-family-count>0</span></h2></div><button class="family-secondary" type="button" data-family-share><Icon name="users" size={17} /> Condividi selezione</button></div>
+        <div class="rose-heading"><div><span class="family-eyebrow">Un passo alla volta</span><h2 id="rose-title">La tua selezione <span data-family-count>0</span></h2></div><div class="family-selection-actions"><a class="family-secondary" href="/">Aggiungi una scuola <Icon name="plus" size={17}/></a><button class="family-secondary" type="button" data-family-share><Icon name="users" size={17} /> Condividi solo le scuole</button></div></div>
         <div class="family-filters" aria-label="Filtra la selezione">
           <button type="button" class="active" aria-pressed="true" data-family-filter="tutte">Tutte</button>
           <button type="button" aria-pressed="false" data-family-filter="da-visitare">Da visitare</button>
@@ -52,9 +51,9 @@ import SharedSpace from '../components/SharedSpace.astro';
       </aside>
     </div>
 
-    <section class="family-utilities" id="condivisione" aria-label="Condivisione e copie"><h2>Scegli come conservare e condividere gli appunti</h2><SharedSpace/><section class="family-transfer" aria-labelledby="transfer-title">
-      <div><span class="family-eyebrow">I tuoi dati</span><h2 id="transfer-title">Porta con te gli appunti</h2><p>Il file esportato contiene gli appunti in un formato leggibile: conservalo con cura. Il link della selezione condivide solo le scuole. Il link segreto dello spazio condiviso permette anche di sincronizzare gli appunti, protetti con cifratura.</p></div>
-      <div class="transfer-actions"><button type="button" class="family-secondary" data-family-export><Icon name="download" size={16} /> Esporta copia</button><button type="button" class="family-secondary" data-family-import>Importa copia <Icon name="plus" size={16} /></button><input type="file" accept="application/json,.json" data-family-file hidden aria-label="Scegli una copia dello spazio famiglia" /></div>
+    <section class="family-utilities" aria-label="Copie dei tuoi dati"><h2>Una copia da conservare anche in un file</h2><section class="family-transfer" aria-labelledby="transfer-title">
+      <div><span class="family-eyebrow">I tuoi dati</span><h2 id="transfer-title">Scarica una copia delle tue scelte</h2><p>Il file contiene le scuole salvate, gli stati delle visite e gli appunti al momento del download. Non si aggiorna con le modifiche successive. Gli appunti nel file sono leggibili: conservalo come un documento personale. Puoi importarlo per aggiungere i dati alla selezione aperta.</p></div>
+      <div class="transfer-actions"><button type="button" class="family-secondary" data-family-export><Icon name="download" size={16} /> Scarica copia</button><button type="button" class="family-secondary" data-family-import>Importa copia <Icon name="plus" size={16} /></button><input type="file" accept="application/json,.json" data-family-file hidden aria-label="Scegli una copia dello spazio famiglia" /></div>
     </section></section>
 
     <dialog class="family-dialog" data-family-import-dialog aria-labelledby="family-import-title">

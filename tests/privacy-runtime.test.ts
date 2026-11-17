@@ -17,7 +17,7 @@ function browser(options: { stored?: string; blocked?: boolean; hostname?: strin
   return {nodes,scripts,sent,window,storage,listeners,click(selector:string){handlers[selector].click();}};
 }
 test('tracker is never requested before consent, after refusal, or for local and personal pages',()=>{
-  for(const config of [{},{stored:JSON.stringify(makeConsent(false,false))},{stored:JSON.stringify(makeConsent(true,false)),hostname:'localhost'},{stored:JSON.stringify(makeConsent(true,false)),path:'/famiglia/'},{stored:JSON.stringify(makeConsent(true,false)),dnt:'1'},{stored:JSON.stringify(makeConsent(true,false)),gpc:true}]) assert.equal(browser(config).scripts.length,0);
+  for(const config of [{},{stored:JSON.stringify(makeConsent(false,false))},{stored:JSON.stringify(makeConsent(true,false)),hostname:'localhost'},{stored:JSON.stringify(makeConsent(true,false)),path:'/famiglia/'},{stored:JSON.stringify(makeConsent(true,false)),path:'/s/'},{stored:JSON.stringify(makeConsent(true,false)),dnt:'1'},{stored:JSON.stringify(makeConsent(true,false)),gpc:true}]) assert.equal(browser(config).scripts.length,0);
 });
 test('consent loads tracker once, sends only sanitized pageview and withdrawal blocks pending sends',()=>{
   const b=browser(); b.click('[data-consent-accept]'); assert.equal(b.scripts.length,1);

@@ -1,21 +1,85 @@
-<section class="shared-panel" data-shared-panel aria-labelledby="shared-title">
-  <div><span class="family-eyebrow">Senza registrazione</span><h2 id="shared-title">Scegli insieme</h2><p data-shared-status role="status" aria-live="polite">Le scuole salvate e gli appunti restano su questo dispositivo.</p><p data-shared-expiry></p><p data-shared-error role="alert" hidden></p></div>
-  <div class="shared-actions">
-    <button class="family-primary" data-shared-create type="button">Condividi spazio</button>
-    <button class="family-primary" data-shared-incoming type="button" hidden>Apri anteprima del link ricevuto</button>
-    <button class="family-secondary" data-shared-link type="button" hidden>Link e codice QR</button>
-    <button class="family-secondary" data-shared-sync type="button" hidden>Sincronizza</button>
-    <button class="family-primary" data-shared-conflicts type="button" hidden>Confronta modifiche</button>
-    <details class="shared-manage" data-shared-manage hidden><summary>Gestisci spazio</summary><div class="shared-actions">
-    <button class="family-secondary" data-shared-add-local type="button" hidden>Aggiungi la mia copia locale</button>
-    <button class="family-secondary" data-shared-drafts type="button" hidden>Recupera altre bozze</button>
-    <button class="family-secondary" data-shared-leave type="button" hidden>Torna alla copia locale</button>
-    <button class="family-secondary" data-shared-delete type="button" hidden>Elimina spazio condiviso</button>
-    </div></details>
+---
+import Character from './design/Character.astro';
+import GraphicMark from './design/GraphicMark.astro';
+import Icon from './Icon.astro';
+import '../styles/family-space.css';
+---
+<header class="family-space-hero" id="condivisione" data-shared-panel>
+  <GraphicMark kind="asterisk" class="family-space-spark"/>
+  <div class="family-space-copy">
+    <p class="eyebrow">Il tuo taccuino · senza account</p>
+    <h1>Le tue <span class="title-cutout">scuole.</span></h1>
+    <p class="family-space-lead">Crea un link per ritrovare scuole e appunti, anche se il browser li dimentica.</p>
+    <p class="family-space-summary" data-space-summary role="status" aria-live="polite">La tua selezione, un passo alla volta.</p>
+    <div class="family-space-quick-actions">
+      <button class="family-primary" data-shared-create type="button">Crea il tuo link <Icon name="arrow-right" size={15}/></button>
+      <button class="family-primary" data-shared-incoming type="button" hidden>Apri l’anteprima del link</button>
+      <button class="family-primary" data-shared-conflicts type="button" hidden>Confronta modifiche</button>
+    </div>
   </div>
-</section>
+  <div class="family-space-art">
+    <GraphicMark kind="orbit" class="family-space-orbit"/>
+    <div class="family-space-placeholder" data-shared-placeholder>
+      <Character kind="arch" color="#B8AAF5" class="family-space-mascot"/>
+    </div>
+    <section class="space-pass" data-shared-pass hidden aria-label="Il tuo spazio personale">
+      <GraphicMark kind="asterisk" class="space-pass-decoration space-pass-asterisk"/>
+      <GraphicMark kind="ribbon" class="space-pass-decoration space-pass-ribbon"/>
+      <div class="space-pass-intro" aria-hidden="true"><Character kind="arch" color="#D4E88B" class="space-pass-mascot"/><span>Il tuo spazio.<small>Da ritrovare, ovunque.</small></span></div>
+      <button type="button" class="space-pass-enlarge" data-shared-enlarge aria-label="Ingrandisci il QR del tuo spazio"><span class="space-pass-qr" data-shared-qr></span></button>
+      <button type="button" class="space-pass-copy" data-shared-link aria-label="Copia il link del tuo spazio"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></svg><span data-shared-copy-label>Copia link</span></button>
+      <button type="button" class="space-pass-download" data-shared-pdf><Icon name="download" size={15}/><span data-shared-pdf-label>Scarica il pass PDF</span></button>
+    </section>
+  </div>
+  <p class="family-space-attention" data-shared-attention role="status" aria-live="polite" hidden></p>
+  <p class="family-space-error" data-shared-error role="alert" hidden></p>
+  <p class="family-space-copy-status" data-shared-copy-status role="status" aria-live="polite"></p>
+  <p class="family-space-pdf-status" data-shared-pdf-status role="status" aria-live="polite"></p>
+  <details class="family-space-expand" data-shared-expand>
+    <summary><span class="space-expand-closed">Come funziona e tutti gli strumenti</span><span class="space-expand-open">Riduci spiegazione e strumenti</span></summary>
+    <div class="family-space-expanded">
+      <div>
+        <p class="family-space-device" data-family-device>Salvate in questo browser</p>
+        <div class="family-space-explanation">
+          <h2 id="shared-title">Conserva le tue scelte con un link</h2>
+          <div data-shared-intro>
+            <p>Crea un link per ritrovare scuole e appunti anche se il browser dimentica i dati del sito o quando usi un altro dispositivo.</p>
+            <p>Per rispettare la tua privacy, non chiediamo un account, un nome o un indirizzo email. Puoi tenere il link per te o condividerlo con chi scegli.</p>
+          </div>
+          <p data-shared-status role="status" aria-live="polite">Le scuole e gli appunti sono conservati soltanto in questo browser.</p>
+          <p data-shared-reminder hidden>Conserva il link fuori da questo browser, per esempio in una nota personale. Ti servirà anche se il browser non ricorda più l’accesso.</p>
+        </div>
+        <div class="family-space-actions"><button class="family-secondary" data-shared-open type="button">Apri uno spazio con un link</button></div>
+        <section class="shared-privacy" aria-labelledby="space-privacy-title"><h3 id="space-privacy-title">Privacy e accesso</h3>
+          <p>I contenuti sono cifrati nel browser prima di essere inviati al servizio. Chi possiede il link o il QR può leggere, modificare ed eliminare lo spazio: condividili soltanto con persone fidate. Evita informazioni personali non necessarie negli appunti. <a href="/privacy/#trattamenti">Come trattiamo i dati</a>.</p>
+          <p>Il link conserva scuole, stati delle visite, domande e appunti. Le tre scuole del confronto restano su questo dispositivo. Se perdi il link e nessun browser ricorda più l’accesso, non possiamo recuperare lo spazio.</p>
+          <p>Lo spazio dura 365 giorni dalla creazione o dall’ultima modifica salvata. Aprirlo non rinnova la durata.</p>
+        </section>
+      </div>
+      <div class="family-space-tools">
+        <div class="space-pass-link" data-shared-full-link hidden>
+          <label for="space-personal-link">Il tuo link personale</label>
+          <input id="space-personal-link" data-shared-personal-link type="url" readonly autocomplete="off" spellcheck="false"/>
+          <p>Conserva il link completo, non il solo indirizzo di questa pagina. Il QR viene generato su questo dispositivo.</p>
+          <p>Il pass PDF contiene il link e il QR per riaprire lo spazio. Viene creato su questo dispositivo e non contiene gli appunti. Custodiscilo: chi lo possiede può accedere allo spazio.</p>
+        </div>
+        <p class="space-pass-local-hint" data-shared-pdf-hint>Quando hai salvato una scuola, crea il tuo link: potrai scaricare un pass PDF per ritrovare lo spazio.</p>
+        <details class="shared-manage" data-shared-manage hidden><summary>Gestisci spazio</summary>
+          <p data-shared-expiry></p>
+          <div class="shared-actions">
+            <button class="family-secondary" data-shared-sync type="button" hidden>Sincronizza ora</button>
+            <button class="family-secondary" data-shared-add-local type="button" hidden>Aggiungi la copia di questo browser</button>
+            <button class="family-secondary" data-shared-drafts type="button" hidden>Recupera altre bozze</button>
+            <button class="family-secondary" data-shared-leave type="button" hidden>Torna alla copia precedente nel browser</button>
+            <button class="family-secondary" data-shared-delete type="button" hidden>Elimina spazio per tutti</button>
+          </div>
+        </details>
+      </div>
+    </div>
+  </details>
+</header>
 <dialog class="family-dialog shared-dialog" data-shared-dialog aria-labelledby="shared-dialog-title">
-  <div class="dialog-top"><span class="family-eyebrow">Spazio condiviso</span><button type="button" data-shared-close aria-label="Chiudi">×</button></div>
+  <div class="dialog-top"><span class="family-eyebrow">Il tuo spazio · senza account</span><button type="button" data-shared-close aria-label="Chiudi">×</button></div>
   <h2 id="shared-dialog-title"></h2>
   <div data-shared-content></div>
   <p data-shared-dialog-error role="alert"></p>

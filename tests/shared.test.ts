@@ -17,20 +17,22 @@ function setup() {
   }; } }; } };
   const stored = new Map<string, any>();
   let failWrites = false, offline = false, loseResponse = false;
+  const requests: Array<{ path: string; headers: unknown; body?: string }> = [];
   const context = vm.createContext({
     crypto: globalThis.crypto, URL, URLSearchParams, Request, Response, Headers, TextEncoder, TextDecoder, Uint8Array, btoa, atob, AbortSignal,
     structuredClone, setTimeout, clearTimeout, console,
     async writeVault(id: string, _c: any, value: any) { if (failWrites) throw new Error('blocked'); stored.set(id, structuredClone(value)); },
     async readVault(id: string) { return stored.get(id) || null; },
     async fetch(path: string, init: any) {
+      requests.push({ path, headers: init.headers, body: init.body });
       if (offline) throw new Error('offline');
       const response = await (context as any).api(new Request(`https://scuole.test${path}`, init), { DB });
       if (loseResponse && init.method === 'PUT') { loseResponse = false; throw new Error('lost after commit'); }
       return response;
     },
   });
-  vm.runInContext(source('../src/lib/shared/protocol.ts') + source('../src/lib/shared/document.ts') + source('../src/lib/shared/client.ts') + source('../worker/index.ts') + '\nglobalThis.api = api; globalThis.shared = { credentials, encrypt, decrypt, link, parseLink, merge, validateDocument, blankEntry, equal, SharedClient, request, decode };', context);
-  return { api: (context as any).api, shared: (context as any).shared, DB, sqlite, stored,
+  vm.runInContext(source('../src/lib/shared/protocol.ts') + source('../src/lib/shared/document.ts') + source('../src/lib/shared/client.ts') + source('../worker/index.ts') + '\nglobalThis.api = api; globalThis.shared = { credentials, createCredentials, restoreCredentials, encrypt, decrypt, link, parseLink, parseSpaceURL, merge, validateDocument, blankEntry, equal, SharedClient, request, decode };', context);
+  return { api: (context as any).api, shared: (context as any).shared, DB, sqlite, stored, requests,
     offline(value: boolean) { offline = value; }, failWrites(value: boolean) { failWrites = value; }, loseResponse() { loseResponse = true; } };
 }
 function doc(note = '') { return { version: 1, saved: ['school-0'], entries: { 'school-0': { status: 'da-valutare', note, questions: '', parentA: '', parentB: '' } } }; }
@@ -51,7 +53,27 @@ test('encrypted content authenticates key, space and revision, with fresh IVs', 
   await assert.rejects(s.decrypt(first, { ...c, key: s.credentials().key }));
   await assert.rejects(s.decrypt({ ...first, revision: 2 }, c));
   await assert.rejects(s.decrypt(first, { ...c, id: s.credentials().id }));
-  assert.deepEqual(JSON.parse(JSON.stringify(s.parseLink(new URL(s.link(c, 'https://scuole.test')).hash))), JSON.parse(JSON.stringify(c)));
+  assert.deepEqual(JSON.parse(JSON.stringify(await s.parseLink(new URL(s.link(c, 'https://scuole.test')).hash))), JSON.parse(JSON.stringify(c)));
+});
+
+test('v2 links reopen encrypted spaces and sync offline drafts without sending the root or AES key', async () => {
+  const env = setup(), s = env.shared, c = await s.createCredentials();
+  await s.request(c, 'POST', await s.encrypt(doc('APPUNTO_V2_PRIVATO'), c, 1));
+  const reopened = await s.parseSpaceURL(s.link(c, 'https://scuole.test'), 'https://scuole.test');
+  const a = await s.SharedClient.open(reopened, 'v2-a', () => {}); a.schedule = () => {};
+  assert.equal(a.state.local.entries['school-0'].note, 'APPUNTO_V2_PRIVATO');
+  env.offline(true); a.set(doc('BOZZA_V2_PRIVATA')); await a.sync(); assert.equal(a.status, 'offline');
+  const restoredCredentials = await s.restoreCredentials(JSON.parse(JSON.stringify(c)));
+  const restored = await s.SharedClient.restore(restoredCredentials, 'v2-a', () => {}); restored.schedule = () => {};
+  env.offline(false); await restored.sync(); assert.equal(restored.status, 'saved');
+  assert.equal((await s.decode(await s.request(c), c)).entries['school-0'].note, 'BOZZA_V2_PRIVATA');
+  await assert.rejects(s.request({ ...c, access: (await s.createCredentials()).access }), /non disponibile/);
+  await assert.rejects(s.decrypt(await s.request(c), { ...c, key: (await s.createCredentials()).key }));
+  const wire = JSON.stringify(env.requests), database = JSON.stringify(env.sqlite.prepare('SELECT * FROM shared_spaces').get());
+  for (const secret of [c.seed, c.key, 'APPUNTO_V2_PRIVATO', 'BOZZA_V2_PRIVATA']) {
+    assert.ok(!wire.includes(secret)); assert.ok(!database.includes(secret));
+  }
+  assert.ok(!database.includes(c.access));
 });
 test('D1 stores ciphertext and token hash; auth, CAS, idempotency, deletion and expiry are enforced', async () => {
   const env = setup(), s = env.shared, c = s.credentials();
@@ -107,4 +129,21 @@ test('storage failure prevents sending unsaved drafts; removal keeps notes; loca
   const removed = doc('iniziale'); removed.saved = [];
   const other = doc('nuovo appunto'); const merged = s.merge(doc('iniziale'), removed, other);
   assert.equal(merged.document.saved.length, 0); assert.equal(merged.document.entries['school-0'].note, 'nuovo appunto');
+});
+
+
+test('pasted recovery links accept only complete links to this site without navigating', async () => {
+  const { shared: s } = setup(), c = s.credentials();
+  const url = s.link(c, 'https://scuole.test');
+  assert.deepEqual(JSON.parse(JSON.stringify(await s.parseSpaceURL(`  ${url}  `, 'https://scuole.test'))), JSON.parse(JSON.stringify(c)));
+  for (const value of [
+    url.replace('https://scuole.test', 'https://other.test'),
+    url.replace('https://', 'http://'),
+    url.replace('/s/', '/privacy/'),
+    url.replace('https://', 'https://user:password@'),
+    'https://scuole.test/famiglia/',
+    url.slice(0, -1),
+    'javascript:alert(1)',
+    'not a link',
+  ]) assert.equal(await s.parseSpaceURL(value, 'https://scuole.test'), null);
 });

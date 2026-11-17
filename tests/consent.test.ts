@@ -14,6 +14,6 @@ test('accept and reject retain independent categories for the same six months', 
   }
 });
 test('personal pages and URL payloads cannot enter analytics', () => {
-  for (const path of ['/famiglia/','/confronto/','/privacy/','/design/','/api/reports','/?q=via+roma','/famiglia/#chiave=secret','/scuole/a/?email=test@example.org']) assert.equal(analyticsPath(path),null);
+  for (const path of ['/famiglia/','/s/','/s/#1.secret','/confronto/','/privacy/','/design/','/api/reports','/?q=via+roma','/famiglia/#chiave=secret','/scuole/a/?email=test@example.org']) assert.equal(analyticsPath(path),null);
   for (const path of ['/','/scuole/scuola-esempio/','/guide/come-scegliere/','/nidi/','/municipi/9/']) assert.equal(analyticsPath(path),path);
 });

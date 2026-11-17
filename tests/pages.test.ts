@@ -28,7 +28,7 @@ test('www and HTTP redirect to HTTPS canonical origin while retaining paths and 
 });
 test('static security headers and noindex protect personal pages, missing pages and technical deployment hosts', async () => {
   for (const [url, status, noindex] of [
-    ['https://scuolevicine.it/', 200, false], ['https://scuolevicine.it/famiglia/', 200, true],
+    ['https://scuolevicine.it/', 200, false], ['https://scuolevicine.it/famiglia/', 200, true], ['https://scuolevicine.it/s/', 200, true],
     ['https://scuole-vicine.pages.dev/', 200, true], ['https://scuolevicine.it/missing/', 404, true],
   ] as const) {
     const response = await handler.fetch(new Request(url), { ASSETS: { async fetch() { return new Response('static-content', { status }); } } });

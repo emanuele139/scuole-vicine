@@ -17,9 +17,13 @@ Controlli: `npm run check`, `npm run shared:check`, `npm test`, `npm run build`.
 ## Esperienza
 
 - Modalità locale invariata, comprese migrazione legacy, esportazione/importazione e link di sola selezione.
-- “Condividi spazio” crea un documento cifrato a partire dalla rosa locale; la copia locale originaria rimane separata.
-- Link segreto e QR generato localmente. Un invito richiede anteprima e accettazione; non importa automaticamente i dati locali.
-- Nello spazio condiviso rosa, stati, note, domande e punti di vista A/B si sincronizzano. La selezione del confronto resta sul dispositivo.
+- “Crea il tuo link” crea un documento cifrato a partire dalla selezione locale; la copia locale originaria rimane separata.
+- L’header illustrato sopra la selezione presenta il link come strumento di conservazione senza account, anche dopo la cancellazione dei dati del browser. La condivisione è facoltativa; il link va conservato fuori dal browser.
+- Un link completo dello stesso sito può essere incollato per aprire l’anteprima, senza navigare al suo URL né salvarlo nella cronologia.
+- L’header compatto mostra titolo, conteggio, luogo e stato del salvataggio. Per gli spazi attivi, il pass Iris offre QR vettoriale, “Copia link” e “Scarica il pass PDF”. “Come funziona e tutti gli strumenti” espande spiegazione, link completo, privacy e gestione. Il QR è ingrandibile con un tocco, ha margine libero di quattro moduli e angoli arrotondati senza coprire dati. Un invito richiede anteprima e accettazione; non importa automaticamente i dati locali.
+- Il pass PDF A4 è generato nel browser, con caratteri locali incorporati, logo, breve presentazione, link completo e QR vettoriale cliccabili. Non contiene gli appunti ed è una chiave di accesso, non un backup. Il modulo si carica soltanto al clic; errori riprovabili e controllo dello spazio ancora attivo prima del download. Nessun servizio PDF/QR esterno, nessun link segreto nelle richieste, nei metadati o nel nome del file.
+- QR e PDF condividono la geometria vettoriale: moduli adiacenti uniti, soli angoli esposti arrotondati, tre riferimenti con cornici morbide. Il fondo coincide con il box (Iris chiaro nell’header e nell’ingrandimento, Prato nel PDF). Nel pass e nel PDF asterisco Sole e nastro Mandarino restano fuori dal quadrato protetto del QR; quattro moduli liberi per lato, correzione M e contenuto del link sono invariati.
+- Nello spazio condiviso selezione, stati, note, domande e punti di vista A/B si sincronizzano. La selezione del confronto resta sul dispositivo.
 - I possessori del link hanno pari permessi, eliminazione compresa. Nessun account/email/autore verificato, nessun recupero amministrativo delle chiavi.
 - Le modifiche vengono conservate come bozze cifrate in IndexedDB. La sincronizzazione avviene dopo 800 ms, ogni 15 secondi a pagina visibile, al ritorno online e all’uscita dai campi. Durante la scrittura in una textarea degli appunti la sincronizzazione è sospesa fino al cambio di campo, per impedire che un aggiornamento remoto alteri il testo sotto il cursore. Non è presente un service worker: la bozza offline funziona su una pagina già aperta; non si promette l’avvio del sito senza rete.
 - “Gestisci spazio” permette di importare la copia locale con anteprima, recuperare le bozze delle altre sessioni, tornare alla copia locale o eliminare lo spazio per tutti.
@@ -28,7 +32,15 @@ Controlli: `npm run check`, `npm run shared:check`, `npm test`, `npm run build`.
 
 ## Sicurezza e formato
 
-`/famiglia/#spazio=ID&accesso=TOKEN&chiave=KEY`: ID casuale da 128 bit, token e chiave indipendenti da 256 bit generati con `crypto.getRandomValues`. Il frammento viene acquisito e rimosso con `history.replaceState`, anche per inviti aperti nella stessa pagina. La condivisione rigenera il link completo.
+I nuovi spazi usano `/s/#2.SEED`: 32 byte casuali (256 bit) generati con `crypto.getRandomValues` e codificati in 43 caratteri base64url senza padding. Lunghezza completa su `https://scuolevicine.it`: **72 caratteri**. Il browser usa esclusivamente Web Crypto HKDF-SHA-256 con salt UTF-8 fisso `scuole-vicine/shared-space/v2` e tre etichette `info` distinte: `id` → 128 bit, `access` → 256 bit, `encryption` → 256 bit. Nessuna derivazione da password, libreria crittografica aggiuntiva o archivio di abbreviazione. Il segreto radice e la chiave AES non sono inviati all’API. Le chiavi derivate hanno usi separati; il materiale segreto iniziale ha 256 bit di entropia complessiva.
+
+Le credenziali ricordate includono il segreto radice solo nel browser. A ogni ripristino i tre valori vengono ricalcolati e confrontati con quelli salvati; metadati incoerenti sono rifiutati. La generazione del link breve accetta soltanto credenziali v2 verificate e non mutate. Le creazioni rimaste in sospeso vengono ripristinate conservando credenziali ed envelope per i tentativi idempotenti.
+
+Gli spazi esistenti mantengono le proprie credenziali. `/s/#1.PAYLOAD` conserva i precedenti 80 byte indipendenti (ID 16, accesso 32, chiave 32), codificati in 107 caratteri; anche `/famiglia/#spazio=ID&accesso=TOKEN&chiave=KEY` resta valido. Nessuna migrazione automatica, rotazione, riscrittura dei contenuti o modifica al database. La rigenerazione di un link v1 conserva il formato v1: non è possibile ricostruire un segreto radice per chiavi indipendenti già esistenti.
+
+L’alias `/s/` serve la stessa pagina di `/famiglia/`, escluso da statistiche, sitemap e indicizzazione. Il frammento viene acquisito e rimosso con `history.replaceState` **prima del primo await crittografico**, anche per inviti aperti nella stessa pagina. Un invito successivo invalida i risultati ancora in corso per quello precedente.
+
+Con correzione degli errori M, il QR sul dominio canonico passa da 53 × 53 moduli (166 caratteri originali), a 49 × 49 (136 caratteri v1), a **37 × 37** (72 caratteri v2). Margine libero di quattro moduli e correzione degli errori invariati. QR nell’header, finestra di ingrandimento e pass PDF usano lo stesso link dello spazio attivo. Riferimenti: [RFC 5869](https://www.rfc-editor.org/rfc/rfc5869.html), [Web Crypto HKDF](https://www.w3.org/TR/2017/REC-WebCryptoAPI-20170126/#hkdf-operations).
 
 - Il token viene inviato solo in `Authorization: Bearer`; D1 ne conserva l’hash SHA-256. La chiave AES non viene inviata all’API.
 - Web Crypto AES-GCM, IV casuale nuovo da 96 bit a ogni cifratura. AAD: `scuole-milano:ID:FORMAT:REVISION`. Il tag di autenticazione è incluso nel ciphertext.

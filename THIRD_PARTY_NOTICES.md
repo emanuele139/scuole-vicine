@@ -11,6 +11,8 @@ La licenza MIT del progetto non sostituisce le licenze dei componenti o dei dati
 | MapLibre GL JS | BSD-3-Clause |
 | MapLibre GL Leaflet | ISC |
 | qrcode | MIT |
+| pdf-lib | MIT |
+| @pdf-lib/fontkit | MIT |
 
 Le dipendenze e le versioni sono fissate in `package-lock.json`. [public/third-party-licenses.txt](public/third-party-licenses.txt) raccoglie i testi LICENSE/NOTICE presenti nei pacchetti di produzione installati e i riferimenti upstream. Alcuni pacchetti includono solo una dichiarazione di licenza: l’elenco lo segnala esplicitamente. Include strumenti di build non inviati al browser e dipendenze native della piattaforma su cui è stato generato; non è un inventario dei soli moduli effettivamente presenti nel bundle.
 
@@ -27,7 +29,8 @@ Le copie di Leaflet 1.9.4 in `public/vendor/leaflet/` mantengono gli avvisi orig
 
 - Dati OpenStreetMap: © [contributori OpenStreetMap](https://www.openstreetmap.org/copyright), ODbL. Conservare le attribuzioni sulle mappe; il servizio di tile ha condizioni d’uso proprie.
 - [OpenFreeMap](https://openfreemap.org/) e [OpenMapTiles](https://www.openmaptiles.org/): servizi e stili cartografici con attribuzioni nell’interfaccia. Le rispettive condizioni non sono sostituite da MIT.
-- [Photon](https://photon.komoot.io/): ricerca di indirizzi basata su OpenStreetMap. Gli indirizzi cercati sono inviati al servizio quando la funzione viene usata.
+- [Comune di Milano · DS634](https://dati.comune.milano.it/dataset/ds634-numeri-civici-coordinate): copia dei civici applicati del 1° ottobre 2026 in `public/dati/civici-milano.json`, **CC BY 4.0**. Elaborazione Scuole Vicine: esclusione dei record in attesa e degli accessi speciali; mantenuti nomi e alias delle vie, civici e coordinate. Fonte, licenza e hash dello ZIP sono inclusi nel JSON.
+- [Photon](https://photon.komoot.io/): ricerca di indirizzi basata su OpenStreetMap. Riceve il testo per i suggerimenti senza civico e quando il civico non viene trovato nei dati comunali locali.
 - Google Maps: solo collegamenti esterni per indirizzi e percorsi; nessun incorporamento automatico. Non sono dati rilasciati dal progetto sotto MIT.
 - Google Fonts: Bricolage Grotesque e DM Sans sono entrambi **SIL OFL 1.1**, come verificato nei file [Bricolage](https://raw.githubusercontent.com/google/fonts/main/ofl/bricolagegrotesque/OFL.txt) e [DM Sans](https://raw.githubusercontent.com/google/fonts/main/ofl/dmsans/OFL.txt). I file font sono ospitati localmente in `public/fonts/`, insieme ai testi integrali di copyright e OFL (`bricolage-grotesque-OFL.txt` e `dm-sans-OFL.txt`). Nessuna richiesta a Google Fonts dal browser. La licenza dei font non è MIT.
 

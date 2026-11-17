@@ -1,6 +1,6 @@
 import './report';
 import { ready, sharedInfo } from '../lib/shared/controller';
-import { loadFamily, toggleSaved, toggleCompare, removeSavedSchool, restoreSavedSchool, isFamilyStorageAvailable } from '../lib/family';
+import { loadFamily, toggleSaved, toggleCompare, removeSavedSchool, restoreSavedSchool, isSharedFamily, isFamilyStorageAvailable } from '../lib/family';
 
 let toastTimeout: ReturnType<typeof setTimeout>;
 type ToastAction = { label: string; run: () => void };
@@ -66,7 +66,15 @@ document.addEventListener('click', event => {
   const save = target.closest<HTMLButtonElement>('[data-save-school]');
   if (save) {
     if (loadFamily().saved.includes(save.dataset.saveSchool!)) removeFromSelection(save.dataset.saveSchool!, event.detail === 0);
-    else { toggleSaved(save.dataset.saveSchool!); notify('Scuola salvata in “Le tue scuole”.'); }
+    else {
+      const first = loadFamily().saved.length === 0;
+      toggleSaved(save.dataset.saveSchool!);
+      if (isFamilyStorageAvailable()) {
+        notify(isSharedFamily() ? 'Scuola aggiunta al tuo spazio.' : 'Scuola salvata in questo browser.', first && !isSharedFamily() ? {
+          label: 'Conserva con un link', run: () => { location.href = '/famiglia/#condivisione'; },
+        } : undefined);
+      }
+    }
     updateControls(); return;
   }
   const compare = target.closest<HTMLButtonElement>('[data-compare-school]');

@@ -5413,3 +5413,41 @@
 .catalog-collections .collection-navigation { margin-block: .75rem; padding-block: 1rem; }
 .markdown-download { margin-block: 2rem; font-size: .8rem; }
 .markdown-download a { text-decoration: underline; text-underline-offset: .2em; }
+
+/* A visible place for preservation, with one primary action per state. */
+.shared-preservation {
+  display:grid;
+  grid-template-columns:minmax(0,1fr) minmax(210px,290px);
+  align-items:start;
+  gap:24px 36px;
+  margin-bottom:28px;
+  padding:26px;
+  border-left:4px solid var(--ink);
+  scroll-margin-top:110px;
+}
+.shared-preservation .shared-copy { min-width:0; }
+.shared-preservation h2 { font-size:clamp(23px,2.4vw,30px); line-height:1.2; margin-bottom:12px; }
+.shared-preservation p { font-size:14px; line-height:1.65; max-width:70ch; }
+.shared-preservation [data-shared-intro] p+p { margin-top:10px; }
+.shared-preservation [data-shared-status]:not([hidden]) { margin-top:12px; font-weight:600; color:var(--ink); }
+.shared-preservation .shared-link-reminder { margin-top:10px; }
+.shared-preservation [data-shared-expiry] { margin-top:10px; font-size:12px; }
+.shared-preservation [data-shared-error] { color:#8e3427; margin-top:12px; }
+.shared-preservation>.shared-actions { display:flex; flex-direction:column; align-items:stretch; gap:10px; }
+.shared-preservation .shared-actions>button { white-space:normal; min-height:44px; font-size:13px; text-align:center; }
+.shared-preservation .shared-manage { width:100%; }
+.shared-preservation .shared-manage .shared-actions { flex-direction:column; align-items:stretch; }
+.shared-privacy { margin-top:16px; }
+.shared-privacy summary,.shared-dialog details summary { cursor:pointer; font-size:13px; min-height:44px; padding-block:12px; }
+.shared-privacy p { margin-top:8px; }
+.shared-privacy a { text-decoration:underline; text-underline-offset:3px; }
+.shared-dialog input[type=url] { width:100%; min-width:0; min-height:44px; font-size:14px; margin-block:8px 16px; }
+.shared-dialog canvas { display:block; width:min(300px,100%); height:auto; margin-inline:auto; }
+.shared-dialog [data-shared-content]>p { margin-block:14px; }
+.shared-dialog [data-shared-content]>label { display:block; margin-top:18px; }
+.shared-dialog [data-shared-content] ul { padding-left:22px; }
+@media(max-width:760px) {
+  .shared-preservation { grid-template-columns:minmax(0,1fr); gap:18px; padding:20px; }
+  .shared-preservation p { font-size:14px; }
+}
+@media print { .shared-preservation { display:none!important; } }
