@@ -164,7 +164,7 @@ def main():
         for path in paths:
             try:
                 for method in ['GET', 'HEAD']:
-                    try: response = urlopen(Request(base + path, method=method), timeout=15)
+                    try: response = urlopen(Request(base + path, method=method, headers={'User-Agent': 'ScuoleVicine-QA/1.0'}), timeout=15)
                     except HTTPError as e: response = e
                     data = response.read()
                     status = response.status

@@ -127,7 +127,9 @@ Browser sulla preview Regia: home desktop; raccolta Municipio 7 a 390 px; raccol
 
 La home conserva un HTML ampio per il catalogo e le funzioni interattive: circa 4 MB non compressi nel campione, circa 205 kB con gzip locale. Le raccolte offrono accessi HTML più leggeri (circa 170 kB per l’intera raccolta 0–3). Questi valori sono una fotografia, non Core Web Vitals: compressione, TTFB, LCP, INP e CLS vanno misurati sull’hosting definitivo e con dati reali. I template delle card non sostituiscono i percorsi HTML di scoperta.
 
-Non sono stati verificati sul dominio definitivo: DNS/TLS, host alternativi, redirect www/HTTPS, CDN/WAF, crawler autenticati, indicizzazione, Rich Results Test pubblico, PageSpeed sul dominio, proprietà Search Console/Bing e citazioni AI. Questo intervento SEO non ha inviato sitemap a servizi esterni né attivato tracciamenti; l’integrazione privacy/statistiche è gestita separatamente. Le verifiche sul dominio dipendono dal rilascio e dagli accessi reali.
+Al momento di questo primo collaudo non erano stati verificati sul dominio definitivo DNS/TLS, host alternativi, redirect www/HTTPS, CDN/WAF, crawler autenticati, indicizzazione, Rich Results Test pubblico, PageSpeed sul dominio, proprietà Search Console/Bing e citazioni AI. L’intervento SEO iniziale non aveva inviato sitemap a servizi esterni né attivato tracciamenti.
+
+Aggiornamento del 17 novembre 2026: dominio HTTPS e redirect funzionanti, [controllo del sito online](ONLINE-QA.md) completato e [Search Console configurata](SEARCH-CONSOLE.md). Proprietà Dominio verificata via DNS, sitemap letta con successo (760 URL), test in tempo reale superati per home, raccolta nidi e una scheda scuola, richiesta di indicizzazione della home accettata. L’indicizzazione effettiva resta da attendere e controllare. Bing, PageSpeed pubblico e citazioni AI non sono stati configurati o verificati da questo aggiornamento; privacy e Umami sono documentati separatamente.
 
 ## Passaggio al dominio e misurazione
 
