@@ -8,7 +8,9 @@ const maps = document.querySelector<HTMLInputElement>('#consent-maps')!;
 const status = document.querySelector<HTMLElement>('#privacy-storage-status')!;
 let current = readConsent();
 let opener: HTMLElement | null = null;
-let loaded = false;
+let loading = false;
+let trackerReady = false;
+let measured = false;
 let expiryTimer: ReturnType<typeof setTimeout>;
 const signalBlocked = () => navigator.doNotTrack === '1' || (navigator as Navigator & { globalPrivacyControl?: boolean }).globalPrivacyControl === true;
 function permitted() { return ['scuolevicine.it', 'www.scuolevicine.it'].includes(location.hostname) && !!current?.analytics && current.expiresAt > Date.now() && !signalBlocked() && !!analyticsPath(location.pathname); }
@@ -19,13 +21,21 @@ window.scuoleBeforeSend = (type, payload) => {
   return Object.fromEntries(Object.entries({ website: payload.website, hostname: location.hostname, language: navigator.language, screen: `${screen.width}x${screen.height}`, url: location.origin + path, title: 'Scuole Vicine', referrer: '' }).filter(([, v]) => v !== undefined));
 };
 function startAnalytics() {
-  if (loaded || !permitted() || banner.dataset.analyticsEnabled !== 'true') return;
-  loaded = true;
+  if (!permitted()) { measured = false; return; }
+  if (measured || loading || banner.dataset.analyticsEnabled !== 'true') return;
+  const track = () => {
+    if (!permitted() || !window.umami || measured) return;
+    measured = true;
+    window.umami.track(props => ({ ...props, url: location.origin + analyticsPath(location.pathname), title: 'Scuole Vicine', referrer: '' }));
+  };
+  if (trackerReady) { track(); return; }
+  loading = true;
   const script = document.createElement('script');
   script.id = 'umami-tracker'; script.src = banner.dataset.umamiScript!; script.defer = true;
   script.referrerPolicy = 'no-referrer';
   Object.assign(script.dataset, { websiteId: banner.dataset.umamiId, autoTrack: 'false', excludeSearch: 'true', excludeHash: 'true', doNotTrack: 'true', beforeSend: 'scuoleBeforeSend', performance: 'false', errors: 'false', fetchCredentials: 'omit' });
-  script.onload = () => { if (permitted()) window.umami?.track(props => ({ ...props, url: location.origin + analyticsPath(location.pathname), title: 'Scuole Vicine', referrer: '' })); };
+  script.onload = () => { loading = false; trackerReady = !!window.umami; track(); };
+  script.onerror = () => { loading = false; script.remove(); };
   document.head.append(script);
 }
 function syncEmbeds() {
@@ -42,6 +52,11 @@ function syncEmbeds() {
 }
 function apply() {
   clearTimeout(expiryTimer);
+  const blocked = signalBlocked();
+  analytics.disabled = banner.dataset.analyticsEnabled !== 'true' || blocked;
+  const signals = document.querySelector<HTMLElement>('#privacy-signals-status')!;
+  signals.hidden = !blocked;
+  signals.textContent = blocked ? 'Il browser invia un segnale Do Not Track o Global Privacy Control. Lo rispettiamo: le statistiche restano disattivate, anche se avevi già dato il consenso.' : '';
   banner.hidden = !!current;
   syncEmbeds();
   window.dispatchEvent(new Event('privacy:change'));

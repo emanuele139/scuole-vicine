@@ -12,7 +12,7 @@ function browser(options: { stored?: string; blocked?: boolean; hostname?: strin
   const storage = new Map(options.stored ? [[CONSENT_KEY,options.stored]] : []);
   const scripts:any[]=[]; const sent:any[]=[]; const listeners:Record<string,Function>={};
   const window:any={addEventListener(type:string,fn:Function){listeners[type]=fn;},dispatchEvent(){}, umami:{track(fn:Function){const result=window.scuoleBeforeSend('event',fn({website:banner.dataset.umamiId,url:'https://scuolevicine.it/?q=private#secret',referrer:'https://private.test',title:'private'}));if(result)sent.push(result);}}};
-  const document={querySelector:node,querySelectorAll(selector:string){return selector==='[data-private-map]' ? [] : [node(selector)];},createElement(){return {dataset:{}};},head:{append(script:any){scripts.push(script);}}};
+  const document={querySelector:node,querySelectorAll(selector:string){return selector==='[data-private-map]' ? [] : [node(selector)];},createElement(){return {dataset:{},remove(){}};},head:{append(script:any){scripts.push(script);}}};
   runInNewContext(bundle,{window,document,location:{hostname:options.hostname||'scuolevicine.it',origin:'https://scuolevicine.it',pathname:options.path||'/'},navigator:{language:'it-IT',doNotTrack:options.dnt,globalPrivacyControl:options.gpc},screen:{width:390,height:844},localStorage:{getItem:(k:string)=>storage.get(k)||null,setItem(k:string,v:string){if(options.blocked)throw Error('blocked');storage.set(k,v);}},setTimeout:()=>1,clearTimeout(){},Event:class{}});
   return {nodes,scripts,sent,window,storage,listeners,click(selector:string){handlers[selector].click();}};
 }
@@ -32,4 +32,26 @@ test('cross-tab withdrawal blocks future sends and blocked storage is reported',
   const b=browser({stored:JSON.stringify(makeConsent(true,true))});assert.equal(b.scripts.length,1);
   b.storage.set(CONSENT_KEY,JSON.stringify(makeConsent(false,false)));b.listeners.storage({key:CONSENT_KEY});b.scripts[0].onload();assert.equal(b.sent.length,0);
   const blocked=browser({blocked:true});blocked.click('[data-consent-reject]');assert.match(blocked.nodes['#privacy-storage-status'].textContent,/impedisce/);assert.equal(blocked.nodes['#privacy-preferences'].open,true);assert.equal(blocked.scripts.length,0);
+});
+test('renewed consent measures again without reloading the tracker or duplicating an unchanged choice',()=>{
+  const b=browser();b.click('[data-consent-accept]');b.scripts[0].onload();
+  b.click('[data-consent-accept]');assert.equal(b.sent.length,1);
+  b.click('[data-consent-reject]');assert.equal(b.sent.length,1);
+  b.click('[data-consent-accept]');assert.equal(b.sent.length,2);assert.equal(b.scripts.length,1);
+});
+test('withdrawal while loading and network failure do not prevent a later consented pageview',()=>{
+  const b=browser();b.click('[data-consent-accept]');b.click('[data-consent-reject]');b.scripts[0].onload();
+  assert.equal(b.sent.length,0);b.click('[data-consent-accept]');assert.equal(b.sent.length,1);
+  const failed=browser();failed.click('[data-consent-accept]');failed.scripts[0].onerror();
+  failed.click('[data-consent-accept]');assert.equal(failed.scripts.length,2);failed.scripts[1].onload();assert.equal(failed.sent.length,1);
+});
+test('browser privacy signals visibly override consent without requesting the tracker',()=>{
+  for(const config of [{dnt:'1'},{gpc:true}]) {
+    const b=browser({...config,stored:JSON.stringify(makeConsent(true,true))});
+    assert.equal(b.nodes['#consent-analytics'].disabled,true);
+    assert.equal(b.nodes['#privacy-signals-status'].hidden,false);
+    assert.match(b.nodes['#privacy-signals-status'].textContent,/statistiche restano disattivate/);
+    b.click('[data-consent-accept]');assert.equal(b.scripts.length,0);
+    assert.equal(JSON.parse(b.storage.get(CONSENT_KEY)!).analytics,false);
+  }
 });
