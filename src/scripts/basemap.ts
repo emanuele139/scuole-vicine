@@ -36,8 +36,8 @@ export function installBasemap(L:any,map:any,onStatus:(message:string)=>void,onS
       }).catch(()=>{if(!cancelled)failover.fail(1,generation);});
       return;
     }
-    if(mapsAllowed())notify('fallback','Le mappe online non sono disponibili. Mostriamo uno schema di Milano per aiutarti a individuare le sedi.');
-    else notify('local','Mappa schematica locale. Puoi abilitare le mappe esterne dalle preferenze privacy nel footer.');
+    if(mapsAllowed())notify('fallback','Le mappe online non sono disponibili. Mostriamo uno schema locale: i punti delle sedi restano disponibili, ma mancano le strade e i dettagli fuori Milano.');
+    else notify('local','Mappe esterne disattivate: lo schema locale mostra solo i quartieri di Milano e alcune linee indicative. Puoi scegliere la cartografia stradale dalle preferenze delle mappe.');
     activeLayer=openLocalBasemap(L,map);
   }
   function startRaster(generation:number) {

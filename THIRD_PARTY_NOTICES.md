@@ -42,6 +42,8 @@ Lo schema metro in `src/lib/milan-map.ts` riporta il [PDF ATM](https://www.atm.i
 
 ## Dati sulle scuole
 
+Il catalogo dei comuni confinanti usa anagrafi MIM 2026/27, registri regionali delle unità di offerta sociali al 31 ottobre 2026 e fonti geografiche riferite nelle singole schede. Le coordinate possono provenire da Scuola in Chiaro, Comuni, istituti, gestori o directory e mappe territoriali, tra cui CommonGround/NordMilanoEducA, Assonidi, DaPiccoli, Cylex e Waze. Questi editori restano distinti: una directory non viene presentata come fonte ufficiale del Comune. Le fonti, i periodi conosciuti, le correzioni degli indirizzi e i limiti sono conservati nei dati e mostrati nel sito. Non è stata accertata una licenza aperta per tutte queste fonti; la licenza MIT del software non viene estesa ai relativi materiali o banche dati.
+
 La verifica del 17 novembre 2026 conferma CC BY 4.0 per DS3014, DS47 e Geoschool e IODL 2.0 per i dataset MIM. Per altre fonti si distinguono licenze esplicite, basi normative di riuso e aspetti non verificati: questi ultimi non costituiscono un divieto accertato. [docs/SOURCE-LICENSE-AUDIT.md](docs/SOURCE-LICENSE-AUDIT.md) riporta condizioni, evidenze e formule di attribuzione; [docs/DATA.md](docs/DATA.md) descrive gli anni e il metodo. L’attribuzione non implica patrocinio né sostituisce una licenza mancante.
 
 Per i servizi esterni, conservare le attribuzioni e rispettare le condizioni del provider: [tile OSM](https://operations.osmfoundation.org/policies/tiles/), [Photon demo](https://github.com/komoot/photon#demo-server), [OpenFreeMap](https://openfreemap.org/quick_start/), [Google Maps](https://www.google.com/intl/en_US/help/terms_maps/). Una licenza sui dati non garantisce accesso illimitato ai server.

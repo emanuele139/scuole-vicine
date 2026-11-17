@@ -1,6 +1,7 @@
 import preschool from '../src/data/catalog-client.json';
 import nurseries from '../src/data/nurseries-client.json';
-const schoolIds = new Set([...preschool, ...nurseries].map(school => school.id));
+import neighbours from '../src/data/neighbor-schools-client.json';
+const schoolIds = new Set([...preschool, ...nurseries, ...neighbours].map(school => school.id));
 const reportHeaders = { 'Content-Type': 'application/json', 'Cache-Control': 'no-store', 'X-Robots-Tag': 'noindex, nofollow', 'X-Content-Type-Options': 'nosniff' };
 function reportReply(status: number, value: unknown) { return new Response(JSON.stringify(value), { status, headers: reportHeaders }); }
 export interface ReportEnv { DB: D1Database; REPORT_EMAIL?: SendEmail; REPORT_FROM?: string }
@@ -38,7 +39,7 @@ export async function reportApi(request: Request, env: ReportEnv): Promise<Respo
 }
 
 type PendingReport = { id: string; school_id: string; category: string; email: string; details: string };
-const reportSchools = new Map([...preschool, ...nurseries].map(school => [school.id, school.name]));
+const reportSchools = new Map([...preschool, ...nurseries, ...neighbours].map(school => [school.id, school.name]));
 const categories: Record<string, string> = { closed: 'Sede chiusa', hours: 'Orari', address: 'Indirizzo', other: 'Altro' };
 export async function notifyReport(env: ReportEnv, report: PendingReport): Promise<void> {
   if (!env.REPORT_EMAIL || !env.REPORT_FROM) return;

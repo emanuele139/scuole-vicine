@@ -2,11 +2,14 @@ export const guideTopics = [
   {id:'scelta',label:'Come scegliere'},
   {id:'costi',label:'Costi e bonus'},
   {id:'iscrizioni',label:'Iscrizioni e graduatorie'},
+  {id:'territorio',label:'Residenza e altri comuni'},
   {id:'ambientamento',label:'Ambientamento e giornata'},
   {id:'visite',label:'Visite e open day'},
 ] as const;
 export type GuideTopic = typeof guideTopics[number]['id'];
 export function questionTopics(slug:string,id:string): GuideTopic[] {
+  if (slug==='nido-fuori-comune'||slug==='infanzia-fuori-comune') return id.includes('retta')||id==='costi'||id==='contributi'||id==='gratis' ? ['territorio','costi'] : ['territorio','iscrizioni'];
+  if (id==='fuori-comune'||id==='residenza03') return ['territorio','iscrizioni'];
   if (slug==='costi-e-isee'||slug==='costi-bonus-nido') return ['costi'];
   if (slug==='iscrizioni-e-graduatorie') return ['iscrizioni'];
   if (slug==='iscrizioni-visite-nido') {

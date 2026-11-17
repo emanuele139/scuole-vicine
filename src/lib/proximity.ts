@@ -1,3 +1,4 @@
+import { addressContext, comuni } from './search-area.ts';
 import { AddressSuggestionCache } from './address-cache.ts';
 import { parseCivicAddress, matchesCivicAddress } from './civic-address.ts';
 import { findMunicipalCivic } from './municipal-civics.ts';
@@ -28,7 +29,7 @@ function addressCache() {
   }
   return cache;
 }
-export function cachedAddressSuggestions(address: string) { return addressCache().get(address); }
+export function cachedAddressSuggestions(address: string, comune: string|null='Milano') { const context=addressContext(address,comune); return addressCache().get([context.address,context.comune].filter(Boolean).join(', ')); }
 let lastRequest = 0;
 let retryAfter = 0;
 const REQUEST_INTERVAL_MS = 250;
@@ -40,22 +41,23 @@ function pause(ms: number, signal: AbortSignal): Promise<void> {
     signal.addEventListener('abort', abort, { once: true });
   });
 }
-export async function findAddress(address: string, signal: AbortSignal): Promise<AddressMatch[]> {
-  const civic = parseCivicAddress(address);
-  if (civic) {
+export async function findAddress(address: string, signal: AbortSignal, comune: string|null='Milano'): Promise<AddressMatch[]> {
+  const context=addressContext(address,comune);
+  const civic = parseCivicAddress(context.address);
+  if (civic && context.comune==='Milano') {
     const local = await findMunicipalCivic(civic, signal);
     signal.throwIfAborted();
     if (local.length) return local;
   }
-  const cached = cachedAddressSuggestions(address);
+  const cached = cachedAddressSuggestions(address,comune);
   if (cached.exact && cached.fresh) return cached.matches;
-  const matches = await requestAddress(address, signal);
+  const matches = await requestAddress(context.address, signal, context.comune);
   signal.throwIfAborted();
-  if (matches.length) addressCache().set(address, matches);
+  if (matches.length) addressCache().set([context.address,context.comune].filter(Boolean).join(', '), matches);
   return matches;
 }
 
-async function requestAddress(address: string, signal: AbortSignal): Promise<AddressMatch[]> {
+async function requestAddress(address: string, signal: AbortSignal, comune: string|null): Promise<AddressMatch[]> {
   // Photon public demo: user-triggered requests only, cached locally and throttled.
   const delay = Math.max(0, REQUEST_INTERVAL_MS - (Date.now() - lastRequest), retryAfter - Date.now());
   if (delay) await pause(delay, signal);
@@ -63,9 +65,9 @@ async function requestAddress(address: string, signal: AbortSignal): Promise<Add
   lastRequest = Date.now();
   const civic = parseCivicAddress(address);
   const url = new URL(civic ? 'https://photon.komoot.io/structured' : 'https://photon.komoot.io/api/');
-  const params = new URLSearchParams({ lat: '45.4642', lon: '9.19', bbox: '8.95,45.35,9.45,45.62', limit: '5', countrycode: 'IT' });
-  if (civic) { params.set('street',civic.street);params.set('housenumber',civic.houseNumber);params.set('city','Milano'); }
-  else params.set('q', /milano|milan\b/i.test(address) ? address.trim() : `${address.trim()}, Milano`);
+  const params = new URLSearchParams({ lat: '45.4642', lon: '9.19', bbox: '8.95,45.30,9.50,45.65', limit: '10', countrycode: 'IT' });
+  if (civic) { params.set('street',civic.street);params.set('housenumber',civic.houseNumber);if(comune)params.set('city',comune); }
+  else params.set('q', [address.trim(),comune].filter(Boolean).join(', '));
   url.search=params.toString();
   const response = await fetch(url, { signal, referrerPolicy: 'strict-origin-when-cross-origin' });
   if (response.status === 429) {
@@ -76,11 +78,11 @@ async function requestAddress(address: string, signal: AbortSignal): Promise<Add
   }
   if (!response.ok) throw new Error('Il servizio indirizzi non è disponibile. Riprova tra poco.');
   const data: unknown = await response.json();
-  const matches = parseAddressMatches(data);
-  return civic ? matches.filter(match=>matchesCivicAddress(match,civic)) : matches;
+  const matches = parseAddressMatches(data,comune);
+  return (civic ? matches.filter(match=>matchesCivicAddress(match,civic)) : matches).slice(0,5);
 }
 
-export function parseAddressMatches(data: unknown): AddressMatch[] {
+export function parseAddressMatches(data: unknown, requestedComune: string|null=null): AddressMatch[] {
   if (!data || typeof data !== 'object' || !('features' in data) || !Array.isArray(data.features)) throw new Error('Non siamo riusciti a leggere la risposta del servizio indirizzi. Riprova.');
   const matches: AddressMatch[] = [];
   // Prefer an address node to a shop/museum at the same civic number.
@@ -90,10 +92,12 @@ export function parseAddressMatches(data: unknown): AddressMatch[] {
     if (!Array.isArray(coords) || coords.length < 2 || typeof coords[0] !== 'number' || typeof coords[1] !== 'number') continue;
     const [lng, lat] = coords;
     const p = item?.properties;
-    if (!Number.isFinite(lat) || !Number.isFinite(lng) || lat < 45.35 || lat > 45.62 || lng < 8.95 || lng > 9.45 || !p || p.countrycode !== 'IT' || !['milano','milan'].includes(String(p.city).toLowerCase())) continue;
+    const rawCity=String(p?.city || p?.town || p?.village || '').trim();
+    const city=comuni.find(([,name])=>name.toLowerCase()===rawCity.toLowerCase() || (name==='Milano' && rawCity.toLowerCase()==='milan'))?.[1];
+    if (!Number.isFinite(lat) || !Number.isFinite(lng) || lat < 45.30 || lat > 45.65 || lng < 8.95 || lng > 9.50 || !p || p.countrycode !== 'IT' || !city || (requestedComune!==null && city!==requestedComune)) continue;
     const houseNumber = typeof p.housenumber === 'string' ? p.housenumber : null;
     const street = typeof p.street === 'string' && p.street.trim() ? p.street.trim() : !houseNumber && typeof p.name === 'string' ? p.name : null;
-    const label = [[street,houseNumber].filter(Boolean).join(' ') || p.name, p.postcode, 'Milano'].filter(v=>typeof v==='string' && v.trim()).join(', ');
+    const label = [[street,houseNumber].filter(Boolean).join(' ') || p.name, p.postcode, city].filter(v=>typeof v==='string' && v.trim()).join(', ');
     if (!label || matches.some(match => match.label === label)) continue;
     matches.push({ lat, lng, label, houseNumber, street });
   }

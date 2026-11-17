@@ -1,5 +1,6 @@
 import schoolData from '../data/schools.json';
 import nurseryData from '../data/nurseries.json';
+import neighborData from '../data/neighbor-schools.json';
 import reportData from '../data/reconciliation-report.json';
 
 export type Management = 'Comunale' | 'Statale' | 'Privata' | 'Parentale' | 'Da verificare';
@@ -20,7 +21,7 @@ export type SchoolEvent = {
   location?: string;
 };
 export type FieldEvidence = {
-  status: 'verified' | 'operator-rule' | 'not-published' | 'not-found' | 'blocked' | 'needs-confirmation' | 'prior-research';
+  status: 'verified' | 'municipal-rule' | 'operator-rule' | 'not-published' | 'not-found' | 'blocked' | 'needs-confirmation' | 'prior-research';
   sourceUrls: string[];
   year: string | null;
 };
@@ -41,8 +42,11 @@ export type School = {
   name: string;
   slug: string;
   address: string;
+  addressReview?: { previousAddress: string; previousComune: string; reviewedAt: string; reason: string; sources: SchoolSource[] };
   zone: string;
   municipality: number | null;
+  comune: string;
+  comuneSlug: string;
   management: Management;
   recognition: string;
   lat: number | null;
@@ -70,6 +74,7 @@ export type School = {
   sourceIds: { municipal?: string; mim?: string; cudes?: string };
   aliases: string[];
   locationYear: string | null;
+  locationSource?: SchoolSource;
   geographyYear?: string | null;
   dataStatus: { identity: string; details: string; location: string };
 };
@@ -94,22 +99,28 @@ export type ReconciliationReport = typeof reportData & { summary: Reconciliation
 // Keep the 3–6 reconciliation pipeline and stable family IDs separate from 0–3 sources.
 export const preschools = schoolData.map(school => ({
   ...school,
+  comune: 'Milano',
+  comuneSlug: 'milano',
   educationStage: 'preschool' as const,
   serviceType: 'Scuola dell’infanzia',
   ageRange: '3–6 anni',
   accessMode: school.management === 'Comunale' ? 'Iscrizione comunale' : 'Iscrizione presso la scuola; verificare le modalità',
   operator: null,
 })) as School[];
-export const nurseries = nurseryData as School[];
-export const schools: School[] = [...preschools, ...nurseries];
+export const nurseries = nurseryData.map(school => ({...school, comune: 'Milano', comuneSlug: 'milano'})) as School[];
+export const milanSchools: School[] = [...preschools, ...nurseries];
+export const neighborSchools = neighborData as School[];
+export const schools: School[] = [...milanSchools, ...neighborSchools];
 export const report: ReconciliationReport = reportData;
 export const municipalities = [...new Set(schools.flatMap(s => s.municipality === null ? [] : [s.municipality]))].sort((a, b) => a - b);
 export const zones = [...new Set(schools.map(s => s.zone).filter(z => z !== 'Zona da verificare'))].sort((a, b) => a.localeCompare(b, 'it'));
 export const managements: Management[] = ['Comunale', 'Statale', 'Privata', 'Parentale'];
 export const catalogStats = {
   total: schools.length,
-  nurseries: nurseries.length,
-  preschools: preschools.length,
+  nurseries: schools.filter(s => s.educationStage === 'nursery').length,
+  preschools: schools.filter(s => s.educationStage === 'preschool').length,
+  milanTotal: milanSchools.length,
+  neighborsTotal: neighborSchools.length,
   municipalities: municipalities.length,
   enriched: schools.filter(s => s.enriched).length,
   geolocated: schools.filter(s => s.lat !== null && s.lng !== null).length,

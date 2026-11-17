@@ -1,13 +1,14 @@
 # Scuole Vicine
 
-Un progetto indipendente e gratuito per cercare nidi e scuole dell’infanzia a Milano, confrontare le informazioni e preparare le visite. Ideato e sviluppato da [Emanuele Cardinali](https://cardinali.studio/).
+Un progetto indipendente e gratuito per cercare nidi e scuole dell’infanzia a Milano e nei 23 comuni confinanti, confrontare le informazioni e preparare le visite. Ideato e sviluppato da [Emanuele Cardinali](https://cardinali.studio/).
 
-Il dominio del servizio è [scuolevicine.it](https://scuolevicine.it). Il codice, il catalogo e la documentazione sono disponibili nel repository pubblico [emanuele139/scuole-vicine](https://github.com/emanuele139/scuole-vicine). Il sito è distribuito su [Cloudflare Pages](https://scuole-vicine.pages.dev); il dominio personalizzato è configurato e in fase di attivazione DNS. Configurazione e collaudo sono descritti in [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
+Il dominio del servizio è [scuolevicine.it](https://scuolevicine.it). Il codice, il catalogo e la documentazione sono disponibili nel repository pubblico [emanuele139/scuole-vicine](https://github.com/emanuele139/scuole-vicine). Il sito è distribuito su [Cloudflare Pages](https://scuole-vicine.pages.dev); il dominio personalizzato è attivo. Configurazione e collaudo sono descritti in [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
 ## Che cosa puoi fare
 
 - Cercare servizi 0–3 e scuole dell’infanzia 3–6, con elenco, filtri e mappa.
 - Confrontare fino a tre scuole e consultare fonti, periodo e informazioni mancanti.
+- Cercare le sedi dei 23 comuni confinanti e confrontare accesso, priorità, tariffe e agevolazioni per non residenti.
 - Trovare gli open day con date documentate ed esportarli nel calendario.
 - Salvare scuole e appunti nel browser, con esportazione e importazione.
 - Usare uno spazio condiviso opzionale, cifrato nel browser, con API Cloudflare e database D1 europeo.
@@ -93,7 +94,7 @@ Il [rapporto di pubblicazione](docs/GITHUB-RELEASE.md) riassume il contenuto inc
 
 ## SEO e GEO
 
-Canonical, anteprime social, breadcrumb, identità e dati strutturati derivano da `src/lib/seo.ts` e dai cataloghi. Le raccolte per fascia d’età e Municipio permettono di consultare le schede anche senza JavaScript. Sono disponibili 25 versioni Markdown delle pagine informative, generate dallo stesso HTML e scaricabili dal fondo della pagina. Per esempio: `/index.md`, `/metodo.md`, `/progetto.md`, `/guide/costi-e-isee.md`. Le singole schede scuola restano in HTML. Le raccolte sono nella home sotto “Esplora per età e Municipio”, prima dei risultati, e nel footer.
+Canonical, anteprime social, breadcrumb, identità e dati strutturati derivano da `src/lib/seo.ts` e dai cataloghi. Le raccolte per fascia d’età e Municipio permettono di consultare le schede anche senza JavaScript. Sono disponibili versioni Markdown delle pagine informative, generate dallo stesso HTML e scaricabili dal fondo della pagina. Per esempio: `/index.md`, `/metodo.md`, `/progetto.md`, `/guide/costi-e-isee.md`. Le singole schede scuola restano in HTML. Le raccolte sono nella home sotto “Esplora per età e Municipio”, prima dei risultati, e nel footer.
 
 `seo.config.mjs` imposta `https://scuolevicine.it` come origine canonica. Le build normali restano escluse dai motori; la futura build di produzione richiede `SEO_INDEXABLE=true`. Sitemap, robots, indice `llms.txt` e intestazioni HTTP seguono la stessa impostazione. Non distribuire una build di produzione su un’anteprima pubblica.
 

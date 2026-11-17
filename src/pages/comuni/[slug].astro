@@ -1,0 +1,29 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { neighborSchools, schoolHref } from '../../lib/catalog';
+import PageIntro from '../../components/PageIntro.astro';
+import { territorialAccess, serviceKey, serviceLabel, accessStatusLabel, type TerritorialMunicipality } from '../../lib/access';
+import '../../styles/territorial-access.css';
+export function getStaticPaths(){return territorialAccess.municipalities.map(municipality=>({params:{slug:municipality.slug},props:{municipality}}));}
+interface Props { municipality: TerritorialMunicipality }
+const { municipality }=Astro.props;
+const members = neighborSchools.filter(s => s.comuneSlug === municipality.slug).sort((a,b) => a.name.localeCompare(b.name,'it'));
+const geolocated = members.filter(s => s.lat !== null && s.lng !== null).length;
+---
+<Layout title={`Nidi e infanzia a ${municipality.name}: accesso e tariffe non residenti`} active="iscrizioni" description={`Regole per chiedere un nido o una scuola dell’infanzia a ${municipality.name} abitando in un altro Comune: priorità, tariffe, agevolazioni e fonti.`}>
+  <div class="territory-page">
+    <PageIntro title={`Una scuola a ${municipality.name}`} eyebrow="DOMANDA, RESIDENZA E COSTI" description="Le condizioni per una famiglia che abita in un altro Comune. Confronta il servizio che cerchi e controlla il periodo dei documenti." tone="prato" character="book" backHref="/comuni/" backLabel="Tutti i 23 comuni"/>
+    <nav class="territory-jump" aria-label="Servizi nel Comune">{municipality.services.map(service=><a href={`#${serviceKey(service)}`}>{serviceLabel(service)}</a>)}</nav>
+    <aside class="territory-coverage">Il catalogo raccoglie {members.length} servizi a {municipality.name}; {geolocated} hanno una posizione documentata sulla mappa. Le sedi senza coordinate restano consultabili nell’elenco. L’ammissione e i posti disponibili vanno verificati con l’ente che raccoglie la domanda.</aside>
+    <section class="territory-service" id="sedi"><h2>Nidi e scuole a {municipality.name}</h2><p><a class="btn btn-secondary" href={`/?area=${municipality.slug}`}>Cerca nell’elenco e nella mappa →</a></p><p>Il censimento identifica i servizi presenti negli elenchi ufficiali consultati. Non conferma posti disponibili; orari, costi e condizioni della singola sede possono essere ancora da verificare.</p><div class="catalog-links">{members.map(s => <a href={schoolHref(s)}><strong>{s.name}</strong><span>{s.serviceType} · {s.management}</span><span>{s.address}</span>{s.lat === null && <span>Posizione sulla mappa da verificare</span>}</a>)}</div></section>
+    {municipality.services.map(service=><section class="territory-service" id={serviceKey(service)}>
+      <div class="territory-service-heading"><h2>{serviceLabel(service)}</h2><p>{accessStatusLabel(service.status)} · {service.year}</p></div>
+      <div class="territory-service-grid"><dl class="access-facts"><div><dt>Posso fare domanda se abito altrove?</dt><dd>{service.eligibility}</dd></div><div><dt>Quale priorità ho?</dt><dd>{service.priority}</dd></div><div><dt>Quali costi devo considerare?</dt><dd>{service.costs}</dd></div><div><dt>Quali agevolazioni verificare?</dt><dd>{service.benefits}</dd></div></dl>
+      {service.tariffExamples?.length ? <div class="territory-tariffs"><h3>Importi documentati</h3><ul>{service.tariffExamples.map(tariff=><li><strong>{tariff.label}: {typeof tariff.amount==='number'?tariff.amount.toLocaleString('it-IT',{style:'currency',currency:'EUR'}):tariff.amount} {tariff.unit}</strong><br/>{tariff.conditions}<small>{tariff.year}</small></li>)}</ul></div> : null}
+      <div class="access-next"><h3>Come procedere</h3><p>{service.application}</p></div>
+      {service.notes?.length > 0 && <details class="access-disclosure"><summary>Condizioni e aspetti da confermare</summary><ul>{service.notes.map(note=><li>{note}</li>)}</ul></details>}
+      <details class="access-disclosure"><summary>Fonti consultate</summary><p>Ricerca del {territorialAccess.checkedAt.split('-').reverse().join('/')}. Le date dei documenti restano visibili perché una regola o una tariffa di un anno precedente richiede conferma.</p>{service.sources?.length ? <ul>{service.sources.map(source=><li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label} ↗</a>{source.year&&<> · {source.year}</>}</li>)}</ul> : <p>Non abbiamo ancora una fonte specifica sufficiente per questo ambito. Chiedi conferma all’Ufficio istruzione del Comune.</p>}</details></div>
+    </section>)}
+    <div class="territory-guide-links"><a href="/guide/nido-fuori-comune/">La guida ai nidi fuori comune →</a><a href="/guide/infanzia-fuori-comune/">La guida all’infanzia fuori comune →</a><a href="/comuni/">Confronta altri comuni →</a></div>
+  </div>
+</Layout>

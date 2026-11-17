@@ -1,0 +1,28 @@
+---
+import type { School } from '../lib/catalog';
+import { getSchoolAccess, eligibilityText, accessStatusLabel } from '../lib/access';
+import '../styles/territorial-access.css';
+interface Props { school: School }
+const { school } = Astro.props;
+const record = getSchoolAccess(school.id);
+const fieldStatus: Record<string,string> = { 'network-rule':'Regola comune della rete', verified:'Dato documentato', 'prior-research':'Ricerca precedente', 'needs-confirmation':'Da confermare', 'not-found':'Informazione non reperita' };
+const fields = record ? [
+  { key: 'eligibility', title: 'Posso fare domanda?', text: eligibilityText(record) },
+  { key: 'priority', title: 'Quale priorità ho?', text: record.priority },
+  { key: 'costs', title: 'Quale tariffa si applica?', text: record.costs },
+  { key: 'benefits', title: 'Quali agevolazioni verificare?', text: record.benefits },
+] : [];
+---
+<section class="detail-section access-details" id="accesso" data-access-panel data-management={school.management}>
+  <p class="eyebrow">Domanda e residenza · Comune di {school.comune}</p>
+  <h2>Le condizioni per iscriversi</h2>
+  <p>La distanza aiuta a organizzare il tragitto. Residenza, età e criteri di ammissione determinano come presentare la domanda e quale tariffa verificare.</p>
+  {record ? <>
+    <p class="access-evidence"><span>{accessStatusLabel(record.status)}</span> · {record.year} · {record.evidenceScope === 'network' ? 'Regole comuni della rete; condizioni della sede da confermare.' : record.evidenceScope === 'school' ? 'Informazioni della sede o dell’istituto.' : 'Condizioni individuali da confermare con la scuola.'}</p>
+    <dl class="access-facts">{fields.map(field => <div><dt>{field.title}</dt><dd>{field.text || 'Informazione non reperita. Chiedi alla segreteria quali condizioni si applicano alla tua famiglia.'}{record.fieldEvidence?.[field.key] && <small>{fieldStatus[record.fieldEvidence[field.key].status] || 'Condizioni da verificare'}{record.fieldEvidence[field.key].year && <> · {record.fieldEvidence[field.key].year}</>}</small>}</dd></div>)}</dl>
+    {record.application && <div class="access-next"><h3>Come procedere</h3><p>{record.application}</p></div>}
+    {record.questions?.length > 0 && <details class="access-disclosure"><summary>Domande da fare alla segreteria</summary><ul>{record.questions.map(question => <li>{question}</li>)}</ul></details>}
+    <details class="access-disclosure"><summary>Fonti e limiti della verifica</summary><p>Ricerca del {(record.reviewedAt || record.verifiedAt)?.split('-').reverse().join('/') || 'periodo indicato'}. Una regola comune non conferma disponibilità di posti o condizioni particolari di questa sede.</p><ul>{record.sources.map(source => <li><a href={source.url} target="_blank" rel="noopener noreferrer">{source.label} ↗</a>{source.year && <span> · {source.year}</span>}{source.accessStatus?.includes('indexed') && <p>Testo letto nell’indice di ricerca; il documento non era consultabile direttamente.</p>}</li>)}</ul></details>
+  </> : <p class="unknown-value">Non abbiamo ancora una verifica delle condizioni di accesso di questa sede. Chiedi alla scuola se accoglie la domanda dal tuo Comune di residenza, come forma la graduatoria e quale tariffa applica.</p>}
+  <p class="access-related"><a href={school.educationStage === 'nursery' ? '/guide/nido-fuori-comune/' : '/guide/infanzia-fuori-comune/'}>Come scegliere un servizio fuori comune →</a><a href="/comuni/">Regole nei 23 comuni confinanti →</a></p>
+</section>

@@ -18,7 +18,7 @@
     "mim": {
       "title": "MIM · Nota iscrizioni 2026/27",
       "url": "https://www.istruzioneer.gov.it/wp-content/uploads/2025/12/m_pi.AOODGOSV.REGISTRO-UFFICIALEU.0100847.17-12-2025.pdf",
-      "note": "La nota ministeriale del 17 dicembre 2025 è ospitata dall’Ufficio scolastico regionale (USR) Emilia-Romagna. Per l’infanzia occorre consultare la sezione dedicata, distinta da quella sulle iscrizioni online al primo ciclo."
+      "note": "La nota ministeriale del 17 dicembre 2025 è ospitata dall’Ufficio scolastico regionale (USR) Emilia-Romagna. Per l’infanzia occorre consultare la sezione dedicata, distinta da quella sulle iscrizioni online al primo ciclo. Per la scadenza 2026/27 abbiamo verificato anche la successiva nota 33781 del 12 febbraio 2026: il termine originario del 14 febbraio è stato prorogato al 21 febbraio 2026."
     },
     "legge": {
       "title": "Parlamento · Legge 62/2000",
@@ -174,6 +174,76 @@
       "title": "Comune · ISEE non inserito nella domanda",
       "url": "https://servizicrm.comune.milano.it/centro-supporto/KA-01438/Nido-ISEE-non-inserito-in-iscrizione-online",
       "note": "Le domande frequenti del Comune, lette nei risultati di ricerca, descrivono l’acquisizione diretta dei dati INPS da parte dell’ufficio, se autorizzata. Per anno, termini ed eventuali anomalie occorre fare riferimento al comunicato e al tariffario specifici."
+    },
+    "segrate-access": {
+      "title": "Segrate · Accesso ai nidi",
+      "url": "https://comune.segrate.mi.it/servizi/educazione-e-formazione/asili-nido/index.html",
+      "note": "Pagina del servizio con graduatorie distinte per residenti e non residenti. La regola riguarda Segrate, non tutti i comuni."
+    },
+    "trezzano-access": {
+      "title": "Trezzano · Iscrizione nidi 2026/27",
+      "url": "https://www.comune.trezzano-sul-naviglio.mi.it/Servizi/Iscrizione-Asili-nido-comunali",
+      "note": "Requisiti territoriali e lavorativi, priorità dei residenti e periodo del bando 2026/27."
+    },
+    "settimo-access": {
+      "title": "Settimo Milanese · Nidi e tariffe",
+      "url": "https://comune.settimomilanese.mi.it/servizio/p21-servizio-asilo-nido/",
+      "note": "La pagina distingue residenti, futuri residenti e non residenti. Documenta età minima, tariffa dedicata e requisiti."
+    },
+    "cusago-access": {
+      "title": "Cusago · Regolamento Polo 0–6",
+      "url": "https://www.comune.cusago.mi.it/c015097/zf/index.php/atti-generali/index/download-file/voce/107",
+      "note": "Il regolamento disciplina nido e infanzia del Polo Leonardo da Vinci. Ammette domande non residenti e distingue il regime tariffario dopo un trasferimento."
+    },
+    "cusago-tariffe": {
+      "title": "Cusago · Tariffe 2026/27",
+      "url": "https://www.halleyweb.com/c015097/zf/index.php/servizi-aggiuntivi/index/index/idtesto/208",
+      "note": "La pagina separa 2025/26 e 2026/27 e pubblica importi differenti per residenti e non residenti; i pasti sono inclusi nella retta infanzia."
+    },
+    "franceschi-access": {
+      "title": "IC Franceschi · Iscrizioni infanzia",
+      "url": "https://www.icfranceschi.edu.it/iscrizioni",
+      "note": "L’istituto di Trezzano pubblica i criteri 2026/27: residenza, età, fratelli e lavoro nel territorio. Sono criteri di questo istituto."
+    },
+    "bollate-mensa": {
+      "title": "Bollate · Agevolazioni mensa",
+      "url": "https://comune.bollate.mi.it/it/servizi/riduzione-tariffa-refezione-scolastica",
+      "note": "La pagina riserva le riduzioni ai residenti e pubblica una quota per non residenti. Il domicilio non equivale alla residenza ai fini del servizio."
+    },
+    "bresso-extra": {
+      "title": "Bresso · Pre e post scuola 2026/27",
+      "url": "https://bresso-api.municipiumapp.it/s3/911/allegati/informativa-servizi-di-pre-post-scuola-2026-2027.pdf",
+      "note": "L’informativa distingue prezzi per residenza, posti e soglia di attivazione per plesso. L’iscrizione al servizio è distinta dall’ammissione alla scuola."
+    },
+    "novate-2728": {
+      "title": "Novate · Prima finestra nidi 2027/28",
+      "url": "https://comune.novate-milanese.mi.it/notizie/3660897/iscrizioni-nidi-d-infanzia-anno-educativo-2027",
+      "note": "Avviso del 9 ottobre 2026: prima finestra dal 15 ottobre 2026 al 14 gennaio 2027 per le fasce di nascita indicate. Non estendiamo queste date agli altri comuni."
+    },
+    "milano-disabilita": {
+      "title": "Milano · Assistenza educativa e scuole fuori Comune",
+      "url": "https://www.comune.milano.it/aree-tematiche/scuola/servizi-6-13-anni/servizi-educativi-per-alunni-con-disabilita",
+      "note": "La pagina comunale distingue assistenza educativa e sostegno didattico e contempla residenti che frequentano scuole fuori Milano. L’apertura diretta ha restituito errore 403; il testo è stato letto nei risultati indicizzati della pagina istituzionale. Procedura, documenti e assegnazione individuale restano da verificare con gli enti."
+    },
+    "anci-nidigratis": {
+      "title": "ANCI Lombardia · Istruttoria Nidi Gratis 2026/27",
+      "url": "https://anci.lombardia.it/dettaglio-circolari/202610211610-nidi-gratis-plus-2026-2027-%E2%80%93-apertura-adesioni-famiglie-dal-27-ottobre-e-webinar-per-i-comuni/",
+      "note": "La comunicazione ai Comuni richiama i controlli su residenza, applicazione di agevolazioni ISEE ai non residenti e posto convenzionato."
+    },
+    "mim-proroga": {
+      "title": "MIM · Proroga iscrizioni 2026/27",
+      "url": "https://anci.lombardia.it/documenti/22974-Istruzione%20-%20Proroga%20termini%20domande%20di%20iscrizione_Nota%20n.%2033781%20del%2012%20febbraio%202026.pdf",
+      "note": "Nota ministeriale 33781 del 12 febbraio 2026, allegata pubblicamente alla comunicazione di ANCI Lombardia. Sposta il termine delle iscrizioni 2026/27 alle ore 20 del 21 febbraio 2026; non definisce il calendario 2027/28."
+    },
+    "usr-infanzia-gratuita": {
+      "title": "Ufficio scolastico · Sistema integrato 0–6",
+      "url": "https://istruzione.umbria.it/sistema-integrato-0-6/",
+      "note": "La pagina dell’Ufficio scolastico regionale descrive il sistema nazionale: frequenza statale gratuita e costi a carico delle famiglie per pasti ed eventuali servizi aggiuntivi. Non è un tariffario dei comuni milanesi."
+    },
+    "buccinasco-access": {
+      "title": "Buccinasco · Regolamento nidi comunali",
+      "url": "https://www.comune.buccinasco.mi.it/s3/970/allegati/regolamento-degli-asili-nido-comunali.pdf",
+      "note": "Regolamento approvato il 2 dicembre 2025: articoli 3, 6 e 8 su requisiti di lavoro, nonni residenti e graduatorie distinte. Il legame familiare o lavorativo non elimina la priorità dei residenti."
     }
   },
   "guides": [
@@ -242,11 +312,12 @@
       "questions": [
         {
           "id": "totale",
-          "title": "La scuola comunale è gratuita?",
-          "text": "Per la scuola dell’infanzia comunale, la brochure 2026/27 indica un’iscrizione annuale di 56,20 euro non rimborsabili e un contributo mensa legato all’ISEE. Le rette del nido riguardano un servizio diverso e non permettono di stimare questa spesa. Per preparare il budget, considera anche gli eventuali servizi richiesti e i periodi estivi. Gli importi per il 2027/28 devono ancora essere riconfermati.",
+          "title": "Quanto costa l’infanzia comunale a Milano?",
+          "text": "Per la scuola dell’infanzia comunale, la brochure 2026/27 indica un’iscrizione annuale di 56,20 euro non rimborsabili e un contributo mensa legato all’ISEE. Le rette del nido riguardano un servizio diverso e non permettono di stimare questa spesa. Per preparare il budget, considera anche gli eventuali servizi richiesti e i periodi estivi. Gli importi per il 2027/28 devono ancora essere riconfermati. Queste condizioni riguardano Milano: in un altro comune può esserci una retta mensile, con importi diversi per chi risiede altrove.",
           "refs": [
             "brochure",
-            "bando"
+            "bando",
+            "cusago-tariffe"
           ],
           "check": "La brochure e il comunicato concordano sugli importi. Provengono dallo stesso ente: il confronto è tra due documenti, senza una verifica indipendente."
         },
@@ -284,13 +355,13 @@
         {
           "id": "fratelli",
           "title": "Ci sono sconti per fratelli o se il reddito diminuisce?",
-          "text": "Le domande frequenti della mensa prevedono, alle condizioni del servizio, una riduzione del 50% per i figli diversi dal più piccolo, che paga la quota intera. Se la situazione economica cambia, puoi verificare come chiedere la revisione della quota. Nel frattempo, chiarisci con l’ufficio quali importi restano dovuti e di proseguire i pagamenti richiesti in attesa della risposta. Per gli sconti delle scuole private occorre consultare le condizioni della singola scuola.",
+          "text": "Per i residenti a Milano, le domande frequenti della mensa prevedono, alle condizioni del servizio, una riduzione del 50% per i figli diversi dal più piccolo, che paga la quota intera. Se la situazione economica cambia, puoi verificare come chiedere la revisione della quota. Nel frattempo, chiarisci con l’ufficio quali importi restano dovuti mentre la richiesta viene esaminata. Per gli sconti delle scuole private occorre consultare le condizioni della singola scuola. Per i non residenti chiedi il tariffario dedicato e le relative esclusioni: gli sconti dei residenti non si trasferiscono automaticamente.",
           "refs": [
             "faq",
             "relazione",
             "inps"
           ],
-          "check": "La riduzione per fratelli è confermata anche nella relazione comunale. INPS descrive l’ISEE corrente, che non sostituisce la richiesta di revisione da presentare al gestore."
+          "check": "La riduzione per fratelli è confermata anche nella relazione comunale. INPS descrive l’ISEE corrente, che non sostituisce la richiesta di revisione da presentare al gestore. L’approfondimento territoriale mantiene distinta la condizione dei non residenti; non attribuisce loro gli sconti dei residenti."
         },
         {
           "id": "privati",
@@ -303,7 +374,8 @@
           "check": "I due regolamenti descrivono le condizioni delle singole scuole. L’elenco delle voci da chiedere è un nostro suggerimento; le clausole non si applicano automaticamente a tutti i gestori."
         }
       ],
-      "stage": "preschool"
+      "stage": "preschool",
+      "checkedAt": "2026-11-17"
     },
     {
       "slug": "iscrizioni-e-graduatorie",
@@ -323,17 +395,19 @@
         {
           "id": "statale",
           "title": "Per la statale si usa Unica?",
-          "text": "Per la scuola dell’infanzia statale, la nota del Ministero dell’Istruzione e del Merito (MIM) 2026/27 prevede una domanda cartacea da presentare all’istituto scelto. La procedura è diversa dall’iscrizione online alla primaria. Puoi chiedere alla segreteria il modulo, come consegnarlo e quale ricevuta conservare.\n\nLe scuole private hanno procedure proprie: prima di manifestare interesse, è utile verificare se questo comporta già un impegno economico.",
+          "text": "Per l’infanzia statale la nota ministeriale 2026/27 prevede una domanda da presentare all’istituto, fuori dal sistema Unica usato per la primaria. Chiedi alla segreteria il modulo e le modalità di consegna: alcuni istituti raccolgono i dati attraverso propri moduli digitali.\n\nIl termine nazionale 2026/27 è stato prorogato al 21 febbraio 2026 alle ore 20 ed è trascorso. Per il 2027/28 occorre il nuovo avviso. Le scuole private hanno procedure proprie: prima di confermare un posto, chiarisci se sono già previsti pagamenti o impegni.",
           "refs": [
             "mim",
-            "naviglio"
+            "mim-proroga",
+            "naviglio",
+            "franceschi-access"
           ],
-          "check": "La nota ministeriale descrive la procedura statale. Le domande frequenti della paritaria mostrano che l’iscrizione privata può seguire tempi diversi; la procedura di questa singola scuola non vale per tutte."
+          "check": "La nota originaria distingue la domanda infanzia dalla procedura Unica. La successiva nota 33781 proroga il termine, che non viene trasferito all’anno successivo; le modalità operative vanno verificate con l’istituto."
         },
         {
           "id": "clickday",
           "title": "Come viene assegnato il posto? Conta la distanza?",
-          "text": "L’ammissione dipende dai criteri del bando e dalle domande ammesse. La distanza e i posti indicati nel catalogo non permettono di stimare la probabilità di ottenere un posto. Leggi le priorità dell’anno che ti interessa, controllare le dichiarazioni prima dell’invio e conservare la ricevuta. La partecipazione a una visita o la prenotazione di un open day sono passaggi separati dalla domanda di iscrizione.",
+          "text": "L’ammissione dipende dai criteri del bando e dalle domande ammesse. La distanza e i posti indicati nel catalogo non permettono di stimare la probabilità di ottenere un posto. Leggi le priorità dell’anno che ti interessa, controlla le dichiarazioni prima dell’invio e conserva la ricevuta. La partecipazione a una visita o la prenotazione di un open day sono passaggi separati dalla domanda di iscrizione.",
           "refs": [
             "bando",
             "attesa"
@@ -359,9 +433,21 @@
             "mim"
           ],
           "check": "Abbiamo confrontato i vincoli comunali con quelli ministeriali, mantenendo distinti i rispettivi ambiti. Le fonti non danno un’autorizzazione generale a presentare domande o mantenere posti doppi."
+        },
+        {
+          "id": "fuori-comune",
+          "title": "Posso scegliere una scuola fuori dal comune di residenza?",
+          "text": "Per la statale puoi presentare domanda all’istituto scelto; l’accoglimento dipende dai posti e dai suoi criteri. Per la comunale valgono i requisiti del Comune che eroga il servizio. In entrambi i casi, verifica separatamente mensa e prolungamento, che possono avere prezzi e priorità diversi per i non residenti.",
+          "refs": [
+            "mim",
+            "franceschi-access",
+            "bresso-extra"
+          ],
+          "check": "Distinguiamo regole dell’istituto e servizi comunali. Le condizioni dei singoli esempi non sono estese a tutta l’area."
         }
       ],
-      "stage": "preschool"
+      "stage": "preschool",
+      "checkedAt": "2026-11-17"
     },
     {
       "slug": "open-day-e-visite",
@@ -489,7 +575,7 @@
         {
           "id": "iscrizioni03",
           "title": "Quando e come si fa domanda al nido comunale?",
-          "text": "Per un posto comunale, consulta la pagina del Comune e il comunicato dell’anno che ti interessa. Il periodo ordinario 2026/27 andava dal 4 al 25 febbraio 2026, con accesso tramite SPID o CIE, ed è ora concluso. Eventuali avvisi per le domande fuori termine vanno verificati separatamente.\n\nNon abbiamo verificato un calendario 2027/28 da pubblicare. Se contatti anche un nido privato, ricorda che quella richiesta segue una procedura distinta e non sostituisce la domanda al Comune.",
+          "text": "Per un posto assegnato dal Comune di Milano, consulta la pagina del servizio e il comunicato dell’anno che ti interessa. Il periodo ordinario 2026/27 andava dal 4 al 25 febbraio 2026, con accesso tramite SPID o CIE, ed è ora concluso. Eventuali avvisi per le domande fuori termine vanno verificati separatamente.\n\nPer Milano non abbiamo verificato un calendario comunale 2027/28 da pubblicare; altri comuni possono avere già aperto le domande. Se contatti anche un nido privato, ricorda che quella richiesta segue una procedura distinta e non sostituisce la domanda al Comune.",
           "refs": [
             "nidi-bando",
             "notizia",
@@ -546,8 +632,19 @@
             "brochure"
           ],
           "check": "Il bando e la brochure distinguono orari ordinari, prolungamento ed estate. Il calendario 2026/27 non conferma le condizioni del 2027/28."
+        },
+        {
+          "id": "residenza03",
+          "title": "E se il nido che ci interessa è in un altro comune?",
+          "text": "Controlla se la domanda è ammessa ai non residenti e quali legami con il territorio vengono richiesti. Alcuni comuni compilano graduatorie separate e assegnano i posti ai non residenti soltanto dopo quelli dei residenti. La tariffa e l’accesso alle agevolazioni vanno verificati a parte.\n\nPrima di preparare i documenti, consulta le regole del Comune della sede e chiedi quale procedura si applica alla vostra famiglia.",
+          "refs": [
+            "segrate-access",
+            "trezzano-access"
+          ],
+          "check": "Gli esempi documentano regole diverse: una distanza breve non certifica accessibilità o convenienza."
         }
-      ]
+      ],
+      "checkedAt": "2026-11-17"
     },
     {
       "slug": "costi-bonus-nido",
@@ -558,10 +655,11 @@
         {
           "id": "rette03",
           "title": "Quanto costano nido e primavera con un posto assegnato dal Comune?",
-          "text": "La tabella riporta le quote mensili 2026/27 dei posti assegnati dal Comune; le quote annuali della mensa 3–6 riguardano invece un servizio diverso. Alla spesa si aggiunge l’iscrizione annua non rimborsabile di 56,20 euro, anche quando la quota mensile è gratuita. Se ti iscrivi direttamente a un servizio privato, serve il suo tariffario. Gli importi per il 2027/28 devono ancora essere riconfermati.",
+          "text": "La tabella riporta le quote mensili 2026/27 dei posti assegnati dal Comune; le quote annuali della mensa 3–6 riguardano invece un servizio diverso. Alla spesa si aggiunge l’iscrizione annua non rimborsabile di 56,20 euro, anche quando la quota mensile è gratuita. Se ti iscrivi direttamente a un servizio privato, serve il suo tariffario. Gli importi per il 2027/28 devono ancora essere riconfermati. La quota non residenti riguarda le situazioni ammesse dal bando, per esempio il trasferimento fuori Milano dopo l’inizio della frequenza: non autorizza da sola una nuova iscrizione da un altro comune.",
           "refs": [
             "nidi-quote",
-            "nidi-paginaquote"
+            "nidi-paginaquote",
+            "nidi-bando"
           ],
           "check": "Tabella e iscrizione riscontrate nel PDF e nella pagina del Comune: doppio documento dello stesso ente, non conferma indipendente."
         },
@@ -621,12 +719,13 @@
         {
           "id": "gratis03",
           "title": "Nidi Gratis Plus significa che ogni nido a Milano è gratuito?",
-          "text": "Nidi Gratis Plus è una misura regionale distinta dal bonus INPS. Riguarda servizi e posti ammessi, con ISEE fino a 25.000 euro e altri requisiti. Il bando 2026/27 prevede le domande dal 27 ottobre al 19 novembre 2026 alle ore 12, salvo esaurimento delle risorse.\n\nControlla nell’elenco sia il Comune aderente sia il posto: la presenza di un indirizzo a Milano, da sola, non conferma il diritto all’aiuto. Per il budget familiare, attendi la verifica della domanda prima di considerare acquisita l’agevolazione.",
+          "text": "Nidi Gratis Plus è una misura regionale distinta dal bonus INPS. Per il 2026/27 riguarda servizi e posti ammessi, con ISEE fino a 25.000 euro e altri requisiti. Le domande si presentano dal 27 ottobre al 19 novembre 2026 alle ore 12, salvo esaurimento delle risorse.\n\nFino a 20.000 euro di ISEE il sostegno regionale copre la quota di retta ammissibile oltre il contributo INPS; da 20.000,01 a 25.000 euro è limitato a 100 euro al mese. La soglia di 25.000 euro non garantisce quindi, da sola, una retta azzerata.\n\nControlla nell’elenco regionale il Comune che assegna il posto, il servizio e le condizioni. Se frequenti fuori comune, verifica anche le agevolazioni ISEE per non residenti. L’indirizzo del nido e la sola iscrizione privata non confermano il diritto al contributo.",
           "refs": [
             "nidi-gratis",
-            "nidi-gratis-elenco"
+            "nidi-gratis-elenco",
+            "anci-nidigratis"
           ],
-          "check": "Abbiamo confrontato il bando per le famiglie con l’elenco delle strutture. Le colonne distinguono Comune aderente e sede operativa; l’indirizzo della sede non dimostra un’adesione generale del Comune di Milano."
+          "check": "Bando famiglie, elenco delle strutture e istruzioni ai Comuni distinguono limiti economici, posto ammesso e condizioni per non residenti. Abbiamo mantenuto separati il contributo regionale e il rimborso INPS."
         },
         {
           "id": "preventivo03",
@@ -637,6 +736,184 @@
             "nidi-quote"
           ],
           "check": "L’elenco delle voci da confrontare è un suggerimento e non indica una tariffa media. Le regole INPS e comunali aiutano a distinguere rimborso, costo da pagare e sconto privato."
+        }
+      ],
+      "checkedAt": "2026-11-17"
+    },
+    {
+      "slug": "nido-fuori-comune",
+      "title": "Un nido fuori comune: accesso, rette e contributi",
+      "intro": "Un nido vicino al lavoro o a chi ti aiuta ogni giorno può semplificare gli spostamenti. Prima di sceglierlo, verifica se puoi fare domanda, quale priorità hai e quale retta pagheresti come non residente.",
+      "stage": "nursery",
+      "checkedAt": "2026-11-17",
+      "territorial": true,
+      "questions": [
+        {
+          "id": "domanda",
+          "title": "Posso fare domanda a un nido di un altro comune?",
+          "text": "In molti comuni puoi presentare domanda anche se abiti altrove. Il regolamento può però richiedere un legame con il territorio e assegnare i posti soltanto dopo le richieste dei residenti. Presentare la domanda e ottenere un posto sono due passaggi distinti.\n\nA Segrate ci sono graduatorie separate; a Trezzano il bando 2026/27 contempla i non residenti che lavorano stabilmente nel Comune. Parti dalla scheda del Comune che ti interessa e controlla le condizioni del bando, senza ricavare l’ammissione dalla sola distanza.",
+          "refs": [
+            "segrate-access",
+            "trezzano-access"
+          ],
+          "check": "Due esempi comunali documentano possibilità diverse; non costituiscono una regola unica per la cintura milanese."
+        },
+        {
+          "id": "priorita",
+          "title": "Lavorare nel comune o avere i nonni lì dà la precedenza?",
+          "text": "Lavoro e legami familiari possono contare in modi diversi: come requisito per presentare domanda, come punteggio oppure per la tariffa. Per esempio, il regolamento di Buccinasco considera specifiche combinazioni di lavoro dei genitori e presenza di un nonno residente, mantenendo la priorità ai residenti.\n\nChiedi all’ufficio in quale graduatoria entrerebbe il bambino e quali documenti servono. Verifica anche se devono essere soddisfatte prima tutte le domande dei residenti, comprese quelle presentate dopo la prima graduatoria.",
+          "refs": [
+            "buccinasco-access",
+            "segrate-access"
+          ],
+          "check": "Gli articoli 3, 6 e 8 di Buccinasco documentano il ruolo di lavoro e nonni. Segrate richiede una verifica anche delle domande residenti successive. I due casi non definiscono una regola unica."
+        },
+        {
+          "id": "retta",
+          "title": "Pagherò la stessa retta dei residenti?",
+          "text": "Una tariffa agevolata per chi abita nel Comune può non essere disponibile ai non residenti, anche con lo stesso ISEE. A Settimo Milanese la pagina del servizio pubblica una quota fissa per i non residenti. La condizione va verificata prima di confrontare le rette.\n\nChiedi un prospetto con fascia oraria, mensilità, pasti, pannolini, iscrizione, prolungamento, luglio e riduzioni per assenza. Due importi mensili possono includere servizi differenti.",
+          "refs": [
+            "settimo-access"
+          ],
+          "check": "La tariffa dedicata è documentata; l’elenco delle voci da chiedere è un criterio di confronto e non un preventivo."
+        },
+        {
+          "id": "contributi",
+          "title": "Se frequenta fuori comune, perde il Bonus INPS?",
+          "text": "Frequentare fuori dal comune di residenza non esclude, da solo, dal Bonus INPS. Occorre verificare i requisiti familiari, il servizio ammesso, il titolo abilitativo della struttura e la spesa documentata. Il contributo non può superare i limiti mensili e la spesa riconosciuta.\n\nChiedi al gestore i riferimenti dell’abilitazione e documenti che distinguano le mensilità e le voci di spesa. Il bonus nazionale e le agevolazioni del Comune seguono procedimenti diversi.",
+          "refs": [
+            "inps29",
+            "inps-nido"
+          ],
+          "check": "La circolare nazionale definisce requisiti e controlli; non attribuiamo l’agevolazione a ogni servizio presente nel catalogo."
+        },
+        {
+          "id": "gratis",
+          "title": "E Nidi Gratis Plus fuori dal comune di residenza?",
+          "text": "Verifica sia il posto ammesso alla misura sia l’applicazione di agevolazioni ISEE ai non residenti. Un nido può partecipare a Nidi Gratis Plus senza offrire lo stesso beneficio a ogni famiglia che lo frequenta. L’elenco regionale distingue anche agevolazioni limitate ad alcuni comuni o a particolari situazioni.\n\nPrima di inserire il contributo nel budget, chiedi al Comune che assegna il posto se il tuo caso rientra nella misura. Il sostegno regionale è distinto dal rimborso INPS e ha requisiti e limiti propri.",
+          "refs": [
+            "nidi-gratis-elenco",
+            "anci-nidigratis"
+          ],
+          "check": "L’elenco e le istruzioni ai Comuni documentano la verifica dei non residenti. Un posto privato diretto non viene equiparato a un posto acquistato dal Comune."
+        },
+        {
+          "id": "calendario",
+          "title": "Le domande aprono tutte insieme?",
+          "text": "Ogni comune pubblica i propri periodi e può distinguere le fasce di nascita. Per esempio, a Novate la prima finestra 2027/28 va dal 15 ottobre 2026 al 14 gennaio 2027, per i bambini nati dal 1° gennaio 2025 al 30 giugno 2026. Le altre fasce e finestre vanno controllate nei rispettivi avvisi.\n\nSe valuti più territori, annota per ciascuno anno educativo, età richiesta, termine della domanda e modalità di accettazione. Non aspettare il bando milanese per iniziare a controllare gli altri comuni.",
+          "refs": [
+            "novate-2728"
+          ],
+          "check": "Date lette nell’avviso comunale 2027/28. La partecipazione dipende anche dalle fasce di nascita e dagli altri requisiti."
+        },
+        {
+          "id": "trasloco",
+          "title": "Che cosa cambia se traslochiamo durante l’anno?",
+          "text": "Il trasferimento può modificare la tariffa e la possibilità di confermare il posto nell’anno seguente. Per i servizi comunali milanesi il bando 2026/27 permette di terminare l’anno già iniziato dopo il trasferimento fuori Milano, ma esclude la conferma per il 2027/28 e prevede la quota dedicata ai non residenti.\n\nComunica il trasferimento all’ufficio e chiedi da quale mese cambia la retta. Se stai per trasferirti nel Comune della sede, controlla quali documenti consentono di partecipare come futuro residente e quando decorre l’eventuale riduzione.",
+          "refs": [
+            "nidi-bando",
+            "settimo-access"
+          ],
+          "check": "Regola milanese e trattamento dei futuri residenti di Settimo tenuti distinti; non estendiamo continuità e tariffa a tutti i comuni."
+        },
+        {
+          "id": "comune-municipio",
+          "title": "Comune e Municipio indicano lo stesso territorio?",
+          "text": "I Municipi da 1 a 9 sono suddivisioni del Comune di Milano. Passare da un Municipio milanese a un altro non significa diventare non residente a Milano. Se la sede è a Segrate, Trezzano o in un altro comune, invece, devi verificare le condizioni previste da quell’ente.\n\nNel catalogo trovi le sedi di Milano; nella sezione Comuni confronti le regole dei territori confinanti. Il Comune della sede e quello che assegna un posto in convenzione possono essere diversi: chiedi quale bando e quale tariffa si applicano al posto che ti viene proposto.",
+          "refs": [
+            "nidi-bando",
+            "segrate-access",
+            "nidi-gratis-elenco"
+          ],
+          "check": "Distinguiamo suddivisioni interne, ente che assegna il posto e sede operativa. La presenza di una convenzione o della sede nell’elenco regionale non certifica un beneficio per qualsiasi iscrizione."
+        }
+      ]
+    },
+    {
+      "slug": "infanzia-fuori-comune",
+      "title": "Scuola dell’infanzia fuori comune: come orientarsi",
+      "intro": "Una scuola dell’infanzia fuori comune può essere compatibile con i vostri spostamenti. Accesso alla scuola, mensa e prolungamento richiedono verifiche diverse: ecco da dove iniziare.",
+      "stage": "preschool",
+      "checkedAt": "2026-11-17",
+      "territorial": true,
+      "questions": [
+        {
+          "id": "statale",
+          "title": "Una famiglia milanese può scegliere una statale fuori Milano?",
+          "text": "Puoi chiedere l’iscrizione a una scuola dell’infanzia statale di un altro comune. Se le domande superano i posti, contano i criteri deliberati dall’istituto: la possibilità di presentare domanda non garantisce l’ammissione.\n\nPer esempio, l’IC Franceschi di Trezzano pubblica criteri 2026/27 che considerano residenza, età, fratelli e lavoro di un genitore nel territorio. Leggi l’avviso dell’istituto e chiedi in quale posizione verrebbe considerata una domanda non residente.",
+          "refs": [
+            "mim",
+            "franceschi-access"
+          ],
+          "check": "La nota nazionale e un regolamento locale sono distinti: i punteggi di Trezzano non vengono attribuiti alle altre scuole."
+        },
+        {
+          "id": "comunale",
+          "title": "Vale lo stesso per una scuola comunale?",
+          "text": "Per una scuola comunale devi leggere il regolamento del Comune che organizza il servizio. Può ammettere domande non residenti, stabilire requisiti territoriali e dare precedenza ai residenti. La parità scolastica non rende uguali procedure e rette di tutte le scuole.\n\nIl Polo comunale 0–6 di Cusago ammette domande non residenti secondo il proprio regolamento. Milano, invece, nel bando 2026/27 esclude ordinariamente nuove domande di nuclei residenti in altri comuni italiani, salvo i casi specifici previsti. L’accesso tra comuni non è necessariamente reciproco.",
+          "refs": [
+            "cusago-access",
+            "bando"
+          ],
+          "check": "Due regolamenti comunali a confronto; le eccezioni milanesi non vengono trasformate in un’apertura generale ai non residenti."
+        },
+        {
+          "id": "costi",
+          "title": "La statale resta gratuita se abitiamo altrove?",
+          "text": "La frequenza della scuola statale è gratuita. Restano da considerare mensa, eventuale pre e post scuola, trasporto e altri servizi richiesti, secondo le condizioni di chi li eroga. Le agevolazioni comunali possono essere riservate ai residenti.\n\nA Bollate, per esempio, la pagina della mensa distingue la quota non residenti dalle fasce ISEE agevolate. Prima di confrontare una scuola dentro e una fuori Milano, chiedi il costo applicabile alla vostra residenza.",
+          "refs": [
+            "usr-infanzia-gratuita",
+            "bollate-mensa"
+          ],
+          "check": "La fonte scolastica istituzionale documenta la gratuità della frequenza statale; Bollate documenta le condizioni del pasto, che non è una retta didattica. Il tariffario locale non viene esteso agli altri comuni."
+        },
+        {
+          "id": "retta-comunale",
+          "title": "La comunale ha soltanto il costo della mensa?",
+          "text": "Dipende dal Comune. A Cusago il tariffario 2026/27 prevede una retta mensile infanzia con mensa inclusa, diversa per residenti e non residenti; pre scuola e prolungamento sono voci aggiuntive. La tariffa milanese non permette quindi di stimare la spesa di una comunale altrove.\n\nChiedi iscrizione, numero di mensilità, fascia oraria inclusa, pasti, servizi aggiuntivi ed estate. Se confronti una quota mensile con un importo annuo, riporta prima le due offerte allo stesso periodo e agli stessi servizi.",
+          "refs": [
+            "cusago-tariffe",
+            "brochure"
+          ],
+          "check": "Gli esempi riguardano i documenti 2026/27. Non sono una media dei prezzi né una conferma del 2027/28."
+        },
+        {
+          "id": "servizi",
+          "title": "Essere ammessi dà diritto anche al pre e post scuola?",
+          "text": "L’ammissione alla scuola e l’iscrizione ai servizi comunali sono passaggi distinti. A Bresso l’informativa 2026/27 prevede tariffe diverse per residenza, disponibilità di posti e un numero minimo di richieste per attivare il servizio in un plesso.\n\nSe il prolungamento è necessario per i vostri orari, chiedi conferma dell’attivazione e dell’accesso prima di accettare il posto. Controlla anche calendario delle chiusure, disponibilità del servizio estivo e domanda da presentare.",
+          "refs": [
+            "bresso-extra"
+          ],
+          "check": "La soglia e le condizioni di Bresso non valgono per tutti i comuni. Il suggerimento riguarda l’organizzazione familiare."
+        },
+        {
+          "id": "domande",
+          "title": "Possiamo fare domanda in molte scuole contemporaneamente?",
+          "text": "Per la procedura di iscrizione all’infanzia statale, la nota ministeriale ricorda che si può presentare una sola domanda. Per coordinare una procedura statale con quella comunale o privata, chiedi alle segreterie quali vincoli valgono per domande, accettazioni e rinunce.\n\nIl bando milanese 2026/27 prevede verifiche sulle ammissioni anche nelle statali. Conserva le ricevute e chiarisci con gli uffici entro quando devi scegliere o rinunciare a un posto.",
+          "refs": [
+            "mim",
+            "bando"
+          ],
+          "check": "I vincoli statali e quelli comunali hanno ambiti distinti. Non forniamo un’autorizzazione generale a mantenere iscrizioni multiple."
+        },
+        {
+          "id": "sostegno",
+          "title": "Come si organizza l’assistenza per un bambino con disabilità?",
+          "text": "Prima dell’ingresso, chiedi alla scuola e al Comune di residenza come coordinare documenti, sostegno didattico e assistenza educativa. Sono interventi con responsabilità diverse; la scelta di una scuola fuori comune richiede di verificare chi attiva ogni servizio e con quali tempi.\n\nMilano contempla l’assistenza educativa anche per residenti che frequentano scuole dell’infanzia statali o paritarie fuori dal territorio comunale, alle condizioni previste. Chiedi una conferma sul vostro percorso, senza dedurla dalla sola presenza di un servizio nella scheda.",
+          "refs": [
+            "milano-disabilita"
+          ],
+          "check": "La pagina comunale distingue l’assistenza educativa dal sostegno. L’informazione non certifica ore o assegnazioni individuali."
+        },
+        {
+          "id": "tragitto",
+          "title": "Che cosa valutare oltre all’iscrizione?",
+          "text": "Prova il tragitto all’orario in cui accompagneresti il bambino e considera anche il rientro, gli imprevisti e chi può riprenderlo. Una sede vicina in linea d’aria può richiedere attraversamenti o cambi di mezzo.\n\nDurante la visita chiedi come si svolge la giornata, come vengono concordati i primi giorni e quali orari sono effettivamente utilizzabili. Accesso, costi e organizzazione aiutano a restringere le possibilità; la visita permette di conoscere le persone e il servizio.",
+          "refs": [
+            "uppa",
+            "bresso-extra"
+          ],
+          "check": "Sono criteri pratici di scelta. Non attribuiamo a una sede tragitti, caratteristiche pedagogiche o disponibilità non documentati."
         }
       ]
     }

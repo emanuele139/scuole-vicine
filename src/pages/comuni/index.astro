@@ -1,0 +1,43 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import PageIntro from '../../components/PageIntro.astro';
+import { territorialAccess, serviceKey, serviceLabel, accessStatusLabel } from '../../lib/access';
+import '../../styles/territorial-access.css';
+const municipalities = [...territorialAccess.municipalities].sort((a,b)=>a.name.localeCompare(b.name,'it'));
+const rows = municipalities.flatMap(municipality=>municipality.services.map(service=>({municipality,service})));
+---
+<Layout title="Nidi e infanzia nei comuni confinanti: accesso e costi" active="iscrizioni" description="Confronta le regole di accesso per non residenti nei 23 comuni confinanti con Milano: nidi comunali, infanzia comunale e statale, tariffe e agevolazioni.">
+  <div class="territory-page">
+    <PageIntro title="Una scuola fuori comune" accent="fuori comune" eyebrow="MILANO E I 23 COMUNI CONFINANTI" description="Residenza, priorità e costi aiutano a capire quali possibilità approfondire. Parti dal servizio e dal Comune che ti interessa." tone="prato" character="book"/>
+    <div class="territory-explanation"><p>Puoi trovare un servizio vicino al lavoro o a chi ti aiuta ogni giorno. Prima di fare domanda, controlla se accoglie famiglie non residenti e quali tariffe applica. Presentare la domanda e ottenere un posto sono passaggi diversi.</p></div>
+    <aside class="territory-coverage"><strong>Le sedi e le regole dei 23 comuni confinanti.</strong><br/>Puoi cercare le sedi per Comune, nome e indirizzo. La mappa mostra i servizi con coordinate documentate; le altre sedi restano nell’elenco. “Da verificare” indica un’informazione mancante, non l’assenza del servizio.</aside>
+    <p class="territory-benefits-note">Per i nidi, <strong>Bonus INPS e Nidi Gratis Plus seguono regole diverse</strong>. La colonna Agevolazioni riporta le condizioni locali: l’assenza di un aiuto regionale non esclude da sola il bonus nazionale. <a href="/guide/nido-fuori-comune/#contributi">Come verificare i due contributi →</a></p>
+    <div class="territory-controls" hidden data-territory-controls>
+      <label for="territory-service">Quale servizio?<select id="territory-service"><option value="nidi">Nidi comunali · 0–3</option><option value="infanzia-comunale">Infanzia comunale · 3–6</option><option value="infanzia-statale">Infanzia statale · 3–6</option><option value="all">Tutti i servizi</option></select></label>
+      <label for="territory-municipality">In quale Comune?<select id="territory-municipality"><option value="all">Tutti i 23 comuni</option>{municipalities.map(municipality=><option value={municipality.slug}>{municipality.name}</option>)}</select></label>
+    </div>
+    <p class="territory-count" id="territory-count" role="status">{municipalities.length} comuni · verifica del {territorialAccess.checkedAt.split('-').reverse().join('/')}</p>
+    <div class="territory-table-wrap"><table class="territory-table"><caption>Le condizioni per una famiglia non residente</caption><thead><tr><th scope="col">Comune e servizio</th><th scope="col">Domanda e priorità</th><th scope="col">Tariffe</th><th scope="col">Agevolazioni</th></tr></thead><tbody>{rows.map(({municipality,service})=><tr data-territory-row data-municipality={municipality.slug} data-service={serviceKey(service)}><th scope="row"><a href={`/comuni/${municipality.slug}/#${serviceKey(service)}`}>{municipality.name}</a><small class="territory-status">{serviceLabel(service)}<br/>{service.year}<br/>{accessStatusLabel(service.status)}</small></th><td data-label="Domanda e priorità"><p>{service.eligibility}</p><p>{service.priority}</p></td><td data-label="Tariffe">{service.costs}</td><td data-label="Agevolazioni">{service.benefits}<small><a href={`/comuni/${municipality.slug}/#${serviceKey(service)}`}>Condizioni e fonti →</a></small></td></tr>)}</tbody></table></div>
+    {municipalities.length === 0 && <p class="notice">La ricerca locale è in aggiornamento. Le guide spiegano quali condizioni verificare con il Comune e con la scuola.</p>}
+    <div class="territory-guide-links"><a href="/guide/nido-fuori-comune/">Scegliere un nido fuori comune →</a><a href="/guide/infanzia-fuori-comune/">Iscriversi all’infanzia fuori comune →</a><a href="/">Cerca le sedi nell’area di Milano →</a><a href="/dati/accesso-comuni.json" download>Scarica regole e fonti (JSON) ↓</a></div>
+  </div>
+  <script>
+    const service = document.getElementById('territory-service') as HTMLSelectElement | null;
+    const municipality = document.getElementById('territory-municipality') as HTMLSelectElement | null;
+    const count = document.getElementById('territory-count');
+    if (service && municipality && count) {
+      const rows = [...document.querySelectorAll<HTMLElement>('[data-territory-row]')];
+      const params = new URLSearchParams(location.search);
+      const choose = (select: HTMLSelectElement, value: string | null) => { if (value && [...select.options].some(option=>option.value===value)) select.value=value; };
+      choose(service,params.get('servizio')); choose(municipality,params.get('comune'));
+      const update = () => {
+        let visible=0; const places=new Set<string>();
+        rows.forEach(row=>{row.hidden=(service.value!=='all'&&row.dataset.service!==service.value)||(municipality.value!=='all'&&row.dataset.municipality!==municipality.value);if(!row.hidden){visible++;places.add(row.dataset.municipality!);}});
+        count.textContent=`${places.size} ${places.size===1?'Comune':'comuni'} · ${visible} ${visible===1?'ambito di servizio':'ambiti di servizio'}. Le condizioni si riferiscono ai periodi indicati.`;
+        const url=new URL(location.href); url.searchParams.set('servizio',service.value); if(municipality.value==='all')url.searchParams.delete('comune');else url.searchParams.set('comune',municipality.value);history.replaceState(null,'',url);
+      };
+      document.querySelector<HTMLElement>('[data-territory-controls]')!.hidden=false;
+      service.addEventListener('change',update);municipality.addEventListener('change',update);update();
+    }
+  </script>
+</Layout>

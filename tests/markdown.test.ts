@@ -4,7 +4,7 @@ import { htmlToMarkdown, markdownHeaders } from '../integrations/markdown.mjs';
 import { markdownPath, htmlPath } from '../src/lib/markdown-paths.mjs';
 
 test('alternate documents cover editorial routes while excluding schools and personal pages', () => {
-  for (const path of ['/', '/guide/', '/guide/costi-e-isee/', '/metodo/', '/progetto/', '/privacy/', '/iscrizioni/', '/agenda/', '/nidi/', '/scuole-infanzia/', '/municipi/7/']) {
+  for (const path of ['/', '/guide/', '/guide/costi-e-isee/', '/metodo/', '/progetto/', '/privacy/', '/iscrizioni/', '/agenda/', '/nidi/', '/scuole-infanzia/', '/municipi/7/', '/comuni/', '/comuni/cusago/']) {
     const md = markdownPath(path);
     assert.ok(md);
     assert.equal(htmlPath(md), path);

@@ -1,8 +1,9 @@
+import { addressContext } from './search-area.ts';
 import type { AddressMatch } from './proximity';
 export type CivicAddress = { street: string; houseNumber: string };
 export const normalizeCivic = (value: string) => value.replace(/\s/g, '').replace(/[\/-](?=[a-z])/gi, '').replace(/^0+(?=\d)/,'').toUpperCase();
 export function parseCivicAddress(value: string): CivicAddress | null {
-  const address=value.trim().replace(/(?:,\s*|\s+)(?:milano|milan)(?:\s*,\s*italia)?\s*$/i,'').replace(/[,\s]+\d{5}\s*$/,'').replace(/\b(?:n\.|civico)\s*(?=\d)/i,'').trim();
+  const address=addressContext(value, null).address.replace(/[,\s]+\d{5}\s*$/,'').replace(/\b(?:n\.|civico)\s*(?=\d)/i,'').trim();
   const match=address.match(/^(.+?)[\s,]+(\d{1,4}(?:\s*(?:\/\s*\d{1,4}[a-z]?|[\/-]?\s*[a-z]))?(?:\s*-\s*\d{1,4}[a-z]?)?)$/i);
   return match ? {street:match[1].trim(),houseNumber:match[2].replace(/\s+/g,'')} : null;
 }

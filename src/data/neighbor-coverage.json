@@ -1,0 +1,517 @@
+{
+  "checkedAt": "2026-11-17",
+  "total": 331,
+  "geolocated": 260,
+  "byServiceType": {
+    "Nido d’infanzia": 141,
+    "Nido famiglia": 23,
+    "Scuola dell’infanzia": 149,
+    "Centro prima infanzia": 5,
+    "Micronido": 13
+  },
+  "byManagement": {
+    "Da verificare": 205,
+    "Statale": 102,
+    "Comunale": 24
+  },
+  "municipalities": [
+    {
+      "comune": "Arese",
+      "total": 11,
+      "preschools": 5,
+      "nurseries": 6,
+      "geolocated": 11,
+      "missingCoordinates": 0,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Assago",
+      "total": 6,
+      "preschools": 2,
+      "nurseries": 4,
+      "geolocated": 4,
+      "missingCoordinates": 2,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Baranzate",
+      "total": 6,
+      "preschools": 3,
+      "nurseries": 3,
+      "geolocated": 6,
+      "missingCoordinates": 0,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Bollate",
+      "total": 18,
+      "preschools": 8,
+      "nurseries": 10,
+      "geolocated": 16,
+      "missingCoordinates": 2,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Bresso",
+      "total": 9,
+      "preschools": 3,
+      "nurseries": 6,
+      "geolocated": 9,
+      "missingCoordinates": 0,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Buccinasco",
+      "total": 14,
+      "preschools": 4,
+      "nurseries": 10,
+      "geolocated": 8,
+      "missingCoordinates": 6,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Cesano Boscone",
+      "total": 7,
+      "preschools": 5,
+      "nurseries": 2,
+      "geolocated": 5,
+      "missingCoordinates": 2,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Cologno Monzese",
+      "total": 24,
+      "preschools": 13,
+      "nurseries": 11,
+      "geolocated": 21,
+      "missingCoordinates": 3,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Cormano",
+      "total": 10,
+      "preschools": 5,
+      "nurseries": 5,
+      "geolocated": 8,
+      "missingCoordinates": 2,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Corsico",
+      "total": 14,
+      "preschools": 7,
+      "nurseries": 7,
+      "geolocated": 10,
+      "missingCoordinates": 4,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Cusago",
+      "total": 2,
+      "preschools": 1,
+      "nurseries": 1,
+      "geolocated": 2,
+      "missingCoordinates": 0,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Novate Milanese",
+      "total": 12,
+      "preschools": 5,
+      "nurseries": 7,
+      "geolocated": 8,
+      "missingCoordinates": 4,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Opera",
+      "total": 9,
+      "preschools": 3,
+      "nurseries": 6,
+      "geolocated": 2,
+      "missingCoordinates": 7,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Pero",
+      "total": 6,
+      "preschools": 3,
+      "nurseries": 3,
+      "geolocated": 6,
+      "missingCoordinates": 0,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Peschiera Borromeo",
+      "total": 16,
+      "preschools": 7,
+      "nurseries": 9,
+      "geolocated": 14,
+      "missingCoordinates": 2,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Rho",
+      "total": 32,
+      "preschools": 14,
+      "nurseries": 18,
+      "geolocated": 30,
+      "missingCoordinates": 2,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Rozzano",
+      "total": 17,
+      "preschools": 10,
+      "nurseries": 7,
+      "geolocated": 11,
+      "missingCoordinates": 6,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "San Donato Milanese",
+      "total": 18,
+      "preschools": 8,
+      "nurseries": 10,
+      "geolocated": 13,
+      "missingCoordinates": 5,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Segrate",
+      "total": 27,
+      "preschools": 11,
+      "nurseries": 16,
+      "geolocated": 17,
+      "missingCoordinates": 10,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Sesto San Giovanni",
+      "total": 40,
+      "preschools": 19,
+      "nurseries": 21,
+      "geolocated": 37,
+      "missingCoordinates": 3,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Settimo Milanese",
+      "total": 16,
+      "preschools": 6,
+      "nurseries": 10,
+      "geolocated": 11,
+      "missingCoordinates": 5,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Trezzano sul Naviglio",
+      "total": 11,
+      "preschools": 5,
+      "nurseries": 6,
+      "geolocated": 6,
+      "missingCoordinates": 5,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    },
+    {
+      "comune": "Vimodrone",
+      "total": 6,
+      "preschools": 2,
+      "nurseries": 4,
+      "geolocated": 5,
+      "missingCoordinates": 1,
+      "identitySources": "MIM 2026/27 e registro UdOS 31/10/2026",
+      "status": "Censimento anagrafico dei registri; copertura di sezioni primavera e servizi non presenti nei registri da verificare"
+    }
+  ],
+  "unlocatedIds": [
+    "hinterland-cudes-050031",
+    "hinterland-cudes-047551",
+    "hinterland-cudes-090008",
+    "hinterland-cudes-096343",
+    "hinterland-cudes-048636",
+    "hinterland-cudes-063308",
+    "hinterland-cudes-095024",
+    "hinterland-cudes-047358",
+    "hinterland-cudes-051172",
+    "hinterland-mim-mi1a30300x",
+    "hinterland-cudes-048731",
+    "hinterland-mim-miaa8et01r",
+    "hinterland-cudes-053423",
+    "hinterland-cudes-091463",
+    "hinterland-cudes-056105",
+    "hinterland-cudes-099826",
+    "hinterland-mim-mi1a35400r",
+    "hinterland-cudes-093617",
+    "hinterland-cudes-091348",
+    "hinterland-cudes-054945",
+    "hinterland-cudes-054729",
+    "hinterland-cudes-097665",
+    "hinterland-cudes-048679",
+    "hinterland-cudes-095143",
+    "hinterland-mim-mi1a456009",
+    "hinterland-cudes-052394",
+    "hinterland-cudes-048553",
+    "hinterland-cudes-055629",
+    "hinterland-cudes-056123",
+    "hinterland-cudes-099009",
+    "hinterland-cudes-050578",
+    "hinterland-mim-miaa877019",
+    "hinterland-cudes-056121",
+    "hinterland-cudes-080690",
+    "hinterland-cudes-047570",
+    "hinterland-cudes-052298",
+    "hinterland-cudes-056688",
+    "hinterland-cudes-092708",
+    "hinterland-cudes-080621",
+    "hinterland-cudes-057009",
+    "hinterland-cudes-080619",
+    "hinterland-cudes-080620",
+    "hinterland-cudes-052395",
+    "hinterland-cudes-048789",
+    "hinterland-cudes-054397",
+    "hinterland-cudes-055450",
+    "hinterland-cudes-048269",
+    "hinterland-cudes-047469",
+    "hinterland-cudes-049944",
+    "hinterland-cudes-055581",
+    "hinterland-cudes-051142",
+    "hinterland-cudes-056119",
+    "hinterland-cudes-053184",
+    "hinterland-cudes-098876",
+    "hinterland-cudes-053209",
+    "hinterland-cudes-086168",
+    "hinterland-cudes-050729",
+    "hinterland-cudes-083049",
+    "hinterland-cudes-050623",
+    "hinterland-cudes-096191",
+    "hinterland-cudes-052296",
+    "hinterland-cudes-052276",
+    "hinterland-cudes-047378",
+    "hinterland-cudes-094187",
+    "hinterland-cudes-091187",
+    "hinterland-cudes-048456",
+    "hinterland-cudes-053668",
+    "hinterland-cudes-052122",
+    "hinterland-cudes-048810",
+    "hinterland-cudes-097393",
+    "hinterland-cudes-047511"
+  ],
+  "coordinateResearch": {
+    "checkedAt": "2026-11-17",
+    "scope": "119 servizi dei comuni confinanti senza coordinate all’inizio dell’approfondimento 3",
+    "investigated": 119,
+    "baselineLocated": 212,
+    "newlyLocated": 48,
+    "remainingUnlocated": 71,
+    "addressReviews": 25,
+    "addressCorrections": 17,
+    "newlyLocatedByComune": {
+      "Arese": 1,
+      "Assago": 1,
+      "Baranzate": 1,
+      "Bollate": 3,
+      "Bresso": 1,
+      "Buccinasco": 4,
+      "Cesano Boscone": 1,
+      "Cologno Monzese": 6,
+      "Corsico": 2,
+      "Novate Milanese": 1,
+      "Pero": 1,
+      "Peschiera Borromeo": 4,
+      "Rho": 3,
+      "Rozzano": 1,
+      "San Donato Milanese": 3,
+      "Segrate": 7,
+      "Sesto San Giovanni": 2,
+      "Trezzano sul Naviglio": 5,
+      "Vimodrone": 1
+    },
+    "newlyLocatedBySourceHost": {
+      "assonidifamily.it": 2,
+      "aziende.virgilio.it": 1,
+      "comprensivodante.edu.it": 2,
+      "comune.colognomonzese.mi.it": 1,
+      "dapiccoli.it": 7,
+      "ictestori.edu.it": 1,
+      "mapcarta.com": 1,
+      "nordmilanoeduca.org": 5,
+      "tempoc.it": 2,
+      "unica.istruzione.gov.it": 1,
+      "www.assonidi.it": 1,
+      "www.bebek.it": 1,
+      "www.comune.baranzate.mi.it": 1,
+      "www.comune.colognomonzese.mi.it": 2,
+      "www.comune.peschieraborromeo.mi.it": 1,
+      "www.comune.sandonatomilanese.mi.it": 1,
+      "www.cylex-italia.it": 4,
+      "www.icbuonarroticorsico.edu.it": 1,
+      "www.iceuropaunita.edu.it": 1,
+      "www.icfranceschi.edu.it": 3,
+      "www.icsgobetti.edu.it": 1,
+      "www.icspadrepinopuglisi.edu.it": 1,
+      "www.micronido-caldo-abbraccio.it": 1,
+      "www.oraridiapertura24.it": 1,
+      "www.pulceeape.it": 1,
+      "www.reteimprese.it": 1,
+      "www.scuolavolta.edu.it": 1,
+      "www.waze.com": 2
+    },
+    "inputs": [
+      {
+        "path": "research/neighbors/coordinate-round-3/group-1-coordinates.json",
+        "sha256": "e656caa255dc15e9d61f43d885140a318b2846fc02f918ac53726ff6b4cb373c"
+      },
+      {
+        "path": "research/neighbors/coordinate-round-3/group-1-audit.json",
+        "sha256": "02e49bf5cb22041274fd3accf57ee3e02bced31523b1812f30e57e80f83656be"
+      },
+      {
+        "path": "research/neighbors/coordinate-round-3/assignment-1.json",
+        "sha256": "e28e18d59bf3bf817dce9782df3890d833126f16786cdba3548809b8dd0f6d95"
+      },
+      {
+        "path": "research/neighbors/coordinate-round-3/group-1-address-proposals.json",
+        "sha256": "7eac754547612322e5e9010d8409a7eda6c9253f57f08cdac6ad340dfba5a381"
+      },
+      {
+        "path": "research/neighbors/coordinate-round-3/group-2-coordinates.json",
+        "sha256": "3002de7f1d5f8edbcee6d5dbd186f600ccc22b87533ea17d58916a48c3443215"
+      },
+      {
+        "path": "research/neighbors/coordinate-round-3/group-2-audit.json",
+        "sha256": "485bae2d1e986caa17d6e460e01e0c2a8fddef6f9129dbae1dae5f02ded8dbbc"
+      },
+      {
+        "path": "research/neighbors/coordinate-round-3/assignment-2.json",
+        "sha256": "c3e20423c51562e575e6b69138a858a6d15a9732e5afdc36c7836c561200f240"
+      },
+      {
+        "path": "research/neighbors/coordinate-round-3/group-2-address-proposals.json",
+        "sha256": "7962295a6efd50d8852a86f48807967da3b4a95d5588e161d3fb47b147afc5a2"
+      },
+      {
+        "path": "research/neighbors/coordinate-round-3/group-3-coordinates.json",
+        "sha256": "35ba1f36dba6157b4df86f1cca6fd2a833457b0d64e149225817425d4eb7006a"
+      },
+      {
+        "path": "research/neighbors/coordinate-round-3/group-3-audit.json",
+        "sha256": "75f69ba7770de96be1415896c66445fb2ddd370e10034f76c75e4d9f971afe54"
+      },
+      {
+        "path": "research/neighbors/coordinate-round-3/assignment-3.json",
+        "sha256": "0dbe4f53803736c00535e7ec37c82d90cda415980c6b3d4d34a6a5b13c07ddd1"
+      },
+      {
+        "path": "research/neighbors/coordinate-round-3/group-3-address-proposals.json",
+        "sha256": "f76206c6d7e2d72d5c04a9a206f9a6e4907bf04fefb5d823b28f518f603b8bb9"
+      }
+    ]
+  },
+  "coordinateResearchHistory": [
+    {
+      "checkedAt": "2026-11-17",
+      "scope": "245 servizi dei 23 comuni confinanti senza coordinate all’inizio del secondo approfondimento",
+      "investigated": 245,
+      "baselineLocated": 86,
+      "newlyLocated": 126,
+      "remainingUnlocated": 119,
+      "newlyLocatedByComune": {
+        "Arese": 9,
+        "Assago": 1,
+        "Baranzate": 3,
+        "Bollate": 11,
+        "Bresso": 7,
+        "Buccinasco": 2,
+        "Cesano Boscone": 3,
+        "Cologno Monzese": 5,
+        "Cormano": 6,
+        "Corsico": 4,
+        "Novate Milanese": 6,
+        "Pero": 3,
+        "Peschiera Borromeo": 7,
+        "Rho": 21,
+        "Rozzano": 1,
+        "San Donato Milanese": 5,
+        "Segrate": 1,
+        "Sesto San Giovanni": 22,
+        "Settimo Milanese": 9
+      },
+      "newlyLocatedBySourceHost": {
+        "comune.arese.mi.it": 5,
+        "comune.bollate.mi.it": 2,
+        "comune.corsico.mi.it": 3,
+        "comune.novate-milanese.mi.it": 1,
+        "comune.segrate.mi.it": 1,
+        "comune.sestosangiovanni.mi.it": 13,
+        "comune.settimomilanese.mi.it": 3,
+        "ilbirbantello.com": 1,
+        "nordmilanoeduca.org": 63,
+        "unica.istruzione.gov.it": 1,
+        "www.asilozuccherofilato.it": 1,
+        "www.assonidi.it": 3,
+        "www.comune.assago.mi.it": 1,
+        "www.comune.colognomonzese.mi.it": 2,
+        "www.comune.cormano.mi.it": 5,
+        "www.comune.peschieraborromeo.mi.it": 7,
+        "www.comune.sandonatomilanese.mi.it": 2,
+        "www.happychild.it": 3,
+        "www.icbeltramirozzano.edu.it": 1,
+        "www.icmontessori.edu.it": 1,
+        "www.icsalessandrinicesanob.edu.it": 2,
+        "www.icsdavinci.edu.it": 1,
+        "www.icsnovate.edu.it": 2,
+        "www.nidoimpronta.it": 1,
+        "www.scuolabanfi.it": 1
+      },
+      "inputs": [
+        {
+          "path": "research/neighbors/coordinate-round-2/group-1-coordinates.json",
+          "sha256": "13dbadd23195555d2e2fb972440a9644367f328c6e3b8c727b1b19b4c4b9b21d"
+        },
+        {
+          "path": "research/neighbors/coordinate-round-2/group-1-audit.json",
+          "sha256": "5f93966b67f9e1ae3d259be657ff945fef011e5d725dd3fcd80515e5ccaf72d8"
+        },
+        {
+          "path": "research/neighbors/coordinate-round-2/group-2-coordinates.json",
+          "sha256": "f98f1a511da74c5c7dd65ff82570cfb674d3c66220ad786a10fce435cb5f2ea1"
+        },
+        {
+          "path": "research/neighbors/coordinate-round-2/group-2-audit.json",
+          "sha256": "2a82d44e8fc9c9128d991e17b035b1e2ae6cc8f477663f9884e4085a414954f6"
+        },
+        {
+          "path": "research/neighbors/coordinate-round-2/group-3-coordinates.json",
+          "sha256": "6699637b65b541ef517b801e27377ad0879ca4abaea2608fec9d0a42ad4ba0ea"
+        },
+        {
+          "path": "research/neighbors/coordinate-round-2/group-3-audit.json",
+          "sha256": "3295779d2b22840e571c14f85818545dbb7af57472a10ac18660d3eafb6f1beb"
+        }
+      ]
+    }
+  ]
+}

@@ -7,7 +7,9 @@ test('cache survives reload and supplies normalized exact and prefix suggestions
   const disk=storage();const cache=new AddressSuggestionCache(disk,()=>1000);
   cache.set('Via Torino, Milano',[match]);
   const reloaded=new AddressSuggestionCache(disk,()=>1001);
-  assert.deepEqual(reloaded.get('  VIA TÓRINO '),{matches:[match],exact:true,fresh:true});
+  assert.deepEqual(reloaded.get('  VIA TÓRINO, Milan '),{matches:[match],exact:true,fresh:true});
+  // A query without a city can span all 24 municipalities; a city-specific cache entry is only a suggestion.
+  assert.deepEqual(reloaded.get('  VIA TÓRINO '),{matches:[match],exact:false,fresh:false});
   assert.deepEqual(reloaded.get('via tor').matches,[match]);
   assert.deepEqual(reloaded.get('via torino 1').matches,[]);
   assert.deepEqual(reloaded.get('via torino 12').matches,[match]);

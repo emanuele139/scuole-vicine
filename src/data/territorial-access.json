@@ -1,0 +1,3800 @@
+{
+  "checkedAt": "2026-11-17",
+  "scope": "23 comuni confinanti con Milano; regole di accesso e costi, senza censimento delle singole sedi",
+  "nationalRules": {
+    "preschool": "Per le scuole dell’infanzia statali la domanda fuori comune è possibile, ma il posto dipende dalla disponibilità e dai criteri deliberati dall’istituto. Frequenza gratuita; servizi comunali separati.",
+    "nurseryBenefits": "Bonus INPS e Nidi Gratis Plus sono misure distinte. Per Nidi Gratis verificare il posto ammesso e l’applicazione di agevolazioni ISEE ai non residenti.",
+    "sources": [
+      {
+        "label": "Nota MIM iscrizioni",
+        "url": "https://www.istruzioneer.gov.it/wp-content/uploads/2025/12/m_pi.AOODGOSV.REGISTRO-UFFICIALEU.0100847.17-12-2025.pdf",
+        "checkedAt": "2026-11-17",
+        "year": "2026/27"
+      },
+      {
+        "label": "Sistema integrato 0–6 e gratuità statale",
+        "url": "https://istruzione.umbria.it/sistema-integrato-0-6/",
+        "checkedAt": "2026-11-17"
+      },
+      {
+        "label": "Bonus INPS 2026",
+        "url": "https://www.inps.it/it/it/inps-comunica/notizie/dettaglio-news-page.news.2026.03.bonus-asilo-nido-2026-attivo-il-servizio-per-la-domanda.html",
+        "checkedAt": "2026-11-17",
+        "year": "2026"
+      },
+      {
+        "label": "Nidi Gratis Plus famiglie",
+        "url": "https://www.bandi.regione.lombardia.it/servizi/servizio/catalogo/dettaglio/politiche-sociali/famiglia/nidi-gratis-plus-2026-27-adesione-famiglie-RLD12026053903",
+        "checkedAt": "2026-11-17",
+        "year": "2026/27"
+      },
+      {
+        "label": "Elenco regionale strutture e agevolazioni non residenti",
+        "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+        "checkedAt": "2026-11-17",
+        "year": "2026/27"
+      }
+    ]
+  },
+  "municipalities": [
+    {
+      "slug": "arese",
+      "name": "Arese",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda ammessa ai non residenti; servizio dai 4 mesi.",
+          "priority": "Accesso solo dopo esaurimento delle richieste dei residenti.",
+          "costs": "Tariffa distinta per non residenti. Allegato ancora pubblicato con decorrenza 01/01/2024: 801,93 € tempo pieno, 400,91 € part time, pasto separato 5 €. Importi da riconfermare per il periodo scelto.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Seconda finestra 2026/27: 5 settembre 2026–5 marzo 2027, nei limiti dei posti. Quota domanda 20,66 €.",
+          "notes": [
+            "Il tariffario allegato ha decorrenza 2024: non è presentato come nuova deliberazione 2026.",
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti tempo pieno",
+              "amount": 801.93,
+              "unit": "mese",
+              "conditions": "Tariffario con decorrenza 01/01/2024; pasto separato; confermare importo attuale",
+              "year": "dal 2024"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://comune.arese.mi.it/servizio/iscrizione-nido-comunale/",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://comune.arese.mi.it/download-file/7784",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://comune.arese.mi.it/download-file/6735",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 2 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Servizi scolastici 2026/27 e anagrafe MIM consultati; gestione comunale di un’infanzia non individuata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://comune.arese.mi.it/servizio/iscrizione-al-servizio-di-pre-e-post-scuola-e-trasporto-scolastico/",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Europa Unita: nel documento 2022/23 i non residenti seguono i residenti, compresi gli anticipatari di gennaio. Fratelli e lavoro locale incidono sulla graduatoria dei non residenti; chiedi i criteri aggiornati.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 3 sedi dell’infanzia statali; istituti: IC DON GNOCCHI, IC EUROPA UNITA.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.iceuropaunita.edu.it/wp-content/uploads/2023/08/Criteri-di-accoglienza-Infanzia-2022-23.pdf",
+              "year": "2022/23, documento storico",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8EB011",
+            "MIAA8EB022",
+            "MIAA8EC01R"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 3,
+        "paritariaPreschoolCount": 2,
+        "stataleInstitutes": [
+          "IC DON GNOCCHI",
+          "IC EUROPA UNITA"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "assago",
+      "name": "Assago",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "2026; bando 2025/26",
+          "eligibility": "Domande dei non residenti previste.",
+          "priority": "Il bando 2025/26 ammette non residenti solo esauriti i residenti; confermare nel bando successivo.",
+          "costs": "Tariffario gennaio–dicembre 2026: 526 €/mese con almeno un genitore lavoratore ad Assago; 735 € negli altri casi. Quota giornaliera e post orario inclusi; ISEE non applicato.",
+          "benefits": "Assago non individuato nell’elenco regionale consultato; verificare adesione e struttura.",
+          "application": "Consulta il bando e il canale del servizio per i termini applicabili.",
+          "notes": [
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti con lavoro locale",
+              "amount": 526,
+              "unit": "mese",
+              "conditions": "Almeno un genitore lavora ad Assago; quota giornaliera e post inclusi",
+              "year": "2026"
+            },
+            {
+              "label": "Altri non residenti",
+              "amount": 735,
+              "unit": "mese",
+              "conditions": "Quota giornaliera e post inclusi",
+              "year": "2026"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://municipium-images-production.s3-eu-west-1.amazonaws.com/s3/381/allegati/amministrazione/uffici/istruzione/tariffe-area-servizi-alla-persona-servizi-a-domanda-individuale-2026-tariffe-istruzione.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026; bando 2025/26"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://assago-api.municipiumapp.it/s3/381/allegati/amministrazione/uffici/istruzione/bando-per-l-accesso-al-servizio-di-asilo-nido-comunale-a-e-2025-2026.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026; bando 2025/26"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "not-listed"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 0 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Elenco comunale scuole e nidi consultato: l’offerta dell’infanzia individuata è statale."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://www.comune.assago.mi.it/it/page/scuola-nido-centro-estivo",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Margherita Hack: pagina iscrizioni con modulo infanzia 2026/27 e rinvio ai criteri d’istituto. Priorità specifiche per non residenti da riconfermare alla segreteria.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 2 sedi dell’infanzia statali; istituti: IC MARGHERITA HACK.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.icmargheritahackassago.edu.it/servizio/iscrizioni-on-line/",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA886025",
+            "MIAA886014"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 2,
+        "paritariaPreschoolCount": 0,
+        "stataleInstitutes": [
+          "IC MARGHERITA HACK"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "baranzate",
+      "name": "Baranzate",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "Pagina 2025; carta 2020/21; tariffario senza anno",
+          "eligibility": "La carta dei servizi 2020/21 ammette domande da non residenti; confermare il requisito per la nuova domanda.",
+          "priority": "Domande in coda, considerate dopo le graduatorie dei residenti nella carta storica.",
+          "costs": "Tariffario collegato alla pagina del Polo: non residenti 525 €/mese pieno, 357 € parziale, post 31 €. Pasti inclusi; anno non indicato nel prospetto.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Consulta il bando e il canale del servizio per i termini applicabili.",
+          "notes": [
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti pieno",
+              "amount": 525,
+              "unit": "mese",
+              "conditions": "Pasti inclusi; anno non indicato, confermare validità",
+              "year": "senza anno"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.baranzate.mi.it/it/vivere/756022",
+              "checkedAt": "2026-11-17",
+              "year": "Pagina 2025; carta 2020/21; tariffario senza anno"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.baranzate.mi.it/s3prod/uploads/ckeditor/attachments/1/2/8/7/0/6/carta_dei_servizi_nido_2020-21.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "Pagina 2025; carta 2020/21; tariffario senza anno"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://municipium-images-production.s3-eu-west-1.amazonaws.com/s3/501/allegati/nuove-tariffe-nidogermoglio.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "Pagina 2025; carta 2020/21; tariffario senza anno"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 0 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Piano diritto allo studio 2024/25 consultato: statale e paritaria Sacro Cuore; titolarità comunale non individuata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://www.comune.baranzate.mi.it/it/servizi/6054",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Rodari: circolare iscrizioni 2026/27 verificata. Criteri locali per non residenti non ricavati dalla circolare: chiedi la delibera della graduatoria.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 2 sedi dell’infanzia statali; istituti: IC GIANNI RODARI.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.icrodaribaranzate.edu.it/circolare/131-iscrizioni-anno-scolastico-2026-2027/",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8A9019",
+            "MIAA8A902A"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 2,
+        "paritariaPreschoolCount": 0,
+        "stataleInstitutes": [
+          "IC GIANNI RODARI"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "bollate",
+      "name": "Bollate",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domande dei non residenti previste nelle informazioni 2026/27.",
+          "priority": "Il documento usa la formula «a parità di punteggio» per la collocazione dopo i residenti: chiedere conferma dell’ordine applicato.",
+          "costs": "Settembre 2026–luglio 2027: ai non residenti fascia 5, 504 €/mese pieno, 365,40 € parziale, 546 € lungo; frequenza e pasti inclusi. Il prospetto riserva eventuale adeguamento ISTAT.",
+          "benefits": "Tariffario 2026/27: non residenti in affido o affido preadottivo equiparati ai residenti. L’elenco Nidi Gratis dichiara invece nessuna agevolazione ISEE ai non residenti: chiedi al servizio come si applica l’eccezione. Bonus INPS da verificare a parte.",
+          "application": "Consulta il bando e il canale del servizio per i termini applicabili.",
+          "notes": [
+            "Non assimilare la regola a precedenza assoluta senza leggere criteri e graduatoria applicabili.",
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS.",
+            "Tariffario 2026/27: ISEE e riduzioni per fratelli riservati ai residenti o trasferimenti documentati. Non residenti in affido/affido preadottivo equiparati ai residenti. Verificare compatibilità specifica con Nidi Gratis: elenco regionale e tariffario non descrivono necessariamente identici requisiti."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Pieno",
+              "amount": 504,
+              "unit": "mese",
+              "conditions": "non residenti, fascia 5, pasti inclusi",
+              "year": "2026/27"
+            },
+            {
+              "label": "Parziale",
+              "amount": 365.4,
+              "unit": "mese",
+              "conditions": "non residenti, fascia 5, pasti inclusi",
+              "year": "2026/27"
+            },
+            {
+              "label": "Lungo",
+              "amount": 546,
+              "unit": "mese",
+              "conditions": "non residenti, fascia 5, pasti inclusi",
+              "year": "2026/27"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://bollate-api.municipiumapp.it/s3/742/allegati/nidi-comunali-informazioni-per-l-iscrizione-anno-2026_2027.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Comuni Insieme: tariffe nidi 2026/27",
+              "url": "https://www.comuni-insieme.mi.it/servizi/gestionedocumentale/visualizzadocumento.aspx?ID=7158",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "Pagine correnti; tariffa senza anno esplicito",
+          "eligibility": "Il Comune documenta le infanzie comunali Aurora e Gesù Bambino; ammissione dei non residenti da confermare nel bando.",
+          "priority": "Non dedurre i criteri di ammissione dai soli servizi di pre e post scuola.",
+          "costs": "Mensa: pagina comunale indica 5,48 €/pasto per non residenti; riduzioni ISEE riservate ai residenti. Altre quote da verificare.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Consulta il bando e il canale del servizio per i termini applicabili.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 6 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Pre/post nelle scuole statali e comunali",
+              "url": "https://comune.bollate.mi.it/it/servizi/pre-e-dopo-scuola-dell-infanzia",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Riduzioni refezione",
+              "url": "https://comune.bollate.mi.it/it/servizi/riduzione-tariffa-refezione-scolastica",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Scuola comunale Aurora",
+              "url": "https://comune.bollate.mi.it/it/vivere/scuola-dell-infanzia-aurora-3082",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Rosmini: iscrizioni cartacee in segreteria e rinvio ai criteri per l’esubero. Punteggi specifici dei non residenti da verificare nella delibera; gli altri istituti possono adottare criteri diversi.",
+          "costs": "Frequenza gratuita. Mensa pubblicata: 5,48 €/pasto non residenti; riduzioni ISEE ai residenti. Pre/post senza riduzione ISEE per non residenti.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 3 sedi dell’infanzia statali; istituti: I.C. MONTESSORI, I.C. RITA LEVI-MONTALCINI, IC A. ROSMINI.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Refezione scolastica",
+              "url": "https://comune.bollate.mi.it/it/servizi/riduzione-tariffa-refezione-scolastica",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Pre e post infanzia",
+              "url": "https://comune.bollate.mi.it/it/servizi/pre-e-dopo-scuola-dell-infanzia",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.icr.edu.it/servizio/iscrizione-alla-scuola-dellinfanzia/",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8A801D",
+            "MIAA8ED01L",
+            "MIAA8EE01C"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 3,
+        "paritariaPreschoolCount": 6,
+        "stataleInstitutes": [
+          "I.C. MONTESSORI",
+          "I.C. RITA LEVI-MONTALCINI",
+          "IC A. ROSMINI"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "bresso",
+      "name": "Bresso",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domande non residenti contemplate nell’informativa e nel regolamento.",
+          "priority": "Nessun punteggio alla situazione familiare dei non residenti nell’informativa; ordine completo da verificare nel regolamento vigente.",
+          "costs": "Tabella con decorrenza settembre 2025, ancora allegata al bando di ottobre 2026: non residenti 428 €/mese part time 8:30–13, 535 € ridotto 8:30–16, 600 € pieno 7:30–18. Quota domanda 30 €. Conferma il tempo scelto con il servizio.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Finestra 12 ottobre–12 novembre 2026 conclusa; inserimenti previsti da gennaio 2027. Servizio 6–36 mesi.",
+          "notes": [
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Part time",
+              "amount": 428,
+              "unit": "mese",
+              "conditions": "non residenti, 8:30–13",
+              "year": "da settembre 2025"
+            },
+            {
+              "label": "Ridotto",
+              "amount": 535,
+              "unit": "mese",
+              "conditions": "non residenti, 8:30–16",
+              "year": "da settembre 2025"
+            },
+            {
+              "label": "Pieno",
+              "amount": 600,
+              "unit": "mese",
+              "conditions": "non residenti, 7:30–18",
+              "year": "da settembre 2025"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.bresso.mi.it/it/page/asili-nido-comunali",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.bresso.mi.it/it/news/2052525",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://bresso-api.municipiumapp.it/s3/911/allegati/informativa-x-genitori.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Tariffe del servizio",
+              "url": "https://bresso-api.municipiumapp.it/s3/911/allegati/tab-nuove-tariffe-2025.pdf",
+              "year": "da settembre 2025",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 1 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Elenco luoghi comunale e anagrafe MIM consultati: scuole statali e paritaria Recalcati; gestione comunale non individuata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://comune.bresso.mi.it/it/sitemap",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Bresso, modulo 2024/25: residenza 8 punti; non residenza 0, con punti per lavoro o familiari nel Comune. La griglia aggiornata 2026/27 va richiesta all’istituto.",
+          "costs": "Frequenza gratuita. Pre e post infanzia 7:30–8:00 e 16–18: non residenti 80 €/mese, residenti 55 €; disponibilità e minimo utenti da verificare.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 2 sedi dell’infanzia statali; istituti: IC DON PINO PUGLISI.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Informativa pre/post comunale",
+              "url": "https://bresso-api.municipiumapp.it/s3/911/allegati/informativa-servizi-di-pre-post-scuola-2026-2027.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.icb.edu.it/wp-content/uploads/2022/04/Modulo-iscrizione-infanzia-2024_2025-VIA-CAMPESTRE-3.pdf",
+              "year": "2024/25, documento storico",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8GF02E",
+            "MIAA8GF01D"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 2,
+        "paritariaPreschoolCount": 1,
+        "stataleInstitutes": [
+          "IC DON PINO PUGLISI"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "buccinasco",
+      "name": "Buccinasco",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "Regolamento pubblicato 2026; tariffe 2025/26",
+          "eligibility": "Non residenti: genitori entrambi lavoratori e almeno un genitore che lavora nel Comune, oppure almeno un nonno residente. Altre condizioni nelle riaperture.",
+          "priority": "Residenti prioritari; il Comune descrive due graduatorie per non residenti con legami familiari o lavorativi.",
+          "costs": "Carta 2025/26: non residenti 485 €/mese pieno, 374 € parziale; pasto giornaliero separato. Importi 2026/27 da riconfermare.",
+          "benefits": "Elenco Nidi Gratis 2026/27: agevolazioni ISEE ai non residenti soltanto per casi particolari, come l’affido. Bonus INPS da verificare separatamente.",
+          "application": "Consulta il bando e il canale del servizio per i termini applicabili.",
+          "notes": [
+            "La pagina informativa più vecchia cita soltanto il lavoro locale: il regolamento include anche i nonni residenti.",
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.buccinasco.mi.it/s3/970/allegati/regolamento-degli-asili-nido-comunali.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "Regolamento pubblicato 2026; tariffe 2025/26"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.buccinasco.mi.it/index.php/it/news/1960042",
+              "checkedAt": "2026-11-17",
+              "year": "Regolamento pubblicato 2026; tariffe 2025/26"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.buccinasco.mi.it/s3/970/allegati/carta-dei-servizi-a-e-2025-2026.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "Regolamento pubblicato 2026; tariffe 2025/26"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "special-cases"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 1 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Elenco comunale: infanzie negli IC statali e parrocchiale Don Stefano Bianchi; nessuna gestione comunale indicata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://www.comune.buccinasco.mi.it/it/page/scuole-dell-infanzia-primarie-e-secondarie-di-primo",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Rita Levi Montalcini: fasce ordinate residenti, trasferimento entro agosto 2026, non residenti, anticipatari residenti di gennaio, domande tardive. Lavoro o accudimento locale incidono sul punteggio dei non residenti. Verifica separatamente gli altri istituti.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 3 sedi dell’infanzia statali; istituti: IC PADRE PINO PUGLISI, IC RITA LEVI MONTALCINI.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.icrlmontalcini.edu.it/wp-content/uploads/2026/01/Punteggi-Infanzia-2026-27-Allegato-1.pdf",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8EF029",
+            "MIAA8EG014",
+            "MIAA8EF018"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 3,
+        "paritariaPreschoolCount": 1,
+        "stataleInstitutes": [
+          "IC PADRE PINO PUGLISI",
+          "IC RITA LEVI MONTALCINI"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "cesano-boscone",
+      "name": "Cesano Boscone",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Il modulo 2026/27 contempla bambini non residenti; carta del gestore: ammessi sui posti residui.",
+          "priority": "Priorità ai residenti e ai figli dei dipendenti comunali; i nonni residenti sono una voce del modulo.",
+          "costs": "Carta 2026/27: non residenti 480 €/mese 7:30–13:30, 720 € 7:30–16:30, 840 € 7:30–18. IVA, pannolini e pranzo inclusi; merenda inclusa nei due tempi più lunghi.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Per il 2027/28 la pagina indica domande 1 gennaio–30 aprile 2027. Per 2026/27 anche 1 settembre 2026–31 marzo 2027 sui posti disponibili.",
+          "notes": [
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Part time",
+              "amount": 480,
+              "unit": "mese",
+              "conditions": "7:30–13:30; IVA, pranzo e pannolini inclusi",
+              "year": "2026/27"
+            },
+            {
+              "label": "Pieno",
+              "amount": 720,
+              "unit": "mese",
+              "conditions": "7:30–16:30; IVA, pasti, merenda e pannolini inclusi",
+              "year": "2026/27"
+            },
+            {
+              "label": "Prolungato",
+              "amount": 840,
+              "unit": "mese",
+              "conditions": "7:30–18; IVA, pasti, merenda e pannolini inclusi",
+              "year": "2026/27"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.cesano-boscone.mi.it/asili-nido/",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://api.wp.ai4smartcity.ai/rest/v1/storage/modulistica/modulo-documento/3f96736c-7147-4a5e-f81d-08de0c85c2db?tenant=comune-cesano-boscone-mi-it",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://equacooperativa.it/wp-content/uploads/2022/05/Carta-Servizi-Asili-Nido-2020-21-Cesano-B.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Tariffe del servizio",
+              "url": "https://api.wp.ai4smartcity.ai/rest/v1/storage/modulistica/modulo-documento/ba1a3d71-2c8a-4fde-a40c-08ded4ecfa17?tenant=comune-cesano-boscone-mi-it",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 1 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Elenco comunale: quattro infanzie statali e paritaria Maria Bambina; nessuna infanzia comunale indicata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://www.comune.cesano-boscone.mi.it/scuole/",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Leonardo da Vinci: modulo 2025/26 con rinvio alla delibera d’istituto sui criteri. Priorità aggiornate per non residenti da confermare; consulta anche l’IC Alessandrini per i suoi plessi.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 4 sedi dell’infanzia statali; istituti: IC E. ALESSANDRINI, IC LEONARDO DA VINCI.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.icsdavinci.edu.it/wp-content/uploads/2024/04/MOD-ISCRIZIONE-SCUOLA-INFANZIA-A.S.-2025-2026-2-1.pdf",
+              "year": "2025/26, documento storico",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8ET02T",
+            "MIAA8ES022",
+            "MIAA8ES011",
+            "MIAA8ET01R"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 4,
+        "paritariaPreschoolCount": 1,
+        "stataleInstitutes": [
+          "IC E. ALESSANDRINI",
+          "IC LEONARDO DA VINCI"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "cologno-monzese",
+      "name": "Cologno Monzese",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "Accesso 2026/27; importi 2025/26",
+          "eligibility": "La pagina pubblica graduatorie 2026/27 separate per residenti e non residenti.",
+          "priority": "Precedenza ai residenti; fuori termine lista in ordine cronologico.",
+          "costs": "Tariffario 2025/26: ai non residenti retta massima (605 €/mese normale, 710 € prolungato, 518 € parziale). La pagina aggiornata rinvia al tariffario in vigore: importi 2026/27 da confermare.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Consulta il bando e il canale del servizio per i termini applicabili.",
+          "notes": [
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://comune.colognomonzese.mi.it/it/page/asilo-nido",
+              "checkedAt": "2026-11-17",
+              "year": "Accesso 2026/27; importi 2025/26"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://storage.googleapis.com/stu-colognomonzese-public-prod/2025-01/G%20-%20Tariffe%20prima%20infanzia.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "Accesso 2026/27; importi 2025/26"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 5 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Convenzione 2025–28 pubblicata dal gestore Start: descrive il sistema statale e paritario autonomo e le quattro paritarie cittadine. Convenzione comunale non equivale a titolarità comunale."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dei gestori e dell’offerta",
+              "url": "https://startscs.com/wp-content/uploads/2026/01/COnvenzione25-28.pdf",
+              "year": "2025–28",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Montale: modulo 2025/26 con criteri su condizioni tutelate, fratelli, residenza, età e legami lavorativi/familiari. Non estendere la griglia agli altri istituti; chiedi quella 2026/27.",
+          "costs": "Frequenza gratuita. Pre/post 2026/27: 65 €/mese solo pre, 80 € solo post, 145 € entrambi per non residenti; con almeno un genitore o nonno residente si applica tariffa residenti.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Verificare che il servizio e l’orario siano attivati nel plesso dell’infanzia scelto.",
+            "Anagrafe 2026/27: 8 sedi dell’infanzia statali; istituti: IC ALESSANDRO VOLTA, IC IV E. MONTALE, IC MANZONI AD ORDINAM. MUSICALE, IC VIALE LOMBARDIA.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Pre e post scuola",
+              "url": "https://comune.colognomonzese.mi.it/it/servizi/479",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.icsmontale.edu.it/wp-content/uploads/2024/12/Editabile-Modulo-iscrizione-scuola-dell-Infanzia-a.s.-2025-2026.pdf",
+              "year": "2025/26, documento storico",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA822015",
+            "MIAA8AU019",
+            "MIAA8EJ037",
+            "MIAA8EH01X",
+            "MIAA8AU027",
+            "MIAA8EH021",
+            "MIAA8EJ026",
+            "MIAA8EJ015"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 8,
+        "paritariaPreschoolCount": 5,
+        "stataleInstitutes": [
+          "IC ALESSANDRO VOLTA",
+          "IC IV E. MONTALE",
+          "IC MANZONI AD ORDINAM. MUSICALE",
+          "IC VIALE LOMBARDIA"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "cormano",
+      "name": "Cormano",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domande ammesse anche senza legami con il Comune.",
+          "priority": "Solo dopo i residenti, comprese domande giacenti. Fra i non residenti lavoro locale o nonni residenti attribuiscono punteggio.",
+          "costs": "Tariffario 2026/27: ai non residenti retta massima, senza ISEE; 599 €/mese nella fascia 8:30–18:00. Documento con riserva di aggiornamento a luglio 2026: confermare eventuale revisione.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Consulta il bando e il canale del servizio per i termini applicabili.",
+          "notes": [
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti 8:30–18:00",
+              "amount": 599,
+              "unit": "mese",
+              "conditions": "Retta massima; verificare aggiornamenti successivi a luglio 2026",
+              "year": "2026/27"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://cormano-api.municipiumapp.it/s3/2345/allegati/regolamento-asili-nido.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://cormano-api.municipiumapp.it/s3/2345/allegati/tariffe-2026_2027-asilo-nido.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 3 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Servizio istruzione comunale e anagrafe MIM consultati; gestore delle paritarie non accertato per tutte le sedi.",
+            "Avviso comunale 2026/27: identifica le infanzie statali e le paritarie della Fondazione Carcano Grassi e della cooperativa San Giovanni XXIII; nessuna infanzia comunale indicata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://www.comune.cormano.mi.it/it/unita_organizzative/istruzione",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dei gestori e dell’offerta",
+              "url": "https://www.comune.cormano.mi.it/it/news/1938817",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Manzoni: modulo pubblicato a gennaio 2026 distingue bacino A (50 punti), bacino B (10), non residenti (0). Il testo conserva date precedenti: richiedi conferma della griglia per l’anno scelto.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 2 sedi dell’infanzia statali; istituti: IC A. MANZONI, IC XXV APRILE.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.icmanzonicormano.edu.it/wp-content/uploads/2026/01/Dichiarazione_Sost_di-Certificazione.pdf",
+              "year": "pubblicato gennaio 2026; date interne da riconfermare",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8AW02V",
+            "MIAA8EN01C"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 2,
+        "paritariaPreschoolCount": 3,
+        "stataleInstitutes": [
+          "IC A. MANZONI",
+          "IC XXV APRILE"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "corsico",
+      "name": "Corsico",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "verified",
+          "year": "2026/27",
+          "eligibility": "Domande ammesse ai bambini residenti in altri comuni.",
+          "priority": "Ammessi solo dopo l’esaurimento della graduatoria dei residenti.",
+          "costs": "Tariffario 2026–2028, punti 4 e 4.1: ai non residenti si applica la tariffa massima, 443 €/mese di quota fissa più 5,40 € per pasto. Frequenza ridotta: quota fissa −50% senza pasto (7:30–12), −40% con pasto (7:30–13).",
+          "benefits": "Elenco Nidi Gratis 2026/27: agevolazioni ISEE ai non residenti soltanto per casi particolari, come l’affido. Bonus INPS da verificare separatamente.",
+          "application": "Bando 2026/27: 2 marzo–24 aprile 2026. Portale Omnibus, SPID/CIE.",
+          "notes": [
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS.",
+            "Il tariffario 2026–2028 risolve l’incertezza lasciata dal prospetto 2025/26 ancora allegato alla pagina delle rette.",
+            "Il punto 4 riserva ai residenti lo sconto fratelli del 25% con ISEE inferiore a 26.500 €. Prevede inoltre una riduzione del 50% per nuclei con persone con disabilità documentata; applicazione concreta da verificare nel caso specifico."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti — quota fissa",
+              "amount": 443,
+              "unit": "mese",
+              "conditions": "pasti esclusi; tariffario 2026–2028",
+              "year": "2026/27"
+            },
+            {
+              "label": "Non residenti — pasto nido",
+              "amount": 5.4,
+              "unit": "pasto",
+              "conditions": "si aggiunge alla quota fissa",
+              "year": "2026/27"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://comune.corsico.mi.it/servizio/asili-nido/",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Tariffario pubblicato 2025/26",
+              "url": "https://comune.corsico.mi.it/download-file/26127",
+              "year": "2025/26",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Tariffario ufficiale servizi a domanda individuale 2026–2028",
+              "url": "https://corsico.e-pal.it/L190/atto/download/288574?activePage=0&cf4=false&idSezione=735&justGrid=1&order=asc&search=&sort=unita",
+              "year": "2026–2028",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "special-cases"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "La domanda alle infanzie comunali Dante e Battisti è raccolta online; il bando consultato non esplicita un divieto per non residenti, da confermare con il servizio.",
+          "priority": "Bando 2026/27: 55 punti per il bacino, 10 per residenza a Corsico; altri punteggi per lavoro, fratelli e condizioni familiari.",
+          "costs": "Frequenza gratuita. Tariffario 2026–2028: mensa non residenti 5,50 €/pasto; post orario 16–18, 180 €/anno per non residenti (135 € residenti), con entrambi i genitori lavoratori.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Domanda tramite Sibyl con SPID/CIE nei termini MIM. Termine 2026/27 prorogato al 21 febbraio 2026.",
+          "notes": [
+            "I punteggi di residenza non equivalgono da soli a un divieto di domanda da fuori comune."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Infanzia comunale Battisti",
+              "url": "https://comune.corsico.mi.it/amministrazione/unita-organizzativa/settore-2-welfare/sociale-e-istruzione/infanzia-battisti/",
+              "checkedAt": "2026-11-17",
+              "year": "2026"
+            },
+            {
+              "label": "Iscrizioni scuole e servizi",
+              "url": "https://comune.corsico.mi.it/servizio/iscrizioni-anno-scolastico-2023-2024/",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Bando scuole e criteri 2026/27",
+              "url": "https://comune.corsico.mi.it/novita/notizia/iscrizioni-alle-scuole-a-s-2026-2027/",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Servizio infanzie comunali",
+              "url": "https://comune.corsico.mi.it/servizio/scuole-paritarie-comunali-dante-e-battisti/",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Tariffario ufficiale servizi a domanda individuale 2026–2028",
+              "url": "https://corsico.e-pal.it/L190/atto/download/288574?activePage=0&cf4=false&idSezione=735&justGrid=1&order=asc&search=&sort=unita",
+              "year": "2026–2028",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Buonarroti: modulo 2026/27 verificato; criteri d’istituto e disponibilità dei singoli plessi da verificare. L’iscrizione ai servizi comunali è distinta dalla domanda scolastica.",
+          "costs": "Frequenza gratuita. Tariffario 2026–2028: mensa non residenti 5,50 €/pasto; post orario 16–18, 180 €/anno per non residenti (135 € residenti), con entrambi i genitori lavoratori.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 5 sedi dell’infanzia statali; istituti: IC BUONARROTI, IC COPERNICO, IC GALILEI.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.icbuonarroticorsico.edu.it/wp-content/uploads/2026/01/Moduli-iscrizione-scuola-infanzia.pdf",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Tariffario ufficiale servizi a domanda individuale 2026–2028",
+              "url": "https://corsico.e-pal.it/L190/atto/download/288574?activePage=0&cf4=false&idSezione=735&justGrid=1&order=asc&search=&sort=unita",
+              "year": "2026–2028",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA88903N",
+            "MIAA88701X",
+            "MIAA88902L",
+            "MIAA88901G",
+            "MIAA88801Q"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 5,
+        "paritariaPreschoolCount": 2,
+        "stataleInstitutes": [
+          "IC BUONARROTI",
+          "IC COPERNICO",
+          "IC GALILEI"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "cusago",
+      "name": "Cusago",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "verified",
+          "year": "2026/27",
+          "eligibility": "Domande ammesse ai non residenti. Nido da 6 mesi; domanda solo per bambini già nati.",
+          "priority": "La residenza incide sulla graduatoria; a pari punteggio residenti, futuri residenti, poi non residenti.",
+          "costs": "Dal settembre 2026: 680 €/mese ai non residenti, senza fasce ISEE; residenti da 246,10 a 535 €.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Consulta il bando e il canale del servizio per i termini applicabili.",
+          "notes": [
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti nido",
+              "amount": 680,
+              "unit": "mese",
+              "conditions": "Retta mensile; verificare formula oraria con il gestore",
+              "year": "2026/27"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.halleyweb.com/c015097/zf/index.php/servizi-aggiuntivi/index/index/idtesto/208",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.cusago.mi.it/c015097/zf/index.php/atti-generali/index/download-file/voce/107",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "verified",
+          "year": "2026/27",
+          "eligibility": "Domande ammesse ai non residenti per il Polo comunale Leonardo da Vinci, gestito in concessione.",
+          "priority": "La residenza incide sulla graduatoria; a pari punteggio residenti, futuri residenti, poi non residenti.",
+          "costs": "Non residenti: 395 €/mese mensa inclusa; iscrizione 60 €; pre 48 €/mese; post 16:30–18:00 73 €/mese. Residenti: retta base 224,70 €.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Consulta il bando e il canale del servizio per i termini applicabili.",
+          "notes": [
+            "La gestione in concessione non rende il servizio una scuola statale."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti infanzia",
+              "amount": 395,
+              "unit": "mese",
+              "conditions": "Mensa inclusa, 8:30–16:30; iscrizione ed extra separati",
+              "year": "2026/27"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Polo comunale e tariffe",
+              "url": "https://www.halleyweb.com/c015097/zf/index.php/servizi-aggiuntivi/index/index/idtesto/208",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Regolamento Polo 0–6",
+              "url": "https://www.comune.cusago.mi.it/c015097/zf/index.php/atti-generali/index/download-file/voce/107",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "not-found",
+          "year": "2026/27",
+          "eligibility": "Nessuna sede dell’infanzia statale risulta nel Comune nell’anagrafe MIM 2026/27 consultata.",
+          "priority": "Non applicabile alle sedi statali del Comune non individuate.",
+          "costs": "Nessuna tariffa di una sede statale locale attribuita.",
+          "benefits": "Non applicabile all’offerta statale locale non individuata; verificare nel Comune della scuola scelta.",
+          "application": "Per l’offerta locale consulta il Polo Leonardo da Vinci; per una statale cerca nei comuni vicini.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 0 sedi dell’infanzia statali; istituti: nessuno individuato."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": []
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 0,
+        "paritariaPreschoolCount": 1,
+        "stataleInstitutes": [],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "novate-milanese",
+      "name": "Novate Milanese",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Il sistema comunale/convenzionato pubblica una tariffa per non residenti; requisiti dettagliati nel Regolamento Prima Infanzia.",
+          "priority": "Priorità specifiche da verificare nella graduatoria unificata e nel regolamento; non trasferire automaticamente i criteri del singolo privato.",
+          "costs": "Dal 1 settembre 2026: 580 €/mese 7:30–16:30, 625 € 7:30–18:00, 392 € mattino, 370 € pomeriggio per non residenti; pasti/merenda indicati nel prospetto.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Prima finestra 2027/28 aperta dal 15 ottobre 2026 al 14 gennaio 2027 per nati 1 gennaio 2025–30 giugno 2026.",
+          "notes": [
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti 7:30–16:30",
+              "amount": 580,
+              "unit": "mese",
+              "conditions": "Retta e pasto; tabella triennio 2026–2028",
+              "year": "2026/27"
+            },
+            {
+              "label": "Non residenti prolungato",
+              "amount": 625,
+              "unit": "mese",
+              "conditions": "7:30–18:00; retta e pasto",
+              "year": "2026/27"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://comune.novate-milanese.mi.it/documenti/2077147/prima-infanzia-servizio-nido",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://mycity.s3.sbg.io.cloud.ovh.net/4936059/Nuove%20tariffe%20di%20compartecipazione%20%28triennio%202026%20-%202028%29%20con%20decorrenza%20settembre%202026.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://comune.novate-milanese.mi.it/notizie/3660897/iscrizioni-nidi-d-infanzia-anno-educativo-2027",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 2 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Elenco comunale: infanzie degli IC Don Milani e Testori e paritarie Giovanni XXIII e Sacra Famiglia; nessuna comunale indicata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://comune.novate-milanese.mi.it/documenti/2075437/istituti-scolastici",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Testori: pagina 2026/27 pubblica una griglia per la graduatoria Andersen; punteggi dei non residenti da verificare nell’allegato. L’IC Don Milani può adottare criteri diversi.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "IC Testori: scarica e compila la modulistica dell’infanzia, poi consegnala alla segreteria didattica. Consulta separatamente l’IC Don Milani per Collodi e Salgari.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 3 sedi dell’infanzia statali; istituti: IC DON MILANI, IC GIOVANNI TESTORI.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://comune.novate-milanese.mi.it/documenti/2075437/istituti-scolastici",
+              "year": "elenco corrente",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Istituto: iscrizioni infanzia 2026/27",
+              "url": "https://ictestori.edu.it/servizi?id=321&source=servizi-famiglie",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8DB01A",
+            "MIAA8BR01C",
+            "MIAA8DB02B"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 3,
+        "paritariaPreschoolCount": 2,
+        "stataleInstitutes": [
+          "IC DON MILANI",
+          "IC GIOVANNI TESTORI"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "opera",
+      "name": "Opera",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "Regolamento 2024 collegato al servizio aggiornato 10 novembre 2026",
+          "eligibility": "Il regolamento approvato nel 2024 e collegato al servizio corrente include domande di non residenti, anche senza lavoro a Opera; l’ammissione dipende dalla graduatoria e dai posti.",
+          "priority": "Regolamento, art. 6: nucleo interamente residente 5 punti; bambino con un solo genitore residente nello stesso nucleo 3; non residenti con lavoro a Opera 1,5, senza lavoro locale 0. Non c’è una coda automatica per tutti i non residenti: concorrono anche gli altri punteggi. A parità precede la maggiore anzianità di residenza.",
+          "costs": "Allegato Rette tuttora pubblicato dal Comune: non residenti 620 €/mese fino alle 18, 585 € fino alle 16:30, 434 € fino alle 13:30, più 6 € per pasto. Il file è denominato 2022/23–2023/24: conferma della decorrenza 2026/27 ancora necessaria.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Bando 2026/27: 23 marzo–17 aprile 2026. Richiesta online, ISEE e documentazione lavorativa.",
+          "notes": [
+            "La presenza di una carta storica per residenti non prova un divieto attuale ai non residenti.",
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS.",
+            "Art.6: figli dei dipendenti del Comune e delle Forze di Polizia equiparati ai residenti per graduatoria e retta entro il 5% della capienza complessiva. La regola non attribuisce priorità a ogni lavoratore a Opera.",
+            "Il regolamento 2024 sostituisce la lettura più restrittiva della vecchia Carta che citava non residenti solo per trasferimenti durante la frequenza.",
+            "Art.5: priorità indipendente dalla graduatoria per le fragilità sociali segnalate dai Servizi sociali comunali; ammessi d’ufficio i già frequentanti entro i limiti di età.",
+            "L’allegato contiene una riga specifica NON RESIDENTI, distinta dalla massima fascia ISEE dei residenti: non usare automaticamente 570 € come retta non residenti.",
+            "La pagina corrente chiama gli allegati tariffe attualmente in vigore, ma il PDF non reca una decorrenza interna e il nome rinvia a 2022/23–2023/24. La verifica dell’importo espressamente approvato per il 2026/27 resta aperta."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti — prospetto pubblicato",
+              "amount": 620,
+              "unit": "mese",
+              "conditions": "fino alle 18; più 6 € a pasto; decorrenza 2026/27 da confermare",
+              "year": "file 2022/23–2023/24"
+            },
+            {
+              "label": "Non residenti — breve",
+              "amount": 585,
+              "unit": "mese",
+              "conditions": "fino alle 16:30; più 6 € a pasto; decorrenza da confermare",
+              "year": "file 2022/23–2023/24"
+            },
+            {
+              "label": "Non residenti — parziale",
+              "amount": 434,
+              "unit": "mese",
+              "conditions": "fino alle 13:30; più 6 € a pasto; decorrenza da confermare",
+              "year": "file 2022/23–2023/24"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.opera.mi.it/novita/notizie/novita_2160.html",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://halleyweb.com/c015159/eg/files/carta%20dei%20servizi%20Asilo%20Nido.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Servizio comunale e regolamento nido vigente pubblicato",
+              "url": "https://www.comune.opera.mi.it/servizi/educazione_e_formazione/servizio_25.html",
+              "year": "pagina aggiornata10novembre2026; regolamento2024",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Prospetto Rette collegato alla pagina corrente (scansione)",
+              "url": "https://www.comune.opera.mi.it/halley//ht/eg779/rette_nido2022-2023_e_2023-2024.pdf",
+              "year": "file denominato 2022/23–2023/24; decorrenza attuale da confermare",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 0 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Avviso comunale e IC Dante Alighieri consultati; nessuna infanzia a gestione comunale individuata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://www.comune.opera.mi.it/novita/avvisi/novita_2028.html",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Dante Alighieri: criteri distinguono residenti e non residenti; tra questi ultimi incidono fratelli (5 punti), lavoro nel Comune (3) e famiglia monoparentale (2). Conferma validità della delibera per l’anno scelto.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 3 sedi dell’infanzia statali; istituti: IC DANTE ALIGHIERI.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://icopera.edu.it/allegati/all/5568-criteri-iscr-infanzia.pdf",
+              "year": "delibera dicembre 2022",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA87702A",
+            "MIAA87703B",
+            "MIAA877019"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 3,
+        "paritariaPreschoolCount": 0,
+        "stataleInstitutes": [
+          "IC DANTE ALIGHIERI"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "pero",
+      "name": "Pero",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "verified",
+          "year": "2026/27",
+          "eligibility": "Carta 2026/27: non residenti ammissibili solo su posti disponibili dopo l’esaurimento delle richieste dei residenti. La sessione ordinaria del bando 2026/27 è riservata ai residenti.",
+          "priority": "Residenti prima dei non residenti. La Carta 2026/27 prevede una sessione suppletiva solo se restano posti dopo la graduatoria ordinaria; non equivale a iscrizioni sempre aperte.",
+          "costs": "Carta 2026/27: tariffa intera 650,48 €/mese per il pieno 7:30–16:30; part time −25% (487,86 €). Post 16:30–17: +16 €/mese; fino alle 18: +37 €. Le riduzioni ISEE e per il secondo figlio sono riservate ai residenti.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Per i non residenti verificare l’apertura della sessione suppletiva e presentare domanda nello sportello telematico entro i termini indicati. Ordinaria 2026/27: 4 maggio–4 giugno 2026, solo residenti.",
+          "notes": [
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS.",
+            "La Carta 2026/27 (pp. 9, 22–24), collegata allo sportello comunale, aggiorna le precedenti Carte 2022/23 e 2025/26. La tariffa intera è ricavata congiuntamente alla riserva delle agevolazioni ai residenti; non è una tariffa aggiuntiva speciale per i non residenti.",
+            "La Carta distingue riduzioni per orario e ambientamento dalle agevolazioni ISEE e fratelli riservate ai residenti."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Tariffa intera — pieno",
+              "amount": 650.48,
+              "unit": "mese",
+              "conditions": "7:30–16:30; agevolazioni ISEE riservate ai residenti",
+              "year": "2026/27"
+            },
+            {
+              "label": "Tariffa intera — parziale",
+              "amount": 487.86,
+              "unit": "mese",
+              "conditions": "riduzione del 25% sulla tariffa intera; calcolo 650,48 × 0,75",
+              "year": "2026/27"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://sportellotelematico.comune.pero.mi.it/sites/default/files/2022-04/CDS_22_23Pero.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "Carta 2022/23; avviso 2026/27 individuato"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.pero.mi.it/it/sitemap?id=approfondimenti",
+              "checkedAt": "2026-11-17",
+              "year": "Carta 2022/23; avviso 2026/27 individuato"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Avviso iscrizioni nido 2026/27",
+              "url": "https://www.comune.pero.mi.it/it/news/134805/asilo-nido-aperte-le-iscrizioni-per-l-anno-2026-2027",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "SerCoP: Carta del servizio nido",
+              "url": "https://www.sercop.it/index.php?AJAX=1&cmd=file&o=connector&p=documents&target=l1_VkVSQkFMSS1DREEvMjAyNS9BbGwuRGVsaWItNjAucGRm",
+              "year": "2025",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Carta ufficiale nido Aldo Moro AE 2026/27",
+              "url": "https://storage.googleapis.com/stu-pero-public-prod/2026-04/CDS_26_27_Pero_0.pdf",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Sportello comunale: Carta e calcolo retta 2026/27",
+              "url": "https://sportellotelematico.comune.pero.mi.it/action%3As_italia%3Aasilo.nido",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 1 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Offerta dell’IC statale e anagrafe MIM consultate; nessuna infanzia comunale individuata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://scuoledipero.edu.it/wp-content/uploads/2023/07/N-075-Iscrizioni-allanno-scolastico-2026-27.pdf",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Pero: circolare 2026/27 con domanda cartacea o via email. Criteri specifici di precedenza per non residenti non ricavati: chiedi la delibera all’istituto.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 2 sedi dell’infanzia statali; istituti: IC DI PERO.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://scuoledipero.edu.it/wp-content/uploads/2023/07/N-075-Iscrizioni-allanno-scolastico-2026-27.pdf",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8BT025",
+            "MIAA8BT014"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 2,
+        "paritariaPreschoolCount": 1,
+        "stataleInstitutes": [
+          "IC DI PERO"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "peschiera-borromeo",
+      "name": "Peschiera Borromeo",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Non residenti ammessi sui posti residui. Servizio nido da 4 mesi.",
+          "priority": "Residenti, poi figli non residenti di dipendenti comunali, poi altri non residenti.",
+          "costs": "2026/27: non residenti 824,98 €/mese pieno o 507,16 € part time, più 3,87 €/giorno per il pasto. Iscrizione primo anno 67,98 €; pre 7–8 e post 16–17 ciascuno 33,21 €/mese, post 16–18 66,41 €. Primavera distinta: 550 € 8–16 o 600 € 8–18, pasti inclusi.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Iscrizioni nido 2026/27: 1 gennaio–30 aprile 2026; primavera con nuova domanda.",
+          "notes": [
+            "Non confondere il prezzo della sezione primavera con la retta del nido.",
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS.",
+            "Importi 2026/27 letti visivamente nell’immagine ufficiale collegata all’avviso comunale 4 settembre 2026. Non confrontare retta nido e quota Primavera come se fossero lo stesso servizio."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Pieno",
+              "amount": 824.98,
+              "unit": "mese",
+              "conditions": "non residenti; pasto 3,87 €/giorno separato",
+              "year": "2026/27"
+            },
+            {
+              "label": "Part time",
+              "amount": 507.16,
+              "unit": "mese",
+              "conditions": "non residenti; pasto 3,87 €/giorno separato",
+              "year": "2026/27"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://comune.peschieraborromeo.mi.it/it/page/asilo-nido-8d6a0af1-f7ac-487d-a506-1069b3b34d7b",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://peschieraborromeo-api.municipiumapp.it/s3/5102/allegati/regolamento-nido-2025-con-numero-delibera-di-consiglio.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Avviso tariffe nidi 2026/27",
+              "url": "https://comune.peschieraborromeo.mi.it/it/news/2005653",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Tabella ufficiale tariffe nidi 2026/27",
+              "url": "https://cloud.municipiumapp.it/s3/5102/allegati/riepilogo-tariffe.jpg",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 3 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Elenco comunale delle paritarie: Giovanni XXIII, Fondazione Buzzoni e Sant’Ambrogio; non identificate come comunali."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://www.comune.peschieraborromeo.mi.it/it/page/scuole-paritarie",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC De André: domanda dell’infanzia cartacea o via email alla segreteria, con termine prorogato al 21 febbraio 2026. Criteri specifici per non residenti da verificare per questo e per gli altri istituti.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 4 sedi dell’infanzia statali; istituti: IC FABRIZIO DE ANDRE', IC R.L. MONTALCINI.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.icsdeandre.edu.it/pagine/iscrizioni-as-202627",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8AB02G",
+            "MIAA899027",
+            "MIAA8AB01E",
+            "MIAA899016"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 4,
+        "paritariaPreschoolCount": 3,
+        "stataleInstitutes": [
+          "IC FABRIZIO DE ANDRE'",
+          "IC R.L. MONTALCINI"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "rho",
+      "name": "Rho",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "verified",
+          "year": "2026/27",
+          "eligibility": "Domande ammesse a residenti e non residenti, con graduatorie separate.",
+          "priority": "Regolamento, art. 9.1.9: graduatoria non residenti utilizzata soltanto dopo aver soddisfatto tutte le domande dei residenti. Nella graduatoria specifica incidono anche distretto, lavoro e situazione familiare.",
+          "costs": "Anno 2026/27: non residenti senza riduzioni ISEE, 20,30 €/giorno per il parziale 7:30–13:30 e 26,70 €/giorno per il pieno 7:30–18. La retta mensile dipende dai giorni di servizio previsti; non è una quota mensile fissa.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "La pagina indica termine 28 febbraio per la graduatoria e pubblicazione entro 30 aprile; controllare il ciclo selezionato.",
+          "notes": [
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS.",
+            "Regolamento ancora collegato alla pagina corrente, art. 9.1.10: ai non residenti non spettano le riduzioni per fascia ISEE. Gli importi derivano dalla fascia massima dell’allegato tariffario 2026/27.",
+            "L’ISEE può incidere sui punti della graduatoria non residenti senza dare diritto a uno sconto sulla retta.",
+            "Art. 9.1.7: un già frequentante che trasferisce la residenza può completare il percorso; perde le riduzioni dal successivo anno educativo. Se il trasferimento avviene in attesa dell’inserimento, le riduzioni non spettano (art. 9.1.8)."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti — parziale",
+              "amount": 20.3,
+              "unit": "giorno",
+              "conditions": "7:30–13:30; nessuna riduzione ISEE",
+              "year": "2026/27"
+            },
+            {
+              "label": "Non residenti — pieno",
+              "amount": 26.7,
+              "unit": "giorno",
+              "conditions": "7:30–18; nessuna riduzione ISEE",
+              "year": "2026/27"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.rho.mi.it/fr-fr/servizi/educazione-e-formazione/richiedere-iscrizione-all-asilo-nido-357-6724-1-1433bdd00bd442ab9e202662d33f7923",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.rho.mi.it/en-us/download/nuove-tariffe-giornaliere-nidi-e-fasce-isee-2025-26-e-2026-27-164315-9-1365-b73893a31715e9796e58168c45177b02",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.rho.mi.it/es-es/download/carta-dei-servizi-asili-nido-2026-2027-519022-31-1365-b3e1a4045ff135e1a01884de9595d341",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Regolamento nido: artt. 9.1.7–10, residenza e tariffe",
+              "url": "https://www.comune.rho.mi.it/en-us/download/regolamento-asilo-nido-comunale-108932-9-1365-6ae3ed38c90e7afa21bcb2aa0359b020",
+              "year": "regolamento 2020 collegato al servizio corrente",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 7 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Pagina comunale 2026/27 elenca infanzie statali e sette paritarie; nessuna comunale indicata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://www.comune.rho.mi.it/ro/servizi/educazione-e-formazione/richiedere-iscrizione-alla-scuola-dell-infanzia-358-6724-1-d26d409b6a7af66703b39a2d44a2b14a",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Tommaso Grossi: pagina 2026/27 rinvia ai criteri di accoglienza dell’infanzia; punteggi specifici dei non residenti da verificare nell’allegato. Gli altri istituti possono adottare criteri diversi.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "IC Tommaso Grossi: procedura online dell’istituto tramite Axios, distinta dalle iscrizioni nazionali alle classi prime. Termine 2026/27 prorogato al 21 febbraio 2026. Per altri istituti consulta la relativa segreteria.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 7 sedi dell’infanzia statali; istituti: I.C. ANNA FRANK, I.C. EZIO FRANCESCHINI, I.C. TOMMASO GROSSI, IC FABRIZIO DE ANDRE'.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti.",
+            "Non tutte le scuole dell’infanzia raccolgono necessariamente il solo cartaceo: l’IC Grossi usa una propria procedura online per il 2026/27."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.comune.rho.mi.it/ro/servizi/educazione-e-formazione/richiedere-iscrizione-alla-scuola-dell-infanzia-358-6724-1-d26d409b6a7af66703b39a2d44a2b14a",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Istituto: iscrizioni infanzia 2026/27",
+              "url": "https://www.icgrossirho.edu.it/iscrizioni/",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8FN024",
+            "MIAA8BV02N",
+            "MIAA8FF01V",
+            "MIAA8BV01D",
+            "MIAA8GD01T",
+            "MIAA8FN013",
+            "MIAA8GD02V"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 7,
+        "paritariaPreschoolCount": 7,
+        "stataleInstitutes": [
+          "I.C. ANNA FRANK",
+          "I.C. EZIO FRANCESCHINI",
+          "I.C. TOMMASO GROSSI",
+          "IC FABRIZIO DE ANDRE'"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "rozzano",
+      "name": "Rozzano",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Il bando 2026/27 accoglie espressamente domande di residenti e non residenti, anche nascituri nei termini previsti.",
+          "priority": "Ordine specifico da verificare nel regolamento, modificato dal Consiglio anche nel luglio 2026.",
+          "costs": "Prospetto 2023 ancora collegato alla pagina 2026/27: 600 €/mese per non residenti, da riconfermare per il 2026/27; iscrizione 115 €.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Bando 2026/27: 16 febbraio–17 marzo 2026; SPID/CIE sullo sportello digitale.",
+          "notes": [
+            "La pagina del gestore contiene anche informazioni INPS non aggiornate: fare riferimento alle regole nazionali 2026.",
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS.",
+            "Il PDF delle rette pubblicato dal gestore è una scansione: nessun importo di frequenza attribuito senza lettura verificabile.",
+            "Tariffa 600 € letta visivamente nella scansione, pagina 7; delibera GC 47 del 12 aprile 2023. Nessuna conferma che l’importo sia stato riapprovato per il 2026/27."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti — prospetto storico",
+              "amount": 600,
+              "unit": "mese",
+              "conditions": "delibera2023 ancora collegata; riconfermare2026/27",
+              "year": "2023"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.amarozzano.it/servizio-nidi/",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://comune.rozzano.mi.it/index.php/it/news/convocazione-consiglio-comunale-del-20-luglio-2026?type=1",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 0 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Ufficio istruzione e anagrafe MIM consultati: l’offerta dell’infanzia individuata è statale."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://comune.rozzano.mi.it/it/unita_organizzative/2590",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "IC Monte Amiata e IC Orchidee prevedono una procedura per non residenti.",
+          "priority": "Bacini e criteri da leggere nel documento dell’istituto scelto.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Al Monte Amiata i non residenti devono contattare la segreteria; Orchidee pubblica il collegamento per la domanda.",
+            "Anagrafe 2026/27: 10 sedi dell’infanzia statali; istituti: I.C. BAROZZI BELTRAMI, I.C. MONTE AMIATA, I.C. VIALE LIGURIA, IC ORCHIDEE."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "IC Monte Amiata, iscrizioni",
+              "url": "https://www.icsmonteamiata.edu.it/iscrizioni-anno-scolastico-2026-27/",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "IC Orchidee, iscrizioni",
+              "url": "https://www.icorchidee.edu.it/iscrizioni-a-s-2026-2027/",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8GG019",
+            "MIAA880026",
+            "MIAA880015",
+            "MIAA8FM028",
+            "MIAA8GG02A",
+            "MIAA880037",
+            "MIAA8FC01B",
+            "MIAA8FC03D",
+            "MIAA8FC02C",
+            "MIAA8FM017"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 10,
+        "paritariaPreschoolCount": 0,
+        "stataleInstitutes": [
+          "I.C. BAROZZI BELTRAMI",
+          "I.C. MONTE AMIATA",
+          "I.C. VIALE LIGURIA",
+          "IC ORCHIDEE"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "san-donato-milanese",
+      "name": "San Donato Milanese",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "2026/27; tariffe da settembre 2026",
+          "eligibility": "Domande dirette dei non residenti previste in subordine, oltre ad affidi, invii sociali e convenzioni.",
+          "priority": "Graduatoria separata dei non residenti, utilizzata solo dopo l’esaurimento delle domande dei residenti secondo il bando 2026/27.",
+          "costs": "Tariffe 2026: da settembre costo pieno non residenti 914,77 €/mese IVA inclusa, 7:30–18:00; quota domanda 13 €. Eventuali riduzioni orarie da applicare secondo prospetto.",
+          "benefits": "Elenco Nidi Gratis 2026/27: agevolazioni ISEE ai non residenti soltanto per casi particolari, come l’affido. Bonus INPS da verificare separatamente.",
+          "application": "Consulta il bando e il canale del servizio per i termini applicabili.",
+          "notes": [
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti tempo pieno",
+              "amount": 914.77,
+              "unit": "mese",
+              "conditions": "7:30–18:00; costo pieno IVA 5% inclusa; da settembre 2026",
+              "year": "2026"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.sandonatomilanese.mi.it/novita/notizie/nidi-comunali-apertura-iscrizione-piccoli-settembre-2026",
+              "checkedAt": "2026-11-17",
+              "year": "Tariffe 2026; regolamento pubblicato con bando 2024/25"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://servizi.comune.sandonatomilanese.mi.it/L190/sezione/download/319693?activePage=0&idSezione=53017&sort=",
+              "checkedAt": "2026-11-17",
+              "year": "Tariffe 2026; regolamento pubblicato con bando 2024/25"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.sandonatomilanese.mi.it/novita/avvisi/nidi-comunali-le-graduatorie-provvisorie-per-lanno-2024-25/documenti-allegati/regolamentoasilinido.pdf/%40%40download/file",
+              "checkedAt": "2026-11-17",
+              "year": "Tariffe 2026; regolamento pubblicato con bando 2024/25"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Bando ammissioni nidi 2026/27",
+              "url": "https://www.comune.sandonatomilanese.mi.it/servizi/educazione-e-formazione/servizio-asilo-nido/allegati/bando-ammissioni-asili-nido-comunali-anno-educativo-2026-27.pdf/%40%40download/file",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "special-cases"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 2 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Offerta degli istituti e anagrafe MIM consultate; titolarità comunale delle paritarie non accertata.",
+            "Maria Ausiliatrice: Carta del gestore Salesiane di Don Bosco, documento storico 2021/22. Gestore dell’altra paritaria Baby Paradise non verificato in fonte amministrativa corrente."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://icsmhack.edu.it/notizie/794-iscrizioni-anno-scolastico-20262027",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dei gestori e dell’offerta",
+              "url": "https://www.mariausiliatrice.it/wp-content/uploads/Carta-dei-Servizi-2021_22.pdf",
+              "year": "2021/22",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Margherita Hack: avviso iscrizioni 2026/27 verificato. Priorità per non residenti e disponibilità da verificare nella delibera dell’istituto scelto.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 6 sedi dell’infanzia statali; istituti: I.C. MARGHERITA HACK, IC VIA LIBERTA'.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://icsmhack.edu.it/notizie/794-iscrizioni-anno-scolastico-20262027",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8FA02R",
+            "MIAA8FB04P",
+            "MIAA8FB02L",
+            "MIAA8FA01Q",
+            "MIAA8FB01G",
+            "MIAA8FB05Q"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 6,
+        "paritariaPreschoolCount": 2,
+        "stataleInstitutes": [
+          "I.C. MARGHERITA HACK",
+          "IC VIA LIBERTA'"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "segrate",
+      "name": "Segrate",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "verified",
+          "year": "2026/27",
+          "eligibility": "Domande ammesse ai non residenti; il bambino deve essere già nato.",
+          "priority": "Graduatorie separate; non residenti solo dopo i residenti, comprese domande successive.",
+          "costs": "2026/27: non residenti 804,26 € 7:30–18:30; 772,86 € 8–18:30; 664,77 € 7:30–16:30; 616,13 € 8–16:30. ISEE non applicato ai non residenti ordinari.",
+          "benefits": "Elenco Nidi Gratis 2026/27: agevolazioni ISEE ai non residenti soltanto per casi particolari, come l’affido. Bonus INPS da verificare separatamente.",
+          "application": "Consulta il bando e il canale del servizio per i termini applicabili.",
+          "notes": [
+            "Nei convenzionati il massimo non può superare il prezzo massimo praticato dal nido frequentato.",
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti 7:30–18:30",
+              "amount": 804.26,
+              "unit": "mese",
+              "conditions": "Tariffa mensile; altri orari nel prospetto",
+              "year": "2026/27"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://comune.segrate.mi.it/servizi/educazione-e-formazione/asili-nido/index.html",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://comune.segrate.mi.it/doc/tariffe_nido-2026.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://comune.segrate.mi.it/doc/Regolamento-Nido-Vigente.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "special-cases"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 2 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Elenco comunale: IC Schweitzer, Sabin e Galbusera, Santa Rita e Causa Pia d’Adda; iscrizione presso le scuole. Al Comune competono refezione e pre/post delle pubbliche. Nessuna infanzia comunale individuata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dei gestori e dell’offerta",
+              "url": "https://www.comune.segrate.mi.it/servizi/educazione-e-formazione/scuole/",
+              "year": "pagina corrente",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Schweitzer: ordine plesso, territorio dell’istituto, Comune di Segrate, altri comuni; trasferimenti da documentare entro agosto. Criteri riferiti a questo istituto, da verificare separatamente per gli altri.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 9 sedi dell’infanzia statali; istituti: IC A.B. SABIN, IC ALBERT SCHWEITZER, IC ROSANNA GALBUSERA.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.icschweitzer.edu.it/wp-content/uploads/2025/12/Criteri_di_accettazione_Iscrizioni_2026_2027_CdI_15_VI_17_tutti_gli_ordini_di_scuola.pdf",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8BK01D",
+            "MIAA8BX015",
+            "MIAA8BK026",
+            "MIAA8BX03A",
+            "MIAA8BK037",
+            "MIAA8BK048",
+            "MIAA8BW03B",
+            "MIAA8BW02A",
+            "MIAA8BW019"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 9,
+        "paritariaPreschoolCount": 2,
+        "stataleInstitutes": [
+          "IC A.B. SABIN",
+          "IC ALBERT SCHWEITZER",
+          "IC ROSANNA GALBUSERA"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "sesto-san-giovanni",
+      "name": "Sesto San Giovanni",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domande ammesse ai non residenti.",
+          "priority": "Graduatoria separata utilizzata dopo tutte le richieste dei residenti.",
+          "costs": "Dal settembre 2026, fascia massima applicabile ai non residenti secondo il regolamento: 548,70 €/mese fino alle 13:30, 783,17 € fino alle 16:30, 843,02 € fino alle 18.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Consulta il bando e il canale del servizio per i termini applicabili.",
+          "notes": [
+            "Il collegamento tecnico è quello restituito dal portale comunale durante la migrazione del sito.",
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Parziale",
+              "amount": 548.7,
+              "unit": "mese",
+              "conditions": "fascia massima; uscita13:30",
+              "year": "2026/27"
+            },
+            {
+              "label": "Pieno",
+              "amount": 783.17,
+              "unit": "mese",
+              "conditions": "fascia massima; uscita16:30",
+              "year": "2026/27"
+            },
+            {
+              "label": "Prolungato",
+              "amount": 843.02,
+              "unit": "mese",
+              "conditions": "fascia massima; uscita18",
+              "year": "2026/27"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://lb-sestosg-101407550.eu-central-1.elb.amazonaws.com/it/service/agid-service/342/asili-nido-comunali-come-fare-liscrizione",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://sestosg.net/wp-content/uploads/2019/12/6472-attach1-Regolamento20in20vigore28129.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Tariffe asili nido 2026/27",
+              "url": "https://storage.googleapis.com/stu-sestosangiovanni-public-prod/2026-05/Allegato%20A-%20Tariffe%20servizi%20a%20domanda%20individuale%20e%20diversi%20-%20anno%202026.pdf",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 4 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Elenco comunale distingue statali e paritarie; nessuna infanzia comunale individuata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://www.comune.sesto-san-giovanni.mi.it/it/service/agid-service/284/scuole-dellinfanzia-quali-sono-e-come-iscriversi",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Breda pubblica criteri 2026/27 distinti per Montessori e Corridoni. Verifica la graduatoria del plesso scelto: non è stata ricavata una regola unica valida per tutte le statali cittadine.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 15 sedi dell’infanzia statali; istituti: I.C.BREDA, IC ANNA FRANK, IC DANTE ALIGHIERI, IC G.PASCOLI, IC MARTIRI DELLA LIBERTA, IC R 0 VANI.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.icbredasesto.edu.it/modulo-iscrizione-infanzia/",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8A001V",
+            "MIAA8C803R",
+            "MIAA8EU02N",
+            "MIAA8A5023",
+            "MIAA8A102Q",
+            "MIAA8C806X",
+            "MIAA8A5012",
+            "MIAA8C805V",
+            "MIAA8C801P",
+            "MIAA8A103R",
+            "MIAA8A101P",
+            "MIAA8EU01L",
+            "MIAA8C802Q",
+            "MIAA8AZ019",
+            "MIAA8AZ02A"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 15,
+        "paritariaPreschoolCount": 4,
+        "stataleInstitutes": [
+          "I.C.BREDA",
+          "IC ANNA FRANK",
+          "IC DANTE ALIGHIERI",
+          "IC G.PASCOLI",
+          "IC MARTIRI DELLA LIBERTA",
+          "IC R0VANI"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "settimo-milanese",
+      "name": "Settimo Milanese",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "verified",
+          "year": "2026/27",
+          "eligibility": "Domande ammesse ai non residenti in via residuale. Servizio dai 7 mesi.",
+          "priority": "Prima residenti e futuri residenti; non residenti accolti in presenza di posti.",
+          "costs": "Non residenti: 474,40 €/mese part time, 593 € normale, 652,30 € prolungato. Pranzo, merende, pannolini e materiale indicati inclusi. Nessuna fascia ISEE per non residenti.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Consulta il bando e il canale del servizio per i termini applicabili.",
+          "notes": [
+            "Ai futuri residenti tariffa non residenti finché il nucleo non è registrato in anagrafe.",
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti tempo normale",
+              "amount": 593,
+              "unit": "mese",
+              "conditions": "7:30–16:30; pasti e materiali indicati inclusi",
+              "year": "2026/27"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://comune.settimomilanese.mi.it/servizio/p21-servizio-asilo-nido/",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 4 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Elenco comunale e gestore scuole parrocchiali consultati; Causa Pia d’Adda indicata privata. Nessuna infanzia comunale individuata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://comune.settimomilanese.mi.it/vivere-il-comune/luogo/tipologia/centro-per-la-cultura/",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "L’IC Settimo rinvia al regolamento delle iscrizioni: residenza, trasferimento e lavoro locale incidono sulla precedenza. Conferma i criteri applicabili al plesso e all’anno scelti.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 2 sedi dell’infanzia statali; istituti: I.C. SETTIMO MILANESE.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://www.icsettimomilanese.edu.it/servizio/iscrizioni-scuola/",
+              "year": "pagina corrente; allegato senza annualità corrente",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA83202R",
+            "MIAA83201Q"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 2,
+        "paritariaPreschoolCount": 4,
+        "stataleInstitutes": [
+          "I.C. SETTIMO MILANESE"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "trezzano-sul-naviglio",
+      "name": "Trezzano sul Naviglio",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Non residenti ammessi alla domanda se almeno un genitore/tutore/affidatario lavora stabilmente nel Comune con il contratto previsto dal bando.",
+          "priority": "Solo dopo completo soddisfacimento delle domande dei residenti.",
+          "costs": "Non residenti in fascia massima. Il bando 2026/27 indica 450 €/mese pieno 7:30–16:30 o 315 € parziale; refezione e post da verificare separatamente.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Bando 2026/27: 1–31 marzo 2026. Domanda gratuita, distinta dalla frequenza.",
+          "notes": [
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Non residenti pieno",
+              "amount": 450,
+              "unit": "mese",
+              "conditions": "Retta massima 7:30–16:30; refezione/post separati da verificare",
+              "year": "2026/27"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.trezzano-sul-naviglio.mi.it/Servizi/Iscrizione-Asili-nido-comunali",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.trezzano-sul-naviglio.mi.it/ocmultibinary/download/2623/52999/29/4c2ee4907a7c059f94eb47a20c727ffb.pdf/file/bando%252Biscrizione%252B%252Bintegrale%252B2026-2027.pdf",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 0 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Offerta degli IC Franceschi e Gobetti e anagrafe MIM consultate; nessuna infanzia comunale individuata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://www.icfranceschi.edu.it/servizi/percorsi-di-studio/scuola-dellinfanzia",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "L’IC Franceschi contempla iscrizioni di non residenti.",
+          "priority": "IC Franceschi 2026/27: residenza 25 punti, fratelli nell’istituto 15, lavoro di un genitore nel Comune 5; precedenza dei residenti nella ricollocazione dei plessi.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Criteri di questo istituto: non attribuiti ad altre scuole di Trezzano.",
+            "Anagrafe 2026/27: 5 sedi dell’infanzia statali; istituti: IC GOBETTI, IC R FRANCESCHI."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "IC Franceschi, iscrizioni e criteri",
+              "url": "https://www.icfranceschi.edu.it/iscrizioni",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA89002R",
+            "MIAA89001Q",
+            "MIAA8EQ01X",
+            "MIAA89003T",
+            "MIAA8EQ021"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 5,
+        "paritariaPreschoolCount": 0,
+        "stataleInstitutes": [
+          "IC GOBETTI",
+          "IC R FRANCESCHI"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    },
+    {
+      "slug": "vimodrone",
+      "name": "Vimodrone",
+      "services": [
+        {
+          "stage": "nursery",
+          "management": "Comunale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Il regolamento aggiornato nel novembre 2024 ammette i non residenti.",
+          "priority": "Collocazione subordinata ai residenti; graduatorie separate.",
+          "costs": "Allegato tariffe collegato alla Carta 2026/27: non residenti 680,58 €/mese pieno, 453,72 € part time mattino, 362,98 € pomeriggio. Riduzione assenze 4,99 €/giorno e secondo figlio 25% secondo le condizioni del prospetto; decorrenza non esplicitata.",
+          "benefits": "Elenco Nidi Gratis 2026/27: il Comune dichiara di non applicare agevolazioni ISEE ai non residenti. Bonus INPS da verificare separatamente.",
+          "application": "Domande ordinarie 1 marzo–30 aprile. Preferenza della sede compatibile con i posti.",
+          "notes": [
+            "Bonus INPS: verificare separatamente i requisiti nazionali; il trattamento regionale non determina il diritto al Bonus INPS."
+          ],
+          "tariffExamples": [
+            {
+              "label": "Pieno",
+              "amount": 680.58,
+              "unit": "mese",
+              "conditions": "non residenti",
+              "year": "allegato corrente, anno non indicato"
+            },
+            {
+              "label": "Mattino",
+              "amount": 453.72,
+              "unit": "mese",
+              "conditions": "non residenti",
+              "year": "allegato corrente, anno non indicato"
+            },
+            {
+              "label": "Pomeriggio",
+              "amount": 362.98,
+              "unit": "mese",
+              "conditions": "non residenti",
+              "year": "allegato corrente, anno non indicato"
+            }
+          ],
+          "sources": [
+            {
+              "label": "Fonte del servizio",
+              "url": "https://comune.vimodrone.mi.it/servizio/nidi-comunali/",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Fonte del servizio",
+              "url": "https://www.comune.vimodrone.milano.it/c015242/zf/index.php/atti-generali/index/download-file/voce/167",
+              "checkedAt": "2026-11-17",
+              "year": "2026/27"
+            },
+            {
+              "label": "Nidi Gratis: elenco strutture e agevolazioni non residenti",
+              "url": "https://bandi.regione.lombardia.it/bol-file/repository/8a5aa371a165fe7b01a1685e6f970039/download",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Tariffe del servizio",
+              "url": "https://comune.vimodrone.mi.it/download-file/5503",
+              "year": "allegato corrente, anno non indicato",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "regionalNonResidentIsee": "no"
+        },
+        {
+          "stage": "preschool",
+          "management": "Comunale",
+          "status": "not-found",
+          "year": "Da verificare",
+          "eligibility": "Offerta dell’infanzia a gestione comunale non individuata nelle fonti consultate. Per le scuole statali consulta la voce dedicata; per le paritarie verifica il gestore.",
+          "priority": "Nessuna graduatoria comunale dell’infanzia individuata.",
+          "costs": "Non applicabile all’offerta comunale non individuata; per statali e altre paritarie consulta la gestione della scuola scelta.",
+          "benefits": "Non attribuite agevolazioni a un servizio comunale non individuato.",
+          "application": "Chiedi all’ufficio istruzione se esistono infanzie a titolarità comunale; per quelle statali rivolgiti all’istituto.",
+          "notes": [
+            "Questo esito non significa che il servizio non esista; non applicare le regole del nido o delle statali.",
+            "Nel MIM risultano 0 sedi paritarie: la titolarità comunale non è ricavabile dal solo elenco.",
+            "Offerta dell’IC statale e anagrafe MIM consultate; nessuna infanzia comunale individuata."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe paritarie MIM: riscontro delle sedi",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Ricognizione dell’offerta locale",
+              "url": "https://icsclaudioabbado.edu.it/wp-content/uploads/2025/12/Criteri_iscrizioni_infanzia_2026_27_1.pdf",
+              "year": "consultato 2026",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17"
+        },
+        {
+          "stage": "preschool",
+          "management": "Statale",
+          "status": "partial",
+          "year": "2026/27",
+          "eligibility": "Domanda fuori comune possibile secondo la disciplina nazionale; criteri della singola scuola da verificare.",
+          "priority": "IC Claudio Abbado: due elenchi ordinati, prima residenti o trasferimenti documentati entro 1 settembre 2026, poi non residenti. Seguono condizioni tutelate, età, fratelli e punteggi familiari; possibile assegnazione a un altro plesso con posti.",
+          "costs": "Frequenza gratuita; mensa, pre/post e trasporto seguono le regole comunali.",
+          "benefits": "Agevolazioni su mensa e servizi aggiuntivi da verificare separatamente con il Comune.",
+          "application": "Richiedi alla segreteria modulo e criteri per l’anno scelto. Non usare le scadenze del nido.",
+          "notes": [
+            "Regola nazionale: non equivale a verifica delle delibere di tutti gli istituti del Comune.",
+            "Anagrafe 2026/27: 2 sedi dell’infanzia statali; istituti: I. C. CLAUDIO ABBADO.",
+            "Fonte di un istituto o elenco comunale: non certifica criteri uniformi per tutti gli istituti presenti."
+          ],
+          "tariffExamples": [],
+          "sources": [
+            {
+              "label": "Anagrafe statali MIM",
+              "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            },
+            {
+              "label": "Iscrizioni e criteri locali",
+              "url": "https://icsclaudioabbado.edu.it/wp-content/uploads/2025/12/Criteri_iscrizioni_infanzia_2026_27_1.pdf",
+              "year": "2026/27",
+              "checkedAt": "2026-11-17"
+            }
+          ],
+          "verifiedAt": "2026-11-17",
+          "schoolCodes": [
+            "MIAA8B001D",
+            "MIAA8B003G"
+          ]
+        }
+      ],
+      "inventory": {
+        "year": "2026/27",
+        "statalePreschoolCount": 2,
+        "paritariaPreschoolCount": 0,
+        "stataleInstitutes": [
+          "I. C. CLAUDIO ABBADO"
+        ],
+        "sources": [
+          {
+            "label": "Anagrafe statali MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFESTAT",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          },
+          {
+            "label": "Anagrafe paritarie MIM",
+            "url": "https://dati.istruzione.it/opendata/opendata/catalog/SCUANAGRAFEPAR",
+            "year": "2026/27",
+            "checkedAt": "2026-11-17"
+          }
+        ],
+        "notes": [
+          "La parità non identifica da sola la gestione comunale o privata. Il conteggio riguarda le sedi anagrafiche, non posti disponibili."
+        ]
+      }
+    }
+  ]
+}

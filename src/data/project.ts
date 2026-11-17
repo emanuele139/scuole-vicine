@@ -1,7 +1,7 @@
 /** Collegamenti pubblici: impostare gli URL effettivi prima del lancio. */
 export const project = {
   name: 'Scuole Vicine',
-  tagline: 'Guida alla scelta di nidi e scuole dell’infanzia a Milano',
+  tagline: 'Guida alla scelta di nidi e scuole dell’infanzia a Milano e dintorni',
   city: 'Milano',
   author: 'Emanuele Cardinali',
   authorUrl: 'https://cardinali.studio/' as string | null,

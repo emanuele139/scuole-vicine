@@ -16,14 +16,15 @@ function setup(emailFails = false) {
   const REPORT_EMAIL = { async send(message: any) { if (emailFails) throw new Error('temporary delivery failure'); messages.push(message); return { messageId: 'test' }; } };
   const preschool = JSON.parse(readFileSync(new URL('../src/data/catalog-client.json', import.meta.url), 'utf8'));
   const nurseries = JSON.parse(readFileSync(new URL('../src/data/nurseries-client.json', import.meta.url), 'utf8'));
+  const neighbours = JSON.parse(readFileSync(new URL('../src/data/neighbor-schools-client.json', import.meta.url), 'utf8'));
   const source = readFileSync(new URL('../worker/reports.ts', import.meta.url), 'utf8').replace(/^import .*;\s*$/gm, '').replace(/^export /gm, '');
-  const context = vm.createContext({ preschool, nurseries, Request, Response, URL, Uint8Array, TextDecoder, crypto: globalThis.crypto });
+  const context = vm.createContext({ preschool, nurseries, neighbours, Request, Response, URL, Uint8Array, TextDecoder, crypto: globalThis.crypto });
   vm.runInContext(ts.transpileModule(source, { compilerOptions: { target: ts.ScriptTarget.ES2022, module: ts.ModuleKind.ESNext } }).outputText + '\nglobalThis.reportApi = reportApi; globalThis.flushReportEmails = flushReportEmails;', context);
   const valid = { schoolId: preschool[0].id, category: 'hours', email: 'utente@example.org', details: 'Orario fino alle 18. Fonte: https://example.org/' };
   function send(value: unknown = valid, headers: Record<string, string> = {}, method = 'POST', notify = false) {
     return (context as any).reportApi(new Request('https://scuole.test/api/reports', { method, headers: { 'Content-Type': 'application/json', Origin: 'https://scuole.test', ...headers }, ...(method === 'POST' ? { body: typeof value === 'string' ? value : JSON.stringify(value) } : {}) }), { DB, ...(notify ? { REPORT_EMAIL, REPORT_FROM: 'segnalazioni@scuolevicine.it' } : {}) });
   }
-  return { sqlite, send, valid, nurseryId: nurseries[0].id, messages, retry: () => (context as any).flushReportEmails({ DB, REPORT_EMAIL, REPORT_FROM: 'segnalazioni@scuolevicine.it' }) };
+  return { sqlite, send, valid, nurseryId: nurseries[0].id, neighbours, messages, retry: () => (context as any).flushReportEmails({ DB, REPORT_EMAIL, REPORT_FROM: 'segnalazioni@scuolevicine.it' }) };
 }
 test('reports persist school, category and contact for preschool and nursery; no email in response', async () => {
   const { sqlite, send, valid, nurseryId } = setup();
@@ -83,4 +84,16 @@ test('scheduled retries deliver pending reports and ignore expired reports', asy
   sqlite.prepare('UPDATE school_reports SET expires_at = 0 WHERE email_sent_at IS NULL').run();
   await retry();
   assert.equal(messages.length, 1);
+});
+
+test('reports accept every neighbouring municipality and resolve its school name in mock notifications', async () => {
+  const { sqlite, send, valid, neighbours, messages } = setup();
+  const byComune = new Map(neighbours.map((school: any) => [school.comuneSlug, school]));
+  assert.equal(byComune.size, 23);
+  for (const school of byComune.values() as Iterable<any>) {
+    const response = await send({ ...valid, schoolId: school.id }, {}, 'POST', true);
+    assert.equal(response.status, 201, school.comune);
+    assert.ok(messages.at(-1).text.includes(`Scuola: ${school.name}\n`));
+  }
+  assert.equal(sqlite.prepare('SELECT COUNT(*) AS count FROM school_reports').get()!.count, 23);
 });

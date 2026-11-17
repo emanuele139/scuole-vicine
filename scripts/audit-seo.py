@@ -65,7 +65,7 @@ def main():
         except (ValueError, json.JSONDecodeError) as e: errors.append(f'{route}: HTML/JSON-LD {e}')
     excluded = {'/famiglia/', '/s/', '/confronto/', '/404.html'}
     public = set(documents) - excluded
-    school_data = json.loads(Path('src/data/schools.json').read_text()) + json.loads(Path('src/data/nurseries.json').read_text())
+    school_data = json.loads(Path('src/data/schools.json').read_text()) + json.loads(Path('src/data/nurseries.json').read_text()) + json.loads(Path('src/data/neighbor-schools.json').read_text())
     require(len([p for p in public if p.startswith('/scuole/')]) == len(school_data), 'School route coverage differs from catalogue')
     require(len([p for p in public if p.startswith('/municipi/')]) == 9, 'Expected nine Municipality collections')
     titles, descriptions, link_count, schemas = [], [], 0, 0

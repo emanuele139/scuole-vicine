@@ -61,15 +61,15 @@ test('nursery coverage reports limitations and does not manufacture fees, events
 
 test('canonical and browser lookups support both stages and retain every existing family ID', () => {
   for (const [file, imports] of [
-    ['../src/lib/catalog.ts', { schoolData: preschools, nurseryData: nurseries, reportData: read('../src/data/reconciliation-report.json') }],
-    ['../src/lib/catalog-client.ts', { data: read('../src/data/catalog-client.json'), nurseryData: clientNurseries }],
+    ['../src/lib/catalog.ts', { neighborData: read('../src/data/neighbor-schools.json'), schoolData: preschools, nurseryData: nurseries, reportData: read('../src/data/reconciliation-report.json') }],
+    ['../src/lib/catalog-client.ts', { neighborData: read('../src/data/neighbor-schools-client.json'), data: read('../src/data/catalog-client.json'), nurseryData: clientNurseries }],
   ] as const) {
     const source = stripTypeScriptTypes(readFileSync(new URL(file, import.meta.url), 'utf8'))
       .replace(/^import .*;\n/gm, '').replace(/^export /gm, '');
     const context = vm.createContext({ ...imports });
     vm.runInContext(`${source}\nglobalThis.api = {schools, getSchool};`, context);
     const { api } = context as any;
-    assert.equal(api.schools.length, preschools.length + nurseries.length);
+    assert.equal(api.schools.length, preschools.length + nurseries.length + read('../src/data/neighbor-schools.json').length);
     for (const school of [...preschools, ...nurseries]) {
       assert.equal(api.getSchool(school.id)?.id, school.id);
       assert.equal(api.getSchool(school.slug)?.id, school.id);

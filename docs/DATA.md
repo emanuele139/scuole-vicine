@@ -19,6 +19,16 @@ Verifica delle licenze: **17 novembre 2026**. Il [rapporto completo](SOURCE-LICE
 
 Le schede in `src/data/schools.json` e `src/data/nurseries.json` conservano fonti, anni, avvertenze ed esiti. I rapporti in `public/dati/` documentano copertura, conflitti e corrispondenze. Il sito li presenta nella pagina `/metodo/`.
 
+## Accesso, residenza e comuni confinanti
+
+La ricerca amministrativa è separata dall’anagrafe delle sedi. `src/data/territorial-access.json` copre i 23 comuni confinanti con Milano, distinguendo nidi comunali, infanzia comunale e statale. La ricerca conserva requisiti per non residenti, priorità, tariffe, agevolazioni, procedura, periodi e fonti. `/comuni/` permette il confronto; `/comuni/[slug]/` presenta i dettagli; `/dati/accesso-comuni.json` restituisce gli stessi dati. Il catalogo e la mappa includono le sedi censite dei 23 comuni: `neighbor-schools.json` e relativa proiezione client. `scripts/import-neighbor-schools.py` genera i dati da MIM e UdOS; `research/neighbors/coverage.json` documenta copertura e limiti. I Municipi sono attribuiti esclusivamente alle sedi milanesi. La ricerca usa il Comune per distinguere gli indirizzi omonimi; le sedi prive di coordinate restano negli elenchi.
+
+`src/data/milan-access.json` aggiunge le condizioni amministrative per gli identificativi esistenti, senza sostituire i cataloghi né cambiare i salvataggi delle famiglie. Ogni voce distingue evidenze della rete, della sede e condizioni non accertate; i singoli campi conservano esito, periodo e fonti. Una regola di rete non è una verifica individuale dei posti o di tutte le condizioni della sede.
+
+Gli archivi locali di ricerca e i limiti sono in `research/territorial-access/` e `research/milan-access/`. La presenza di una tariffa per non residenti non dimostra l’apertura a nuove domande. L’anagrafe MIM documenta le sedi e non i criteri di ammissione; l’assenza di una scuola da un elenco non dimostra una chiusura. I posti in convenzione e i posti privati della stessa struttura richiedono condizioni distinte. Per Nidi Gratis Plus si verifica anche il trattamento dei non residenti, senza confondere la misura regionale con il Bonus INPS.
+
+Le guide `nido-fuori-comune` e `infanzia-fuori-comune` spiegano le differenze con fonti per risposta. La scelta del Comune non costituisce una valutazione individuale di ammissibilità: non vengono raccolti reddito, documenti o dati del bambino per consultare la ricerca.
+
 ## Criteri di raccolta
 
 Usare solo pagine e documenti intenzionalmente pubblici. Un documento raggiungibile per errore, un’area riservata o un link personale non è una fonte ammessa. Non aggirare controlli d’accesso e non cercare varianti di URL privati.
@@ -46,3 +56,11 @@ Questi comandi scrivono gli output del catalogo: eseguirli soltanto con gli inpu
 ## Ricerca locale dei civici
 
 `public/dati/civici-milano.json` contiene 52.156 civici applicati su 3.965 vie, ricavati dal CSV comunale con `python3 scripts/import-civic-addresses.py`. Il comando scarica lo snapshot configurato; `--input ZIP` consente la ricostruzione da una copia locale. Metadati, URL, licenza e hash dello ZIP sono nel JSON. Sono esclusi civici non applicati, numeri non validi e accessi speciali indicati da BARRA2. Non sono inclusi residenti, contatti, dati immobiliari o associazioni fra indirizzi e utenti. Dettagli e limiti in [Ricerca dei civici](CIVIC-ADDRESS-SEARCH.md).
+
+Le coordinate dei comuni confinanti sono accompagnate da `locationSource`, visibile accanto alla mappa della scheda. Il secondo approfondimento è validato da `scripts/review-neighbor-coordinates.py` (245 esiti disgiunti, ID, fonti, coordinate e impronte), quindi importato dalla pipeline territoriale. Gli esiti e i limiti sono documentati in `research/neighbors/coordinate-round-2/`; il riepilogo è incluso nel download della copertura dei comuni.
+
+La mappa della ricerca conserva lo schema locale quando le mappe esterne sono disattivate o indisponibili. Lo schema contiene soltanto quartieri e riferimenti milanesi: non è una cartografia stradale dei 24 comuni. L’avviso sopra la mappa rende esplicito il limite e apre le preferenze senza attivare automaticamente i fornitori esterni.
+
+Il terzo approfondimento usa `scripts/review-neighbor-coordinates.py --round 3`. Le correzioni documentate in `coordinate-round-3/reviewed-addresses.json` vengono applicate dopo la lettura dei registri, senza riscrivere gli snapshot: `addressReview` conserva recapito originario, Comune, motivazione, data e fonti. Gli ID, gli slug, i codici e le posizioni già accettate restano invariati. L’indirizzo precedente rimane ricercabile come alias. La scheda distingue conferma del recapito da aggiornamento effettivo; la copertura scaricabile mantiene anche il riepilogo del passaggio precedente.
+
+Per compilare la copia pubblica non sono necessari gli archivi di ricerca: `src/data/neighbor-coverage.json` conserva il riepilogo esportato dall’importatore e alimenta `/dati/copertura-comuni.json`. Catalogo, proiezione browser e riepilogo vengono esportati insieme; gli snapshot e gli audit di lavoro restano locali.

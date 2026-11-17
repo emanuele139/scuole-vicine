@@ -3,11 +3,13 @@ import { schoolHref } from '../lib/catalog';
 import type { School } from '../lib/catalog';
 import Icon from './Icon.astro';
 import CardFact from './CardFact.astro';
+import { accessCardCopy, schoolCost } from '../lib/access';
 interface Props { school: School; mapAction?: boolean }
 const { school, mapAction=false } = Astro.props;
+const cost=schoolCost(school);
 const managementLabel = school.educationStage === 'nursery' && school.accessMode.toLowerCase().includes('appalto') ? 'Comunale · in appalto' : school.management;
 const municipalityLabel = school.municipality ? `Municipio ${school.municipality}` : null;
-const place = [school.zone !== municipalityLabel ? school.zone : null, municipalityLabel].filter(Boolean).join(' · ');
+const place = [school.comuneSlug !== 'milano' ? school.comune : null, school.zone !== municipalityLabel && school.zone !== school.comune && school.zone !== 'Zona da verificare' ? school.zone : null, municipalityLabel].filter(Boolean).join(' · ');
 ---
 <article class="school-card" data-school-id={school.id} data-school-stage={school.educationStage}>
   <div class="school-card-top"><span class:list={['school-management', { municipal: school.management === 'Comunale', state: school.management === 'Statale' }]}>{managementLabel}</span><button class="school-save" data-save-school={school.id} aria-label={`Salva ${school.name}`} aria-pressed="false" title="Salva scuola"><Icon name="heart" size={20} /><span class="save-label" data-save-label>Salva</span></button></div>
@@ -19,8 +21,8 @@ const place = [school.zone !== municipalityLabel ? school.zone : null, municipal
   <p class="school-card-zone">{place || 'Quartiere da verificare'}</p>
   {school.status !== 'historical' && <div class="school-facts" aria-label="Informazioni essenziali">
     <CardFact id={`${school.id}:hours`} label="Orari" value={school.hours} evidence={school.research?.fieldEvidence.hours} previousYear={school.detailYear} href={`${schoolHref(school)}#giornata`}/>
-    <CardFact id={`${school.id}:cost`} label="Costi" value={school.cost} evidence={school.research?.fieldEvidence.cost} previousYear={school.detailYear} href={`${schoolHref(school)}#costi`}/>
-    <CardFact id={`${school.id}:access`} label="Accesso" value={school.accessMode} href={`${schoolHref(school)}#in-breve`}/>
+    <CardFact id={`${school.id}:cost`} label="Costi" value={cost.value} evidence={cost.evidence} previousYear={school.detailYear} href={`${schoolHref(school)}#costi`}/>
+    <CardFact id={`${school.id}:access`} label="Accesso" value={accessCardCopy(school)} href={`${schoolHref(school)}#accesso`}/>
   </div>}
   <div class="school-card-bottom"><button class="school-compare" data-compare-school={school.id} aria-pressed="false" aria-label={`Confronta ${school.name}`}><Icon name="plus" size={16} /><span data-compare-label>Confronta</span></button><button type="button" class="school-report" data-report-school={school.id} data-report-name={school.name} aria-haspopup="dialog" aria-label={`Segnala un problema con ${school.name}`}><Icon name="flag" size={16} /><span>Segnala</span></button>{mapAction && school.lat !== null && school.lng !== null && <button type="button" class="school-locate" data-locate-school={school.id} aria-pressed="false" aria-label={`Mostra ${school.name} sulla mappa`}><Icon name="location" size={15}/><span>Sulla mappa</span></button>}<a class="school-open" href={schoolHref(school)} aria-label={`Scheda di ${school.name}`}><span>Vedi scheda</span><Icon name="arrow-right" size={18} /></a></div>
 </article>

@@ -56,3 +56,9 @@ Netsons e il WHOIS del registro .it hanno confermato i nameserver `jillian.ns.cl
 Nel controllo successivo del 17 novembre il dominio `https://scuolevicine.it/` è risultato raggiungibile con HTTPS e redirect funzionanti. Le prove su desktop e layout mobile, compresi gli esiti e i limiti della verifica CSP, sono descritte in [Controllo del sito online](ONLINE-QA.md).
 
 Aggiornamento Umami dello stesso giorno: codice `2867200`, deployment Pages `https://5a54f22d.scuole-vicine.pages.dev`, distribuito anche sul dominio principale. Verificati una visita reale dopo consenso nella dashboard, il rispetto di DNT/GPC e le correzioni per nuovo consenso ed errore di caricamento. Superati 73 test, controllo Astro senza errori, build Pages, audit SEO di produzione e controlli HTTP sul dominio. [Google Search Console](SEARCH-CONSOLE.md) è stata configurata con proprietà Dominio verificata e sitemap letta correttamente.
+
+## Aggiornamento territoriale del 17 novembre 2026
+
+La versione estende ricerca, schede e guide a Milano e ai 23 comuni confinanti. Il catalogo comprende 1066 servizi; i 331 dei comuni confinanti includono 260 posizioni documentate e 71 schede consultabili nell’elenco senza punto. Gli aggiornamenti di indirizzo conservano identità, collegamenti e provenienza. Il backend delle segnalazioni riconosce anche i nuovi ID. Nessuna modifica allo schema D1 è richiesta da questo aggiornamento.
+
+Verificata la copia pubblica priva di archivi di ricerca, guide di lavoro e credenziali: 104 test TypeScript, 14 test Python, controlli Astro e Worker superati. La build Pages indicizzabile genera 1121 pagine; l’audit verifica 1066 schede, 1117 URL in sitemap, 51 documenti Markdown e 67.098 collegamenti interni, senza errori. `/design/` è esclusa. `src/data/neighbor-coverage.json` rende il rapporto di copertura disponibile anche da un clone pulito.

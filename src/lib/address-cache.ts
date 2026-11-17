@@ -1,14 +1,15 @@
+import { addressContext } from './search-area.ts';
 import type { AddressMatch } from './proximity';
 import { parseCivicAddress, matchesCivicAddress } from './civic-address.ts';
 
-export const ADDRESS_CACHE_KEY = 'scuole-milano-address-cache-v1';
+export const ADDRESS_CACHE_KEY = 'scuole-milano-address-cache-v2';
 const MAX_AGE = 24 * 60 * 60 * 1000;
 const FRESH_AGE = 5 * 60 * 1000;
 const LIMIT = 50;
 type Entry = { query: string; matches: AddressMatch[]; savedAt: number };
 type CacheStorage = Pick<Storage, 'getItem' | 'setItem'>;
-const normalize = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').replace(/\bmilano?\b/g, '').trim().replace(/\s+/g, ' ');
-const validMatch = (value: any): value is AddressMatch => value && typeof value.label === 'string' && value.label.length <= 1000 && Number.isFinite(value.lat) && Number.isFinite(value.lng) && value.lat >= 45.35 && value.lat <= 45.62 && value.lng >= 8.95 && value.lng <= 9.45 && (value.houseNumber === null || typeof value.houseNumber === 'string') && (value.street === null || typeof value.street === 'string');
+const normalize = (value: string) => { const context=addressContext(value,null); return [context.address,context.comune].filter(Boolean).join(', ').normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim().replace(/\s+/g, ' '); };
+const validMatch = (value: any): value is AddressMatch => value && typeof value.label === 'string' && value.label.length <= 1000 && Number.isFinite(value.lat) && Number.isFinite(value.lng) && value.lat >= 45.30 && value.lat <= 45.65 && value.lng >= 8.95 && value.lng <= 9.50 && (value.houseNumber === null || typeof value.houseNumber === 'string') && (value.street === null || typeof value.street === 'string');
 
 /** Bounded, expiring browser cache. Memory fallback also works with storage blocked. */
 export class AddressSuggestionCache {
@@ -36,6 +37,8 @@ export class AddressSuggestionCache {
     const matches: AddressMatch[] = [];
     for (const entry of [...this.entries].reverse()) for (const match of entry.matches) {
       if(civic && !matchesCivicAddress(match,civic))continue;
+      const requestedCity=addressContext(query,null).comune;
+      if(requestedCity && addressContext(match.label,null).comune!==requestedCity)continue;
       const label = normalize(match.label);
       // A civic number must match a whole token: 1 must not silently suggest 12.
       if (words.every(word => /^\d+[a-z]?$/.test(word) ? label.split(' ').includes(word) : label.includes(word)) && !matches.some(other => other.label === match.label)) matches.push(match);

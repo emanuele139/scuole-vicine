@@ -1,3 +1,4 @@
+import { normalizeArea, matchesSearchArea, areaLabel, areaComune, addressContext } from '../lib/search-area';
 import { RetryableRequest, type RequestState } from '../lib/retryable-request';
 import { resourceFeedback } from './resource-feedback';
 import { installBasemap, type BasemapState } from './basemap';
@@ -24,9 +25,9 @@ const addressLoadingStatus = $('#address-loading-status');
 let searchMode: 'address' | 'name' = 'address';
 let educationStage: '' | 'nursery' | 'preschool' = '';
 let origin: AddressMatch | null = null;
-type AddressJob = {query:string;kind:'suggestions'|'search'};
+type AddressJob = {query:string;comune:string|null;kind:'suggestions'|'search'};
 const addressFeedback=resourceFeedback($('#address-request-feedback'));
-const addressTask=new RetryableRequest<AddressJob,AddressMatch[]>((input,signal)=>findAddress(input.query,signal),addressState);
+const addressTask=new RetryableRequest<AddressJob,AddressMatch[]>((input,signal)=>findAddress(input.query,signal,input.comune),addressState);
 let selectedAddress: AddressMatch | null = null;
 let suggestions: AddressMatch[] = [];
 let activeSuggestion = -1;
@@ -34,7 +35,7 @@ let suggestionTimer: ReturnType<typeof setTimeout>;
 const distances = new Map<string, number>();
 let originLayer: any = null;
 const normal = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLocaleLowerCase('it');
-const lookup = new Map(schools.map(s => [s.id, normal([s.name,...s.aliases,s.code || ''].join(' '))]));
+const lookup = new Map(schools.map(s => [s.id, normal([s.name,...s.aliases,s.code || '',s.address,s.comune || 'Milano'].join(' '))]));
 let onlySaved = false;
 let shown = 12;
 let filtered: School[] = [];
@@ -46,6 +47,7 @@ let basemap:ReturnType<typeof installBasemap>|null=null;
 const mapFeedback=resourceFeedback($('#map-request-feedback'));
 function mapState(state:BasemapState){
   const restoreFocus=document.activeElement===mapFeedback.retry;
+  $('#map-cartography-notice').hidden = !['local','fallback'].includes(state.phase);
   $('#school-map').setAttribute('aria-busy',String(state.phase==='loading'));
   $('.map-shell').classList.toggle('is-loading',state.phase==='loading');
   $('#map-column').classList.toggle('is-loading',state.phase==='loading');
@@ -67,7 +69,7 @@ let filterRevision = 0;
 query.value = params.get('q') || '';
 searchMode = query.value || params.get('tipo') === 'nome' ? 'name' : 'address';
 radius.value = String(radiusKm(params.get('raggio') || '2'));
-municipality.value = params.get('municipio') || '';
+municipality.value = normalizeArea(params.get('area') || params.get('municipio') || '');
 management.value = params.get('gestione') || '';
 educationStage = params.get('fascia') === 'nursery' ? 'nursery' : params.get('fascia') === 'preschool' ? 'preschool' : '';
 nurseryService.value = educationStage === 'nursery' && [...nurseryService.options].some(option => option.value === params.get('servizio')) ? params.get('servizio')! : '';
@@ -75,7 +77,7 @@ sort.value = params.get('ordine') === 'details' ? 'details' : 'name';
 onlySaved = params.get('salvate') === '1';
 if (resume) {
   query.value=resume.query; searchMode=resume.mode; educationStage=resume.stage;
-  radius.value=resume.radius; municipality.value=resume.municipality; management.value=resume.management;
+  radius.value=resume.radius; municipality.value=normalizeArea(resume.municipality); management.value=resume.management;
   nurseryService.value=resume.stage==='nursery'?resume.service:''; sort.value=resume.sort; onlySaved=resume.onlySaved;
   origin=resume.origin; selectedAddress=resume.origin; selectedSchoolId=resume.selectedId;
   if(origin){
@@ -91,13 +93,13 @@ function filterSchools(refit=true) {
   if(refit)pendingMapView=null;
   const words = searchMode === 'name' ? normal(query.value.trim()).split(/\s+/).filter(Boolean) : [];
   const saved = loadFamily().saved;
-  filtered = schools.filter(s => (!educationStage || s.educationStage === educationStage) && (educationStage !== 'nursery' || !nurseryService.value || s.serviceType === nurseryService.value) && (!municipality.value || (municipality.value === 'unknown' ? s.municipality === null : s.municipality === Number(municipality.value))) && (!management.value || s.management === management.value) && (!onlySaved || saved.includes(s.id)) && words.every(word => lookup.get(s.id)!.includes(word)) && (!origin || (distances.has(s.id) && distances.get(s.id)! <= radiusKm(radius.value))));
+  filtered = schools.filter(s => (!educationStage || s.educationStage === educationStage) && (educationStage !== 'nursery' || !nurseryService.value || s.serviceType === nurseryService.value) && matchesSearchArea(s,municipality.value) && (!management.value || s.management === management.value) && (!onlySaved || saved.includes(s.id)) && words.every(word => lookup.get(s.id)!.includes(word)) && (!origin || (distances.has(s.id) && distances.get(s.id)! <= radiusKm(radius.value))));
   filtered.sort((a,b) => (sort.value === 'distance' && origin ? distances.get(a.id)!-distances.get(b.id)! : sort.value === 'details' ? Number(b.enriched)-Number(a.enriched) : 0) || a.name.localeCompare(b.name,'it'));
   shown = 12;
   if(selectedSchoolId && !filtered.some(s=>s.id===selectedSchoolId))clearMapSelection();
   const summary = $('#proximity-summary');
   summary.hidden = !origin;
-  summary.textContent = origin ? `Entro ${radius.value} km da ${origin.label}. Distanze in linea d’aria.${origin.houseNumber ? ' Le distanze partono dal numero civico selezionato.' : ' Le distanze partono dalla via, senza un numero civico preciso.'} ${schools.filter(s=>(!educationStage || s.educationStage===educationStage) && (s.lat===null || s.lng===null)).length} sedi${educationStage ? ' della fascia selezionata' : ''} non hanno coordinate e non sono incluse nella ricerca per vicinanza.` : '';
+  summary.textContent = origin ? `${areaLabel(municipality.value)} · entro ${radius.value} km da ${origin.label}. Distanze in linea d’aria.${origin.houseNumber ? ' Le distanze partono dal numero civico selezionato.' : ' Le distanze partono dalla via, senza un numero civico preciso.'} ${schools.filter(s=>(!educationStage || s.educationStage===educationStage) && matchesSearchArea(s,municipality.value) && (s.lat===null || s.lng===null)).length} sedi${educationStage ? ' della fascia selezionata' : ''} non hanno coordinate e non sono incluse nella ricerca per vicinanza.` : '';
   renderList();
   $('#result-count').textContent = String(filtered.length);
   $('#result-noun').textContent = filtered.length === 1 ? 'sede' : 'sedi';
@@ -109,12 +111,12 @@ function filterSchools(refit=true) {
   document.querySelectorAll<HTMLElement>('[data-education-stage]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.educationStage === educationStage)));
   $('#saved-only').setAttribute('aria-pressed',String(onlySaved));
   $('#reset-filters').hidden = !educationStage && !query.value && !municipality.value && !management.value && !onlySaved && sort.value === 'name' && radius.value === '2';
-  document.querySelectorAll<HTMLElement>('[data-municipality]').forEach(button => { const selected = button.dataset.municipality === municipality.value; button.classList.toggle('active',selected); button.setAttribute('aria-pressed',String(selected)); });
+  document.querySelectorAll<HTMLElement>('[data-municipality]').forEach(button => { const selected = normalizeArea(button.dataset.municipality || '') === municipality.value; button.classList.toggle('active',selected); button.setAttribute('aria-pressed',String(selected)); });
   document.querySelectorAll<HTMLElement>('[data-hero-management]').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.heroManagement === management.value)));
   document.querySelectorAll<SVGElement>('[data-terrain-type]').forEach(cell => { cell.style.opacity = !management.value || cell.dataset.terrainType === management.value ? '1' : '.25'; });
   const url = new URL(location.href);
-  for (const key of ['lat','lng','indirizzo']) url.searchParams.delete(key);
-  for (const [key,value] of Object.entries({fascia:educationStage,servizio:educationStage==='nursery'?nurseryService.value:'',q:searchMode==='name'?query.value:'',tipo:searchMode==='name'?'nome':'',raggio:radius.value==='2'?'':radius.value,municipio:municipality.value,gestione:management.value,salvate:onlySaved?'1':'',ordine:sort.value==='details'?'details':''})) value ? url.searchParams.set(key,value) : url.searchParams.delete(key);
+  for (const key of ['lat','lng','indirizzo','municipio']) url.searchParams.delete(key);
+  for (const [key,value] of Object.entries({fascia:educationStage,servizio:educationStage==='nursery'?nurseryService.value:'',q:searchMode==='name'?query.value:'',tipo:searchMode==='name'?'nome':'',raggio:radius.value==='2'?'':radius.value,area:municipality.value,gestione:management.value,salvate:onlySaved?'1':'',ordine:sort.value==='details'?'details':''})) value ? url.searchParams.set(key,value) : url.searchParams.delete(key);
   history.replaceState(null,'',url);
   renderActiveFilters();
   renderMarkers();
@@ -162,13 +164,13 @@ function addressState(state:RequestState<AddressJob,AddressMatch[]>) {
   const matches=state.value;
   if(state.input.kind==='suggestions'){
     if(activeSuggestion<0&&(matches.length||!suggestions.length))showSuggestions(matches);
-    status.textContent=suggestions.length?`${suggestions.length} suggerimenti. Seleziona un indirizzo, poi premi Cerca.`:parseCivicAddress(query.value)?'Non abbiamo trovato questo numero civico. Controlla via e numero. Se preferisci cercare dalla via, puoi togliere il numero civico.':'Non abbiamo trovato suggerimenti a Milano. Controlla come è scritto il nome della via.';
+    status.textContent=suggestions.length?`${suggestions.length} suggerimenti. Seleziona un indirizzo, poi premi Cerca.`:parseCivicAddress(query.value)?'Non abbiamo trovato questo numero civico. Controlla via e numero. Se preferisci cercare dalla via, puoi togliere il numero civico.':'Non abbiamo trovato suggerimenti nell’area di ricerca. Controlla come è scritto il nome della via.';
     if(state.retry)query.focus({preventScroll:true});
   }else if(!matches.length){
-    status.textContent=parseCivicAddress(query.value)?'Non abbiamo trovato questo numero civico e non possiamo calcolare le distanze da quel punto. Controlla via e numero.':'Non abbiamo trovato questo indirizzo nel Comune di Milano. Controlla come è scritto il nome della via.';
+    status.textContent=parseCivicAddress(query.value)?'Non abbiamo trovato questo numero civico e non possiamo calcolare le distanze da quel punto. Controlla via e numero.':'Non abbiamo trovato questo indirizzo a Milano o nei comuni confinanti. Controlla come è scritto il nome della via.';
     status.dataset.error='true';query.setAttribute('aria-invalid','true');if(state.retry)query.focus({preventScroll:true});
-  }else if(matches.length===1){useAddress(matches[0]);if(state.retry&&!document.querySelector('dialog[open]'))$('#results-title').focus({preventScroll:true});}
-  else{status.textContent='Scegli l’indirizzo da cui calcolare le distanze:';showSuggestions(matches);if(!document.querySelector('dialog[open]'))query.focus();}
+  }else if(matches.length===1 && addressContext(state.input.query,state.input.comune).comune){useAddress(matches[0]);if(state.retry&&!document.querySelector('dialog[open]'))$('#results-title').focus({preventScroll:true});}
+  else{status.textContent='Conferma indirizzo e Comune da cui calcolare le distanze:';showSuggestions(matches);if(!document.querySelector('dialog[open]'))query.focus();}
 }
 addressFeedback.retry.addEventListener('click',()=>void addressTask.retry());
 function cancelSearch(preserveError=false) {
@@ -202,7 +204,7 @@ function showSuggestions(matches: AddressMatch[]) {
   });
   choices.hidden=!matches.length;query.setAttribute('aria-expanded',String(matches.length>0));
 }
-function autocomplete(){return addressTask.start({query:query.value,kind:'suggestions'});}
+function autocomplete(){return addressTask.start({query:query.value,comune:areaComune(municipality.value),kind:'suggestions'});}
 query.addEventListener('keydown',event=>{
   if(searchMode!=='address')return;
   if(event.key==='Escape'){cancelSearch();return;}
@@ -224,7 +226,7 @@ function clearOrigin() {
 function updateMode() {
   document.querySelectorAll<HTMLElement>('[data-search-mode]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.searchMode===searchMode)));
   const addressMode=searchMode==='address';
-  query.placeholder=addressMode?'Via e numero civico, Milano':'Nome del nido o della scuola';
+  query.placeholder=addressMode?`Via e numero civico, ${areaComune(municipality.value) || 'Comune'}`:'Nome, indirizzo o Comune della scuola';
   query.setAttribute('aria-label',query.placeholder);
   query.closest('.search-field')!.querySelector('label[for="query"]')!.textContent=query.placeholder;
   query.setAttribute('role',addressMode?'combobox':'searchbox');
@@ -232,7 +234,7 @@ function updateMode() {
   $('.radius-field').hidden=!addressMode;
   $('#geocoder-credit').hidden=!addressMode;
 }
-function resetFilters() { cancelSearch();selectedAddress=null;clearOrigin();query.value='';educationStage='';nurseryService.value='';municipality.value='';management.value='';radius.value='2';sort.value='name';onlySaved=false;status.textContent='';query.removeAttribute('aria-invalid');filterSchools(); }
+function resetFilters() { cancelSearch();selectedAddress=null;clearOrigin();query.value='';educationStage='';nurseryService.value='';municipality.value='';management.value='';radius.value='2';sort.value='name';onlySaved=false;status.textContent='';query.removeAttribute('aria-invalid');updateMode();filterSchools(); }
 function useAddress(match: AddressMatch) {
   status.classList.remove('sr-only');
   const civic=parseCivicAddress(query.value);
@@ -259,7 +261,7 @@ async function search() {
   }
   if(selectedAddress){useAddress(selectedAddress);return;}
   if(query.value.trim().length<3){status.textContent='Inserisci una via e, se disponibile, il numero civico.';query.setAttribute('aria-invalid','true');return;}
-  await addressTask.start({query:query.value,kind:'search'});
+  await addressTask.start({query:query.value,comune:areaComune(municipality.value),kind:'search'});
 }
 
 let searchTimer: ReturnType<typeof setTimeout>;
@@ -270,10 +272,10 @@ query.addEventListener('input',()=>{
   status.textContent=searchMode==='address'&&query.value.trim().length<3?'Scrivi almeno 3 caratteri per i suggerimenti.':'';
   if(searchMode==='name'){clearOrigin();searchTimer=setTimeout(()=>filterSchools(),160);}
   if(searchMode==='address'&&query.value.trim().length>=3){
-    const cached=cachedAddressSuggestions(query.value);
+    const cached=cachedAddressSuggestions(query.value,areaComune(municipality.value));
     if(cached.matches.length){showSuggestions(cached.matches);status.textContent=`${cached.matches.length} suggerimenti. Seleziona un indirizzo, poi premi Cerca.`;}
     if(!cached.exact || !cached.fresh)suggestionTimer=setTimeout(()=>void autocomplete(),150);
-    else if(!cached.matches.length)status.textContent=parseCivicAddress(query.value)?'Non abbiamo trovato questo numero civico. Controlla via e numero. Se preferisci cercare dalla via, puoi togliere il numero civico.':'Non abbiamo trovato suggerimenti a Milano. Controlla come è scritto il nome della via e riprova.';
+    else if(!cached.matches.length)status.textContent=parseCivicAddress(query.value)?'Non abbiamo trovato questo numero civico. Controlla via e numero. Se preferisci cercare dalla via, puoi togliere il numero civico.':'Non abbiamo trovato suggerimenti nell’area di ricerca. Controlla come è scritto il nome della via e riprova.';
   }
 });
 document.querySelectorAll<HTMLElement>('[data-search-mode]').forEach(button=>button.addEventListener('click',()=>{
@@ -286,7 +288,8 @@ document.querySelectorAll<HTMLElement>('[data-education-stage]').forEach(button 
   educationStage = nextStage;
   filterSchools();
 }));
-[municipality,management,nurseryService,sort,radius].forEach(el=>el.addEventListener('change',()=>filterSchools()));
+[management,nurseryService,sort,radius].forEach(el=>el.addEventListener('change',()=>filterSchools()));
+municipality.addEventListener('change',()=>{cancelSearch();selectedAddress=null;updateMode();filterSchools();});
 $('#school-search').addEventListener('submit',event=>{event.preventDefault();clearTimeout(searchTimer);void search();});
 document.querySelectorAll<HTMLElement>('[data-hero-management]').forEach(button => button.addEventListener('click', () => {
   management.value = management.value === button.dataset.heroManagement ? '' : button.dataset.heroManagement!;
@@ -296,7 +299,7 @@ $('#reset-filters').addEventListener('click',resetFilters);
 $('#empty-reset').addEventListener('click',resetFilters);
 $('#empty-edit').addEventListener('click',()=>{window.scrollTo({top:Math.max(0,$('#ricerca').getBoundingClientRect().top+window.scrollY-headerHeight()-12),behavior:'instant'});query.focus({preventScroll:true});});
 $('#saved-only').addEventListener('click',()=>{onlySaved=!onlySaved;filterSchools();});
-document.querySelectorAll<HTMLElement>('[data-municipality]').forEach(button=>button.addEventListener('click',()=>{municipality.value=button.dataset.municipality!;filterSchools();}));
+document.querySelectorAll<HTMLElement>('[data-municipality]').forEach(button=>button.addEventListener('click',()=>{municipality.value=normalizeArea(button.dataset.municipality!);filterSchools();}));
 $('#load-more').addEventListener('click',()=>{shown+=12;renderList();});
 function dock() { const count=loadFamily().compare.length;$('#compare-dock').hidden=!count;$('#dock-count').textContent=String(count); }
 window.addEventListener('family:change',()=>{dock();if(onlySaved)filterSchools(false);});
@@ -328,7 +331,7 @@ function openFilters(opener:HTMLElement){
   moveFilter($('#nursery-service-field'),$('#filters-service-host'));
   moveFilter($('#sort').closest('label')!,$('#filters-fields-host'));
   moveFilter($('#saved-only'),$('#filters-saved-host'));
-  $('#filters-query-context').textContent=origin?`Vicino a ${origin.label}`:searchMode==='name'&&query.value?`Nome: ${query.value}`:searchMode==='address'?'Tutta Milano. Il raggio si applica dopo la ricerca di un indirizzo.':'Tutta Milano · scegli i filtri che contano per te.';
+  $('#filters-query-context').textContent=origin?`Vicino a ${origin.label}`:searchMode==='name'&&query.value?`Nome: ${query.value}`:searchMode==='address'?`${areaLabel(municipality.value)}. Il raggio si applica dopo la ricerca di un indirizzo.`:`${areaLabel(municipality.value)} · scegli i filtri che contano per te.`;
   filtersDialog.returnValue='';filtersDialog.showModal();
   $('#filter-toggle').setAttribute('aria-expanded','true');$('#compact-filter-toggle').setAttribute('aria-expanded','true');
 }
@@ -366,7 +369,7 @@ function renderActiveFilters(){
   const filters:[string,string][]=[];
   if(educationStage)filters.push(['stage',educationStage==='nursery'?'Servizi 0–3':'Infanzia 3–6']);
   if(nurseryService.value)filters.push(['service',nurseryService.value]);
-  if(municipality.value)filters.push(['municipality',municipality.value==='unknown'?'Municipio da verificare':`Municipio ${municipality.value}`]);
+  if(municipality.value)filters.push(['municipality',areaLabel(municipality.value)]);
   if(management.value)filters.push(['management',management.value]);
   if(origin)filters.push(['origin',`Entro ${radius.value} km`]);
   if(searchMode==='name'&&query.value.trim())filters.push(['query',query.value.trim()]);
@@ -388,7 +391,7 @@ $('#active-filters').addEventListener('click',event=>{
     case 'query':query.value='';break;
     case 'origin':clearOrigin();selectedAddress=null;query.value='';status.textContent='';break;
   }
-  filterSchools();
+  updateMode();filterSchools();
 });
 function clearMapSelection(){
   selectedSchoolId=null;$('#map-selection').classList.remove('is-active');
@@ -403,7 +406,7 @@ async function selectSchool(id:string,fromMap=false){
   if(index>=shown){shown=Math.ceil((index+1)/12)*12;renderList();}
   document.querySelectorAll<HTMLElement>('.school-card').forEach(card=>{const selected=card.dataset.schoolId===id;card.classList.toggle('is-map-selected',selected);card.querySelector('[data-locate-school]')?.setAttribute('aria-pressed',String(selected));});
   document.getElementById('map-cluster-options')?.remove();
-  $('#map-selected-name').textContent=school.name;$('#map-selected-address').textContent=`${school.address} · ${school.serviceType} · ${school.ageRange}`;
+  $('#map-selected-name').textContent=school.name;$('#map-selected-address').textContent=`${school.address}, ${school.comune} · ${school.serviceType} · ${school.ageRange}`;
   const link=$<HTMLAnchorElement>('#map-selected-link');link.href=schoolHref(school);link.hidden=false;
   if(!fromMap&&window.innerWidth<1024){$('#explorer').classList.add('map-mode');setViewControls('map');}
   await initMap();
@@ -472,7 +475,7 @@ if(resume){
   shown=Math.max(12,Math.min(resume.shown,Math.ceil(filtered.length/12)*12));renderList();
   resume.expandedFacts.forEach(id=>document.querySelector<HTMLDetailsElement>(`[data-card-fact="${CSS.escape(id)}"]`)?.setAttribute('open',''));
   const selected=filtered.find(s=>s.id===selectedSchoolId);
-  if(selected){$('#map-selection').classList.add('is-active');$('#map-selected-name').textContent=selected.name;$('#map-selected-address').textContent=`${selected.address} · ${selected.serviceType} · ${selected.ageRange}`;const link=$<HTMLAnchorElement>('#map-selected-link');link.href=schoolHref(selected);link.hidden=false;}
+  if(selected){$('#map-selection').classList.add('is-active');$('#map-selected-name').textContent=selected.name;$('#map-selected-address').textContent=`${selected.address}, ${selected.comune} · ${selected.serviceType} · ${selected.ageRange}`;const link=$<HTMLAnchorElement>('#map-selected-link');link.href=schoolHref(selected);link.hidden=false;}
   if(location.hash==='#riprendi')history.replaceState(null,'',location.pathname+location.search);
   let interacted=false;
   ['wheel','pointerdown','keydown','touchstart'].forEach(type=>window.addEventListener(type,()=>{interacted=true;},{once:true,passive:true}));

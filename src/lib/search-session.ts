@@ -1,3 +1,4 @@
+import { normalizeArea } from './search-area.ts';
 import type { AddressMatch } from './proximity.ts';
 
 export const SEARCH_SESSION_KEY = 'scuole-vicine-search-session-v1';
@@ -21,7 +22,7 @@ export function publicSearchUrl(value: string): string {
   const parsed = new URL(value, 'https://search.invalid');
   if (parsed.origin !== 'https://search.invalid' || parsed.pathname !== '/') throw new Error('Invalid search URL');
   const clean = new URLSearchParams();
-  for (const key of ['fascia', 'servizio', 'tipo', 'raggio', 'municipio', 'gestione', 'salvate', 'ordine']) {
+  for (const key of ['fascia', 'servizio', 'tipo', 'raggio', 'area', 'municipio', 'gestione', 'salvate', 'ordine']) {
     const item = parsed.searchParams.get(key);
     if (item && item.length <= 200) clean.set(key, item);
   }
@@ -35,7 +36,7 @@ export function validateSearchSession(value: unknown, now = Date.now()): SearchS
   if (!record(value) || value.version !== 1 || !finite(value.savedAt) || now < value.savedAt || now - value.savedAt > SEARCH_SESSION_TTL) return null;
   if (!short(value.url, 2000) || !short(value.openedPath, 300) || !/^\/scuole\/[a-z0-9-]+\/$/.test(value.openedPath)) return null;
   if (!['address', 'name'].includes(String(value.mode)) || !['', 'nursery', 'preschool'].includes(String(value.stage)) || !short(value.query)) return null;
-  if (!short(value.radius) || !/^(?:[1-9]|10)$/.test(value.radius) || !short(value.municipality) || !/^(?:[1-9]|unknown)?$/.test(value.municipality)) return null;
+  if (!short(value.radius) || !/^(?:[1-9]|10)$/.test(value.radius) || !short(value.municipality) || (value.municipality!=='' && normalizeArea(value.municipality)==='')) return null;
   if (!short(value.management, 80) || !short(value.service, 120) || !['name', 'distance', 'details'].includes(String(value.sort)) || typeof value.onlySaved !== 'boolean') return null;
   if (!['list', 'map'].includes(String(value.view)) || !between(value.shown, 12, 2000) || !Number.isInteger(value.shown) || !between(value.count, 0, 2000) || !Number.isInteger(value.count) || !between(value.scrollY, 0, 2000000)) return null;
   if (!Array.isArray(value.expandedFacts) || value.expandedFacts.length > 6000 || value.expandedFacts.some(item=>!short(item,250))) return null;

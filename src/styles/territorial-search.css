@@ -1,0 +1,13 @@
+/* One geographical scope avoids combining a Milano district with another city. */
+.search-extra-filters .municipality-field { min-width: 0; flex: 1.25; }
+.search-extra-filters .municipality-field select { width: 100%; max-width: 100%; text-overflow: ellipsis; }
+.filters-dialog .municipality-field { width: 100%; }
+@media (min-width: 1024px) { .search-extra-filters .municipality-field { max-width: 245px; } }
+@media (max-width: 1023px) { .filters-dialog .municipality-field select { min-height: 44px; } }
+
+.map-cartography-notice { margin: 0; padding: 16px 20px; border-top: 1px solid var(--line, #dddacf); background: var(--surface, #fffdf5); display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.map-cartography-notice[hidden] { display: none; }
+.map-cartography-notice > div { flex: 1 1 240px; }
+.map-cartography-notice strong { font-size: .9rem; }
+.map-cartography-notice p { margin: 6px 0 0; font-size: .82rem; line-height: 1.5; }
+.map-cartography-notice button { min-height: 44px; font-size: .82rem; }

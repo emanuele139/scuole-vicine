@@ -2,7 +2,7 @@ import { catalogText } from '../lib/catalog-copy';
 import { loadFamily, saveFamily } from '../lib/family';
 import type { SchoolResearch } from '../lib/catalog';
 
-interface ComparedSchool { educationStage: 'nursery' | 'preschool'; serviceType: string; ageRange: string; accessMode: string; operator: string | null; id: string; name: string; address: string; zone: string; municipality: number | null; management: string; recognition: string; hours: string | null; cost: string | null; services: string[]; openDay: string | null; description: string; catalogYear: string; detailYear?: string | null; enriched: boolean; verifiedAt?: string | null; research?: SchoolResearch; warnings: string[]; href: string }
+interface ComparedSchool { comune: string; access?: {eligibility:string;priority:string;benefits:string;costs:string;year:string;evidenceScope:string;fieldEvidence?:Record<string,{status:string;scope?:string;year?:string|null}|null>}|null; educationStage: 'nursery' | 'preschool'; serviceType: string; ageRange: string; accessMode: string; operator: string | null; id: string; name: string; address: string; zone: string; municipality: number | null; management: string; recognition: string; hours: string | null; cost: string | null; costAlternative?:string; services: string[]; openDay: string | null; description: string; catalogYear: string; detailYear?: string | null; enriched: boolean; verifiedAt?: string | null; research?: SchoolResearch; warnings: string[]; href: string }
 const dataNode = document.getElementById('comparison-data');
 if (dataNode) {
   const schools: ComparedSchool[] = JSON.parse(dataNode.textContent || '[]');
@@ -27,8 +27,17 @@ if (dataNode) {
   document.getElementById('compare-start')!.addEventListener('click',()=>{input.scrollIntoView({block:'center',behavior:'instant'});input.focus({preventScroll:true});});
   const normalized = (value: string) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLocaleLowerCase('it');
   const researchFields: Record<string, keyof SchoolResearch['fieldEvidence']> = {Orari:'hours',Costi:'cost','Servizi e spazi':'services','Open day e visite':'openDay'};
-  const statusLabels = {verified:'Dati della sede','operator-rule':'Indicazioni comuni del gestore','prior-research':'Informazioni da una ricerca precedente','not-published':'Non pubblicato','not-found':'Non trovato nelle fonti consultate',blocked:'Fonte non consultabile','needs-confirmation':'Da confermare'};
+  const statusLabels = {'municipal-rule':'Regole del Comune',verified:'Dati della sede','operator-rule':'Indicazioni comuni del gestore','prior-research':'Informazioni da una ricerca precedente','not-published':'Non pubblicato','not-found':'Non trovato nelle fonti consultate',blocked:'Fonte non consultabile','needs-confirmation':'Da confermare'};
   function evidenceNote(school: ComparedSchool, label: string, hasText: boolean) {
+    if (label==='Costi' && school.costAlternative) return `Canali distinti: informazioni per l’iscrizione privata e tariffa del posto comunale. <a href="${escape(school.href)}#costi">Periodi e fonti nella scheda</a>`;
+    const accessField = ({'Domanda e residenza':'eligibility','Priorità di ammissione':'priority','Agevolazioni':'benefits',Costi:'costs'} as Record<string,string>)[label];
+    if (accessField) {
+      if (!school.access) return 'Condizioni da chiedere alla scuola.';
+      const field = school.access.fieldEvidence?.[accessField];
+      const labels: Record<string,string> = {'network-rule':'Regola comune della rete',verified:'Dato documentato','not-found':'Informazione non reperita','needs-confirmation':'Da confermare','prior-research':'Ricerca precedente'};
+      const note = field ? labels[field.status] || 'Da verificare' : 'Da verificare';
+      return `${escape(field?.year || school.access.year)} · ${escape(note)} · <a href="${escape(school.href)}#accesso">Condizioni e fonti</a>`;
+    }
     const field = researchFields[label];
     const evidence = field && school.research?.fieldEvidence[field];
     if (evidence) return `${escape(statusLabels[evidence.status])}${evidence.year ? ` · ${escape(evidence.year)}` : ''}${evidence.sourceUrls[0] ? ` · <a href="${escape(school.href)}#fonti">Fonti della scheda</a>` : ''}`;
@@ -52,14 +61,16 @@ if (dataNode) {
     share.disabled = print.disabled = !ids.length;
     differences.disabled = ids.length < 2;
     if (ids.length < 2) differences.checked = false;
-    selection.innerHTML = selected.map(school => `<article class="compare-selected-card"><span class="badge">${escape(managementLabel(school))}</span><button class="compare-remove" data-remove-compare="${escape(school.id)}" aria-label="Rimuovi ${escape(school.name)} dal confronto">×</button><h2><a href="${escape(school.href)}">${escape(school.name)}</a></h2><p>${escape(school.serviceType)} · ${escape(school.ageRange)}</p><p>${escape(school.address)}</p><p>${escape(school.zone)}${school.municipality && school.zone !== `Municipio ${school.municipality}` ? ` · Municipio ${school.municipality}` : ''}</p></article>`).join('') + (ids.length && ids.length < 3 ? '<div class="compare-slot">C’è posto per un’altra scuola</div>' : '');
+    selection.innerHTML = selected.map(school => `<article class="compare-selected-card"><span class="badge">${escape(managementLabel(school))}</span><button class="compare-remove" data-remove-compare="${escape(school.id)}" aria-label="Rimuovi ${escape(school.name)} dal confronto">×</button><h2><a href="${escape(school.href)}">${escape(school.name)}</a></h2><p>${escape(school.serviceType)} · ${escape(school.ageRange)}</p><p>${escape(school.address)}, ${escape(school.comune)}</p><p>${escape(school.zone)}${school.municipality && school.zone !== `Municipio ${school.municipality}` ? ` · Municipio ${school.municipality}` : ''}</p></article>`).join('') + (ids.length && ids.length < 3 ? '<div class="compare-slot">C’è posto per un’altra scuola</div>' : '');
     if (empty) { criteriaCount.textContent = ''; board.innerHTML = ''; return; }
     const criteria: [string, (school: ComparedSchool) => string | null | undefined][] = [
       ['Servizio ed età', school => [school.serviceType, school.ageRange].join(' · ')],
-      ['Accesso', school => school.accessMode],
+      ['Domanda e residenza', school => school.access?.eligibility || school.accessMode],
+      ['Priorità di ammissione', school => school.access?.priority],
+      ['Agevolazioni', school => school.access?.benefits],
       ['Gestore', school => school.operator || school.management],
       ['Gestione e riconoscimento', school => [managementLabel(school), school.recognition].filter(Boolean).join(' · ')],
-      ['Orari', school => school.hours], ['Servizi e spazi', school => school.services?.join(' · ')], ['Costi', school => school.cost], ['Open day e visite', school => school.openDay],
+      ['Orari', school => school.hours], ['Servizi e spazi', school => school.services?.join(' · ')], ['Costi', school => school.costAlternative ? `${school.cost}\n\nPosto assegnato dal Comune: ${school.costAlternative}` : school.cost || school.access?.costs], ['Open day e visite', school => school.openDay],
       ['Progetto e vita della scuola', school => school.description], ['Attenzioni sulla sede', school => school.warnings.length ? school.warnings.join(' ') : null],
     ];
     const visibleCriteria = differences.checked ? criteria.filter(([, value]) => new Set(selected.map(school => normalized(value(school) || '').trim())).size > 1) : criteria;
@@ -69,8 +80,8 @@ if (dataNode) {
   function renderSearch() {
     const term = normalized(input.value.trim());
     if (term.length < 2) { results.innerHTML = ''; return; }
-    const found = schools.filter(school => !ids.includes(school.id) && normalized(`${school.name} ${school.address} ${school.zone}`).includes(term)).slice(0, 7);
-    results.innerHTML = found.length ? found.map(school => `<button class="compare-result" data-add-compare="${escape(school.id)}"><span>${escape(school.name)}<small>${escape(school.serviceType)} · ${escape(school.ageRange)} · ${escape(school.address)} · ${escape(managementLabel(school))}</small></span><span aria-hidden="true">+</span></button>`).join('') : '<p>Non abbiamo trovato scuole con questo nome o indirizzo. Prova con un altro nome o un’altra via.</p>';
+    const found = schools.filter(school => !ids.includes(school.id) && normalized(`${school.name} ${school.address} ${school.zone} ${school.comune}`).includes(term)).slice(0, 7);
+    results.innerHTML = found.length ? found.map(school => `<button class="compare-result" data-add-compare="${escape(school.id)}"><span>${escape(school.name)}<small>${escape(school.serviceType)} · ${escape(school.ageRange)} · ${escape(school.address)}, ${escape(school.comune)} · ${escape(managementLabel(school))}</small></span><span aria-hidden="true">+</span></button>`).join('') : '<p>Non abbiamo trovato scuole con questo nome o indirizzo. Prova con un altro nome o un’altra via.</p>';
   }
   input.addEventListener('input', renderSearch);
   differences.addEventListener('change', render);
