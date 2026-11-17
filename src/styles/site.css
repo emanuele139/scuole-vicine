@@ -1979,9 +1979,25 @@
 }
 
 .agenda-extra-filters select {
+  appearance:none;
+  -webkit-appearance:none;
+  width:100%;
   font-size:13px;
   min-height:44px;
-  padding:9px 30px 9px 12px
+  padding:9px 40px 9px 12px
+}
+
+.agenda-select {
+  position:relative;
+  display:block
+}
+
+.agenda-select-chevron {
+  position:absolute;
+  right:12px;
+  top:50%;
+  transform:translateY(-50%) rotate(90deg);
+  pointer-events:none
 }
 
 .agenda-results-count {
@@ -4615,13 +4631,15 @@
 
   .agenda-extra-filters label {
     font-size:10px;
-    flex:1
+    flex:1 1 140px;
+    min-width:0
   }
 
   .agenda-extra-filters select {
     font-size:12px;
-    padding:9px 20px 9px 10px;
-    max-width:180px
+    padding:9px 40px 9px 10px;
+    width:100%;
+    max-width:none
   }
 
   .agenda-results-count {
