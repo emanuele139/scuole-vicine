@@ -2,7 +2,7 @@
 
 Un progetto indipendente e gratuito per cercare nidi e scuole dell’infanzia a Milano, confrontare le informazioni e preparare le visite. Ideato e sviluppato da [Emanuele Cardinali](https://cardinali.studio/).
 
-Il dominio previsto è **scuolevicine.it**. Il codice, il catalogo e la documentazione sono disponibili nel repository pubblico [emanuele139/scuole-vicine](https://github.com/emanuele139/scuole-vicine). Il sito non è ancora pubblicato online.
+Il dominio del servizio è [scuolevicine.it](https://scuolevicine.it). Il codice, il catalogo e la documentazione sono disponibili nel repository pubblico [emanuele139/scuole-vicine](https://github.com/emanuele139/scuole-vicine). Il sito è distribuito su [Cloudflare Pages](https://scuole-vicine.pages.dev); il dominio personalizzato è configurato e in fase di attivazione DNS. Configurazione e collaudo sono descritti in [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
 ## Che cosa puoi fare
 
@@ -10,7 +10,8 @@ Il dominio previsto è **scuolevicine.it**. Il codice, il catalogo e la document
 - Confrontare fino a tre scuole e consultare fonti, periodo e informazioni mancanti.
 - Trovare gli open day con date documentate ed esportarli nel calendario.
 - Salvare scuole e appunti nel browser, con esportazione e importazione.
-- Provare uno spazio condiviso opzionale, cifrato nel browser, con un Worker Cloudflare e un database D1 locali.
+- Usare uno spazio condiviso opzionale, cifrato nel browser, con API Cloudflare e database D1 europeo.
+- Inviare segnalazioni private sulle scuole, con notifica email al titolare.
 
 Il catalogo non certifica la qualità delle scuole, i posti disponibili o le condizioni per anni successivi. Per una decisione, conferma con la scuola i dati dell’anno che ti interessa.
 

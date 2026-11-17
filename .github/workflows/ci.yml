@@ -22,7 +22,7 @@ jobs:
       - run: npm test
       - run: npm run test:research
       - run: npm run test:nurseries
-      - run: npm run build
+      - run: npm run build:pages
       - run: npm run seo:audit
       - name: Build e audit SEO di produzione senza deploy
         env:

@@ -1,6 +1,7 @@
-import { reportApi } from './reports';
+import { reportApi, flushReportEmails, type ReportEnv } from './reports';
+import { secureAsset } from './security';
 import { idPattern, secretPattern, validEnvelope, MAX_CIPHERTEXT, type Envelope } from '../src/lib/shared/protocol';
-interface Env { DB: D1Database; ASSETS: Fetcher; CREATE_LIMITER?: RateLimit; API_LIMITER?: RateLimit }
+interface Env extends ReportEnv { ASSETS?: Fetcher; CREATE_LIMITER?: RateLimit; API_LIMITER?: RateLimit }
 type Row = { revision: number; format_version: 1; ciphertext: string; iv: string; last_operation_id: string; expires_at: number };
 const YEAR = 365 * 86400;
 const headers = { 'Cache-Control': 'no-store', 'Content-Type': 'application/json', 'Referrer-Policy': 'no-referrer', 'X-Robots-Tag': 'noindex, nofollow', 'X-Content-Type-Options': 'nosniff' };
@@ -75,15 +76,10 @@ export default {
         return reply(error instanceof SyntaxError || (error instanceof Error && error.message === 'body') ? 400 : 503, { error: 'Non siamo riusciti a completare la richiesta. I dati ricevuti potrebbero non essere validi oppure il servizio potrebbe essere temporaneamente non disponibile. Riprova più tardi.' });
       }
     }
-    const asset = await env.ASSETS.fetch(request);
-    const response = new Response(asset.body, asset);
-    if (response.status === 404 || /^\/(famiglia|confronto|design)(?:\/|$)/.test(new URL(request.url).pathname)) response.headers.set('X-Robots-Tag', 'noindex, follow');
-    response.headers.set('Referrer-Policy', 'no-referrer');
-    response.headers.set('X-Content-Type-Options', 'nosniff');
-    response.headers.set('Content-Security-Policy', "default-src 'self'; script-src 'self' https://cloud.umami.is; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://tiles.openfreemap.org https://tile.openstreetmap.org https://*.tile.openstreetmap.org; connect-src 'self' https://photon.komoot.io https://tile.openstreetmap.org https://tiles.openfreemap.org https://cloud.umami.is https://gateway.umami.is; frame-src https://www.openstreetmap.org; worker-src 'self'; font-src 'self'; object-src 'none'; base-uri 'none'; frame-ancestors 'none'; form-action 'self'");
-    return response;
+    return env.ASSETS ? secureAsset(request, env.ASSETS) : reply(404, { error: 'Pagina non disponibile.' });
   },
   async scheduled(_event: ScheduledEvent, env: Env) {
+    await flushReportEmails(env);
     await env.DB.prepare('DELETE FROM school_reports WHERE expires_at <= ?').bind(Math.floor(Date.now() / 1000)).run();
     await env.DB.prepare('DELETE FROM shared_spaces WHERE expires_at <= ?').bind(Math.floor(Date.now() / 1000)).run();
   },

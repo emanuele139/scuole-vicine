@@ -1,6 +1,6 @@
-# Spazio famiglia condiviso — implementazione locale
+# Spazio famiglia condiviso
 
-Nessun deploy eseguito, nessun database cloud creato. L’ID D1 in `wrangler.jsonc` è un segnaposto valido soltanto per lo sviluppo locale.
+La configurazione locale in `wrangler.jsonc` usa un database separato con ID segnaposto. La configurazione di produzione, con D1 europeo, Pages e Worker interno, è descritta in [Pubblicazione su Cloudflare](docs/DEPLOYMENT.md).
 
 ## Avvio
 
@@ -24,7 +24,7 @@ Controlli: `npm run check`, `npm run shared:check`, `npm test`, `npm run build`.
 - Le modifiche vengono conservate come bozze cifrate in IndexedDB. La sincronizzazione avviene dopo 800 ms, ogni 15 secondi a pagina visibile, al ritorno online e all’uscita dai campi. Durante la scrittura in una textarea degli appunti la sincronizzazione è sospesa fino al cambio di campo, per impedire che un aggiornamento remoto alteri il testo sotto il cursore. Non è presente un service worker: la bozza offline funziona su una pagina già aperta; non si promette l’avvio del sito senza rete.
 - “Gestisci spazio” permette di importare la copia locale con anteprima, recuperare le bozze delle altre sessioni, tornare alla copia locale o eliminare lo spazio per tutti.
 - Le bozze di sessioni diverse non si sovrascrivono; il recupero di una bozza non la cancella. Non c’è ancora un comando per eliminare singole bozze locali.
-- Lo spazio scade 365 giorni dopo l’ultima modifica accettata; il polling non rinnova la durata. Cron giornaliero di pulizia e controllo di scadenza su ogni accesso.
+- Lo spazio scade 365 giorni dopo l’ultima modifica accettata; il polling non rinnova la durata. Pulizia automatica ogni 15 minuti in produzione e controllo di scadenza su ogni accesso.
 
 ## Sicurezza e formato
 
@@ -50,10 +50,10 @@ I conflitti vengono persistiti nella bozza cifrata e rimangono dopo ricaricament
 
 Prima dell’invio si salva una bozza di recupero. Ogni operazione ha un ID casuale; se la risposta si perde dopo il commit, il client riconosce l’operazione rileggendo il server. Se nel frattempo un’altra operazione l’ha superata, esegue un nuovo merge conservativo. Le modifiche inserite durante una richiesta in corso restano nella bozza e vengono risalvate.
 
-Il ritorno alla copia locale non elimina lo spazio remoto né le bozze. L’eliminazione cancella la riga nel database attivo e le bozze di quello spazio sul dispositivo corrente. Non elimina esportazioni o copie su altri dispositivi. I tempi di ritenzione dei backup Cloudflare devono essere verificati e documentati prima della pubblicazione; un ripristino infrastrutturale deve rispettare eliminazioni e scadenze avvenute successivamente. Nessuna cronologia remota degli appunti è implementata.
+Il ritorno alla copia locale non elimina lo spazio remoto né le bozze. L’eliminazione cancella la riga nel database attivo e le bozze di quello spazio sul dispositivo corrente. Non elimina esportazioni o copie su altri dispositivi. D1 Time Travel mantiene copie di ripristino fino a 30 giorni sul piano attuale; un ripristino infrastrutturale deve rispettare eliminazioni e scadenze avvenute successivamente. Nessuna cronologia remota degli appunti è implementata.
 
 Per escludere chi possiede il vecchio link occorre creare un nuovo spazio con nuove credenziali e chiave, poi eliminare quello precedente. La prima versione non implementa revoca individuale né rotazione automatica.
 
-## Prima di un futuro deploy
+## Produzione
 
-Richiede una richiesta separata dell’utente: creare/associare D1 reale, sostituire il segnaposto, applicare la migrazione remota, verificare dominio HTTPS, CSP, limiter e cron, e definire ritenzione/ripristino dei backup. Non inserire chiavi dei singoli spazi nelle variabili del Worker: devono restare nel browser.
+Configurazione e comandi in [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md). La produzione usa un nuovo D1, separato dai dati locali; non migrare appunti o segnalazioni di prova personali. Il Worker pianificato pulisce i record scaduti e ritenta le notifiche email. Le chiavi degli spazi restano nel browser e non devono entrare nelle variabili del Worker.

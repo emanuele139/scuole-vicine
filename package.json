@@ -19,7 +19,8 @@
     "catalog:nurseries": "python3 scripts/import-nurseries.py",
     "catalog:nurseries-research": "python3 scripts/apply-nursery-research.py",
     "test:nurseries": "python3 -m unittest discover -s tests -p test_nursery_research.py",
-    "seo:audit": "python3 scripts/audit-seo.py"
+    "seo:audit": "python3 scripts/audit-seo.py",
+    "build:pages": "npm run build && node scripts/build-pages.mjs"
   },
   "dependencies": {
     "@maplibre/maplibre-gl-leaflet": "^0.1.4",
@@ -40,7 +41,8 @@
     "typescript": "^6.0.3",
     "wrangler": "^4.163.0",
     "ultrahtml": "1.7.0",
-    "entities": "4.5.0"
+    "entities": "4.5.0",
+    "esbuild": "0.28.2"
   },
   "license": "MIT",
   "author": "Emanuele Cardinali",

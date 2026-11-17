@@ -39,4 +39,4 @@ L’immagine social originale `public/social/scuole-vicine.png` è ammessa nella
 - Attivare e verificare le segnalazioni private di vulnerabilità su GitHub; aggiornare `SECURITY.md`.
 - Controllare l’indirizzo del repository, il profilo autore e gli esiti della CI.
 
-Un eventuale deploy del servizio è un passaggio distinto. Per lo spazio condiviso occorre definire ritenzione e ripristino dei backup, dominio HTTPS, database reale, migrazioni, limiter e cron: vedi `README-SHARED.md`.
+La configurazione effettiva del servizio su Cloudflare è in [DEPLOYMENT.md](DEPLOYMENT.md). La preparazione di una copia e il deploy restano operazioni distinte. Per lo spazio condiviso occorre definire ritenzione e ripristino dei backup, dominio HTTPS, database reale, migrazioni, limiter e cron: vedi `README-SHARED.md`.

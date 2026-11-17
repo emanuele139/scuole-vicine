@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "scuole-vicine",
+  "pages_build_output_dir": "./dist",
+  "compatibility_date": "2026-11-17",
+  "services": [
+    {
+      "binding": "BACKEND",
+      "service": "scuole-vicine-api"
+    }
+  ]
+}

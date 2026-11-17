@@ -37,6 +37,7 @@ export function installBasemap(L:any,map:any,onStatus:(message:string)=>void) {
     activeLayer=openLocalBasemap(L,map);
   }
   function startRaster() {
+    onStatus('');
     const pending=new Map<HTMLCanvasElement,AbortController>();
     let removed=false;
     const Layer=L.TileLayer.extend({
